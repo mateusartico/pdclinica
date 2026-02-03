@@ -1,4 +1,7 @@
+/* Fontes do Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+/* Ícones do Bootstrap */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 * {
   margin: 0px;
@@ -102,14 +105,25 @@
   padding: 0px 20px;
 }
 
-.label-checkbox {
-  margin-left: 10px;
+.input-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
   font-family: var(--fonte-texto);
   font-size: var(--texto-mobile);
 }
 
+.input-checkbox input {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  accent-color: var(--cor-verde-ativo);
+  cursor: pointer;
+}
+
 label span {
   color: var(--cor-verde);
+  margin-left: 3px;
 }
 
 .wrapper-botoes {
@@ -149,4 +163,65 @@ a:hover {
 .botao:hover {
   background-color: var(--cor-laranja-ativo);
   color: var(--cor-branco);
+}
+
+.fake-recaptcha {
+  width: 300px;
+  height: 74px;
+  background: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+}
+
+.checkbox-recaptcha {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #c1c1c1;
+  border-radius: 3px;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-recaptcha i {
+  color: var(--cor-branco);
+  font-size: 24px;
+  display: none;
+}
+
+.checkbox-recaptcha.checked {
+  border-color: var(--cor-verde);
+  background-color: var(--cor-verde-ativo);
+}
+
+.checkbox-recaptcha.checked i {
+  display: block;
+}
+
+.text-recaptcha {
+  flex: 1;
+  font-size: 14px;
+  color: #000;
+}
+
+.brand-recaptcha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  color: #777;
+}
+
+.brand-recaptcha img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 2px;
 }

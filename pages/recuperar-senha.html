@@ -13,9 +13,35 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body class="autenticacao-pagina">
+    <div class="autenticacao-logo">PD Clínica</div>
     <main class="autenticacao-conteudo">
       <div class="autenticacao-card">
-        <form action="#"></form>
+        <header>Recuperar Senha</header>
+        <form action="#">
+          <p>Coloque seu e-mail para receber o código de recuperação</p>
+          <input class="input-txt" type="email" placeholder="E-mail" />
+          <div class="fake-recaptcha">
+            <button
+              type="button"
+              class="checkbox-recaptcha"
+              aria-label="Não sou um robô"
+            >
+              <i class="bi bi-check"></i>
+            </button>
+            <span class="text-recaptcha">Não sou um robô</span>
+            <div class="brand-recaptcha">
+              <img
+                src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
+                alt="reCAPTCHA"
+              />
+              <small>reCAPTCHA</small>
+            </div>
+          </div>
+          <div class="wrapper-botoes">
+            <a href="../index.html" class="botao">Voltar</a>
+            <a href="login.html" class="botao">Enviar</a>
+          </div>
+        </form>
       </div>
     </main>
 
