@@ -101,3 +101,50 @@
     margin-bottom: 68px;
 }
 /* SESSOES */
+
+/* RODAPE */
+.rodape div nav{
+    display: none;
+}
+/* RODAPE */
+
+/* MEDIA QUERIES*/
+@media (max-width: 768px){
+    .rodape{
+        padding: 15px;
+        gap: 15px;
+    }
+    
+    .rodape div nav{
+        display: block;
+    }
+    
+    .rodape div{
+        justify-content: start;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .rodape div nav ul{
+        list-style: none;
+        font-size: var(--texto-mobile);
+    }
+    
+    .rodape div nav ul a{
+        color: var(--cor-branco);
+        font-family: var(--fonte-texto);
+        font-weight: 600;
+    }
+    
+    .rodape section, .rodape-links{
+        display: none;
+    }
+    
+    .rodape-copyrigth{
+        font-size: var(--texto-mobile);
+    }
+
+    .rodape-copyrigth span{
+        display: block;
+    }
+}

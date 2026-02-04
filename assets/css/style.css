@@ -56,7 +56,7 @@
 }
 
 
-.botao {
+.botao, .botao-mobile {
     background-color: var(--cor-laranja);
     color: var(--cor-branco);
     font-family: var(--fonte-texto);
@@ -71,6 +71,14 @@
 .botao:hover {
     background-color: var(--cor-laranja-ativo);
     color: var(--cor-branco);
+}
+
+.menu-mobile {
+    display: none;
+}
+
+#menu-aberto, .btn-menu, .botao-mobile{
+    display: none;
 }
 
 /* CABECALHO */
@@ -116,4 +124,59 @@
     font-size: var(--texto-desktop);
     font-family: var(--fonte-texto);
 }
+
 /* RODAPE */
+
+/* MEDIA QUERIES*/
+@media (max-width: 768px) {
+    .cabecalho{
+        padding: 21px 15px;
+    }
+
+    .logo {
+        font-size: var(--titulo-mobile);
+    }
+
+    .icon-menu{
+        background-color: var(--cor-laranja);
+        padding: 5px;
+        border-radius: 4px;
+    }
+
+    .btn-menu{
+        display: block;
+    }
+
+    .cabecalho .botao, #menu-aberto {
+        display: none;
+    }
+
+    .lista-links{
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        gap: 25px;
+        padding: 15px;
+
+        position: fixed;
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+        height: auto;
+        background-color: var(--cor-verde);
+    }
+
+    .lista-links a {
+        
+    }
+
+    .botao-mobile{
+        display: block;
+        font-family: var(--texto-mobile);
+    }
+
+    #menu-aberto:checked ~ .lista-links{
+        display: flex;
+    }
+}

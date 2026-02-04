@@ -13,10 +13,17 @@
     <header class="cabecalho">
         <h1 class="logo">PD Clínica</h1>
         <nav>
+            <input type="checkbox" id="menu-aberto">
+            <label for="menu-aberto" class="btn-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px" fill="#FFFFFF" class="icon-menu"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
+            </label>
             <ul class="lista-links">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="pages/institucional.html">Institucional</a></li>
                 <li><a href="pages/conteudo-informativo.html">Informações</a></li>
+                <!-- MENU MOBILE -->
+                <li><a href="pages/login.html" class="botao-mobile">Entrar</a></li>
+                <!-- MENU MOBILE -->
             </ul>
         </nav>
         <a href="login.html" class="botao">Login</a>
@@ -63,6 +70,15 @@
 
     <footer class="rodape">
         <div>
+            <!-- RODAPE MOBILE -->
+            <nav>
+                <ul>
+                    <li><a href="pages/trabalhe-conosco.html">Trabelhe Conosco</a></li>
+                    <li><a href="pages/contato.html">Contato</a></li>
+                    <li><a href="pages/localizacao.html">Localização</a></li>
+                </ul>
+            </nav>
+            <!-- RODAPE MOBILE -->
             <section>
                 <h3 class="titulo-rodape">Trabalhe Conosco</h3>
                 <p class="descricao-rodape">Somos uma clínica comprometida com a ética, o cuidado humanizado e a
@@ -83,7 +99,7 @@
                 <a href="localizacao.html" class="botao botao-rodape">Ver Localização Completa</a>
             </section>
         </div>
-        <p class="rodape-copyrigth">© 2026 PD Clínica. Todos os Direitos Reservados</p>
+        <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados<span></p>
     </footer>
 </body>
 
