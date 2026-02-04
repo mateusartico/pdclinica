@@ -59,3 +59,45 @@
     background-color: var(--cor-laranja);
 }
 /* CARROSSEL */
+
+/* SESSOES */
+.sessao{
+    padding: 68px 34px 0 34px;
+    display: flex;
+    gap: 34px;
+}
+
+.titulo{
+    font-size: var(--titulo-desktop);
+    font-family: var(--fonte-titulo);
+    margin-bottom: 20px;
+}
+
+.sessao div{
+    width: 50%;
+}
+
+.descricao{
+    font-size: var(--texto-desktop);
+    font-family: var(--fonte-texto);
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.img-conteudo{
+    width: 50%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.botao{
+    display: inline-block;
+    width: auto;
+}
+
+.reverso{
+    flex-direction: row-reverse;
+    margin-bottom: 68px;
+}
+/* SESSOES */
