@@ -452,14 +452,12 @@ a:hover {
   }
 
   .paciente-conteudo {
-    width: 100%;
-    height: 100%;
-    padding: 68px 34px;
+    padding: 30px 15px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 34px;
+    gap: 30px;
   }
 
   .paciente-informacoes {
@@ -467,70 +465,40 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 34px;
+    gap: 30px;
   }
 
   .paciente-informacoes h2,
   .paciente-consultas h2 {
-    font-family: var(--fonte-titulo);
-    font-size: var(--titulo-desktop);
+    font-size: var(--titulo-mobile);
   }
 
   .paciente-card {
-    font-family: var(--fonte-texto);
-    border: 3px solid var(--cor-verde);
-    border-radius: var(--arredondamento-bordas);
-    padding: 25px;
+    width: 100%;
+    padding: 15px;
   }
 
   .paciente-card h5 {
     margin-top: 15px;
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .paciente-card p {
-    font-size: var(--texto-desktop);
-    margin: 0px;
+    font-size: var(--texto-mobile);
   }
 
   .paciente-card-img {
-    width: 430px;
+    width: 100%;
   }
 
   .paciente-consultas {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 34px;
+    gap: 15px;
   }
-
-  .wrapper-consultas {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 34px;
-  }
-
   .paciente-consulta-card {
-    background-color: var(--cor-verde);
-    color: var(--cor-branco);
-    font-family: var(--fonte-texto);
-    font-size: var(--texto-desktop);
-    width: 100%;
-    padding: 25px;
-    border-radius: var(--arredondamento-bordas);
+    font-size: var(--texto-mobile);
   }
 
   .paciente-consulta-card h5 {
-    font-family: var(--fonte-titulo);
-    font-size: var(--titulo-desktop);
-  }
-
-  .paciente-consulta-card p {
-    margin: 0;
+    font-size: var(--titulo-mobile);
   }
 }
