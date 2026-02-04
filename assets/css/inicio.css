@@ -1,0 +1,61 @@
+/* CARROSSEL */
+.carrossel {
+    margin: 0 auto;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    anchor-name: --carrossel;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+}
+
+.carrossel-img {
+    scroll-snap-align: start;
+    flex: 1 0 100%;
+}
+
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+.carrossel::scroll-button(right),
+.carrossel::scroll-button(left) {
+    content: url(../img/estado-direita.png);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    position-anchor: --carrossel;
+    position-area: right center;
+    translate: -50%;
+}
+
+.carrossel::scroll-button(left) {
+    content: url(../img/estado-esquerda.png);
+    position-area: left center;
+    translate: 50%;
+}
+
+.carrossel::scroll-marker-group {
+    display: flex;
+    justify-content: center;
+    gap: .5em;
+    position: fixed;
+    position-anchor: --carrossel;
+    position-area: bottom center;
+    top: -30%;
+}
+
+.carrossel-img::scroll-marker {
+    content: '';
+    height: 4px;
+    width: 120px;
+    background-color: var(--cor-branco);
+    border-radius: 4px;
+    border: solid 1px var(--cor-preto);
+}
+
+.carrossel-img::scroll-marker:target-current {
+    background-color: var(--cor-laranja);
+}
+/* CARROSSEL */
