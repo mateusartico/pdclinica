@@ -43,7 +43,7 @@
     position: fixed;
     position-anchor: --carrossel;
     position-area: bottom center;
-    top: -30%;
+    top: -30px;
 }
 
 .carrossel-img::scroll-marker {
