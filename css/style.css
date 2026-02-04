@@ -212,6 +212,7 @@ a:hover {
   font-weight: bold;
   text-align: center;
   padding: 10px 20px;
+  border: none;
   border-radius: var(--arredondamento-bordas);
   transition: 0.2s;
 }
@@ -281,6 +282,100 @@ a:hover {
   margin-bottom: 2px;
 }
 
+.paciente-pagina {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.paciente-conteudo {
+  width: 100%;
+  height: 100%;
+  padding: 68px 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 34px;
+}
+
+.paciente-informacoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+}
+
+.paciente-informacoes h2,
+.paciente-consultas h2 {
+  font-family: var(--fonte-titulo);
+  font-size: var(--titulo-desktop);
+}
+
+.paciente-card {
+  font-family: var(--fonte-texto);
+  border: 3px solid var(--cor-verde);
+  border-radius: var(--arredondamento-bordas);
+  padding: 25px;
+}
+
+.paciente-card h5 {
+  margin-top: 15px;
+  font-size: 32px;
+}
+
+.paciente-card p {
+  font-size: var(--texto-desktop);
+  margin: 0px;
+}
+
+.paciente-card-img {
+  width: 430px;
+}
+
+.paciente-consultas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+}
+
+.wrapper-consultas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+}
+
+.paciente-consulta-card {
+  background-color: var(--cor-verde);
+  color: var(--cor-branco);
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-desktop);
+  width: 100%;
+  padding: 25px;
+  border-radius: var(--arredondamento-bordas);
+}
+
+.paciente-consulta-card h5 {
+  font-family: var(--fonte-titulo);
+  font-size: var(--titulo-desktop);
+}
+
+.paciente-consulta-card p {
+  margin: 0;
+}
+
+/* MOBILE */
+
 @media (max-width: 768px) {
   .agendamento-pagina,
   .autenticacao-pagina {
@@ -345,5 +440,97 @@ a:hover {
 
   .wrapper-botoes a:not(.botao) {
     text-align: center;
+  }
+
+  .paciente-pagina {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .paciente-conteudo {
+    width: 100%;
+    height: 100%;
+    padding: 68px 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 34px;
+  }
+
+  .paciente-informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .paciente-informacoes h2,
+  .paciente-consultas h2 {
+    font-family: var(--fonte-titulo);
+    font-size: var(--titulo-desktop);
+  }
+
+  .paciente-card {
+    font-family: var(--fonte-texto);
+    border: 3px solid var(--cor-verde);
+    border-radius: var(--arredondamento-bordas);
+    padding: 25px;
+  }
+
+  .paciente-card h5 {
+    margin-top: 15px;
+    font-size: 32px;
+  }
+
+  .paciente-card p {
+    font-size: var(--texto-desktop);
+    margin: 0px;
+  }
+
+  .paciente-card-img {
+    width: 430px;
+  }
+
+  .paciente-consultas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+  }
+
+  .wrapper-consultas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+  }
+
+  .paciente-consulta-card {
+    background-color: var(--cor-verde);
+    color: var(--cor-branco);
+    font-family: var(--fonte-texto);
+    font-size: var(--texto-desktop);
+    width: 100%;
+    padding: 25px;
+    border-radius: var(--arredondamento-bordas);
+  }
+
+  .paciente-consulta-card h5 {
+    font-family: var(--fonte-titulo);
+    font-size: var(--titulo-desktop);
+  }
+
+  .paciente-consulta-card p {
+    margin: 0;
   }
 }
