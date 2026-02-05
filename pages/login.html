@@ -18,15 +18,26 @@
       <div class="autenticacao-card">
         <header>Entrar</header>
         <form action="#">
-          <input class="input-txt" type="email" placeholder="E-mail" />
-          <input class="input-txt" type="password" placeholder="Senha" />
+          <input
+            id="login-email"
+            class="input-txt"
+            type="email"
+            placeholder="E-mail"
+          />
+          <input
+            id="login-senha"
+            class="input-txt"
+            type="password"
+            placeholder="Senha"
+          />
           <a href="recuperar-senha.html">Esqueci minha senha</a>
           <div class="wrapper-botoes">
             <a href="cadastro.html">Ainda não tenho uma conta</a>
             <a href="../index.html" class="botao">Voltar</a>
 
-            <a href="#" class="botao">Entrar</a>
-            <!-- Adicionar link das páginas de "Área do Pacente" e "Área Administrativa" posteriormente -->
+            <button type="button" onclick="entrar()" class="botao">
+              Entrar
+            </button>
           </div>
         </form>
       </div>
