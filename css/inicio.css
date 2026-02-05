@@ -115,6 +115,10 @@
     display: none;
 }
 
+.botao-rodape{
+    display: block;
+}
+
 /* RODAPE */
 
 /* MEDIA QUERIES*/
