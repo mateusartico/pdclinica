@@ -263,25 +263,6 @@ a:hover {
   color: var(--cor-verde-ativo);
 }
 
-.botao {
-  background-color: var(--cor-laranja);
-  color: var(--cor-branco);
-  font-family: var(--fonte-texto);
-  font-size: var(--texto-desktop);
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px 20px;
-  border: none;
-  border-radius: var(--arredondamento-bordas);
-  transition: 0.2s;
-}
-
-.botao:hover {
-  background-color: var(--cor-laranja-ativo);
-  color: var(--cor-branco);
-}
-
 .fake-recaptcha {
   width: 230px;
   height: 74px;
