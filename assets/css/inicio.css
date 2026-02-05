@@ -23,7 +23,7 @@
 
 .carrossel::scroll-button(right),
 .carrossel::scroll-button(left) {
-    content: url(../img/estado-direita.png);
+    content: url(../img/icons/estado-direita.png);
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -35,7 +35,7 @@
 }
 
 .carrossel::scroll-button(left) {
-    content: url(../img/estado-esquerda.png);
+    content: url(../img/icons/estado-esquerda.png);
     position-area: left center;
     translate: 50%;
     z-index: 1;
@@ -121,12 +121,12 @@
 
     /* CARROSSEL */
     .carrossel::scroll-button(left) {
-        content: url(../img/estado-esquerda-mobile.png);
+        content: url(../img/icons/estado-esquerda-mobile.png);
         
     }
 
     .carrossel::scroll-button(right) {
-        content: url(../img/estado-direita-mobile.png);
+        content: url(../img/icons/estado-direita-mobile.png);
     }
 
     .carrossel-img::scroll-marker {
