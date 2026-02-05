@@ -18,8 +18,8 @@
     --arredondamento-bordas: 4px;
 
 
-    --cor-branco: #fafafa;
-    --cor-preto: #111111;
+    --cor-bg: #fafafa;
+    --cor-txt: #111111;
     --cor-laranja: #f57921;
     --cor-laranja-ativo: #ff6a00;
     --cor-verde: #01796b;
@@ -29,7 +29,7 @@
 /* CABECALHO */
 .cabecalho {
     background-color: var(--cor-verde);
-    color: var(--cor-branco);
+    color: var(--cor-bg);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@
 
 .lista-links a {
     font-size: var(--texto-desktop);
-    color: var(--cor-branco);
+    color: var(--cor-bg);
     text-decoration: none;
     font-family: "Lato";
 }
@@ -58,7 +58,7 @@
 
 .botao, .botao-mobile {
     background-color: var(--cor-laranja);
-    color: var(--cor-branco);
+    color: var(--cor-bg);
     font-family: var(--fonte-texto);
     font-size: var(--texto-desktop);
     text-decoration: none;
@@ -70,7 +70,7 @@
 
 .botao:hover {
     background-color: var(--cor-laranja-ativo);
-    color: var(--cor-branco);
+    color: var(--cor-bg);
 }
 
 .menu-mobile {
@@ -86,7 +86,7 @@
 /* RODAPE */
 .rodape {
     background-color: var(--cor-verde);
-    color: var(--cor-branco);
+    color: var(--cor-bg);
     display: flex;
     flex-direction: column;
     gap: 35px;
