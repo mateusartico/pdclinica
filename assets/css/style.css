@@ -165,10 +165,7 @@
         width: 100%;
         height: auto;
         background-color: var(--cor-verde);
-    }
-
-    .lista-links a {
-        
+        z-index: 100;
     }
 
     .botao-mobile{
