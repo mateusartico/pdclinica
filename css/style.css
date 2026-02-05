@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --fonte-titulo: "Archivo Black", sans-serif;
+  --fonte-texto: "Lato", sans-serif;
+  --titulo-desktop: 32px;
+  --texto-desktop: 20px;
+  --titulo-mobile: 24px;
+  --texto-mobile: 16px;
+  --arredondamento-bordas: 4px;
+  --cor-branco: #fafafa;
+  --cor-preto: #111111;
+  --cor-laranja: #f57921;
+  --cor-laranja-ativo: #ff6a00;
+  --cor-verde: #01796b;
+  --cor-verde-ativo: #0ea199;
+}
+
+.autenticacao-pagina,
+.agendamento-pagina {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.autenticacao-pagina {
+  background-image: url(../img/img-fundo-autenticacao.jpg);
+}
+
+.agendamento-pagina {
+  width: 100%;
+  background-image: url(../img/img-fundo-agendamento.png);
+}
+
+.agendamento-pagina::before,
+.autenticacao-pagina::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+
+.agendamento-conteudo {
+  width: 100%;
+  height: 100%;
+  margin: 34px 68px 34px 68px;
+  z-index: 1;
+}
+
+.autenticacao-conteudo {
+  position: relative;
+  z-index: 1;
+}
+
+.autenticacao-logo {
+  position: absolute;
+  top: 34px;
+  left: 34px;
+  font-family: var(--fonte-titulo);
+  font-size: var(--titulo-desktop);
+  background-color: var(--cor-verde);
+  color: var(--cor-branco);
+  padding: 5px 10px;
+  border-radius: var(--arredondamento-bordas);
+}
+
+.agendamento-card,
+.autenticacao-card {
+  width: 100%;
+  background: var(--cor-branco);
+  border: 3px solid var(--cor-verde);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.autenticacao-card {
+  max-width: 650px;
+}
+
+.agendamento-card header,
+.autenticacao-card header {
+  background-color: var(--cor-verde);
+  font-family: var(--fonte-titulo);
+  font-size: var(--titulo-desktop);
+  color: var(--cor-branco);
+  padding: 13px 20px;
+  margin-bottom: 20px;
+}
+
+.autenticacao-card form,
+.agendamento-card form {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.wrapper-inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.select,
+.input-txt {
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-desktop);
+  display: block;
+  width: 100%;
+  padding: 10px 10px 10px 20px;
+  border: 1px solid #444444;
+  border-radius: 8px;
+}
+
+.campo-data {
+  position: relative;
+  width: 100%;
+}
+
+.campo-data input {
+  width: 100%;
+  padding: 14px 24px 6px;
+  border: 1px solid #444444;
+  border-radius: 8px;
+  font-size: var(--texto-desktop);
+  outline: none;
+}
+
+.campo-data label {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--texto-desktop);
+  color: #444444;
+  pointer-events: none;
+  background: #fff;
+  transition: 0.15s ease;
+}
+
+.campo-data input:valid + label {
+  display: none;
+}
+
+.input-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-mobile);
+}
+
+.input-checkbox input {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  accent-color: var(--cor-verde-ativo);
+  cursor: pointer;
+}
+
+label span {
+  color: var(--cor-verde);
+  margin-left: 3px;
+}
+
+.wrapper-botoes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+a {
+  font-size: var(--texto-desktop);
+  font-family: var(--fonte-texto);
+  color: var(--cor-verde);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: var(--cor-verde-ativo);
+}
+
+.botao {
+  background-color: var(--cor-laranja);
+  color: var(--cor-branco);
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-desktop);
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--arredondamento-bordas);
+  transition: 0.2s;
+}
+
+.botao:hover {
+  background-color: var(--cor-laranja-ativo);
+  color: var(--cor-branco);
+}
+
+.fake-recaptcha {
+  width: 230px;
+  height: 74px;
+  background: var(--cor-branco);
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+}
+
+.checkbox-recaptcha {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #c1c1c1;
+  border-radius: 3px;
+  background: #fff;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-recaptcha i {
+  color: var(--cor-branco);
+  font-size: 24px;
+  display: none;
+}
+
+.checkbox-recaptcha.checked {
+  border-color: var(--cor-verde);
+  background-color: var(--cor-verde-ativo);
+}
+
+.checkbox-recaptcha.checked i {
+  display: block;
+}
+
+.text-recaptcha {
+  flex: 1;
+  font-size: 14px;
+  color: #000;
+}
+
+.brand-recaptcha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  color: #777;
+}
+
+.brand-recaptcha img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 2px;
+}
+
+.paciente-pagina {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.paciente-conteudo {
+  width: 100%;
+  height: 100%;
+  padding: 68px 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 34px;
+}
+
+.paciente-informacoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+}
+
+.paciente-informacoes h2,
+.paciente-consultas h2 {
+  font-family: var(--fonte-titulo);
+  font-size: var(--titulo-desktop);
+}
+
+.paciente-card {
+  font-family: var(--fonte-texto);
+  border: 3px solid var(--cor-verde);
+  border-radius: var(--arredondamento-bordas);
+  padding: 25px;
+}
+
+.paciente-card h5 {
+  margin-top: 15px;
+  font-size: 32px;
+}
+
+.paciente-card p {
+  font-size: var(--texto-desktop);
+  margin: 0px;
+}
+
+.paciente-card-img {
+  width: 430px;
+}
+
+.paciente-consultas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 34px;
+}
+
+.wrapper-consultas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+}
+
+.paciente-consulta-card {
+  background-color: var(--cor-verde);
+  color: var(--cor-branco);
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-desktop);
+  width: 100%;
+  padding: 25px;
+  border-radius: var(--arredondamento-bordas);
+}
+
+.paciente-consulta-card h5 {
+  font-family: var(--fonte-titulo);
+  font-size: var(--titulo-desktop);
+}
+
+.paciente-consulta-card p {
+  margin: 0;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .agendamento-pagina,
+  .autenticacao-pagina {
+    align-items: flex-start;
+    padding-top: 90px;
+    height: 100%;
+  }
+
+  .agendamento-conteudo {
+    margin: 15px 30px 15px 30px;
+  }
+
+  .agendamento-card {
+    width: 100%;
+  }
+
+  .autenticacao-conteudo {
+    width: 100%;
+  }
+
+  .autenticacao-logo {
+    font-size: var(--titulo-mobile);
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+  }
+
+  .autenticacao-card {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(100% - 30px);
+  }
+
+  .autenticacao-card header {
+    font-size: var(--titulo-mobile);
+    padding: 10px 15px;
+  }
+
+  .select,
+  .campo-data label,
+  .campo-data input,
+  .input-txt,
+  .botao,
+  a,
+  .input-checkbox {
+    font-size: var(--texto-mobile);
+  }
+
+  .wrapper-inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .wrapper-botoes {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .wrapper-botoes a:not(.botao) {
+    text-align: center;
+  }
+
+  .paciente-pagina {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .paciente-conteudo {
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .paciente-informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .paciente-informacoes h2,
+  .paciente-consultas h2 {
+    font-size: var(--titulo-mobile);
+  }
+
+  .paciente-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .paciente-card h5 {
+    margin-top: 15px;
+    font-size: 24px;
+  }
+
+  .paciente-card p {
+    font-size: var(--texto-mobile);
+  }
+
+  .paciente-card-img {
+    width: 100%;
+  }
+
+  .paciente-consultas {
+    gap: 15px;
+  }
+  .paciente-consulta-card {
+    font-size: var(--texto-mobile);
+  }
+
+  .paciente-consulta-card h5 {
+    font-size: var(--titulo-mobile);
+  }
+}
