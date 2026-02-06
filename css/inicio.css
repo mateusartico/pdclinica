@@ -111,12 +111,51 @@
 /* SESSOES */
 
 /* RODAPE */
+.rodape {
+  background-color: var(--cor-verde);
+  color: var(--cor-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 40px 70px;
+}
+
+.rodape div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0 40px;
+  margin-bottom: 10px;
+}
+
+.titulo-rodape {
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  margin-bottom: 27px;
+}
+
+.descricao-rodape {
+  font-family: var(--fonte-texto);
+  margin-bottom: 27px;
+}
+
+.botao-rodape {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
 .rodape div nav {
     display: none;
 }
 
 .botao-rodape{
     display: block;
+}
+
+.rodape-copyrigth{
+    padding: 0;
 }
 
 /* RODAPE */

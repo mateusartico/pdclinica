@@ -1,0 +1,134 @@
+/* SESSAO */
+.banner-especialidades,
+.especialidades {
+    display: flex;
+    padding: 34px;
+    margin-top: 34px;
+    gap: 34px;
+}
+
+.banner-especialidades img {
+    border-radius: 4px;
+    width: 50%;
+    height: 100%;
+}
+
+.banner-especialidades div {
+    width: 50%;
+}
+
+.centro {
+    text-align: center;
+    margin: 0;
+}
+
+.titulo {
+    font-size: var(--titulo-desktop);
+    font-family: var(--fonte-titulo);
+    margin-bottom: 20px;
+}
+
+.descricao {
+    font-size: var(--texto-desktop);
+    font-family: var(--fonte-texto);
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.especialidades {
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+#especialidade {
+    padding: 10px;
+    font-size: var(--texto-desktop);
+    font-family: var(--fonte-texto);
+    border-radius: 8px;
+}
+
+.especialidades div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+.card {
+    background-color: var(--cor-verde);
+    color: var(--cor-bg);
+    padding: 20px 26px;
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-card {
+    font-size: var(--titulo-mobile);
+    font-family: var(--fonte-titulo);
+    margin-bottom: 21px;
+}
+
+.descricao-card {
+    font-size: var(--texto-desktop);
+    font-family: var(--fonte-texto);
+    margin-bottom: 35px;
+}
+
+.saiba-mais {
+    align-self: flex-end;
+}
+
+/* SESSAO */
+
+@media (max-width: 768px) {
+    .banner-especialidades {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+        text-align: center;
+    }
+
+    .banner-especialidades img,
+    .banner-especialidades div {
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .banner-especialidades div {
+        padding: 30px 15px;
+    }
+
+    .titulo {
+        font-size: var(--titulo-mobile);
+    }
+
+    .centro{
+        margin: 0;
+    }
+
+    .descricao {
+        font-size: var(--texto-mobile);
+        margin: 0;
+    }
+
+    .especialidades {
+        padding: 0;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .especialidades div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+    #especialidade{
+        width: 100%;
+    }
+}
