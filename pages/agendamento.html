@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PD Clínica | Fazer Agendamento</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dark-mode.css" />
+  </head>
+  <body class="agendamento-pagina">
+    <header></header>
+    <main class="agendamento-conteudo">
+      <div class="agendamento-card">
+        <header>Agendamento</header>
+        <form action="#">
+          <div class="wrapper-inputs">
+            <input
+              class="input-txt"
+              type="text"
+              placeholder="Informe seu Nome"
+            />
+            <input
+              class="input-txt"
+              type="text"
+              placeholder="Informe seu Telefone"
+            />
+          </div>
+          <select class="select" name="convenio" id="select-convenio">
+            <option value="" selected disabled>Escolha um Convênio</option>
+            <option value="unimed">Unimed</option>
+            <option value="amil">Amil</option>
+            <option value="bradescoSaude">Bradesco Saúde</option>
+            <option value="nenhum">Nenhum</option>
+          </select>
+
+          <select class="select" name="especialidade" id="select-especialidade">
+            <option value="" selected disabled>
+              Escolha uma Especialidade
+            </option>
+            <option value="cardiologia">Cardiologia</option>
+            <option value="dermatologia">Dermatologia</option>
+            <option value="neurologia">Neurologia</option>
+            <option value="ortopedia">Ortopedia</option>
+            <option value="pediatria">Pediatria</option>
+            <option value="psiquiatria">Psiquiatria</option>
+          </select>
+
+          <div class="campo-data">
+            <input type="date" id="data" required />
+            <label for="data">Selecione uma data</label>
+          </div>
+
+          <div class="wrapper-botoes">
+            <a href="#" class="botao">Agendar</a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/dark-mode.js"></script>
+  </body>
+</html>

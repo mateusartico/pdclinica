@@ -1,0 +1,10 @@
+body.dark {
+  --cor-bg: #212121;
+  --cor-txt: #f1f1f1;
+
+  --cor-laranja: #ff9f43;
+  --cor-laranja-ativo: #ffb066;
+
+  --cor-verde: #26a69a;
+  --cor-verde-ativo: #2ec4b6;
+}
