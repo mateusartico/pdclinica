@@ -34,6 +34,7 @@
 }
 
 /* ==========================================================================*/
+
 body {
   background-color: var(--cor-bg);
   color: var(--cor-txt);
@@ -54,7 +55,6 @@ ul {
   font-size: var(--texto-desktop);
   font-family: var(--fonte-texto);
 }
-
 
 a {
   font-size: var(--texto-desktop);
@@ -85,7 +85,6 @@ a:hover {
 
 .txt-especialidade h2 {
   text-align: center;
-
 }
 
 .nav-botao {
@@ -266,6 +265,7 @@ label span {
 
 /* --- Cabeçalho --- */
 .cabecalho {
+  width: 100%;
   background-color: var(--cor-verde);
   color: var(--cor-bg);
   display: flex;
@@ -303,6 +303,7 @@ label span {
 
 /* --- Rodapé --- */
 .rodape {
+  width: 100%;
   background-color: var(--cor-verde);
   color: var(--cor-bg);
   display: flex;
@@ -351,14 +352,14 @@ label span {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .autenticacao-pagina {
   background-image: url(../img/img-fundo-autenticacao.jpg);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .agendamento-pagina {
@@ -390,7 +391,6 @@ label span {
   height: calc(100% - 171px);
   margin: 145px 34px;
   z-index: 1;
-  width: 100%;
 }
 
 /* --- Logo Flutuante (Login/Cadastro) --- */
@@ -615,7 +615,6 @@ label span {
 
   .txt-especialidade {
     margin-bottom: -25px;
-
   }
 
   .txt-img {
@@ -624,7 +623,6 @@ label span {
 
   ul {
     font-size: var(--texto-mobile);
-
   }
 
   .fig-img {
@@ -639,7 +637,6 @@ label span {
   }
 
   /* --- Ajustes Auth e Agendamento Mobile --- */
-  .agendamento-pagina,
   .autenticacao-pagina {
     align-items: flex-start;
     padding-top: 90px; /* Espaço para não bater na logo */
@@ -647,7 +644,7 @@ label span {
   }
 
   .agendamento-conteudo {
-    margin: 15px 30px;
+    margin: 30px 15px;
   }
 
   .autenticacao-conteudo {
