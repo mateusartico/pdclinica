@@ -46,6 +46,8 @@
     font-size: var(--texto-desktop);
     font-family: var(--fonte-texto);
     border-radius: 8px;
+    background-color: var(--cor-bg);
+    color: var(--cor-texto);
 }
 
 .especialidades div {
