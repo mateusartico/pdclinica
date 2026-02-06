@@ -23,6 +23,14 @@
   --cor-verde-ativo: #0ea199;
 }
 
+<<<<<<< feature/dark-mode
+body {
+  background-color: var(--cor-bg);
+  color: var(--cor-txt);
+}
+
+.autenticacao-pagina {
+=======
 /* CABECALHO */
 .cabecalho {
   background-color: var(--cor-verde);
@@ -85,6 +93,7 @@
 
 .autenticacao-pagina,
 .agendamento-pagina {
+>>>>>>> homologacao
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -102,6 +111,11 @@
 
 .agendamento-pagina {
   width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-image: url(../img/img-fundo-agendamento.png);
 }
 
@@ -111,14 +125,13 @@
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.8);
-  z-index: 0;
+  z-index: -1;
 }
 
 .agendamento-conteudo {
-  width: 100%;
-  height: 100%;
-  margin: 34px 68px 34px 68px;
-  z-index: 1;
+  height: calc(100% - 171px);
+  margin: 145px 34px;
+  z-index: 1000;
 }
 
 .autenticacao-conteudo {
@@ -133,7 +146,7 @@
   font-family: var(--fonte-titulo);
   font-size: var(--titulo-desktop);
   background-color: var(--cor-verde);
-  color: var(--cor-branco);
+  color: #fafafa;
   padding: 5px 10px;
   border-radius: var(--arredondamento-bordas);
 }
@@ -141,7 +154,7 @@
 .agendamento-card,
 .autenticacao-card {
   width: 100%;
-  background: var(--cor-branco);
+  background: var(--cor-bg);
   border: 3px solid var(--cor-verde);
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -156,7 +169,7 @@
   background-color: var(--cor-verde);
   font-family: var(--fonte-titulo);
   font-size: var(--titulo-desktop);
-  color: var(--cor-branco);
+  color: #fafafa;
   padding: 13px 20px;
   margin-bottom: 20px;
 }
@@ -171,6 +184,10 @@
   gap: 10px;
 }
 
+.autenticacao-card form p {
+  color: var(--cor-txt);
+}
+
 .wrapper-inputs {
   width: 100%;
   display: flex;
@@ -183,6 +200,8 @@
 .input-txt {
   font-family: var(--fonte-texto);
   font-size: var(--texto-desktop);
+  color: var(--cor-txt);
+  background-color: var(--cor-bg);
   display: block;
   width: 100%;
   padding: 10px 10px 10px 20px;
@@ -202,6 +221,8 @@
   border-radius: 8px;
   font-size: var(--texto-desktop);
   outline: none;
+  color: var(--cor-txt);
+  background-color: var(--cor-bg);
 }
 
 .campo-data label {
@@ -210,9 +231,9 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: var(--texto-desktop);
-  color: #444444;
+  color: var(--cor-txt);
   pointer-events: none;
-  background: #fff;
+  background: var(--cor-bg);
   transition: 0.15s ease;
 }
 
@@ -224,6 +245,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  color: var(--cor-txt);
   font-family: var(--fonte-texto);
   font-size: var(--texto-mobile);
 }
@@ -263,10 +285,32 @@ a:hover {
   color: var(--cor-verde-ativo);
 }
 
+<<<<<<< feature/dark-mode
+.botao {
+  background-color: var(--cor-laranja);
+  color: var(--cor-bg);
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-desktop);
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--arredondamento-bordas);
+  transition: 0.2s;
+}
+
+.botao:hover {
+  background-color: var(--cor-laranja-ativo);
+  color: var(--cor-bg);
+}
+
+=======
+>>>>>>> homologacao
 .fake-recaptcha {
   width: 230px;
   height: 74px;
-  background: var(--cor-branco);
+  background: var(--cor-bg);
   border: 1px solid #d3d3d3;
   border-radius: 4px;
   display: flex;
@@ -289,7 +333,7 @@ a:hover {
 }
 
 .checkbox-recaptcha i {
-  color: var(--cor-branco);
+  color: var(--cor-bg);
   font-size: 24px;
   display: none;
 }
@@ -306,7 +350,7 @@ a:hover {
 .text-recaptcha {
   flex: 1;
   font-size: 14px;
-  color: #000;
+  color: var(--cor-txt);
 }
 
 .brand-recaptcha {
@@ -324,6 +368,8 @@ a:hover {
 }
 
 .paciente-pagina {
+  background-color: var(--cor-bg);
+  color: var(--cor-txt);
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -398,7 +444,7 @@ a:hover {
 
 .paciente-consulta-card {
   background-color: var(--cor-verde);
-  color: var(--cor-branco);
+  color: var(--cor-bg);
   font-family: var(--fonte-texto);
   font-size: var(--texto-desktop);
   width: 100%;
