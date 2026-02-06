@@ -1,6 +1,3 @@
-/* ==========================================================================
-1. IMPORTS & RESET
-========================================================================== */
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
@@ -10,9 +7,6 @@
   box-sizing: border-box;
 }
 
-/* ==========================================================================
-2. VARIÁVEIS (ROOT)
-========================================================================== */
 :root {
   /* Tipografia */
   --fonte-titulo: "Archivo Black", sans-serif;
@@ -39,14 +33,28 @@
   --cor-verde-ativo: #0ea199;
 }
 
-/* ==========================================================================
-3. ESTILOS GERAIS & BASE
-========================================================================== */
+/* ==========================================================================*/
 body {
   background-color: var(--cor-bg);
   color: var(--cor-txt);
   font-family: var(--fonte-texto);
 }
+
+h2 {
+  font-size: var(--titulo-desktop);
+  font-family: var(--fonte-titulo);
+}
+
+p {
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-desktop);
+}
+
+ul {
+  font-size: var(--texto-desktop);
+  font-family: var(--fonte-texto);
+}
+
 
 a {
   font-size: var(--texto-desktop);
@@ -60,9 +68,30 @@ a:hover {
   color: var(--cor-verde-ativo);
 }
 
-/* ==========================================================================
-4. COMPONENTES DE UI (BOTÕES E INPUTS)
-========================================================================== */
+.txt-img {
+  margin-bottom: 34px;
+  padding: 0;
+}
+
+.conteudo-principal {
+  padding: 0 34px;
+  margin: 68px 0;
+}
+
+.linha-txt-img {
+  column-gap: 34px;
+  display: flex;
+}
+
+.txt-especialidade h2 {
+  text-align: center;
+
+}
+
+.nav-botao {
+  width: 100%;
+  margin-bottom: 34px;
+}
 
 /* --- Botões --- */
 .botao,
@@ -235,10 +264,6 @@ label span {
   margin-bottom: 2px;
 }
 
-/* ==========================================================================
-5. CABEÇALHO E RODAPÉ
-========================================================================== */
-
 /* --- Cabeçalho --- */
 .cabecalho {
   background-color: var(--cor-verde);
@@ -317,10 +342,6 @@ label span {
   font-size: var(--texto-desktop);
   font-family: var(--fonte-texto);
 }
-
-/* ==========================================================================
-6. PÁGINAS DE AUTENTICAÇÃO E AGENDAMENTO
-========================================================================== */
 
 /* --- Layout Base das Páginas --- */
 .autenticacao-pagina,
@@ -423,9 +444,6 @@ label span {
   color: var(--cor-txt);
 }
 
-/* ==========================================================================
-7. PÁGINA DO PACIENTE
-========================================================================== */
 .paciente-pagina {
   width: 100%;
   min-height: 100vh;
@@ -518,9 +536,6 @@ label span {
   margin: 0;
 }
 
-/* ==========================================================================
-8. MEDIA QUERIES (RESPONSIVIDADE GERAL)
-========================================================================== */
 @media (max-width: 768px) {
   /* --- Ajustes do Cabeçalho Mobile --- */
   .cabecalho {
@@ -570,6 +585,57 @@ label span {
 
   #menu-aberto:checked ~ .lista-links {
     display: flex;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .conteudo-principal {
+    padding: 0 15px;
+    margin: 30px 0;
+  }
+
+  .botao {
+    font-size: var(--texto-mobile);
+  }
+
+  .nav-botao {
+    text-align: end;
+    margin-bottom: 15px;
+  }
+
+  .txt-especialidade h2 {
+    margin-top: 30px;
+  }
+
+  .txt-especialidade {
+    margin-bottom: -25px;
+
+  }
+
+  .txt-img {
+    margin-bottom: 30px;
+  }
+
+  ul {
+    font-size: var(--texto-mobile);
+
+  }
+
+  .fig-img {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .fig-img img {
+    width: 100vw;
+    max-width: 100vw;
+    display: block;
   }
 
   /* --- Ajustes Auth e Agendamento Mobile --- */
