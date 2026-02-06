@@ -23,12 +23,77 @@
   --cor-verde-ativo: #0ea199;
 }
 
+<<<<<<< feature/dark-mode
 body {
   background-color: var(--cor-bg);
   color: var(--cor-txt);
 }
 
 .autenticacao-pagina {
+=======
+/* CABECALHO */
+.cabecalho {
+  background-color: var(--cor-verde);
+  color: var(--cor-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.logo {
+  font-family: var(--fonte-titulo);
+  font-size: 48px;
+}
+
+.lista-links {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  list-style: none;
+}
+
+.lista-links a {
+  font-size: var(--texto-desktop);
+  color: var(--cor-bg);
+  text-decoration: none;
+  font-family: "Lato";
+}
+
+
+.botao,
+.botao-mobile {
+  background-color: var(--cor-laranja);
+  color: var(--cor-bg);
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-desktop);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: var(--arredondamento-bordas);
+  transition: 0.2s;
+}
+
+.botao:hover {
+  background-color: var(--cor-laranja-ativo);
+  color: var(--cor-bg);
+}
+
+.menu-mobile {
+  display: none;
+}
+
+#menu-aberto,
+.btn-menu,
+.botao-mobile {
+  display: none;
+}
+
+/* CABECALHO */
+
+.autenticacao-pagina,
+.agendamento-pagina {
+>>>>>>> homologacao
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -172,7 +237,7 @@ body {
   transition: 0.15s ease;
 }
 
-.campo-data input:valid + label {
+.campo-data input:valid+label {
   display: none;
 }
 
@@ -220,6 +285,7 @@ a:hover {
   color: var(--cor-verde-ativo);
 }
 
+<<<<<<< feature/dark-mode
 .botao {
   background-color: var(--cor-laranja);
   color: var(--cor-bg);
@@ -239,6 +305,8 @@ a:hover {
   color: var(--cor-bg);
 }
 
+=======
+>>>>>>> homologacao
 .fake-recaptcha {
   width: 230px;
   height: 74px;
@@ -393,9 +461,104 @@ a:hover {
   margin: 0;
 }
 
+
+/* RODAPE */
+.rodape {
+  background-color: var(--cor-verde);
+  color: var(--cor-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 40px 70px;
+}
+
+.rodape div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0 40px;
+  margin-bottom: 10px;
+}
+
+.titulo-rodape {
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  margin-bottom: 27px;
+}
+
+.descricao-rodape {
+  font-family: var(--fonte-texto);
+  margin-bottom: 27px;
+}
+
+.botao-rodape {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.rodape-copyrigth {
+  text-align: center;
+  font-size: var(--texto-desktop);
+  font-family: var(--fonte-texto);
+}
+
+/* RODAPE */
+
 /* MOBILE */
 
 @media (max-width: 768px) {
+
+  .cabecalho {
+    padding: 21px 15px;
+  }
+
+  .logo {
+    font-size: var(--titulo-mobile);
+  }
+
+  .icon-menu {
+    background-color: var(--cor-laranja);
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  .cabecalho .botao,
+  #menu-aberto {
+    display: none;
+  }
+
+  .lista-links {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    gap: 25px;
+    padding: 15px;
+
+    position: fixed;
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+    height: auto;
+    background-color: var(--cor-verde);
+    z-index: 100;
+  }
+
+  .botao-mobile {
+    display: block;
+    font-family: var(--texto-mobile);
+  }
+
+  #menu-aberto:checked~.lista-links {
+    display: flex;
+  }
+
   .agendamento-pagina,
   .autenticacao-pagina {
     align-items: flex-start;
@@ -513,6 +676,7 @@ a:hover {
   .paciente-consultas {
     gap: 15px;
   }
+
   .paciente-consulta-card {
     font-size: var(--texto-mobile);
   }
