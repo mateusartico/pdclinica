@@ -935,7 +935,7 @@ label span {
 
 /* Componente: Cartão */
 .cartao-vaga {
-  background-color: #FAFAFA;
+  background-color: var(--cor-bg);
   border-radius: 8px;
   padding: 24px;
   display: flex;
