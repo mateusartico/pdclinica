@@ -962,13 +962,22 @@ label span {
   align-items: center;
   padding: 12px 20px;
   border: 2px solid var(--cor-txt);
-  border-radius: 0;
   margin-bottom: 0;
   background-color: var(--cor-bg);
 }
 
 .linha-config:not(:last-child) {
   border-bottom: none;
+}
+
+.linha-config-primeira {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.linha-config-ultima {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .texto-config {
