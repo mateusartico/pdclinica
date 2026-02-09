@@ -1178,3 +1178,45 @@ label span {
     height: 10px;
   }
 }
+
+/* Itens de eficiência */
+.item-eficiencia {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.texto-eficiencia {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  color: var(--cor-txt);
+  flex: 1;
+}
+
+.numero-eficiencia {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--cor-txt);
+}
+
+.badge-ok {
+  background-color: #4caf50;
+}
+
+.badge-alerta {
+  background-color: #ffc107;
+  color: #111;
+}
+
+.badge-erro {
+  background-color: #f44336;
+}
+
+@media (max-width: 767px) {
+  .texto-eficiencia,
+  .numero-eficiencia {
+    font-size: 14px;
+  }
+}
