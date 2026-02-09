@@ -1070,3 +1070,52 @@ label span {
     padding: 10px 15px;
   }
 }
+
+/* Seção de relatórios */
+.secao-relatorios {
+  margin-top: 68px;
+}
+
+.titulo-relatorios {
+  font-family: var(--fonte-titulo);
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 34px;
+  color: var(--cor-txt);
+}
+
+.fileira-relatorios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+}
+
+.coluna-relatorio {
+  flex: 1 1 300px;
+}
+
+.titulo-relatorio {
+  font-family: var(--fonte-titulo);
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  color: var(--cor-txt);
+}
+
+@media (max-width: 767px) {
+  .secao-relatorios {
+    margin-top: 30px;
+  }
+
+  .titulo-relatorios {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .fileira-relatorios {
+    gap: 20px;
+  }
+
+  .titulo-relatorio {
+    font-size: 20px;
+  }
+}
