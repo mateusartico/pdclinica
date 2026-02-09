@@ -1184,7 +1184,15 @@ label span {
   display: flex;
   align-items: center;
   gap: 12px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.item-eficiencia:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .texto-eficiencia {
