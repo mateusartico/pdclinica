@@ -873,6 +873,7 @@ label span {
   border: 2px solid var(--cor-txt);
   font-family: var(--fonte-texto);
   font-size: 20px;
+  min-width: 600px;
 }
 
 .tabela-agendamentos thead th {
@@ -926,15 +927,6 @@ label span {
   .titulo-agendamentos {
     font-size: 24px;
     margin-bottom: 20px;
-  }
-
-  .tabela-agendamentos {
-    font-size: 14px;
-  }
-
-  .tabela-agendamentos thead th,
-  .tabela-agendamentos tbody td {
-    padding: 8px;
   }
 
   .badge {
