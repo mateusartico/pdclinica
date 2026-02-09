@@ -1165,3 +1165,30 @@ label span {
     display: inline;
   }
 }
+
+/* Correções para página trabalhe-conosco */
+.campo-entrada input {
+  outline: 0;
+}
+
+.campo-entrada input:focus {
+  outline: 0;
+}
+
+.botao-acao.botao-destaque {
+  background-color: var(--cor-laranja);
+  color: var(--cor-bg);
+  border-color: var(--cor-laranja);
+}
+
+.botao-acao.botao-destaque:hover {
+  background-color: var(--cor-laranja-ativo);
+  border-color: var(--cor-laranja-ativo);
+  color: var(--cor-bg);
+}
+
+.botao-acao.botao-destaque:active {
+  background-color: var(--cor-bg);
+  color: var(--cor-laranja-ativo);
+  border-color: var(--cor-laranja-ativo);
+}
