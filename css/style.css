@@ -942,3 +942,130 @@ label span {
     padding: 3px 8px;
   }
 }
+
+/* Seção de configurações */
+.secao-configuracoes {
+  margin-top: 68px;
+}
+
+.titulo-configuracoes {
+  font-family: var(--fonte-titulo);
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 34px;
+  color: var(--cor-txt);
+}
+
+.linha-config {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border: 2px solid var(--cor-txt);
+  border-radius: 0;
+  margin-bottom: 0;
+  background-color: var(--cor-bg);
+}
+
+.linha-config:not(:last-child) {
+  border-bottom: none;
+}
+
+.texto-config {
+  font-family: var(--fonte-texto);
+  font-size: 20px;
+  color: var(--cor-txt);
+}
+
+.botao-config {
+  padding: 8px 16px;
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--cor-laranja);
+  color: var(--cor-bg);
+  border: 2px solid var(--cor-laranja);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.botao-config:hover {
+  background-color: var(--cor-laranja-ativo);
+  border-color: var(--cor-laranja-ativo);
+}
+
+/* Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+  background-color: var(--cor-verde);
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+@media (min-width: 768px) {
+  .linha-config {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .secao-configuracoes {
+    margin-top: 30px;
+  }
+
+  .titulo-configuracoes {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .texto-config {
+    font-size: 16px;
+  }
+
+  .botao-config {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .linha-config {
+    padding: 10px 15px;
+  }
+}
