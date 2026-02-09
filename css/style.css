@@ -1192,3 +1192,35 @@ label span {
   color: var(--cor-laranja-ativo);
   border-color: var(--cor-laranja-ativo);
 }
+
+/* Correções de tipografia para trabalhe-conosco */
+.banner-principal h1.titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 64px;
+}
+
+.cartao-vaga h3.titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 24px;
+}
+
+.cartao-vaga p.texto-normal {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .banner-principal h1.titulo {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cartao-vaga h3.titulo {
+    font-size: 32px;
+  }
+  
+  .cartao-vaga p.texto-normal {
+    font-size: 20px;
+  }
+}
