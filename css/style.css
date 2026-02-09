@@ -747,3 +747,104 @@ label span {
     font-size: var(--titulo-mobile);
   }
 }
+
+/* ========================================
+   PÁGINA: ÁREA ADMINISTRATIVA
+   ======================================== */
+
+.recipiente-admin {
+  width: 100%;
+  max-width: 1340px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 68px;
+  padding-bottom: 68px;
+}
+
+.titulo-admin {
+  font-family: var(--fonte-titulo);
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 34px;
+  color: var(--cor-txt);
+}
+
+.fileira-espacada-admin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.card-admin-verde {
+  background-color: var(--cor-verde);
+  color: var(--cor-bg);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1 1 280px;
+  max-width: 400px;
+}
+
+.card-admin-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 24px;
+  margin: 0;
+  color: var(--cor-bg);
+}
+
+.card-admin-valor {
+  font-family: var(--fonte-titulo);
+  font-size: 48px;
+  margin: 0;
+  color: var(--cor-bg);
+}
+
+.card-admin-info {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  margin: 0;
+  color: var(--cor-bg);
+}
+
+@media (min-width: 768px) {
+  .recipiente-admin {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .fileira-espacada-admin {
+    gap: 34px;
+  }
+
+  .card-admin-info {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .titulo-admin {
+    font-size: 24px;
+  }
+
+  .card-admin-titulo {
+    font-size: 20px;
+  }
+
+  .card-admin-valor {
+    font-size: 36px;
+  }
+
+  .recipiente-admin {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .titulo-admin {
+    margin-bottom: 20px;
+  }
+}
