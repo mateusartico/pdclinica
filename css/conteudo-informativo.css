@@ -111,6 +111,7 @@ h2{
 
 .resposta-faq{
     font-size: var(--texto-desktop);
+    color: var(--cor-bg);
 }
 
 
