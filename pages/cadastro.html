@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/toasts-alerts.css" />
     <link rel="stylesheet" href="../css/dark-mode.css" />
   </head>
   <body class="autenticacao-pagina">
@@ -19,44 +20,58 @@
       <div class="autenticacao-card">
         <header>Cadastrar</header>
 
-        <form action="#">
+        <form action="#" id="form-cadastro">
           <div class="wrapper-inputs">
             <input
+              id="cad-nome"
               class="input-txt"
               type="text"
               placeholder="Informe seu Nome"
             />
             <input
+              id="cad-telefone"
               class="input-txt"
-              type="text"
+              type="tel"
               placeholder="Informe seu Telefone"
+              maxlength="15"
             />
           </div>
+
           <input
+            id="cad-email"
             class="input-txt"
             type="email"
             placeholder="Informe o seu E-mail"
           />
+
           <input
+            id="cad-senha"
             class="input-txt"
             type="password"
             placeholder="Escolha uma Senha"
           />
+
           <input
+            id="cad-confirma-senha"
             class="input-txt"
             type="password"
             placeholder="Confirme a Senha"
           />
+
           <div>
             <label class="input-checkbox" for="check-termos">
               <input type="checkbox" name="termos" id="check-termos" />
               Aceito os<span> Termos</span>
             </label>
           </div>
+
           <div class="wrapper-botoes">
             <a href="login.html">Já tenho uma conta</a>
             <a href="../index.html" class="botao">Voltar</a>
-            <a href="login.html" class="botao">Cadastrar</a>
+
+            <button type="button" class="botao" id="btn-cadastrar">
+              Cadastrar
+            </button>
           </div>
         </form>
       </div>
@@ -69,5 +84,6 @@
     ></script>
     <script src="../js/script.js"></script>
     <script src="../js/dark-mode.js"></script>
+    <script src="../js/forms.js"></script>
   </body>
 </html>
