@@ -284,6 +284,8 @@ label span {
   justify-content: center;
   gap: 60px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .lista-links a {
@@ -342,6 +344,7 @@ label span {
   text-align: center;
   font-size: var(--texto-desktop);
   font-family: var(--fonte-texto);
+  margin: 0;
 }
 
 /* --- Layout Base das Páginas --- */
