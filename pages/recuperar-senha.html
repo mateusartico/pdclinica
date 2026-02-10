@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/toasts-alerts.css" />
     <link rel="stylesheet" href="../css/dark-mode.css" />
   </head>
   <body class="autenticacao-pagina">
@@ -18,18 +19,41 @@
     <main class="autenticacao-conteudo">
       <div class="autenticacao-card">
         <header>Recuperar Senha</header>
-        <form action="#">
-          <p>Coloque seu e-mail para receber o código de recuperação</p>
-          <input class="input-txt" type="email" placeholder="E-mail" />
+        <form action="#" id="form-recuperacao">
+          <p
+            style="
+              margin-bottom: 15px;
+              font-family: var(--fonte-texto);
+              color: var(--cor-txt);
+            "
+          >
+            Coloque seu e-mail para receber o código de recuperação
+          </p>
+
+          <input
+            id="rec-email"
+            class="input-txt"
+            type="email"
+            placeholder="E-mail"
+          />
+
           <div class="fake-recaptcha">
             <button
               type="button"
+              id="btn-recaptcha"
               class="checkbox-recaptcha"
               aria-label="Não sou um robô"
             >
               <i class="bi bi-check"></i>
             </button>
-            <span class="text-recaptcha">Não sou um robô</span>
+
+            <span
+              class="text-recaptcha"
+              id="txt-recaptcha"
+              style="cursor: pointer"
+              >Não sou um robô</span
+            >
+
             <div class="brand-recaptcha">
               <img
                 src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
@@ -38,9 +62,10 @@
               <small>reCAPTCHA</small>
             </div>
           </div>
+
           <div class="wrapper-botoes">
             <a href="../index.html" class="botao">Voltar</a>
-            <a href="login.html" class="botao">Enviar</a>
+            <button type="button" id="btn-enviar" class="botao">Enviar</button>
           </div>
         </form>
       </div>
@@ -53,5 +78,6 @@
     ></script>
     <script src="../js/script.js"></script>
     <script src="../js/dark-mode.js"></script>
+    <script src="../js/forms.js"></script>
   </body>
 </html>

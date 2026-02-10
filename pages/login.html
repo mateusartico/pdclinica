@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/toasts-alerts.css" />
     <link rel="stylesheet" href="../css/dark-mode.css" />
   </head>
   <body class="autenticacao-pagina">
@@ -18,7 +19,7 @@
     <main class="autenticacao-conteudo">
       <div class="autenticacao-card">
         <header>Entrar</header>
-        <form action="#">
+        <form action="#" id="form-login">
           <input
             id="login-email"
             class="input-txt"
@@ -36,9 +37,7 @@
             <a href="cadastro.html">Ainda não tenho uma conta</a>
             <a href="../index.html" class="botao">Voltar</a>
 
-            <button type="button" onclick="entrar()" class="botao">
-              Entrar
-            </button>
+            <button type="button" id="btn-entrar" class="botao">Entrar</button>
           </div>
         </form>
       </div>
@@ -51,5 +50,6 @@
     ></script>
     <script src="../js/script.js"></script>
     <script src="../js/dark-mode.js"></script>
+    <script src="../js/forms.js"></script>
   </body>
 </html>
