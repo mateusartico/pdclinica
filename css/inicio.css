@@ -321,6 +321,7 @@
         color: var(--cor-bg);
         font-family: var(--fonte-texto);
         font-weight: 600;
+        text-decoration: underline;
     }
 
     .rodape section,
