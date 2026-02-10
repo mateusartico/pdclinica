@@ -1,6 +1,6 @@
 # 🏥 Projeto PD Clínica
 
-Este repositório contém o desenvolvimento do **Projeto PD Clínica**, um site institucional e funcional de uma clínica médica fictícia, criado como parte de uma **atividade/projeto em grupo** pelos estagiários **Elias Costa, Igor Santos, Matheus Artico e Roger Leal**, integrantes da **Turma Q1 Vênus – Tarde**.
+Este repositório contém o desenvolvimento do **Projeto PD Clínica**, um site institucional e funcional de uma clínica médica fictícia, criado como parte de uma **atividade/projeto em grupo** pelos estagiários **Elias Costa, Igor Santos, Mateus Artico e Roger Leal**, integrantes da **Turma Q1 Vênus – Tarde**.
 
 O projeto foi desenvolvido exclusivamente em **front-end**, com foco em organização de código, responsividade, acessibilidade e simulação de funcionalidades comuns a sistemas de clínicas médicas modernas.
 
@@ -159,4 +159,4 @@ Este projeto tem caráter **educacional**, sendo desenvolvido como parte das ati
 
 **Turma:** Q1 Vênus – Tarde
 **Projeto:** PD Clínica
-**Desenvolvido por:** Elias Costa, Igor Santos, Matheus Artico e Roger Leal
+**Desenvolvido por:** Elias Costa, Igor Santos, Mateus Artico e Roger Leal
