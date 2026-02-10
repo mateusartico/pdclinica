@@ -569,7 +569,7 @@ label span {
     align-items: start;
     gap: 25px;
     padding: 15px;
-    position: absolute;
+    position: fixed;
     top: 70px;
     left: 0;
     width: 100%;
@@ -748,10 +748,6 @@ label span {
   }
 }
 
-/* ========================================
-   PÁGINA: TRABALHE CONOSCO
-   ======================================== */
-
 /* Cores utilitárias */
 .texto-claro {
   color: var(--cor-bg);
@@ -788,11 +784,6 @@ label span {
   flex: 1 1 250px;
 }
 
-.fileira-distribuida article.cartao-vaga {
-  flex: 1 1 calc(25% - 26px);
-  min-width: 200px;
-}
-
 @media (min-width: 768px) {
   .recipiente {
     padding-left: 34px;
@@ -802,12 +793,6 @@ label span {
   .fileira-espacada,
   .fileira-distribuida {
     gap: 34px;
-  }
-}
-
-@media (max-width: 767px) {
-  .fileira-distribuida article.cartao-vaga {
-    flex: 1 1 100%;
   }
 }
 
@@ -860,149 +845,6 @@ label span {
   border: 0;
 }
 
-/* Componente: Banner */
-.banner-principal {
-  position: relative;
-  max-height: 80vh;
-  overflow: hidden;
-}
-
-.banner-principal img {
-  width: 100%;
-  height: 100%;
-  max-height: 80vh;
-  display: block;
-  object-fit: cover;
-}
-
-.banner-principal h1.titulo {
-  font-size: 64px;
-}
-
-.conteudo-banner {
-  position: absolute;
-  top: 50%;
-  left: 50px;
-}
-
-@media (max-width: 768px) {
-  .banner-principal {
-    text-align: center;
-    height: 400px;
-  }
-
-  .banner-principal h1.titulo {
-    font-size: 32px;
-  }
-
-  .conteudo-banner {
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-/* Componente: Barra de busca */
-.barra-busca {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 15px;
-  width: 100%;
-}
-
-.barra-busca form {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  width: 100%;
-}
-
-.barra-busca .campo-entrada,
-.barra-busca form .campo-entrada {
-  flex: 1;
-  margin: 0;
-  height: auto;
-  min-height: 44px;
-}
-
-@media (min-width: 768px) {
-  .barra-busca,
-  .barra-busca form {
-    gap: 34px;
-    padding: 34px;
-  }
-}
-
-/* Componente: Cartão */
-.cartao-vaga {
-  background-color: var(--cor-bg);
-  border-radius: 8px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  height: 100%;
-}
-
-.cartao-destaque {
-  background-color: var(--cor-verde);
-  color: var(--cor-bg);
-}
-
-/* Componente: Botão */
-.botao-acao {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 16px;
-  font-family: var(--fonte-texto);
-  font-size: 16px;
-  font-weight: bold;
-  border: 2px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.botao-destaque {
-  background-color: var(--cor-laranja);
-  color: var(--cor-bg);
-  border-color: var(--cor-laranja);
-}
-
-.botao-destaque:hover {
-  background-color: var(--cor-laranja-ativo);
-  border-color: var(--cor-laranja-ativo);
-}
-
-.botao-destaque:active {
-  background-color: var(--cor-bg);
-  color: var(--cor-laranja-ativo);
-}
-
-@media (min-width: 768px) {
-  .botao-acao {
-    font-size: 20px;
-  }
-}
-
-/* Componente: Link */
-.link-sublinhado {
-  color: var(--cor-bg);
-  border: none;
-  background-color: transparent;
-  border-bottom: 1px solid var(--cor-bg);
-  font-family: var(--fonte-texto);
-  font-size: 16px;
-  cursor: pointer;
-}
-
-@media (min-width: 768px) {
-  .link-sublinhado {
-    font-size: 20px;
-  }
-}
-
 /* Componente: Formulário */
 .formulario-inscricao {
   border: 2px solid var(--cor-verde);
@@ -1043,6 +885,7 @@ label span {
   font-family: var(--fonte-texto);
   font-size: 16px;
   color: var(--cor-txt);
+  outline: 0;
 }
 
 .campo-entrada:focus-within {
@@ -1055,34 +898,8 @@ label span {
   }
 }
 
-/* Componente: Seletor de arquivo */
-.seletor-curriculo {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  cursor: pointer;
-}
-
-.seletor-curriculo input[type="file"] {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-.rotulo-arquivo {
-  font-family: var(--fonte-texto);
-  font-size: 16px;
-  color: var(--cor-txt);
-  pointer-events: none;
-}
-
-.botao-arquivo {
+/* Componente: Botão */
+.botao-acao {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1090,137 +907,106 @@ label span {
   font-family: var(--fonte-texto);
   font-size: 16px;
   font-weight: bold;
-  background-color: var(--cor-laranja);
-  color: var(--cor-bg);
-  border: 2px solid var(--cor-laranja);
+  border: 2px solid transparent;
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.seletor-curriculo:hover .botao-arquivo {
-  background-color: var(--cor-laranja-ativo);
-  border-color: var(--cor-laranja-ativo);
-}
-
-@media (min-width: 768px) {
-  .seletor-curriculo {
-    gap: 34px;
-  }
-
-  .rotulo-arquivo,
-  .botao-arquivo {
-    font-size: 20px;
-  }
-}
-
-/* Componente: Ver mais/menos */
-.alternador-conteudo {
-  display: none;
-}
-
-.conteudo-oculto-mobile {
-  display: flex;
-  margin-top: 15px;
-}
-
-.botao-expandir {
-  display: none;
-  cursor: pointer;
-  color: var(--cor-txt);
-  border-bottom: 1px solid var(--cor-txt);
-  font-family: var(--fonte-texto);
-  font-size: 16px;
-  width: fit-content;
-  margin: 0 auto;
-}
-
-.texto-recolher {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .conteudo-oculto-mobile {
-    margin-top: 34px;
-  }
-}
-
-@media (max-width: 767px) {
-  .conteudo-oculto-mobile {
-    display: none;
-  }
-  
-  .botao-expandir {
-    display: inline-block;
-  }
-  
-  .alternador-conteudo:checked ~ .conteudo-oculto-mobile {
-    display: flex;
-  }
-  
-  .alternador-conteudo:checked ~ .centralizar-texto .botao-expandir .texto-expandir {
-    display: none;
-  }
-  
-  .alternador-conteudo:checked ~ .centralizar-texto .botao-expandir .texto-recolher {
-    display: inline;
-  }
-}
-
-/* Correções para página trabalhe-conosco */
-.campo-entrada input {
-  outline: 0;
-}
-
-.campo-entrada input:focus {
-  outline: 0;
-}
-
-.botao-acao.botao-destaque {
+.botao-destaque {
   background-color: var(--cor-laranja);
   color: var(--cor-bg);
   border-color: var(--cor-laranja);
 }
 
-.botao-acao.botao-destaque:hover {
+.botao-destaque:hover {
   background-color: var(--cor-laranja-ativo);
   border-color: var(--cor-laranja-ativo);
   color: var(--cor-bg);
 }
 
-.botao-acao.botao-destaque:active {
+.botao-destaque:active {
   background-color: var(--cor-bg);
   color: var(--cor-laranja-ativo);
   border-color: var(--cor-laranja-ativo);
 }
 
-/* Correções de tipografia para trabalhe-conosco */
-.banner-principal h1.titulo {
-  font-family: var(--fonte-titulo);
-  font-size: 64px;
+@media (min-width: 768px) {
+  .botao-acao {
+    font-size: 20px;
+  }
 }
 
-.cartao-vaga h3.titulo {
-  font-family: var(--fonte-titulo);
-  font-size: 24px;
+/* Página de contato específico */
+.secao-contato {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 68px 15px;
 }
 
-.cartao-vaga p.texto-normal {
+.imagem-fundo-contato {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container-formulario-contato {
+  width: 100%;
+  max-width: 1340px;
+  z-index: 1;
+}
+
+.container-formulario-contato .formulario-inscricao {
+  width: 100%;
+}
+
+.campo-mensagem {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 8px;
+  width: 100%;
+  min-height: 200px;
+  background-color: var(--cor-bg);
+  border: 1px solid var(--cor-txt);
+  border-radius: 8px;
+  cursor: text;
+}
+
+.campo-mensagem textarea {
+  flex: 1;
+  border: none;
+  background: transparent;
   font-family: var(--fonte-texto);
   font-size: 16px;
+  color: var(--cor-txt);
+  resize: vertical;
+  min-height: 160px;
+  max-height: 240px;
+  outline: 0;
 }
 
-@media (max-width: 768px) {
-  .banner-principal h1.titulo {
-    font-size: 32px;
-  }
+.campo-mensagem:focus-within {
+  border-color: var(--cor-verde);
+}
+
+.secao-contato h1.titulo {
+  font-family: var(--fonte-titulo);
 }
 
 @media (min-width: 768px) {
-  .cartao-vaga h3.titulo {
-    font-size: 32px;
+  .secao-contato {
+    padding: 68px 34px;
   }
-  
-  .cartao-vaga p.texto-normal {
+
+  .campo-mensagem textarea {
     font-size: 20px;
   }
 }
