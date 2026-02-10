@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
+    <title>PD Clínica | Lista de Especialidades</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="logo">PD Clínica</h1>
+        <nav>
+            <input type="checkbox" id="menu-aberto">
+            <label for="menu-aberto" class="btn-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px"
+                    fill="#FFFFFF" class="icon-menu">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </label>
+            <ul class="lista-links">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="institucional.html">Institucional</a></li>
+                <li><a href="conteudo-informativo.html">Informações</a></li>
+                <!-- MENU MOBILE -->
+                <li><a href="login.html" class="botao-mobile">Entrar</a></li>
+                <!-- MENU MOBILE -->
+            </ul>
+        </nav>
+        <a href="login.html" class="botao">Login</a>
+    </header>
+
+    <main>
+        <section class="banner-especialidades">
+            <img src="../img/foto-medico.png" alt="Fotografia de médico da PD Clínica">
+            <div>
+                <h2 class="titulo">Somos a clínica com o maior número de especialistas da região</h2>
+                <p class="descricao">Nossa clínica reúne uma equipe médica ampla e altamente qualificada, composta por
+                    especialistas de diversas áreas da saúde. Essa diversidade nos permite oferecer um atendimento
+                    completo, integrado e resolutivo, reduzindo a necessidade de deslocamentos e encaminhamentos
+                    externos para nossos pacientes.
+                    Trabalhamos com profissionais experientes, atualizados com as melhores práticas da medicina e
+                    comprometidos com um cuidado humanizado. </p>
+            </div>
+        </section>
+
+        <section class="especialidades">
+            <h2 class="titulo centro">Nossas especialidades</h2>
+            <select name="" id="especialidade" onchange="filtrarEspecialidades()">
+                <option value="">Busque uma especialidade</option>
+                <option value="dermatologia">Dermatologia</option>
+                <option value="cardiologia">Cardiologia</option>
+                <option value="pediatria">Pediatria</option>
+                <option value="ortopedia">Ortopedia</option>
+                <option value="neurologia">Neurologia</option>
+                <option value="psiquiatria">Psiquiatria</option>
+            </select>
+            <div id="lista-especialidades">
+                <article class="card" id="dermatologia">
+                    <h3 class="titulo-card">Dermatologia</h3>
+                    <p class="descricao-card">Tratamentos para sua pele.</p>
+                    <a href="especialidade-dermatologia.html" class="botao saiba-mais">Saiba mais</a>
+                </article>
+                <article class="card" id="cardiologia">
+                    <h3 class="titulo-card">Cardiologia</h3>
+                    <p class="descricao-card">Cuidados com a saúde do coração.</p>
+                    <a href="especialidade-cardiologia.html" class="botao saiba-mais">Saiba mais</a>
+                </article>
+                <article class="card" id="pediatria">
+                    <h3 class="titulo-card">Pediatria</h3>
+                    <p class="descricao-card">Acompanhamento da saúde infantil.</p>
+                    <a href="especialidade-pediatria.html" class="botao saiba-mais">Saiba mais</a>
+                </article>
+                <article class="card" id="ortopedia">
+                    <h3 class="titulo-card">Ortopedia</h3>
+                    <p class="descricao-card">Tratamento de ossos e articulações.</p>
+                    <a href="especialidade-ortopedia.html" class="botao saiba-mais">Saiba mais</a>
+                </article>
+                <article class="card" id="neurologia">
+                    <h3 class="titulo-card">Neurologia</h3>
+                    <p class="descricao-card">Tratamento do sistema nervoso.</p>
+                    <a href="especialidade-neurologia.html" class="botao saiba-mais">Saiba mais</a>
+                </article>
+                <article class="card" id="psiquiatria">
+                    <h3 class="titulo-card">Psiquiatria</h3>
+                    <p class="descricao-card">Cuidados com a mente emocional.</p>
+                    <a href="especialidade-psiquiatria.html" class="botao saiba-mais">Saiba mais</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao-precos" aria-labelledby="titulo-precos">
+            <h2 id="titulo-precos" class="titulo-precos">Orçamentos</h2>
+            <div class="container-tabela-precos">
+                <table class="tabela-precos" role="table" aria-label="Tabela de preços de serviços">
+                    <thead>
+                        <tr>
+                            <th scope="col">Serviços/Procedimentos</th>
+                            <th scope="col">Convênio</th>
+                            <th scope="col">Valor (R$)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Consulta Cardiologia</td>
+                            <td>Unimed</td>
+                            <td>R$ 250,00</td>
+                        </tr>
+                        <tr>
+                            <td>Exame Dermatológico</td>
+                            <td>Bradesco Saúde</td>
+                            <td>R$ 180,00</td>
+                        </tr>
+                        <tr>
+                            <td>Consulta Pediatria</td>
+                            <td>Amil</td>
+                            <td>R$ 200,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados<span></p>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="../js/dark-mode.js"></script>
+    <script src="../js/filtro-especialidades.js"></script>
+</body>
+
+</html>

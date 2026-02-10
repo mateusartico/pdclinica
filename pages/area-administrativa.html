@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Área administrativa da PD Clínica.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
+    <title>PD Clínica | Área Administrativa</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="logo">PD Clínica</h1>
+        <nav aria-label="Menu principal">
+            <input type="checkbox" id="menu-aberto">
+            <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px" fill="#FFFFFF" class="icon-menu"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
+            </label>
+            <ul class="lista-links">
+                <li><a href="/">Início</a></li>
+                <li><a href="institucional.html">Institucional</a></li>
+                <li><a href="conteudo-informativo.html">Informações</a></li>
+                <!-- MENU MOBILE -->
+                <li><a href="login.html" class="botao-mobile">Sair</a></li>
+                <!-- MENU MOBILE -->
+            </ul>
+        </nav>
+        <a href="login.html" class="botao">Sair</a>
+    </header>
+
+    <main class="recipiente-admin">
+        <h1 class="titulo-admin">Área Administrativa</h1>
+        
+        <section class="secao-cards-admin" aria-label="Estatísticas administrativas">
+            <div class="fileira-espacada-admin">
+                <article class="card-admin-verde" role="region" aria-labelledby="card-consultas">
+                    <h2 id="card-consultas" class="card-admin-titulo">Consultas agendadas</h2>
+                    <p class="card-admin-valor">150</p>
+                    <p class="card-admin-info">Últimos 30 dias</p>
+                </article>
+
+                <article class="card-admin-verde" role="region" aria-labelledby="card-pacientes">
+                    <h2 id="card-pacientes" class="card-admin-titulo">Pacientes ativos</h2>
+                    <p class="card-admin-valor">320</p>
+                    <p class="card-admin-info">Total cadastrado</p>
+                </article>
+
+                <article class="card-admin-verde" role="region" aria-labelledby="card-medicos">
+                    <h2 id="card-medicos" class="card-admin-titulo">Médicos disponíveis</h2>
+                    <p class="card-admin-valor">25</p>
+                    <p class="card-admin-info">Em atendimento</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao-agendamentos" aria-labelledby="titulo-agendamentos">
+            <h2 id="titulo-agendamentos" class="titulo-agendamentos">Agendamentos</h2>
+            <div class="container-tabela-admin">
+                <table class="tabela-agendamentos" role="table" aria-label="Lista de agendamentos">
+                    <thead>
+                        <tr>
+                            <th scope="col">Data/Hora</th>
+                            <th scope="col">Paciente</th>
+                            <th scope="col">Médico</th>
+                            <th scope="col">Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15/01/2024 - 09:00</td>
+                            <td>Maria Silva</td>
+                            <td>Dr. João Santos</td>
+                            <td><span class="badge badge-confirmado">Confirmado</span></td>
+                        </tr>
+                        <tr>
+                            <td>15/01/2024 - 10:30</td>
+                            <td>Carlos Oliveira</td>
+                            <td>Dra. Ana Costa</td>
+                            <td><span class="badge badge-aguardando">Aguardando</span></td>
+                        </tr>
+                        <tr>
+                            <td>15/01/2024 - 14:00</td>
+                            <td>Fernanda Lima</td>
+                            <td>Dr. Pedro Alves</td>
+                            <td><span class="badge badge-cancelado">Cancelado</span></td>
+                        </tr>
+                        <tr>
+                            <td>16/01/2024 - 08:30</td>
+                            <td>Roberto Mendes</td>
+                            <td>Dra. Juliana Rocha</td>
+                            <td><span class="badge badge-confirmado">Confirmado</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="secao-relatorios" aria-labelledby="titulo-relatorios">
+            <h2 id="titulo-relatorios" class="titulo-relatorios">Relatórios</h2>
+            
+            <div class="fileira-relatorios">
+                <article class="coluna-relatorio">
+                    <h3 class="titulo-relatorio">Demandas por Especialidade</h3>
+                    
+                    <div class="item-progresso">
+                        <div class="info-progresso">
+                            <span class="texto-progresso">Dentista</span>
+                            <span class="valor-progresso">45 atendimentos</span>
+                        </div>
+                        <div class="barra-progresso">
+                            <div class="preenchimento-progresso progresso-verde" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item-progresso">
+                        <div class="info-progresso">
+                            <span class="texto-progresso">Cardiologia</span>
+                            <span class="valor-progresso">32 atendimentos</span>
+                        </div>
+                        <div class="barra-progresso">
+                            <div class="preenchimento-progresso progresso-azul" style="width: 55%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item-progresso">
+                        <div class="info-progresso">
+                            <span class="texto-progresso">Pediatria</span>
+                            <span class="valor-progresso">28 atendimentos</span>
+                        </div>
+                        <div class="barra-progresso">
+                            <div class="preenchimento-progresso progresso-amarelo" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="coluna-relatorio">
+                    <h3 class="titulo-relatorio">Eficiência de Agenda</h3>
+                    
+                    <div class="item-eficiencia">
+                        <span class="badge badge-ok">Ok</span>
+                        <span class="texto-eficiencia">Consultas realizadas</span>
+                        <span class="numero-eficiencia">142</span>
+                    </div>
+
+                    <div class="item-eficiencia">
+                        <span class="badge badge-alerta">!</span>
+                        <span class="texto-eficiencia">Pendências de confirmação</span>
+                        <span class="numero-eficiencia">8</span>
+                    </div>
+
+                    <div class="item-eficiencia">
+                        <span class="badge badge-erro">X</span>
+                        <span class="texto-eficiencia">Cancelamentos/Faltas</span>
+                        <span class="numero-eficiencia">5</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="secao-configuracoes" aria-labelledby="titulo-configuracoes">
+            <h2 id="titulo-configuracoes" class="titulo-configuracoes">Configurações</h2>
+            
+            <div class="linha-config linha-config-primeira">
+                <span class="texto-config">Ativar Modo Escuro</span>
+                <label class="switch" aria-label="Alternar modo escuro">
+                    <input type="checkbox" data-theme-toggle aria-label="Switch de modo escuro">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="linha-config">
+                <span class="texto-config">Atualizar Dados da Clínica</span>
+            </div>
+
+            <div class="linha-config linha-config-ultima">
+                <span class="texto-config">Gerenciar Médicos e Recepcionistas</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados<span></p>
+    </footer>
+    <script src="../js/dark-mode.js"></script>
+</body>
+</html>
