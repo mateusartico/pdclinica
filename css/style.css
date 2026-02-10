@@ -780,10 +780,6 @@ label span {
   justify-content: center;
 }
 
-.fileira-espacada .coluna-metade {
-  flex: 1 1 250px;
-}
-
 @media (min-width: 768px) {
   .recipiente {
     padding-left: 34px;
@@ -859,43 +855,13 @@ label span {
   margin: 0;
 }
 
+#titulo-contato {
+  text-align: start;
+}
+
 .formulario-corpo {
   background-color: var(--cor-bg);
   padding: 24px;
-}
-
-/* Componente: Caixa de texto */
-.campo-entrada {
-  display: flex;
-  align-items: center;
-  padding: 8px 16px;
-  gap: 8px;
-  width: 100%;
-  height: 44px;
-  background-color: var(--cor-bg);
-  border: 1px solid var(--cor-txt);
-  border-radius: 8px;
-  cursor: text;
-}
-
-.campo-entrada input {
-  flex: 1;
-  border: none;
-  background: transparent;
-  font-family: var(--fonte-texto);
-  font-size: 16px;
-  color: var(--cor-txt);
-  outline: 0;
-}
-
-.campo-entrada:focus-within {
-  border-color: var(--cor-verde);
-}
-
-@media (min-width: 768px) {
-  .campo-entrada input {
-    font-size: 20px;
-  }
 }
 
 /* Componente: Botão */
@@ -967,36 +933,6 @@ label span {
   width: 100%;
 }
 
-.campo-mensagem {
-  display: flex;
-  align-items: flex-start;
-  padding: 8px 16px;
-  gap: 8px;
-  width: 100%;
-  min-height: 200px;
-  background-color: var(--cor-bg);
-  border: 1px solid var(--cor-txt);
-  border-radius: 8px;
-  cursor: text;
-}
-
-.campo-mensagem textarea {
-  flex: 1;
-  border: none;
-  background: transparent;
-  font-family: var(--fonte-texto);
-  font-size: 16px;
-  color: var(--cor-txt);
-  resize: vertical;
-  min-height: 160px;
-  max-height: 240px;
-  outline: 0;
-}
-
-.campo-mensagem:focus-within {
-  border-color: var(--cor-verde);
-}
-
 .secao-contato h1.titulo {
   font-family: var(--fonte-titulo);
 }
@@ -1009,4 +945,135 @@ label span {
   .campo-mensagem textarea {
     font-size: 20px;
   }
+}
+
+.secao-contato {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 68px 15px;
+}
+
+.imagem-fundo-contato {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Container que centraliza o formulário */
+.container-formulario-contato {
+  width: 100%;
+  max-width: 800px; /* Largura similar aos outros cards */
+  z-index: 1;
+}
+
+/* Card do Formulário (Estilo unificado) */
+.formulario-inscricao {
+  background: var(--cor-bg);
+  border: 3px solid var(--cor-verde);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.formulario-cabecalho {
+  background-color: var(--cor-verde);
+  font-family: var(--fonte-titulo);
+  font-size: var(--titulo-desktop);
+  color: var(--cor-bg);
+  padding: 20px 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.formulario-corpo {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Layout de Colunas (Nome/Telefone lado a lado) */
+.fileira-espacada {
+  display: flex;
+  gap: 20px;
+}
+
+.coluna-metade {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .fileira-espacada {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .coluna-metade {
+    height: fit-content;
+  }
+}
+
+/* --- ESTILIZAÇÃO DOS INPUTS (Reutilizando padrão global) --- */
+
+/* Input de Texto Padrão (igual Login/Cadastro) */
+.formulario-corpo input[type="text"],
+.formulario-corpo input[type="tel"],
+.formulario-corpo input[type="email"],
+.formulario-corpo textarea {
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-desktop);
+  color: var(--cor-txt);
+  background-color: var(--cor-bg);
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #444444; /* Borda padrão */
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+/* Textarea específico */
+.formulario-corpo textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Foco */
+.formulario-corpo input:focus,
+.formulario-corpo textarea:focus {
+  border-color: var(--cor-verde);
+}
+
+/* --- CLASSE DE ERRO (Crucial para o JS funcionar) --- */
+/* O JS adiciona .input-error diretamente no input/textarea */
+.input-error {
+  border: 1px solid #d63031 !important; /* Vermelho força sobre a borda padrão */
+}
+
+/* Botão de Enviar (Reutilizando estilo .botao) */
+#btn-contato {
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 20px;
+}
+
+/* Ajustes de Acessibilidade */
+.apenas-leitores {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

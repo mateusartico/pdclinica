@@ -316,3 +316,69 @@ if (formRecuperacao) {
     }, 3000);
   });
 }
+
+/* LÓGICA: FORMULÁRIO DE CONTATO */
+
+const formContato = document.getElementById("form-contato");
+
+if (formContato) {
+  const btnContato = document.getElementById("btn-contato");
+
+  const inputTelContato = document.getElementById("contato-telefone");
+  if (inputTelContato) {
+    inputTelContato.addEventListener("input", (e) => {
+      let v = e.target.value.replace(/\D/g, "");
+      if (v.length > 11) v = v.slice(0, 11);
+      e.target.value = v;
+    });
+  }
+
+  btnContato.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const nome = document.getElementById("contato-nome");
+    const telefone = document.getElementById("contato-telefone");
+    const email = document.getElementById("contato-email");
+    const mensagem = document.getElementById("contato-mensagem");
+
+    [nome, telefone, email, mensagem].forEach(clearError);
+
+    let isValid = true;
+    let msgErro = null;
+
+    if (nome.value.trim().split(" ").length < 2) {
+      setError(nome);
+      isValid = false;
+      if (!msgErro) msgErro = "Informe seu nome completo.";
+    }
+
+    if (telefone.value.replace(/\D/g, "").length < 10) {
+      setError(telefone);
+      isValid = false;
+      if (!msgErro) msgErro = "Informe um telefone válido.";
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.value.trim())) {
+      setError(email);
+      isValid = false;
+      if (!msgErro) msgErro = "Informe um e-mail válido.";
+    }
+
+    if (mensagem.value.trim().length < 10) {
+      setError(mensagem);
+      isValid = false;
+      if (!msgErro) msgErro = "Sua mensagem deve ter pelo menos 10 caracteres.";
+    }
+
+    if (!isValid) {
+      showToast(msgErro, "error");
+    } else {
+      showToast(
+        "Mensagem enviada com sucesso! Entraremos em contato.",
+        "success",
+      );
+      formContato.reset();
+    }
+  });
+}
