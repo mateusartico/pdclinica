@@ -382,3 +382,80 @@ if (formContato) {
     }
   });
 }
+
+/* LÓGICA: TRABALHE CONOSCO */
+
+const btnBuscarVagas = document.getElementById("btn-buscar-vagas");
+if (btnBuscarVagas) {
+  btnBuscarVagas.addEventListener("click", (e) => {
+    e.preventDefault();
+    const termo = document.getElementById("busca-vagas");
+
+    if (termo.value.trim() === "") {
+      showToast("Digite algo para buscar.", "warning");
+    } else {
+      showToast(`Buscando vagas para: "${termo.value}"...`, "success");
+    }
+  });
+}
+
+const formTrabalhe = document.getElementById("form-trabalhe");
+
+if (formTrabalhe) {
+  const btnEnviarCurriculo = document.getElementById("btn-enviar-curriculo");
+
+  const inputTelCand = document.getElementById("cand-telefone");
+  if (inputTelCand) {
+    inputTelCand.addEventListener("input", (e) => {
+      let v = e.target.value.replace(/\D/g, "");
+      if (v.length > 11) v = v.slice(0, 11);
+      e.target.value = v;
+    });
+  }
+
+  btnEnviarCurriculo.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const nome = document.getElementById("cand-nome");
+    const telefone = document.getElementById("cand-telefone");
+    const email = document.getElementById("cand-email");
+    const curriculo = document.getElementById("cand-curriculo");
+
+    [nome, telefone, email, curriculo].forEach(clearError);
+
+    let isValid = true;
+    let msgErro = null;
+
+    if (nome.value.trim().split(" ").length < 2) {
+      setError(nome);
+      isValid = false;
+      if (!msgErro) msgErro = "Informe seu nome completo.";
+    }
+
+    if (telefone.value.replace(/\D/g, "").length < 10) {
+      setError(telefone);
+      isValid = false;
+      if (!msgErro) msgErro = "Informe um telefone válido.";
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.value.trim())) {
+      setError(email);
+      isValid = false;
+      if (!msgErro) msgErro = "Informe um e-mail válido.";
+    }
+
+    if (curriculo.files.length === 0) {
+      setError(curriculo);
+      isValid = false;
+      if (!msgErro) msgErro = "Por favor, anexe seu currículo.";
+    }
+
+    if (!isValid) {
+      showToast(msgErro, "error");
+    } else {
+      showToast("Inscrição enviada com sucesso! Boa sorte.", "success");
+      formTrabalhe.reset();
+    }
+  });
+}

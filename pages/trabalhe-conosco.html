@@ -1,139 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Trabalhe conosco na PD Clínica. Veja nossas vagas disponíveis para profissionais da saúde.">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Trabalhe conosco na PD Clínica. Veja nossas vagas disponíveis para profissionais da saúde."
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/toasts-alerts.css" />
+    <link rel="stylesheet" href="../css/dark-mode.css" />
+
     <title>PD Clínica | Trabalhe Conosco</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="banner-principal" role="banner">
-        <img src="../img/colegio-medico-colombiano.png" alt="Equipe médica da PD Clínica">
-        <div class="conteudo-banner texto-claro">
-            <h1 class="titulo">Trabalhe conosco</h1>
-            <p class="texto-normal">Venha ver as vagas que temos disponíveis</p>
-        </div>
+      <img
+        src="../img/colegio-medico-colombiano.png"
+        alt="Equipe médica da PD Clínica"
+      />
+      <div class="conteudo-banner texto-claro">
+        <h1 class="titulo">Trabalhe conosco</h1>
+        <p class="texto-normal">Venha ver as vagas que temos disponíveis</p>
+      </div>
     </div>
 
     <section class="barra-busca fundo-principal" aria-label="Pesquisa de vagas">
-        <form role="search">
-            <label for="busca" class="apenas-leitores">Buscar vagas</label>
-            <div class="campo-entrada">
-                <input type="search" id="busca" name="busca" placeholder="Buscar vagas..." aria-label="Campo de busca de vagas">
-            </div>
-            <button type="submit" class="link-sublinhado">Buscar</button>
-        </form>
+      <form role="search">
+        <label for="busca" class="apenas-leitores">Buscar vagas</label>
+
+        <div class="campo-entrada">
+          <input
+            type="search"
+            id="busca"
+            name="busca"
+            placeholder="Buscar vagas..."
+            aria-label="Campo de busca de vagas"
+          />
+        </div>
+
+        <button type="button" class="botao">Buscar</button>
+      </form>
     </section>
 
     <main class="recipiente">
-        <section aria-labelledby="titulo-vagas">
-            <h2 id="titulo-vagas" class="titulo espacamento-vertical">Nossas vagas</h2>
-            
-            <div class="fileira-distribuida" role="list">
-                <article class="cartao-vaga cartao-destaque" role="listitem">
-                    <h3 class="titulo texto-claro">Médico</h3>
-                    <p class="texto-normal">Atendimento clínico geral e especializado</p>
-                    <a href="#inscricao" class="botao-acao botao-destaque" aria-label="Inscrever-se para vaga de Médico">Inscrever</a>
-                </article>
+      <section aria-labelledby="titulo-vagas">
+        <h2 id="titulo-vagas" class="titulo espacamento-vertical">
+          Nossas vagas
+        </h2>
 
-                <article class="cartao-vaga cartao-destaque" role="listitem">
-                    <h3 class="titulo texto-claro">Dentista</h3>
-                    <p class="texto-normal">Cuidados odontológicos e tratamentos dentários</p>
-                    <a href="#inscricao" class="botao-acao botao-destaque" aria-label="Inscrever-se para vaga de Dentista">Inscrever</a>
-                </article>
-                
-                <article class="cartao-vaga cartao-destaque" role="listitem">
-                    <h3 class="titulo texto-claro">Enfermeiro</h3>
-                    <p class="texto-normal">Assistência e cuidados aos pacientes</p>
-                    <a href="#inscricao" class="botao-acao botao-destaque" aria-label="Inscrever-se para vaga de Enfermeiro">Inscrever</a>
-                </article>
+        <div class="fileira-distribuida" role="list">
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Médico</h3>
+            <p class="texto-normal">
+              Atendimento clínico geral e especializado
+            </p>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
+          </article>
 
-                <article class="cartao-vaga cartao-destaque" role="listitem">
-                    <h3 class="titulo texto-claro">Fisioterapeuta</h3>
-                    <p class="texto-normal">Reabilitação física e tratamentos terapêuticos</p>
-                    <a href="#inscricao" class="botao-acao botao-destaque" aria-label="Inscrever-se para vaga de Fisioterapeuta">Inscrever</a>
-                </article>
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Dentista</h3>
+            <p class="texto-normal">
+              Cuidados odontológicos e tratamentos dentários
+            </p>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
+          </article>
+
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Enfermeiro</h3>
+            <p class="texto-normal">Assistência e cuidados aos pacientes</p>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
+          </article>
+
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Fisioterapeuta</h3>
+            <p class="texto-normal">
+              Reabilitação física e tratamentos terapêuticos
+            </p>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
+          </article>
+
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Nutricionista</h3>
+            <p class="texto-normal">
+              Orientação nutricional e dietas personalizadas
+            </p>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
+          </article>
+
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Psicólogo</h3>
+            <p class="texto-normal">Atendimento psicológico e terapia</p>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
+          </article>
+
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Farmacêutico</h3>
+            <p class="texto-normal">Dispensação e orientação de medicamentos</p>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
+          </article>
+
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Radiologista</h3>
+            <p class="texto-normal">Exames de imagem e diagnósticos</p>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="inscricao"
+        aria-labelledby="titulo-inscricao"
+        class="espacamento-vertical-grande"
+      >
+        <form
+          class="formulario-inscricao"
+          id="form-trabalhe"
+          aria-label="Formulário de inscrição"
+        >
+          <h2 id="titulo-inscricao" class="titulo formulario-cabecalho">
+            Formulário de Inscrição
+          </h2>
+
+          <div class="formulario-corpo">
+            <div class="fileira-espacada">
+              <div class="coluna-metade">
+                <label for="cand-nome" class="apenas-leitores"
+                  >Nome completo</label
+                >
+                <input
+                  type="text"
+                  id="cand-nome"
+                  name="nome"
+                  placeholder="Nome completo"
+                  class="input-txt"
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="coluna-metade">
+                <label for="cand-telefone" class="apenas-leitores"
+                  >Telefone</label
+                >
+                <input
+                  type="tel"
+                  id="cand-telefone"
+                  name="telefone"
+                  placeholder="Telefone"
+                  class="input-txt"
+                  autocomplete="tel"
+                  maxlength="15"
+                />
+              </div>
             </div>
-            
-            <input type="checkbox" id="ver-mais" class="alternador-conteudo" aria-label="Expandir para ver mais vagas">
-            
-            <div class="fileira-distribuida conteudo-oculto-mobile" role="list" aria-hidden="true">
-                <article class="cartao-vaga cartao-destaque" role="listitem">
-                    <h3 class="titulo texto-claro">Nutricionista</h3>
-                    <p class="texto-normal">Orientação nutricional e dietas personalizadas</p>
-                    <a href="#inscricao" class="botao-acao botao-destaque" aria-label="Inscrever-se para vaga de Nutricionista">Inscrever</a>
-                </article>
 
-                <article class="cartao-vaga cartao-destaque" role="listitem">
-                    <h3 class="titulo texto-claro">Psicólogo</h3>
-                    <p class="texto-normal">Atendimento psicológico e terapia</p>
-                    <a href="#inscricao" class="botao-acao botao-destaque" aria-label="Inscrever-se para vaga de Psicólogo">Inscrever</a>
-                </article>
-                
-                <article class="cartao-vaga cartao-destaque" role="listitem">
-                    <h3 class="titulo texto-claro">Farmacêutico</h3>
-                    <p class="texto-normal">Dispensação e orientação de medicamentos</p>
-                    <a href="#inscricao" class="botao-acao botao-destaque" aria-label="Inscrever-se para vaga de Farmacêutico">Inscrever</a>
-                </article>
-
-                <article class="cartao-vaga cartao-destaque" role="listitem">
-                    <h3 class="titulo texto-claro">Radiologista</h3>
-                    <p class="texto-normal">Exames de imagem e diagnósticos</p>
-                    <a href="#inscricao" class="botao-acao botao-destaque" aria-label="Inscrever-se para vaga de Radiologista">Inscrever</a>
-                </article>
+            <div>
+              <label for="cand-email" class="apenas-leitores">Email</label>
+              <input
+                type="email"
+                id="cand-email"
+                name="email"
+                placeholder="Email"
+                class="input-txt"
+                autocomplete="email"
+              />
             </div>
-            
-            <div class="centralizar-texto espacamento-vertical">
-                <label for="ver-mais" class="botao-expandir">
-                    <span class="texto-expandir">Ver mais...</span>
-                    <span class="texto-recolher">Ver menos</span>
-                </label>
-            </div>
-        </section>
 
-        <section id="inscricao" aria-labelledby="titulo-inscricao" class="espacamento-vertical-grande">
-            <form class="formulario-inscricao" aria-label="Formulário de inscrição">
-                <h2 id="titulo-inscricao" class="titulo formulario-cabecalho">Inscrição</h2>
-                
-                <div class="formulario-corpo">
-                    <div class="fileira-espacada espacamento-vertical">
-                        <div class="coluna-metade">
-                            <label for="nome" class="apenas-leitores">Nome completo</label>
-                            <div class="campo-entrada">
-                                <input type="text" id="nome" name="nome" placeholder="Nome" required aria-required="true">
-                            </div>
-                        </div>
-                        
-                        <div class="coluna-metade">
-                            <label for="telefone" class="apenas-leitores">Telefone</label>
-                            <div class="campo-entrada">
-                                <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required aria-required="true">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="espacamento-vertical">
-                        <label for="email" class="apenas-leitores">Email</label>
-                        <div class="campo-entrada">
-                            <input type="email" id="email" name="email" placeholder="Email" required aria-required="true">
-                        </div>
-                    </div>
-                    
-                    <div class="espacamento-vertical">
-                        <label for="curriculo" class="seletor-curriculo">
-                            <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" aria-label="Selecionar arquivo de currículo">
-                            <span class="rotulo-arquivo" aria-hidden="true">Selecionar currículo...</span>
-                            <span class="botao-arquivo" aria-hidden="true">Escolher</span>
-                        </label>
-                    </div>
-                    
-                    <div class="flexivel alinhar-direita espacamento-vertical">
-                        <button type="submit" class="botao-acao botao-destaque">Enviar</button>
-                    </div>
-                </div>
-            </form>
-        </section>
+            <div>
+              <label for="cand-curriculo">Anexar Currículo (.pdf, .doc)</label>
+              <input
+                type="file"
+                id="cand-curriculo"
+                name="curriculo"
+                accept=".pdf,.doc,.docx"
+                class="input-txt"
+              />
+            </div>
+
+            <div class="flexivel alinhar-direita espacamento-vertical">
+              <button type="button" id="btn-enviar-curriculo" class="botao">
+                Enviar Inscrição
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/dark-mode.js"></script>
+    <script src="../js/forms.js"></script>
+  </body>
 </html>
