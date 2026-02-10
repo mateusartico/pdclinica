@@ -71,7 +71,7 @@ A equipe se organizou dividindo o desenvolvimento das páginas e funcionalidades
 * Validação de Formulários
 * Feedback Visual
 
-### Matheus Artico
+### Mateus Artico
 
 * Contato
 * Trabalhe Conosco
@@ -100,6 +100,8 @@ Qualquer tentativa de login com:
 * O email `admin@gmail.com` e **senha diferente de `12345`**
 
 resultará em um **alerta**, e o login **não será realizado**.
+
+foi utilizado a função setTimeout() do JS para simular o tempo de acesso ao banco de dados.
 
 ---
 
