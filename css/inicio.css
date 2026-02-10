@@ -59,6 +59,7 @@
     position-anchor: --carrossel;
     position-area: bottom center;
     top: -30px;
+    z-index: 1;
 }
 
 .carrossel-img::scroll-marker {
