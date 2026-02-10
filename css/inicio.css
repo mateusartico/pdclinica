@@ -1,3 +1,13 @@
+/* CONTEUDO PRINCIPAL */
+.conteudo-principal{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 68px;
+    }
+/* CONTEUDO PRINCIPAL */
+
 /* CARROSSEL */
 .carrossel {
     margin: 0 auto;
@@ -68,8 +78,9 @@
 
 /* SESSOES */
 .sessao {
-    padding: 68px 34px 0 34px;
+    padding: 0 34px;
     display: flex;
+    align-items: center;
     gap: 34px;
     color: var(--cor-txt);
 }
@@ -80,8 +91,9 @@
     margin-bottom: 20px;
 }
 
-.sessao div {
-    width: 50%;
+.sessao div,
+.sessao img {
+    flex: 1;
 }
 
 .descricao {
@@ -92,10 +104,13 @@
 }
 
 .img-conteudo {
-    width: 50%;
     height: auto;
-    display: block;
     border-radius: 4px;
+    display: block;
+}
+
+.reverso {
+    flex-direction: row-reverse;
 }
 
 .botao {
@@ -103,58 +118,82 @@
     width: auto;
 }
 
-.reverso {
-    flex-direction: row-reverse;
+.primeira-sessao{
+    margin-top: 68px;
+}
+
+.ultima-sessao {
     margin-bottom: 68px;
 }
 
 /* SESSOES */
 
+/* ESSENCIA */
+.essencia {
+    background-color: var(--cor-laranja);
+    color: var(--cor-bg);
+    padding: 34px 70px;
+    display: flex;
+    gap: 95px;
+    justify-content: space-between;
+}
+
+.essencia .subtitulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.essencia p {
+    text-align: justify;
+}
+
+/* ESSENCIA */
+
 /* RODAPE */
 .rodape {
-  background-color: var(--cor-verde);
-  color: var(--cor-bg);
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-  padding: 40px 70px;
+    background-color: var(--cor-verde);
+    color: var(--cor-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 40px 70px;
 }
 
 .rodape div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  padding: 0 40px;
-  margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0 40px;
+    margin-bottom: 10px;
 }
 
 .titulo-rodape {
-  text-align: center;
-  font-family: var(--fonte-titulo);
-  margin-bottom: 27px;
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    margin-bottom: 27px;
 }
 
 .descricao-rodape {
-  font-family: var(--fonte-texto);
-  margin-bottom: 27px;
+    font-family: var(--fonte-texto);
+    margin-bottom: 27px;
 }
 
 .botao-rodape {
-  text-align: center;
-  display: block;
-  width: 100%;
+    text-align: center;
+    display: block;
+    width: 100%;
 }
 
 .rodape div nav {
     display: none;
 }
 
-.botao-rodape{
+.botao-rodape {
     display: block;
 }
 
-.rodape-copyrigth{
+.rodape-copyrigth {
     padding: 0;
 }
 
@@ -162,11 +201,16 @@
 
 /* MEDIA QUERIES*/
 @media (max-width: 768px) {
+    /* CONTEUDO PRINCIPAL */
+    .conteudo-principal{
+        gap: 30px;
+    }
+    /* CONTEUDO PRINCIPAL */
 
     /* CARROSSEL */
     .carrossel::scroll-button(left) {
         content: url(../img/icons/estado-esquerda-mobile.png);
-        
+
     }
 
     .carrossel::scroll-button(right) {
@@ -188,26 +232,27 @@
     .sessao {
         flex-direction: column;
         gap: 30px;
-        text-align: center;
         padding: 0;
+        text-align: center;
     }
-    
-    .sessao.reverso{
+
+    .sessao.reverso {
         flex-direction: column;
-        margin-bottom: 30px;
     }
 
     .titulo {
-        font-size: var(--titulo-mobile);margin-bottom: 15px;
+        font-size: var(--titulo-mobile);
+        margin-bottom: 15px;
     }
-    
+
     .sessao div {
-        padding: 30px 15px 0 15px;
+        padding: 0 15px;
         width: 100%;
     }
 
     .descricao {
         font-size: var(--texto-mobile);
+        margin: 0;
     }
 
     .img-conteudo {
@@ -215,14 +260,40 @@
         border-radius: 0px;
     }
 
-    .botao {
+    .sessao div .botao {
         font-size: var(--texto-mobile);
         display: inline-block;
         margin: 0 auto;
+        margin-top: 15px;
     }
 
+    .primeira-sessao{
+        margin: 0;
+    }
+
+    .ultima-sessao{
+        margin-bottom: 30px;
+    }
 
     /* SESSOES */
+
+    /* ESSENCIA */
+    .essencia {
+        padding: 15px;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .essencia .subtitulo {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .essencia p {
+        text-align: justify;
+    }
+
+    /* ESSENCIA */
 
     /* RODAPE */
     .rodape {
@@ -252,7 +323,8 @@
     }
 
     .rodape section,
-    .rodape-links, .reverso img {
+    .rodape-links,
+    .none {
         display: none;
     }
 

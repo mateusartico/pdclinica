@@ -748,6 +748,269 @@ label span {
   }
 }
 
+/* Cores utilitárias */
+.texto-claro {
+  color: var(--cor-bg);
+}
+
+.fundo-principal {
+  background-color: var(--cor-verde);
+}
+
+/* Layout - Container e Grid */
+.recipiente {
+  width: 100%;
+  max-width: 1340px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fileira-espacada {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.fileira-distribuida {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.fileira-espacada .coluna-metade {
+  flex: 1 1 250px;
+}
+
+@media (min-width: 768px) {
+  .recipiente {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .fileira-espacada,
+  .fileira-distribuida {
+    gap: 34px;
+  }
+}
+
+/* Espaçamentos utilitários */
+.espacamento-vertical {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.espacamento-vertical-grande {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .espacamento-vertical {
+    margin-top: 34px;
+    margin-bottom: 34px;
+  }
+
+  .espacamento-vertical-grande {
+    margin-top: 68px;
+    margin-bottom: 68px;
+  }
+}
+
+/* Utilitários de layout */
+.flexivel {
+  display: flex;
+}
+
+.alinhar-direita {
+  justify-content: flex-end;
+}
+
+.centralizar-texto {
+  text-align: center;
+}
+
+/* Acessibilidade */
+.apenas-leitores {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Componente: Formulário */
+.formulario-inscricao {
+  border: 2px solid var(--cor-verde);
+  border-radius: 4px;
+  background-color: var(--cor-verde);
+  overflow: hidden;
+}
+
+.formulario-cabecalho {
+  padding: 24px;
+  color: var(--cor-bg);
+  margin: 0;
+}
+
+.formulario-corpo {
+  background-color: var(--cor-bg);
+  padding: 24px;
+}
+
+/* Componente: Caixa de texto */
+.campo-entrada {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 8px;
+  width: 100%;
+  height: 44px;
+  background-color: var(--cor-bg);
+  border: 1px solid var(--cor-txt);
+  border-radius: 8px;
+  cursor: text;
+}
+
+.campo-entrada input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  color: var(--cor-txt);
+  outline: 0;
+}
+
+.campo-entrada:focus-within {
+  border-color: var(--cor-verde);
+}
+
+@media (min-width: 768px) {
+  .campo-entrada input {
+    font-size: 20px;
+  }
+}
+
+/* Componente: Botão */
+.botao-acao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.botao-destaque {
+  background-color: var(--cor-laranja);
+  color: var(--cor-bg);
+  border-color: var(--cor-laranja);
+}
+
+.botao-destaque:hover {
+  background-color: var(--cor-laranja-ativo);
+  border-color: var(--cor-laranja-ativo);
+  color: var(--cor-bg);
+}
+
+.botao-destaque:active {
+  background-color: var(--cor-bg);
+  color: var(--cor-laranja-ativo);
+  border-color: var(--cor-laranja-ativo);
+}
+
+@media (min-width: 768px) {
+  .botao-acao {
+    font-size: 20px;
+  }
+}
+
+/* Página de contato específico */
+.secao-contato {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 68px 15px;
+}
+
+.imagem-fundo-contato {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container-formulario-contato {
+  width: 100%;
+  max-width: 1340px;
+  z-index: 1;
+}
+
+.container-formulario-contato .formulario-inscricao {
+  width: 100%;
+}
+
+.campo-mensagem {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 8px;
+  width: 100%;
+  min-height: 200px;
+  background-color: var(--cor-bg);
+  border: 1px solid var(--cor-txt);
+  border-radius: 8px;
+  cursor: text;
+}
+
+.campo-mensagem textarea {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  color: var(--cor-txt);
+  resize: vertical;
+  min-height: 160px;
+  max-height: 240px;
+  outline: 0;
+}
+
+.campo-mensagem:focus-within {
+  border-color: var(--cor-verde);
+}
+
+.secao-contato h1.titulo {
+  font-family: var(--fonte-titulo);
+}
+
+@media (min-width: 768px) {
+  .secao-contato {
+    padding: 68px 34px;
+  }
+
+  .campo-mensagem textarea {
+    font-size: 20px;
+  }
+}
+
 /* ========================================
    PÁGINA: LOCALIZAÇÃO
    ======================================== */

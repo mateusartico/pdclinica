@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --fonte-titulo: "Archivo Black", sans-serif;
+    --fonte-texto: "Lato", sans-serif;
+    --titulo-desktop: 32px;
+    --texto-desktop: 20px;
+    --titulo-mobile: 24px;
+    --texto-mobile: 16px;
+    --arredondamento-bordas: 4px;
+    --cor-bg: #fafafa;
+    --cor-txt: #111111;
+    --cor-laranja: #f57921;
+    --cor-laranja-ativo: #ff6a00;
+    --cor-verde: #01796b;
+    --cor-verde-ativo: #0ea199;
+}
+
+
+/* CABECALHO IGOR (COMUM A TODAS AS PAGINAS)*/
+.cabecalho {
+    background-color: var(--cor-verde);
+    color: var(--cor-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.logo {
+    font-family: var(--fonte-titulo);
+    font-size: 48px;
+}
+
+.lista-links {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+}
+
+.lista-links a {
+    font-size: var(--texto-desktop);
+    color: var(--cor-bg);
+    text-decoration: none;
+    font-family: "Lato";
+}
+
+
+.botao,
+.botao-mobile {
+    background-color: var(--cor-laranja);
+    color: var(--cor-bg);
+    font-family: var(--fonte-texto);
+    font-size: var(--texto-desktop);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: var(--arredondamento-bordas);
+    transition: 0.2s;
+}
+
+.botao:hover {
+    background-color: var(--cor-laranja-ativo);
+    color: var(--cor-bg);
+}
+
+.menu-mobile {
+    display: none;
+}
+
+#menu-aberto,
+.btn-menu,
+.botao-mobile {
+    display: none;
+}
+
+/* CABECALHO */
+
+/* RODAPE  (COMUM A TODAS AS PAGINAS) */
+.rodape {
+    background-color: var(--cor-verde);
+    color: var(--cor-bg);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 40px 70px;
+}
+
+.rodape div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0 40px;
+    margin-bottom: 10px;
+}
+
+.titulo-rodape {
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    margin-bottom: 27px;
+}
+
+.descricao-rodape {
+    font-family: var(--fonte-texto);
+    margin-bottom: 27px;
+}
+
+.botao-rodape {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.rodape-copyrigth {
+    text-align: center;
+    font-size: var(--texto-desktop);
+    font-family: var(--fonte-texto);
+}
+
+/* RODAPE */
+
+/* MEDIA QUERIES (COMUM A TODAS AS PAGINAS)*/
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 21px 15px;
+    }
+
+    .logo {
+        font-size: var(--titulo-mobile);
+    }
+
+    .icon-menu {
+        background-color: var(--cor-laranja);
+        padding: 5px;
+        border-radius: 4px;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+
+    .cabecalho .botao,
+    #menu-aberto {
+        display: none;
+    }
+
+    .lista-links {
+        display: none;
+        flex-direction: column;
+        align-items: start;
+        gap: 25px;
+        padding: 15px;
+
+        position: fixed;
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+        height: auto;
+        background-color: var(--cor-verde);
+        z-index: 100;
+    }
+
+    .botao-mobile {
+        display: block;
+        font-family: var(--texto-mobile);
+    }
+
+    #menu-aberto:checked~.lista-links {
+        display: flex;
+    }
+}
+
+/* ARTIGOS (DAQUI PRA BAIXO SÓ DIZ RESPEITO A ESTAS PÁGINAS, AS PÁGINAS DE ARTIGOS)*/
+main{
+    padding: 0 34px;
+}
+
+.nav-botao{
+    margin-top: 68px;
+    margin-bottom: 34px;
+}
+
+.caixa-principal-artigo{
+    display: flex;
+    gap: 34px;
+    
+}
+
+.caixa-principal-artigo figure{
+    margin: 0;
+}
+
+.caixa-secundaria-artigo h1{
+    font-size: var(--titulo-desktop);
+    font-family: var(--fonte-titulo);
+}
+
+.caixa-secundaria-artigo address{
+    font-family: var(--texto-desktop);
+    font-style: italic;
+}
+
+.caixa-secundaria-artigo p{
+    font-size: var(--texto-desktop);
+    font-family: var(--texto-desktop);
+}
+
+
+/* RESPONSIVIDADE DA PAGINA DE ARTIGOS*/
+
+@media (max-width: 768px){
+    .conteudo-principal-artigo header{
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    main{
+        padding: 0 15px;
+    }
+    .caixa-principal-artigo{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .caixa-secundaria-artigo h1{
+        font-size: var(--titulo-mobile);
+    }
+
+    .caixa-secundaria-artigo p{
+        font-size: var(--texto-mobile);
+    }
+
+    .nav-botao{
+        text-align: end;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+}
