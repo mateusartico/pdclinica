@@ -101,6 +101,8 @@ Qualquer tentativa de login com:
 
 resultará em um **alerta**, e o login **não será realizado**.
 
+foi utilizado a função setTimeout() do JS para simular o tempo de acesso ao banco de dados.
+
 ---
 
 ### Acesso à Área do Paciente
