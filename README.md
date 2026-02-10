@@ -71,7 +71,7 @@ A equipe se organizou dividindo o desenvolvimento das páginas e funcionalidades
 * Validação de Formulários
 * Feedback Visual
 
-### Matheus Artico
+### Mateus Artico
 
 * Contato
 * Trabalhe Conosco
