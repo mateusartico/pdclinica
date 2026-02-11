@@ -3107,7 +3107,7 @@ h2{
   height: 100%;
 }
 
-.banner-especialidades div {
+.banner-especialidades article {
   width: 50%;
 }
 
@@ -3144,13 +3144,14 @@ h2{
   color: var(--cor-texto);
 }
 
-.especialidades div {
+.especialidades section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 35px;
 }
 
 .card {
+  width: 33%;
   background-color: var(--cor-verde);
   color: var(--cor-bg);
   padding: 20px 26px;
