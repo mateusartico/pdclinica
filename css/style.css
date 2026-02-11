@@ -50,6 +50,9 @@ body {
   background-color: var(--cor-bg);
   color: var(--cor-txt);
   font-family: var(--fonte-texto);
+  display: flex;
+  flex-direction: column;
+  height: 100%;  
 }
 
 h2 {
@@ -84,7 +87,7 @@ a:hover {
   padding: 0;
 }
 
-.conteudo-principal {
+main.conteudo-principal {
   padding: 0 34px;
   margin: 68px 0;
 }
@@ -98,9 +101,13 @@ a:hover {
   text-align: center;
 }
 
-.nav-botao {
-  width: 100%;
-  margin-bottom: 34px;
+nav.nav-botao {
+  margin: 0;
+}
+
+.btn-voltar{
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 /* --- Botões --- */
@@ -405,6 +412,10 @@ label span {
   height: calc(100% - 171px);
   margin: 160px 34px;
   z-index: 1;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* --- Logo Flutuante (Login/Cadastro) --- */
@@ -609,8 +620,8 @@ label span {
     font-size: 16px;
   }
 
-  .conteudo-principal {
-    padding: 0 15px;
+  main.conteudo-principal {
+    padding: 0;
     margin: 30px 0;
   }
 
@@ -628,7 +639,7 @@ label span {
   }
 
   .txt-especialidade {
-    margin-bottom: -25px;
+    margin: 0 15px -25px 15px;
   }
 
   .txt-img {
@@ -640,8 +651,8 @@ label span {
   }
 
   .fig-img {
-    margin-left: -15px;
-    margin-right: -15px;
+    width: 100%;
+    
   }
 
   .fig-img img {
@@ -2305,7 +2316,7 @@ label span {
 
 .conteudo-principal-artigo {
   text-align: justify;
-  padding: 0 34px;
+  padding: 68px 34px;
 }
 
 h2{
@@ -2377,7 +2388,7 @@ h2{
 
 .resposta-faq{
     font-size: var(--texto-desktop);
-    color: var(--cor-bg);
+    color: #111111;
 }
 
 
@@ -2488,7 +2499,11 @@ h2{
 /* RESPONSIVIDADE DA PAGINA DE ARTIGOS*/
 
 @media (max-width: 768px) {
-  .conteudo-principal-artigo header {
+  .conteudo-principal-artigo{
+    padding: 30px 0
+  } 
+  
+  header {
     text-align: center;
   }
 
@@ -2496,9 +2511,10 @@ h2{
     text-align: center;
   }
 
-  main {
-    padding: 0 15px;
-  }
+.card-blog{
+  margin: 0 auto;
+}
+
   .caixa-principal-artigo {
     display: flex;
     flex-direction: column;
@@ -2517,6 +2533,10 @@ h2{
     text-align: end;
     margin-top: 30px;
     margin-bottom: 15px;
+  }
+
+  .caixa-secundaria-artigo{
+    padding: 0 15px;
   }
 }
 
@@ -2748,7 +2768,7 @@ h2{
 
 /* INICIO E INSTITUCIONAL */
 /* CONTEUDO PRINCIPAL */
-.conteudo-principal{
+.conteudo-principal-inicio{
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -2952,7 +2972,7 @@ h2{
 /* MEDIA QUERIES*/
 @media (max-width: 768px) {
     /* CONTEUDO PRINCIPAL */
-    .conteudo-principal{
+    .conteudo-principal-inicio{
         gap: 30px;
     }
     /* CONTEUDO PRINCIPAL */
