@@ -2841,7 +2841,7 @@ h2{
     margin-bottom: 20px;
 }
 
-.sessao div,
+.sessao article,
 .sessao img {
     flex: 1;
 }
@@ -2909,7 +2909,7 @@ h2{
     padding: 40px 70px;
 }
 
-.rodape div {
+.rodape section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2935,7 +2935,7 @@ h2{
     width: 100%;
 }
 
-.rodape div nav {
+.rodape section nav {
     display: none;
 }
 
@@ -2995,7 +2995,7 @@ h2{
         margin-bottom: 15px;
     }
 
-    .sessao div {
+    .sessao article {
         padding: 0 15px;
         width: 100%;
     }
@@ -3010,7 +3010,7 @@ h2{
         border-radius: 0px;
     }
 
-    .sessao div .botao {
+    .sessao article .botao {
         font-size: var(--texto-mobile);
         display: inline-block;
         margin: 0 auto;
