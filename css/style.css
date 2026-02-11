@@ -2746,7 +2746,7 @@ h2{
 }
 /* BLOG */
 
-/* INICIO E INSTITUCIONAL */
+/* PAGINA DE INICIO E PAGINA INSTITUCIONAL */
 /* CONTEUDO PRINCIPAL */
 .conteudo-principal{
         display: flex;
@@ -2992,7 +2992,7 @@ h2{
 
     .titulo {
         font-size: var(--titulo-mobile);
-        margin-bottom: 15px;
+        margin: 0;
     }
 
     .sessao article {
@@ -3089,7 +3089,7 @@ h2{
 
     /* RODAPE */
 }
-/* INICIO E INSTITUCIONAL */
+/* PAGINA DE INICIO E PAGINA INSTITUCIONAL */
 
 /* LISTAGEM DE ESPECIALIDADES */
 /* SESSAO */
