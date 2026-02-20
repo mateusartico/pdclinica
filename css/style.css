@@ -14,12 +14,12 @@
   --fonte-texto: "Lato", sans-serif;
 
   /* Tamanhos Desktop */
-  --titulo-tam-desktop: 1.5em;
-  --texto-tam-desktop: 1.2em;
+  --titulo-tam-desktop: 32px;
+  --texto-tam-desktop: 20px;
 
   /* Tamanhos Mobile */
-  --titulo-tam-mobile: 1.5em;
-  --texto-tam-mobile: 1.2em;
+  --titulo-tam-mobile: 30px;
+  --texto-tam-mobile: 15px;
 
   /* Layout */
   --arredondamento-bordas: 8px;
@@ -118,8 +118,10 @@ h4 {
 }
 
 .botao {
+  font-size: var(--texto-tam-desktop);
+  font-family: var(--fonte-texto);
+  background-color: rgba(255, 0, 0, 0);
   display: inline-block;
-  background-color: none;
   color: var(--cor-principal);
   border: 1px solid var(--cor-principal);
   border-radius: var(--arredondamento-bordas);
@@ -129,6 +131,7 @@ h4 {
 }
 
 .botao:hover {
+  cursor: pointer;
   background-color: var(--cor-principal);
   color: #ffffff;
 }
@@ -175,6 +178,88 @@ h4 {
 
 .card span {
   font-size: 1.5em;
+}
+
+.container-form {
+  width: 50%;
+  padding: 50px 155px;
+}
+
+#form-contato,
+#form-agendamento {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cabecalho-form {
+  font-family: var(--fonte-titulo);
+  font-size: var(--titulo-tam-desktop);
+  color: var(--cor-principal);
+}
+
+.corpo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.wrapper-inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-txt,
+.select,
+.input-data {
+  width: 100%;
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-tam-desktop);
+  padding: 10px;
+  border-radius: var(--arredondamento-bordas);
+  border: 1px solid var(--cor-principal);
+  resize: none;
+}
+
+.input-txt:focus {
+  outline: 1px solid var(--cor-principal);
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Adiciona uma seta personalizada */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="darkblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 25px;
+}
+
+label {
+  width: 100%;
+  padding: 10px;
+}
+
+input[type="date"] {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="darkblue"><path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 20px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.corpo-form .wrapper-botoes {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Elementos do Menu Mobile (escondidos por padrão no desktop) */
@@ -241,6 +326,40 @@ h4 {
   font-size: var(--texto-desktop);
   font-family: var(--fonte-texto);
   margin: 0;
+}
+
+.pag-contato,
+.pag-agendamento {
+  display: flex;
+  flex-direction: row;
+}
+
+.bg-img-contato,
+.bg-img-agendamento {
+  display: block;
+  width: 50%;
+  height: 85vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-img-contato {
+  background-image: url(../img/imagem-contato.png);
+}
+
+.bg-img-agendamento {
+  background-image: url(../img/imagem-contato.png);
+}
+
+.bg-img-contato h1,
+.bg-img-agendamento h1 {
+  font-size: 2em;
+  color: #ffffff;
+  width: 70%;
 }
 
 /* MEDIAS */

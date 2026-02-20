@@ -37,56 +37,65 @@
         </div>
     </header>
 
-    <main class="agendamento-conteudo ">
-    <div class="agendamento-card">
-    <header>Agendamento</header>
-    <form action="#" id="form-agendamento">
-      <div class="wrapper-inputs">
-        <input
-          class="input-txt"
-          type="text"
-          id="nome"
-          placeholder="Informe seu Nome"
-        />
-        <input
-          class="input-txt"
-          type="tel" 
-          id="telefone"
-          placeholder="Informe seu Telefone"
-          maxlength="15"
-        />
+    <main class="pag-agendamento">
+      <div class="bg-img-agendamento">
+        <h1>Agende sua consulta de forma rápida e segura, escolhendo o melhor horário para você.</h1>
       </div>
-      <select class="select" name="convenio" id="select-convenio">
-        <option value="" selected disabled>Escolha um Convênio</option>
-        <option value="unimed">Unimed</option>
-        <option value="amil">Amil</option>
-        <option value="bradescoSaude">Bradesco Saúde</option>
-        <option value="nenhum">Nenhum</option>
-      </select>
+      <section class="container-form">
+            <form action="#" id="form-agendamento">
+              
+        <header class="cabecalho-form">
+          <h1>Agendamento</h1>
+        </header>
+              <article class="corpo-form">
+                <div class="wrapper-inputs">
+                  <input
+                class="input-txt"
+                type="text"
+                id="nome"
+                placeholder="Informe seu Nome"
+              />
+              <input
+                class="input-txt"
+                type="tel"
+                id="telefone"
+                placeholder="Informe seu Telefone"
+                maxlength="15"
+              />
+                </div>
+              <div class="wrapper-inputs">
+                <select class="select" name="convenio" id="select-convenio">
+                <option value="" selected disabled>Escolha um Convênio</option>
+                <option value="unimed">Unimed</option>
+                <option value="amil">Amil</option>
+                <option value="bradescoSaude">Bradesco Saúde</option>
+                <option value="nenhum">Nenhum</option>
+              </select>
+              <select class="select" name="especialidade" id="select-especialidade">
+                <option value="" selected disabled>
+                  Escolha uma Especialidade
+                </option>
+                <option value="cardiologia">Cardiologia</option>
+                <option value="dermatologia">Dermatologia</option>
+                <option value="neurologia">Neurologia</option>
+                <option value="ortopedia">Ortopedia</option>
+                <option value="pediatria">Pediatria</option>
+                <option value="psiquiatria">Psiquiatria</option>
+              </select>
+              </div>
+              <div class="wrapper-inputs">
+                <input type="date" class="input-data" id="data" required />
+                <label for="data">Selecione uma data</label>
+              </div>
+                <div class="wrapper-botoes">
+                  
+                <a href="#" class="botao" id="btn-agendar">Agendar</a>
+                </div>
+              </article>
+            </form>
+        </section>
+      </main>
 
-      <select class="select" name="especialidade" id="select-especialidade">
-        <option value="" selected disabled>
-          Escolha uma Especialidade
-        </option>
-        <option value="cardiologia">Cardiologia</option>
-        <option value="dermatologia">Dermatologia</option>
-        <option value="neurologia">Neurologia</option>
-        <option value="ortopedia">Ortopedia</option>
-        <option value="pediatria">Pediatria</option>
-        <option value="psiquiatria">Psiquiatria</option>
-      </select>
-
-      <div class="campo-data">
-        <input type="date" id="data" required />
-        <label for="data">Selecione uma data</label>
-      </div>
-
-      <div class="wrapper-botoes">
-        <a href="#" class="botao" id="btn-agendar">Agendar</a>
-      </div>
-    </form>
-  </div>
-</main>
     <footer class="rodape">
         <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados<span></p>
     </footer>
