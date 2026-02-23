@@ -64,7 +64,12 @@ h4 {
   font-size: 1.3em;
 }
 
+p {
+  font-size: var(--texto-tam-desktop);
+}
+
 .cabecalho {
+  font-size: var(--texto-tam-desktop);
   width: 100%;
   background-color: var(--cor-bg-componente);
   display: flex;
@@ -138,13 +143,18 @@ h4 {
   color: #ffffff;
 }
 
+.especialidades,
+.secao-precos {
+  margin-top: 50px;
+}
+
 .card {
   background-color: var(--cor-bg-pagina);
   color: var(--cor-principal);
   border-radius: var(--arredondamento-bordas);
   border: 1px solid var(--cor-bg-sessao);
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
-  width: 25%;
+  width: 100%;
   padding: 18px 24px;
   display: flex;
   flex-direction: column;
@@ -157,7 +167,16 @@ h4 {
   align-items: flex-end;
 }
 
+.material-symbols-outlined {
+  font-variation-settings: "wght" 200;
+}
+
+.descricao-card {
+  font-size: var(--texto-tam-desktop);
+}
+
 .saiba-mais {
+  font-size: var(--texto-tam-desktop);
   color: var(--cor-ativo);
   text-decoration: none;
   display: flex;
@@ -263,6 +282,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+
+.table-resopnsive {
+  border-radius: var(--arredondamento-bordas);
+}
+
+thead {
+  background-color: rgb(245, 245, 245);
+  color: var(--cor-principal);
+}
+
+th {
+  font-family: var(--fonte-titulo);
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+td {
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-tam-desktop);
 }
 
 .pag-autenticacao {
@@ -414,6 +453,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* --- Rodapé --- */
 .rodape {
+  font-size: var(--texto-tam-desktop);
   width: 100%;
   background-color: var(--cor-principal);
   color: var(--cor-bg-pagina);
@@ -510,7 +550,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .carrossel-img-1 {
   background-image: url(../img/carrossel-img-1.png);
-
 }
 
 .carrossel-img-2 {
@@ -550,35 +589,34 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   transform: scale(1.2);
 }
 
-#carrossel-btn-1:checked~.carrossel-navegacao label:nth-child(1),
-#carrossel-btn-2:checked~.carrossel-navegacao label:nth-child(2),
-#carrossel-btn-3:checked~.carrossel-navegacao label:nth-child(3),
-#carrossel-btn-4:checked~.carrossel-navegacao label:nth-child(4) {
+#carrossel-btn-1:checked ~ .carrossel-navegacao label:nth-child(1),
+#carrossel-btn-2:checked ~ .carrossel-navegacao label:nth-child(2),
+#carrossel-btn-3:checked ~ .carrossel-navegacao label:nth-child(3),
+#carrossel-btn-4:checked ~ .carrossel-navegacao label:nth-child(4) {
   background: var(--cor-principal);
 }
 
-.carrossel-inicio input:checked~.carrossel-imagens {
+.carrossel-inicio input:checked ~ .carrossel-imagens {
   animation: none;
 }
 
-#carrossel-btn-1:checked~.carrossel-imagens {
+#carrossel-btn-1:checked ~ .carrossel-imagens {
   transform: translateX(0);
 }
 
-#carrossel-btn-2:checked~.carrossel-imagens {
+#carrossel-btn-2:checked ~ .carrossel-imagens {
   transform: translateX(-100%);
 }
 
-#carrossel-btn-3:checked~.carrossel-imagens {
+#carrossel-btn-3:checked ~ .carrossel-imagens {
   transform: translateX(-200%);
 }
 
-#carrossel-btn-4:checked~.carrossel-imagens {
+#carrossel-btn-4:checked ~ .carrossel-imagens {
   transform: translateX(-300%);
 }
 
 @keyframes autoSlide {
-
   0%,
   20% {
     transform: translateX(0);
@@ -605,35 +643,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* sessoes */
-.sessao-bloco-texto-img{
+.sessao-bloco-texto-img {
   display: flex;
   padding: 65px 155px;
   gap: 70px;
 }
 
-.sessao-bloco-texto-img article{ 
+.sessao-bloco-texto-img article {
   display: flex;
   flex-direction: column;
   width: 50%;
   text-align: justify;
 }
 
-.sessao-bloco-texto-img img{
+.sessao-bloco-texto-img img {
   width: 50%;
 }
 
-.sessao-bloco-texto-img article h2, .sessao-bloco-texto-img article p{ 
+.sessao-bloco-texto-img article h2,
+.sessao-bloco-texto-img article p {
   margin-bottom: 25px;
 }
 
-.sessao-fundo-azul{
+.sessao-fundo-azul {
   background-color: var(--cor-bg-sessao);
 }
 
-.sessao-bloco-texto-img article a{
+.sessao-bloco-texto-img article a {
   width: fit-content;
-} 
-  
+}
+
 .pag-contato,
 .pag-agendamento {
   display: flex;
@@ -713,7 +752,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-family: var(--texto-mobile);
   }
 
-  #menu-aberto:checked~.lista-links {
+  #menu-aberto:checked ~ .lista-links {
     display: flex;
   }
 
