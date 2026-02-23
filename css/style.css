@@ -987,3 +987,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .linha-config:hover .texto-config {
   color: var(--cor-ativo);
 }
+
+
+.centralizar-texto {
+  text-align: center;
+}
