@@ -945,3 +945,45 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .badge-erro {
   background-color: #f44336;
 }
+
+
+.linha-config {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border: 2px solid var(--cor-principal);
+  margin-bottom: 0;
+  background-color: var(--cor-bg-pagina);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.linha-config:hover {
+  background-color: var(--cor-bg-sessao);
+}
+
+.linha-config:not(:last-child) {
+  border-bottom: none;
+}
+
+.linha-config-primeira {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.linha-config-ultima {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.texto-config {
+  font-family: var(--fonte-texto);
+  font-size: 20px;
+  color: var(--cor-texto);
+  transition: 0.2s;
+}
+
+.linha-config:hover .texto-config {
+  color: var(--cor-ativo);
+}
