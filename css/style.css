@@ -760,7 +760,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
-.card-admin-verde {
+.card-admin {
   background-color: var(--cor-bg-pagina);
   color: var(--cor-principal);
   border: 2px solid var(--cor-principal);
@@ -892,7 +892,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   transition: width 0.3s ease;
 }
 
-.progresso-verde {
+.progresso-principal {
   background-color: var(--cor-principal);
 }
 
