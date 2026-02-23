@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Área administrativa da PD Clínica.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
     <title>PD Clínica | Área Administrativa</title>
@@ -31,33 +32,39 @@
         </div>
     </header>
 
-    <main class="recipiente-admin">
-        <h1 class="titulo-admin">Área Administrativa</h1>
+    <main class="container my-5">
+        <h1 class="titulo centralizar-texto mb-5">Área Administrativa</h1>
         
-        <section class="secao-cards-admin" aria-label="Estatísticas administrativas">
-            <div class="fileira-espacada-admin">
-                <article class="card-admin-verde" role="region" aria-labelledby="card-consultas">
+        <section class="mb-5" aria-label="Estatísticas administrativas">
+            <div class="row g-4">
+                <article class="col-12 col-md-6 col-lg-4" role="region" aria-labelledby="card-consultas">
+                    <div class="card-admin-verde">
                     <h2 id="card-consultas" class="card-admin-titulo">Consultas agendadas</h2>
                     <p class="card-admin-valor">150</p>
                     <p class="card-admin-info">Últimos 30 dias</p>
+                    </div>
                 </article>
 
-                <article class="card-admin-verde" role="region" aria-labelledby="card-pacientes">
+                <article class="col-12 col-md-6 col-lg-4" role="region" aria-labelledby="card-pacientes">
+                    <div class="card-admin-verde">
                     <h2 id="card-pacientes" class="card-admin-titulo">Pacientes ativos</h2>
                     <p class="card-admin-valor">320</p>
                     <p class="card-admin-info">Total cadastrado</p>
+                    </div>
                 </article>
 
-                <article class="card-admin-verde" role="region" aria-labelledby="card-medicos">
+                <article class="col-12 col-md-6 col-lg-4" role="region" aria-labelledby="card-medicos">
+                    <div class="card-admin-verde">
                     <h2 id="card-medicos" class="card-admin-titulo">Médicos disponíveis</h2>
                     <p class="card-admin-valor">25</p>
                     <p class="card-admin-info">Em atendimento</p>
+                    </div>
                 </article>
             </div>
         </section>
 
-        <section class="secao-agendamentos" aria-labelledby="titulo-agendamentos">
-            <h2 id="titulo-agendamentos" class="titulo-agendamentos">Agendamentos</h2>
+        <section class="mb-5" aria-labelledby="titulo-agendamentos">
+            <h2 id="titulo-agendamentos" class="titulo centralizar-texto mb-4">Agendamentos</h2>
             <div class="container-tabela-admin">
                 <table class="tabela-agendamentos" role="table" aria-label="Lista de agendamentos">
                     <thead>
@@ -98,11 +105,11 @@
             </div>
         </section>
 
-        <section class="secao-relatorios" aria-labelledby="titulo-relatorios">
-            <h2 id="titulo-relatorios" class="titulo-relatorios">Relatórios</h2>
+        <section class="mb-5" aria-labelledby="titulo-relatorios">
+            <h2 id="titulo-relatorios" class="titulo centralizar-texto mb-4">Relatórios</h2>
             
-            <div class="fileira-relatorios">
-                <article class="coluna-relatorio">
+            <div class="row g-4">
+                <article class="col-12 col-lg-6">
                     <h3 class="titulo-relatorio">Demandas por Especialidade</h3>
                     
                     <div class="item-progresso">
@@ -136,7 +143,7 @@
                     </div>
                 </article>
 
-                <article class="coluna-relatorio">
+                <article class="col-12 col-lg-6">
                     <h3 class="titulo-relatorio">Eficiência de Agenda</h3>
                     
                     <div class="item-eficiencia">
@@ -160,8 +167,8 @@
             </div>
         </section>
 
-        <section class="secao-configuracoes" aria-labelledby="titulo-configuracoes">
-            <h2 id="titulo-configuracoes" class="titulo-configuracoes">Configurações</h2>
+        <section class="mb-5" aria-labelledby="titulo-configuracoes">
+            <h2 id="titulo-configuracoes" class="titulo centralizar-texto mb-4">Configurações</h2>
             
             <div class="linha-config linha-config-primeira">
                 <span class="texto-config">Ativar Modo Escuro</span>
@@ -184,6 +191,7 @@
     <footer class="rodape">
         <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados<span></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
 </html>
