@@ -366,6 +366,7 @@ td {
 }
 
 .input-checkbox {
+  width: 200px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -812,6 +813,75 @@ aside{
   font-size: 2em;
   color: #ffffff;
   width: 70%;
+}
+
+/* Cabeçalho do modal */
+.modal-termos .modal-header {
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-texto);
+  border-bottom: none;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.modal-termos .modal-header .btn-close {
+  filter: invert(1);
+}
+
+.modal-termos .modal-title {
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  font-family: var(--fonte-titulo);
+}
+
+/* Corpo com scroll */
+.modal-termos .modal-body {
+  max-height: 55vh;
+  overflow-y: auto;
+  padding: 1.5rem 1.75rem;
+  font-size: 0.92rem;
+  color: #333;
+  font-family: var(--fonte-texto);
+  line-height: 1.7;
+  scrollbar-width: thin;
+  scrollbar-color: #a7a7a7 #e9ecef;
+  border-top: 1px solid #dee2e6;
+}
+
+.modal-termos .modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-termos .modal-body::-webkit-scrollbar-track {
+  background: #e9ecef;
+  border-radius: 4px;
+}
+
+.modal-termos .modal-body::-webkit-scrollbar-thumb {
+  background-color: var(--cor-principal);
+  border-radius: 4px;
+}
+
+/* Seções dos termos */
+.termos-secao {
+  margin-bottom: 1.2rem;
+}
+
+.termos-secao h6 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-principal);
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.termos-secao p {
+  margin-bottom: 0.5rem;
+}
+
+/* Rodapé do modal */
+.modal-termos .modal-footer {
+  border-top: 1px solid #dee2e6;
+  padding: 0.85rem 1.25rem;
+  justify-content: flex-start;
 }
 
 /* ESTILIZAÇÃO DAS PÁGINAS DE ESPECIALIDADES (ELIAS) */
