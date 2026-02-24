@@ -3,39 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Área do paciente da PD Clínica.">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <meta name="description" content="Área do paciente da PD Clínica." />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../img/favicon-pdclinica.png"
+      type="image/x-icon"
+    />
     <title>PD Clínica | Área do Paciente</title>
   </head>
-  <body>
+  <body class="conteudo-paciente">
     <header class="cabecalho">
-        <img class="logo" src="../img/Logo-PD-Clinica.png" alt="Logo PD Clínica">
-        <nav aria-label="Menu principal">
-            <input type="checkbox" id="menu-aberto">
-            <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
-                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px" fill="#FFFFFF" class="icon-menu"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
-            </label>
-            <ul class="lista-links">
-                <li><a href="/">Início</a></li>
-                <li><a href="institucional.html">Institucional</a></li>
-                <li><a href="conteudo-informativo.html">Informações</a></li>
-                <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-box-arrow-right"></i></a></li>
-            </ul>
-        </nav>
-        <section class="wrapper-botoes">
-            <button type="button" class="botao-icone" data-theme-toggle aria-label="Alternar tema"><i class="bi bi-sun"></i></button>
-            <a href="login.html" class="botao-icone" aria-label="Sair"><i class="bi bi-box-arrow-right"></i></a>
-        </section>
+      <img
+        class="logo"
+        src="../img/Logo-PD-Clinica.png"
+        alt="Logo PD Clínica"
+      />
+      <nav aria-label="Menu principal">
+        <input type="checkbox" id="menu-aberto" />
+        <label
+          for="menu-aberto"
+          class="btn-menu"
+          aria-label="Abrir ou fechar menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="38px"
+            viewBox="0 -960 960 960"
+            width="38px"
+            fill="#FFFFFF"
+            class="icon-menu"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+        <ul class="lista-links">
+          <li><a href="/" class="link-underline-animado">Início</a></li>
+          <li>
+            <a href="institucional.html" class="link-underline-animado"
+              >Institucional</a
+            >
+          </li>
+          <li>
+            <a href="conteudo-informativo.html" class="link-underline-animado"
+              >Informações</a
+            >
+          </li>
+          <li>
+            <a href="login.html" class="botao-mobile-icone"
+              ><i class="bi bi-box-arrow-right"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <section class="wrapper-botoes">
+        <button
+          type="button"
+          class="botao-icone"
+          data-theme-toggle
+          aria-label="Alternar tema"
+        >
+          <i class="bi bi-sun"></i>
+        </button>
+        <a href="login.html" class="botao-icone" aria-label="Sair"
+          ><i class="bi bi-box-arrow-right"></i
+        ></a>
+      </section>
     </header>
 
     <main class="container my-5">
-      <h1 class="titulo centralizar-texto mb-5">Área <span class="destaque">do Paciente</span></h1>
+      <h1 class="titulo centralizar-texto mb-5">
+        Área <span class="destaque">do Paciente</span>
+      </h1>
 
       <section class="row g-4">
         <article class="col-12 col-lg-4" aria-labelledby="titulo-informacoes">
-          <h2 id="titulo-informacoes" class="titulo centralizar-texto mb-4">Informações <span class="destaque">Gerais</span></h2>
+          <h2 id="titulo-informacoes" class="titulo centralizar-texto mb-4">
+            Informações <span class="destaque">Gerais</span>
+          </h2>
 
           <section class="card-paciente">
             <img
@@ -52,7 +103,9 @@
         </article>
 
         <article class="col-12 col-lg-8" aria-labelledby="titulo-consultas">
-          <h2 id="titulo-consultas" class="titulo centralizar-texto mb-4">Consultas <span class="destaque">Agendadas</span></h2>
+          <h2 id="titulo-consultas" class="titulo centralizar-texto mb-4">
+            Consultas <span class="destaque">Agendadas</span>
+          </h2>
 
           <section class="consultas-lista" role="list">
             <article class="card-consulta" role="listitem">
@@ -60,7 +113,7 @@
               <p class="card-consulta-info">Dr. João Silva</p>
               <p class="card-consulta-info">12/04/2026 • 14:30</p>
               <section class="card-consulta-status">
-                <p>Status: </p>
+                <p>Status:</p>
                 <span class="badge badge-cancelado">Cancelado</span>
               </section>
             </article>
@@ -70,7 +123,7 @@
               <p class="card-consulta-info">Dra. Mariana Costa</p>
               <p class="card-consulta-info">18/04/2026 • 09:00</p>
               <section class="card-consulta-status">
-                <p>Status: </p>
+                <p>Status:</p>
                 <span class="badge badge-confirmado">Confirmado</span>
               </section>
             </article>
@@ -80,7 +133,7 @@
               <p class="card-consulta-info">Dra. Paula Mendes</p>
               <p class="card-consulta-info">25/04/2026 • 16:00</p>
               <section class="card-consulta-status">
-                <p>Status: </p>
+                <p>Status:</p>
                 <span class="badge badge-aguardando">Aguardando</span>
               </section>
             </article>
@@ -90,7 +143,9 @@
     </main>
 
     <footer class="rodape">
-        <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados</span></p>
+      <p class="rodape-copyrigth">
+        © 2026 PD Clínica. <span>Todos os Direitos Reservados</span>
+      </p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>

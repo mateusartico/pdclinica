@@ -34,6 +34,24 @@
   --cor-escuro: #2b2f48;
 }
 
+body.dark {
+  --cor-texto: #e8eaf6;
+  --cor-bg-pagina: #12141f;
+  --cor-bg-componente: #1e2235;
+  --cor-bg-sessao: #1a2340;
+  --cor-principal: #5b82d4;
+  --cor-ativo: #4d9bff;
+  --cor-escuro: #c5cae9;
+}
+
+body.dark .select {
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/></svg>');
+}
+
+body.dark input[type="date"] {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+}
+
 /* ==========================================================================*/
 
 body {
@@ -102,15 +120,15 @@ p {
   color: var(--cor-ativo);
 }
 
-.lista-links a.ativo {
-  /* BORDA EMBAIXO COM BEFORE/AFTER */
-}
-
 .botao-icone {
   background-color: var(--cor-bg-componente);
   color: var(--cor-principal);
   font-size: 35px;
   border: none;
+}
+
+.botao-tema {
+  font-size: 30px;
 }
 
 .botao-icone:hover {
@@ -143,6 +161,14 @@ p {
   color: #ffffff;
 }
 
+.conteudo-principal-listagem-especialidades {
+  background-color: var(--cor-bg-pagina);
+}
+
+.conteudo-principal-listagem-especialidades h2 {
+  color: var(--cor-texto);
+}
+
 .especialidades,
 .secao-precos {
   margin-top: 50px;
@@ -169,6 +195,10 @@ p {
 
 .material-symbols-outlined {
   font-variation-settings: "wght" 200;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 3px;
+  background-color: var(--cor-bg-componente);
 }
 
 .descricao-card {
@@ -202,6 +232,7 @@ p {
 }
 
 .container-form {
+  background-color: var(--cor-bg-pagina);
   width: 50%;
   padding: 50px 155px;
 }
@@ -237,6 +268,8 @@ p {
 .input-txt,
 .select,
 .input-data {
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-texto);
   width: 100%;
   font-family: var(--fonte-texto);
   font-size: var(--texto-tam-desktop);
@@ -288,8 +321,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: var(--arredondamento-bordas);
 }
 
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border-color: var(--cor-bg-sessao);
+}
+
 thead {
-  background-color: rgb(245, 245, 245);
+  background-color: var(--cor-bg-componente);
   color: var(--cor-principal);
 }
 
@@ -302,6 +344,7 @@ th {
 td {
   font-family: var(--fonte-texto);
   font-size: var(--texto-tam-desktop);
+  color: var(--cor-texto);
 }
 
 .pag-autenticacao {
@@ -387,7 +430,7 @@ td {
   width: 230px;
   height: 74px;
   background: var(--cor-bg);
-  border: 1px solid #d3d3d3;
+  border: 1px solid var(--cor-principal);
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -457,7 +500,7 @@ td {
   font-size: var(--texto-tam-desktop);
   width: 100%;
   background-color: var(--cor-principal);
-  color: var(--cor-bg-pagina);
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -482,6 +525,7 @@ td {
 .descricao-rodape {
   text-align: center;
   margin-bottom: 27px;
+  color: #ffffff;
 }
 
 .botao-rodape {
@@ -513,37 +557,37 @@ td {
 /* ESTILIZAÇÃO DAS PÁGINAS DE ARTIGOS (ELIAS) */
 
 /* Define a cor de fundo da sessão hero (Contém o titulo principal da página de artigos)*/
-.sessao-hero{ 
+.sessao-hero {
   background-color: var(--cor-principal);
 }
 
 /* Define  o tamanho do titulo principal da página*/
-.sessao-hero h1{
+.sessao-hero h1 {
   font-size: 48px;
 }
 
 /* Define cor, tamaho da fonte e estilo da fonte do subtitulo principal da página) */
-.subtitulo-hero-artigo{
+.subtitulo-hero-artigo {
   color: white;
   font-size: 24px;
   font-style: italic;
 }
 
 /* Define cor e tamaho da fonte dos parágrafos dos artigos */
-article p{
+article p {
   font-size: 20px;
   color: var(--cor-texto);
 }
 
 /* Define cor, tamanho e fonte a ser usada nos titulos h5 */
-.texto-artigo h5{
+.texto-artigo h5 {
   color: var(--cor-principal);
   font-size: var(--titulo-tam-desktop);
   font-family: var(--fonte-titulo);
 }
 
 /* Aplica alinhamentos no container aside usando flex-box */
-aside{
+aside {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -551,7 +595,7 @@ aside{
 }
 
 /* Define largura, preenchimento interno, e alinhamento dos cards do aside */
-.card-aside-artigo{
+.card-aside-artigo {
   width: 70%;
   padding: 0;
   display: flex;
@@ -560,40 +604,40 @@ aside{
 }
 
 /* Define cor, alinhamento e preenchimento interno dos elemntos de dentro dos cards do aside */
-.corpo-card{
+.corpo-card {
   background-color: var(--cor-bg-sessao);
   display: flex;
   padding: 20px;
 }
 
 /* Define cor, tamanho da fonte e largura do h6 interno do card do aside */
-.corpo-card h6{
+.corpo-card h6 {
   font-size: 24px;
   width: 100%;
 }
 
 /* Define tamanho de fonte, cor, peso da fonte e margem do texto de dentro do card do aside*/
-.corpo-card p{
+.corpo-card p {
   font-size: 20px;
   color: var(--cor-texto);
-  font-weight:300 ;
+  font-weight: 300;
   margin-bottom: 8px;
 }
 
 /* Define tamanho da fonte, tira a decoração de link e muda a cor do elemnto <a> do card do aside*/
-.corpo-card a{
+.corpo-card a {
   font-size: 25px;
   text-decoration: none;
   color: var(--cor-principal);
 }
 
 /* Muda a cor do texto quando o usuário passar o mouse por cima do link de "saiba mais" do card*/
-.corpo-card a:hover{
+.corpo-card a:hover {
   color: var(--cor-ativo);
 }
 
 /* Cria um pseudo elemento que vai ser uma barra que vai aparecer embaixo dos links quando o usuário passar o mouse. */
-.link-underline-animado::after{
+.link-underline-animado::after {
   content: "";
   position: absolute;
   left: 0;
@@ -602,18 +646,18 @@ aside{
   height: 2px;
   background-color: var(--cor-ativo);
   transform: scaleX(0);
-  transform-origin:left;
+  transform-origin: left;
   transition: transform 0.25s ease-in-out;
 }
 
 /* Posiciona o pseudo elemento em relação ao link*/
-.link-underline-animado{
+.link-underline-animado {
   position: relative;
   display: inline-block;
 }
 
 /* Faz o efeito de barra ir crescendo até ocupar a largura total do link quando o usuário passa o mouse por cima */
-.link-underline-animado:hover::after{
+.link-underline-animado:hover::after {
   transform: scaleX(1);
 }
 
@@ -653,7 +697,11 @@ aside{
   justify-content: center;
   align-items: center;
   padding: 2em;
-  color: var(--cor-bg-pagina);
+  color: #ffffff;
+}
+
+.carrossel-img p {
+  color: #ffffff;
 }
 
 .carrossel-img-1 {
@@ -752,6 +800,7 @@ aside{
 
 /* sessoes */
 .sessao-bloco-texto-img {
+  background-color: var(--cor-bg-pagina);
   display: flex;
   padding: 65px 155px;
   gap: 70px;
@@ -772,6 +821,7 @@ aside{
 .sessao-bloco-texto-img article h2,
 .sessao-bloco-texto-img article p {
   margin-bottom: 25px;
+  color: var(--cor-texto);
 }
 
 .sessao-fundo-azul {
@@ -893,15 +943,16 @@ aside{
 }  
 
 /* Cabeçalho do modal */
+
+.modal-content {
+  background-color: var(--cor-bg-pagina);
+}
+
 .modal-termos .modal-header {
   background-color: var(--cor-bg-pagina);
   color: var(--cor-texto);
   border-bottom: none;
   border-radius: 0.5rem 0.5rem 0 0;
-}
-
-.modal-termos .modal-header .btn-close {
-  filter: invert(1);
 }
 
 .modal-termos .modal-title {
@@ -912,16 +963,16 @@ aside{
 
 /* Corpo com scroll */
 .modal-termos .modal-body {
+  background-color: var(--cor-bg-pagina);
   max-height: 55vh;
   overflow-y: auto;
   padding: 1.5rem 1.75rem;
-  font-size: 0.92rem;
-  color: #333;
+  color: var(--cor-texto);
   font-family: var(--fonte-texto);
   line-height: 1.7;
   scrollbar-width: thin;
-  scrollbar-color: #a7a7a7 #e9ecef;
-  border-top: 1px solid #dee2e6;
+  scrollbar-color: var(--cor-principal) var(--cor-bg-pagina);
+  border-top: 1px solid var(--cor-bg-componente);
 }
 
 .modal-termos .modal-body::-webkit-scrollbar {
@@ -929,12 +980,12 @@ aside{
 }
 
 .modal-termos .modal-body::-webkit-scrollbar-track {
-  background: #e9ecef;
+  background: lightblue;
   border-radius: 4px;
 }
 
 .modal-termos .modal-body::-webkit-scrollbar-thumb {
-  background-color: var(--cor-principal);
+  background-color: lightblue;
   border-radius: 4px;
 }
 
@@ -947,40 +998,59 @@ aside{
   font-family: var(--fonte-titulo);
   color: var(--cor-principal);
   margin-bottom: 0.4rem;
-  font-size: 0.95rem;
+  font-size: 20px;
 }
 
 .termos-secao p {
   margin-bottom: 0.5rem;
+  font-size: 18px;
 }
 
 /* Rodapé do modal */
 .modal-termos .modal-footer {
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid var(--cor-bg-componente);
   padding: 0.85rem 1.25rem;
   justify-content: flex-start;
+}
+
+.bread {
+  background-color: var(--cor-bg-componente);
+  border-color: var(--cor-bg-sessao);
+}
+
+.breadcrumb-item a {
+  color: var(--cor-principal);
+}
+
+.breadcrumb-item.active {
+  color: var(--cor-ativo);
 }
 
 /* ESTILIZAÇÃO DAS PÁGINAS DE ESPECIALIDADES (ELIAS) */
 
 /* HERO DERMATOLOGIA*/
+
+.conteudo-especialidades,
+.conteudo-artigo,
+.conteudo-paciente,
+.conteudo-admin {
+  background-color: var(--cor-bg-pagina);
+}
+
 .hero-dermatologia {
- background: linear-gradient(
+  background:
+    linear-gradient(
       to right,
-      rgba(255,255,255,0.95) 0%,
-      rgba(255,255,255,0.85) 35%,
-      rgba(255,255,255,0.40) 65%,
-      rgba(255,255,255,0.10) 85%,
-      rgba(255,255,255,0) 100%
+      rgba(40, 40, 40, 0.95) 0%,
+      rgba(40, 40, 40, 0.85) 35%,
+      rgba(40, 40, 40, 0.4) 65%,
+      rgba(40, 40, 40, 0.1) 85%,
+      rgba(40, 40, 40, 0) 100%
     ),
-  url('../img/img-dermatologia-1.jpg') center/cover no-repeat;
+    url("../img/img-dermatologia-1.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
   align-items: center;
-}
-
-.hero-dermatologia h1 {
-  font-weight: 600;
 }
 
 .botao-marcar-consulta {
@@ -989,6 +1059,7 @@ aside{
   background-color: var(--cor-principal);
   font-size: 20px;
   border-radius: 8px;
+  border: none;
 }
 
 /* Títulos das seções */
@@ -999,89 +1070,95 @@ aside{
   margin-bottom: 1.5rem;
 }
 
-.container-titulo-hero h1{
-  color: var(--cor-principal);
+.container-titulo-hero h1 {
+  color: #ffffff;
   font-size: 48;
   font-family: var(--fonte-titulo);
 }
 
-.container-titulo-hero p{
+.container-titulo-hero p {
+  color: #ffffff;
   font-family: var(--texto-desktop);
   font-weight: 600;
 }
 
 /* HERO NEUROLOGIA*/
-.hero-neurologia{
-  background: linear-gradient(
+.hero-neurologia {
+  background:
+    linear-gradient(
       to right,
-      rgba(255,255,255,0.95) 0%,
-      rgba(255,255,255,0.85) 35%,
-      rgba(255,255,255,0.40) 65%,
-      rgba(255,255,255,0.10) 85%,
-      rgba(255,255,255,0) 100%
+      rgba(40, 40, 40, 0.95) 0%,
+      rgba(40, 40, 40, 0.85) 35%,
+      rgba(40, 40, 40, 0.4) 65%,
+      rgba(40, 40, 40, 0.1) 85%,
+      rgba(40, 40, 40, 0) 100%
     ),
-  url('../img/img-especialidade-neurologia.jpg') center/cover no-repeat;
+    url("../img/img-especialidade-neurologia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
   align-items: center;
 }
 
 /* HERO CARDIOLOGIA*/
-.hero-cardiologia{
-  background: linear-gradient(
+.hero-cardiologia {
+  background:
+    linear-gradient(
       to right,
-      rgba(255,255,255,0.95) 0%,
-      rgba(255,255,255,0.85) 35%,
-      rgba(255,255,255,0.40) 65%,
-      rgba(255,255,255,0.10) 85%,
-      rgba(255,255,255,0) 100%
+      rgba(40, 40, 40, 0.95) 0%,
+      rgba(40, 40, 40, 0.85) 35%,
+      rgba(40, 40, 40, 0.4) 65%,
+      rgba(40, 40, 40, 0.1) 85%,
+      rgba(40, 40, 40, 0) 100%
     ),
-  url('../img/img-especialidade-cardiologia.jpg') center/cover no-repeat;
+    url("../img/img-especialidade-cardiologia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
   align-items: center;
 }
 
-.hero-ortopedia{
-   background: linear-gradient(
+.hero-ortopedia {
+  background:
+    linear-gradient(
       to right,
-      rgba(255,255,255,0.95) 0%,
-      rgba(255,255,255,0.85) 35%,
-      rgba(255,255,255,0.40) 65%,
-      rgba(255,255,255,0.10) 85%,
-      rgba(255,255,255,0) 100%
+      rgba(40, 40, 40, 0.95) 0%,
+      rgba(40, 40, 40, 0.85) 35%,
+      rgba(40, 40, 40, 0.4) 65%,
+      rgba(40, 40, 40, 0.1) 85%,
+      rgba(40, 40, 40, 0) 100%
     ),
-  url('../img/img-especialidade-ortopedia.jpg') center/cover no-repeat;
+    url("../img/img-especialidade-ortopedia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
   align-items: center;
 }
 
-.hero-pediatria{
-   background: linear-gradient(
+.hero-pediatria {
+  background:
+    linear-gradient(
       to right,
-      rgba(255,255,255,0.95) 0%,
-      rgba(255,255,255,0.85) 35%,
-      rgba(255,255,255,0.40) 65%,
-      rgba(255,255,255,0.10) 85%,
-      rgba(255,255,255,0) 100%
+      rgba(40, 40, 40, 0.95) 0%,
+      rgba(40, 40, 40, 0.85) 35%,
+      rgba(40, 40, 40, 0.4) 65%,
+      rgba(40, 40, 40, 0.1) 85%,
+      rgba(40, 40, 40, 0) 100%
     ),
-  url('../img/img-especialidade-pediatria.jpg') center/cover no-repeat;
+    url("../img/img-especialidade-pediatria.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
   align-items: center;
 }
 
-.hero-psiquiatria{
-  background: linear-gradient(
+.hero-psiquiatria {
+  background:
+    linear-gradient(
       to right,
-      rgba(255,255,255,0.95) 0%,
-      rgba(255,255,255,0.85) 35%,
-      rgba(255,255,255,0.40) 65%,
-      rgba(255,255,255,0.10) 85%,
-      rgba(255,255,255,0) 100%
+      rgba(40, 40, 40, 0.95) 0%,
+      rgba(40, 40, 40, 0.85) 35%,
+      rgba(40, 40, 40, 0.4) 65%,
+      rgba(40, 40, 40, 0.1) 85%,
+      rgba(40, 40, 40, 0) 100%
     ),
-  url('../img/img-especialidade-psiquiatria.jpg') center/cover no-repeat;
+    url("../img/img-especialidade-psiquiatria.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
   align-items: center;
@@ -1090,12 +1167,12 @@ aside{
 .card-admin,
 .card-paciente {
   background-color: var(--cor-bg-pagina);
-  border: 2px solid var(--cor-principal);
+  border: 1px solid var(--cor-principal);
   border-radius: 5px;
   padding: 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   gap: 12px;
 }
 
@@ -1120,37 +1197,36 @@ aside{
   color: var(--cor-principal);
 }
 
-
-.container-tabela-admin {
+.container-tabela {
   width: 100%;
   overflow-x: auto;
 }
 
-.tabela-agendamentos {
+.tabela {
   width: 100%;
   border-collapse: collapse;
-  border: 2px solid var(--cor-principal);
+  border: 1px solid var(--cor-principal);
   font-family: var(--fonte-texto);
   font-size: 20px;
   min-width: 600px;
 }
 
-.tabela-agendamentos thead th {
+.tabela thead th {
   padding: 16px;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   background-color: var(--cor-bg-pagina);
   color: var(--cor-texto);
 }
 
-.tabela-agendamentos tbody td {
+.tabela tbody td {
   padding: 16px;
-  text-align: center;
+  text-align: left;
   background-color: var(--cor-bg-pagina);
   color: var(--cor-texto);
 }
 
-.tabela-agendamentos tbody tr:nth-child(odd) td {
+.tabela tbody tr:nth-child(odd) td {
   background-color: var(--cor-bg-sessao);
 }
 
@@ -1176,7 +1252,6 @@ aside{
 .badge-cancelado {
   background-color: #f44336;
 }
-
 
 .titulo-relatorio {
   font-family: var(--fonte-titulo);
@@ -1225,11 +1300,11 @@ aside{
 }
 
 .progresso-azul {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 .progresso-amarelo {
-  background-color: #FFC107;
+  background-color: #ffc107;
 }
 
 .item-eficiencia {
@@ -1267,7 +1342,6 @@ aside{
 
 .card-paciente-img {
   width: 100%;
-  max-width: 300px;
   border-radius: 5px;
   margin-bottom: 12px;
   border: 2px solid var(--cor-principal);
@@ -1341,7 +1415,8 @@ aside{
   background-color: #4caf50;
 }
 
-.badge-aguardando, .badge-alerta {
+.badge-aguardando,
+.badge-alerta {
   background-color: #ffc107;
   color: #111;
 }
@@ -1350,13 +1425,12 @@ aside{
   background-color: #f44336;
 }
 
-
 .linha-config {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 20px;
-  border: 2px solid var(--cor-principal);
+  border: 1px solid var(--cor-principal);
   margin-bottom: 0;
   background-color: var(--cor-bg-pagina);
   cursor: pointer;
@@ -1391,7 +1465,6 @@ aside{
 .linha-config:hover .texto-config {
   color: var(--cor-ativo);
 }
-
 
 .centralizar-texto {
   text-align: center;
