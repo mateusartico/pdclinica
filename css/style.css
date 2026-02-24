@@ -64,12 +64,7 @@ h4 {
   font-size: 1.3em;
 }
 
-p {
-  font-size: var(--texto-tam-desktop);
-}
-
 .cabecalho {
-  font-size: var(--texto-tam-desktop);
   width: 100%;
   background-color: var(--cor-bg-componente);
   display: flex;
@@ -143,18 +138,13 @@ p {
   color: #ffffff;
 }
 
-.especialidades,
-.secao-precos {
-  margin-top: 50px;
-}
-
 .card {
   background-color: var(--cor-bg-pagina);
   color: var(--cor-principal);
   border-radius: var(--arredondamento-bordas);
   border: 1px solid var(--cor-bg-sessao);
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 25%;
   padding: 18px 24px;
   display: flex;
   flex-direction: column;
@@ -167,16 +157,7 @@ p {
   align-items: flex-end;
 }
 
-.material-symbols-outlined {
-  font-variation-settings: "wght" 200;
-}
-
-.descricao-card {
-  font-size: var(--texto-tam-desktop);
-}
-
 .saiba-mais {
-  font-size: var(--texto-tam-desktop);
   color: var(--cor-ativo);
   text-decoration: none;
   display: flex;
@@ -282,26 +263,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-}
-
-.table-resopnsive {
-  border-radius: var(--arredondamento-bordas);
-}
-
-thead {
-  background-color: rgb(245, 245, 245);
-  color: var(--cor-principal);
-}
-
-th {
-  font-family: var(--fonte-titulo);
-  font-size: 1.4em;
-  font-weight: normal;
-}
-
-td {
-  font-family: var(--fonte-texto);
-  font-size: var(--texto-tam-desktop);
 }
 
 .pag-autenticacao {
@@ -454,7 +415,6 @@ td {
 
 /* --- Rodapé --- */
 .rodape {
-  font-size: var(--texto-tam-desktop);
   width: 100%;
   background-color: var(--cor-principal);
   color: var(--cor-bg-pagina);

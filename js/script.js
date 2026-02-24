@@ -26,21 +26,20 @@ document.querySelectorAll("[data-theme-toggle]").forEach((btn) => {
   });
 });
 
+// Filtro de especialidades
 function filtrarEspecialidades() {
   let especialidadeSelecionada = document.getElementById("especialidade").value;
 
-  let todasAsColunas = document.querySelectorAll(
-    "#lista-especialidades > [id]",
-  );
+  let todasAsCards = document.querySelectorAll(".card");
 
-  todasAsColunas.forEach((coluna) => {
+  todasAsCards.forEach((card) => {
     if (
       especialidadeSelecionada === "" ||
-      coluna.id === especialidadeSelecionada
+      card.id === especialidadeSelecionada
     ) {
-      coluna.style.display = "";
+      card.style.display = "flex";
     } else {
-      coluna.style.display = "none";
+      card.style.display = "none";
     }
   });
 }
