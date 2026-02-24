@@ -758,3 +758,100 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: block;
   }
 }
+
+
+.card-paciente {
+  background-color: var(--cor-bg-pagina);
+  border: 2px solid var(--cor-principal);
+  border-radius: 5px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-paciente-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  border: 2px solid var(--cor-principal);
+}
+
+.card-paciente-nome {
+  font-family: var(--fonte-titulo);
+  font-size: 24px;
+  margin: 0;
+  color: var(--cor-principal);
+  text-align: center;
+}
+
+.card-paciente-info {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  margin: 0;
+  color: var(--cor-texto);
+  text-align: center;
+}
+
+.consultas-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-consulta {
+  border: 2px solid var(--cor-principal);
+  color: var(--cor-texto);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-consulta-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 24px;
+  margin: 0;
+}
+
+.card-consulta-info {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  margin: 0;
+}
+
+.card-consulta-status {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  font-style: italic;
+}
+
+.card-consulta-status p {
+  display: inline-block;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-family: var(--fonte-texto);
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge-confirmado {
+  background-color: #4caf50;
+}
+
+.badge-aguardando {
+  background-color: #ffc107;
+  color: #111;
+}
+
+.badge-cancelado {
+  background-color: #f44336;
+}
