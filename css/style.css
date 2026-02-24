@@ -727,8 +727,70 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .resposta-faq{
   font-size: 16px;
 }
-/* MEDIAS */
 
+
+/* ESTILIZACAO PAGINA BLOG (ELIAS) */
+
+.hero-blog {
+  background-color: var(--cor-principal);
+  color: white;
+  padding: 80px 0;
+}
+
+.hero-blog h1 {
+  font-family: var(--fonte-titulo);
+  font-size: 64px;
+}
+
+.hero-blog p {
+  font-size: 32px;
+  font-style: italic;
+  font-family: var(--fonte-texto);
+  font-weight: 300;
+}
+
+.sessao-artigos {
+  padding: 70px 0;
+}
+
+.conteudo-blog {
+  padding: 40px 0;
+}
+
+.conteudo-blog h2 {
+  color: #3558A6;
+  font-weight: 700;
+  font-family: var(--fonte-titulo);
+}
+
+.informaco-autor-artigo  {
+  font-style: italic;
+  font-size: 16px;
+  color: #6c757d;
+}
+
+.article-link {
+  text-decoration: none;
+  color: #3558A6;
+  transition: all 0.2s ease;
+}
+
+.article-link:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+.article-link:focus {
+  outline: 2px solid #3558A6;
+  outline-offset: 4px;
+}
+
+.conteudo-blog h5{
+  font-size: 20px;
+}
+
+
+/* MEDIAS */
 @media (max-width: 768px) {
   /* --- Ajustes do Cabeçalho Mobile --- */
   .cabecalho {
