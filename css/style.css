@@ -668,6 +668,65 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 70%;
 }
 
+/* ESTILAZAÇÃO DA PÁGINA DE INFORMAÇÕES*/
+
+/* HERO DA PÁGINA DE INFORMAÇÕES */
+.hero-informacoes {
+  background: url('../img/img-informativo.jpg') center center / cover no-repeat;
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hero-informacoes::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.conteudo-hero-informacoes{
+  position: relative;
+  z-index: 2;
+}
+
+.card-convenio img {
+  height: 160px;
+  object-fit: cover;
+}
+
+.botao-hero-informacoes:hover{
+  background-color: var(--cor-ativo);
+  color: #ffffff;
+}
+
+.card-convenio{
+  width: 350px;
+  display: flex;
+}
+
+.card-convenio p{
+  font-size: 16px;
+}
+
+.card-convenio h5{
+  width: 100%;
+  font-size: var(--titulo-tam-desktop);
+}
+
+.subititulo-convenio{
+  color: var(--cor-principal);
+}
+
+.subtitulo-informacoes{
+  font-family: var(--fonte-titulo);
+}
+
+.resposta-faq{
+  font-size: 16px;
+}
 /* MEDIAS */
 
 @media (max-width: 768px) {
