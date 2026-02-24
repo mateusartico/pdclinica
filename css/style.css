@@ -760,6 +760,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
+.card-admin,
 .card-paciente {
   background-color: var(--cor-bg-pagina);
   border: 2px solid var(--cor-principal);
@@ -767,8 +768,174 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 24px;
   display: flex;
   flex-direction: column;
+  align-itens: center;
+  gap: 12px;
+}
+
+.card-admin-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 24px;
+  margin: 0;
+  color: var(--cor-principal);
+}
+
+.card-admin-valor {
+  font-family: var(--fonte-titulo);
+  font-size: 48px;
+  margin: 0;
+  color: var(--cor-principal);
+}
+
+.card-admin-info {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  margin: 0;
+  color: var(--cor-principal);
+}
+
+
+.container-tabela-admin {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tabela-agendamentos {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--cor-principal);
+  font-family: var(--fonte-texto);
+  font-size: 20px;
+  min-width: 600px;
+}
+
+.tabela-agendamentos thead th {
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-texto);
+}
+
+.tabela-agendamentos tbody td {
+  padding: 16px;
+  text-align: center;
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-texto);
+}
+
+.tabela-agendamentos tbody tr:nth-child(odd) td {
+  background-color: var(--cor-bg-sessao);
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-family: var(--fonte-texto);
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge-confirmado {
+  background-color: #4caf50;
+}
+
+.badge-aguardando {
+  background-color: #ffc107;
+  color: #111;
+}
+
+.badge-cancelado {
+  background-color: #f44336;
+}
+
+
+.titulo-relatorio {
+  font-family: var(--fonte-titulo);
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  color: var(--cor-texto);
+}
+
+.item-progresso {
+  margin-bottom: 20px;
+}
+
+.info-progresso {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.texto-progresso {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  color: var(--cor-texto);
+}
+
+.valor-progresso {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  color: var(--cor-texto);
+}
+
+.barra-progresso {
+  width: 100%;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.preenchimento-progresso {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progresso-principal {
+  background-color: var(--cor-principal);
+}
+
+.progresso-azul {
+  background-color: #2196F3;
+}
+
+.progresso-amarelo {
+  background-color: #FFC107;
+}
+
+.item-eficiencia {
+  display: flex;
   align-items: center;
   gap: 12px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.item-eficiencia:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.texto-eficiencia {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  color: var(--cor-texto);
+  flex: 1;
+}
+
+.numero-eficiencia {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--cor-texto);
+}
+
+.badge-ok {
+  background-color: #4caf50;
 }
 
 .card-paciente-img {
@@ -847,11 +1014,61 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: #4caf50;
 }
 
-.badge-aguardando {
+.badge-aguardando, .badge-alerta {
   background-color: #ffc107;
   color: #111;
 }
 
+.badge-erro {
+  background-color: #f44336;
+}
+
+
+.linha-config {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border: 2px solid var(--cor-principal);
+  margin-bottom: 0;
+  background-color: var(--cor-bg-pagina);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.linha-config:hover {
+  background-color: var(--cor-bg-sessao);
+}
+
+.linha-config:not(:last-child) {
+  border-bottom: none;
+}
+
+.linha-config-primeira {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.linha-config-ultima {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.texto-config {
+  font-family: var(--fonte-texto);
+  font-size: 20px;
+  color: var(--cor-texto);
+  transition: 0.2s;
+}
+
+.linha-config:hover .texto-config {
+  color: var(--cor-ativo);
+}
+
+
+.centralizar-texto {
+  text-align: center;
+}
 .badge-cancelado {
   background-color: #f44336;
 }
