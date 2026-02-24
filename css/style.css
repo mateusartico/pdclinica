@@ -698,7 +698,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .botao-hero-informacoes:hover{
-  background-color: var(--cor-ativo);
+  background-color: var(--cor-principal);
   color: #ffffff;
 }
 
