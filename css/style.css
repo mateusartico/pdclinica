@@ -928,61 +928,67 @@ aside {
 
 /* ESTILIZACAO PAGINA BLOG (ELIAS) */
 
+/* Faz alterações no hero da página onde há o titulo e subtiulo principais */
 .hero-blog {
   background-color: var(--cor-principal);
   color: white;
   padding: 80px 0;
 }
 
+/* Define tamanho e fonte do titulo principal */
 .hero-blog h1 {
   font-family: var(--fonte-titulo);
   font-size: 64px;
 }
 
-.hero-blog p {
+/* Define tamanho, familia, estilo e peso da fonte do texto do subtitulo da HERO  */
+.hero-blog h2 {
   font-size: 32px;
   font-style: italic;
   font-family: var(--fonte-texto);
   font-weight: 300;
 }
 
-.sessao-artigos {
-  padding: 70px 0;
-}
-
+/* Define espaçamento interno de cada article do blog */
 .conteudo-blog {
   padding: 40px 0;
 }
 
+/* Define estilizações de texto para o subtitulo dos articles do blog */
 .conteudo-blog h2 {
   color: #3558A6;
   font-weight: 700;
   font-family: var(--fonte-titulo);
 }
 
+/* Define estilizações de texto para a data e nome do autor dos artigos */
 .informaco-autor-artigo  {
   font-style: italic;
   font-size: 16px;
   color: #6c757d;
 }
 
+/* Define estilizações para os links que levam para as páginas de artigos. (O link é o próprio titulo do article)*/
 .article-link {
   text-decoration: none;
   color: #3558A6;
   transition: all 0.2s ease;
 }
 
+/* Define estilizações de hover para os links que levam para as paginas de artigos*/
 .article-link:hover {
   text-decoration: underline;
   opacity: 0.85;
 }
 
+/* Define estilizações de hover para os links que levam para as paginas de artigos*/
 .article-link:focus {
   outline: 2px solid #3558A6;
   outline-offset: 4px;
 }
 
-.conteudo-blog h5{
+/* Define o tamanho da fonte do subtitulos de cada article*/
+.conteudo-blog h3{
   font-size: 20px;
 }
 

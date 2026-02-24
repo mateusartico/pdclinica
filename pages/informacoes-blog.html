@@ -40,31 +40,31 @@
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="hero-blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10">
-                    <h1 class="display-4 mb-3">Blog PD clínica</h1>
-                    <p>Artigos sobre saúde, ciência e cuidados práticos</p>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <main class="sessao-artigos">
+        <!-- HERO -->
+        <header class="hero-blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-10">
+                        <h1 class="display-4 mb-3">Blog PD clínica</h1>
+                        <h2>Artigos sobre saúde, ciência e cuidados práticos</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
         <div class="container">
 
-            <!-- Artigo 1 -->
             <div class="row">
                 <div class="col-lg-8 col-md-10">
-                    <div class="article-item border-bottom conteudo-blog">
+                    <article class="article-item border-bottom conteudo-blog">
                         <h2 class="mb-3">
                             <a href="artigo-checkup.html" class="article-link">
                                 Check-up preventivo
                             </a>
                         </h2>
-                        <h5 class="text-muted mb-3">Quais exames fazer em cada fase da vida?</h5>
+                        <h3 class="text-muted mb-3">Quais exames fazer em cada fase da vida?</h3>
 
                         <p>
                             O check-up preventivo consiste na realização periódica de avaliações clínicas e exames
@@ -72,22 +72,25 @@
                             indivíduo, mesmo na ausência de sintomas.
                         </p>
 
-                        <p class="informaco-autor-artigo mt-3">
-                            Dr. Pedro Coelho, Agosto de 2022
-                        </p>
-                    </div>
+                        <address>
+                            <p class="informaco-autor-artigo mt-3">
+                                Dr. Pedro Coelho, <time datetime="2022-08">Agosto de 2022</time>
+                            </p>
+                        </address>
+
+                    </article>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-lg-8 col-md-10">
-                    <div class="article-item border-bottom conteudo-blog">
+                    <article class="article-item border-bottom conteudo-blog">
                         <h2 class="mb-3">
                             <a href="artigo-saude.html" class="article-link">
                                 Saúde física e mental
                             </a>
                         </h2>
-                        <h5 class="text-muted mb-3">Por que cuidar das duas é essencial para nós!</h5>
+                        <h3 class="text-muted mb-3">Por que cuidar das duas é essencial para nós!</h3>
 
                         <p>
                             A saúde física e mental constitui um dos pilares fundamentais para o bem-estar integral do
@@ -95,22 +98,24 @@
                             mente e emoções.
                         </p>
 
-                        <p class="informaco-autor-artigo  mt-3">
-                            Dr. Douglas Bastos, Abril de 2024
-                        </p>
-                    </div>
+                        <address>
+                            <p class="informaco-autor-artigo mt-3">
+                                Dr. Douglas Bastos, <time datetime="2024-04">Abril de 2024</time>
+                            </p>
+                        </address>
+                    </article>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-lg-8 col-md-10">
-                    <div class="article-item border-bottom conteudo-blog">
+                    <article class="article-item border-bottom conteudo-blog">
                         <h2 class="mb-3">
                             <a href="artigo-vacinas.html" class="article-link">
                                 Vacinas na vida adulta
                             </a>
                         </h2>
-                        <h5 class="text-muted mb-3">Quais são essenciais e por quê?</h5>
+                        <h3 class="text-muted mb-3">Quais são essenciais e por quê?</h3>
 
                         <p>
                             A vacinação na vida adulta representa uma estratégia fundamental para a manutenção da saúde
@@ -118,10 +123,12 @@
                             complicações clínicas.
                         </p>
 
-                        <p class="informaco-autor-artigo  mt-3">
-                            Dr. Pedro Correia, Março de 2021
-                        </p>
-                    </div>
+                        <address>
+                            <p class="informaco-autor-artigo mt-3">
+                                Dr. Pedro Correia, <time datetime="2021-03">Março de 2021</time>
+                            </p>
+                        </address>
+                    </article>
                 </div>
             </div>
 
@@ -130,7 +137,7 @@
 
     <section class="bg-light py-3">
         <div class="container">
-            <nav>
+            <nav  aria-label="Breadcrumb">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
                     <li class="breadcrumb-item"><a href="conteudo-informativo.html">Informativo</a></li>
