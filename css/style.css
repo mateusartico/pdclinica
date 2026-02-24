@@ -64,7 +64,12 @@ h4 {
   font-size: 1.3em;
 }
 
+p {
+  font-size: var(--texto-tam-desktop);
+}
+
 .cabecalho {
+  font-size: var(--texto-tam-desktop);
   width: 100%;
   background-color: var(--cor-bg-componente);
   display: flex;
@@ -138,13 +143,18 @@ h4 {
   color: #ffffff;
 }
 
+.especialidades,
+.secao-precos {
+  margin-top: 50px;
+}
+
 .card {
   background-color: var(--cor-bg-pagina);
   color: var(--cor-principal);
   border-radius: var(--arredondamento-bordas);
   border: 1px solid var(--cor-bg-sessao);
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
-  width: 25%;
+  width: 100%;
   padding: 18px 24px;
   display: flex;
   flex-direction: column;
@@ -157,7 +167,16 @@ h4 {
   align-items: flex-end;
 }
 
+.material-symbols-outlined {
+  font-variation-settings: "wght" 200;
+}
+
+.descricao-card {
+  font-size: var(--texto-tam-desktop);
+}
+
 .saiba-mais {
+  font-size: var(--texto-tam-desktop);
   color: var(--cor-ativo);
   text-decoration: none;
   display: flex;
@@ -265,6 +284,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: flex-end;
 }
 
+.table-resopnsive {
+  border-radius: var(--arredondamento-bordas);
+}
+
+thead {
+  background-color: rgb(245, 245, 245);
+  color: var(--cor-principal);
+}
+
+th {
+  font-family: var(--fonte-titulo);
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+td {
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-tam-desktop);
+}
+
 .pag-autenticacao {
   background-image: url(../img/img-fundo-autenticacao.jpg);
   background-size: cover;
@@ -327,6 +366,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .input-checkbox {
+  width: 200px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -414,6 +454,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* --- Rodapé --- */
 .rodape {
+  font-size: var(--texto-tam-desktop);
   width: 100%;
   background-color: var(--cor-principal);
   color: var(--cor-bg-pagina);
@@ -469,6 +510,113 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin: 0;
 }
 
+/* ESTILIZAÇÃO DAS PÁGINAS DE ARTIGOS (ELIAS) */
+
+/* Define a cor de fundo da sessão hero (Contém o titulo principal da página de artigos)*/
+.sessao-hero{ 
+  background-color: var(--cor-principal);
+}
+
+/* Define  o tamanho do titulo principal da página*/
+.sessao-hero h1{
+  font-size: 48px;
+}
+
+/* Define cor, tamaho da fonte e estilo da fonte do subtitulo principal da página) */
+.subtitulo-hero-artigo{
+  color: white;
+  font-size: 24px;
+  font-style: italic;
+}
+
+/* Define cor e tamaho da fonte dos parágrafos dos artigos */
+article p{
+  font-size: 20px;
+  color: var(--cor-texto);
+}
+
+/* Define cor, tamanho e fonte a ser usada nos titulos h5 */
+.texto-artigo h5{
+  color: var(--cor-principal);
+  font-size: var(--titulo-tam-desktop);
+  font-family: var(--fonte-titulo);
+}
+
+/* Aplica alinhamentos no container aside usando flex-box */
+aside{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 50px 0 !important;
+}
+
+/* Define largura, preenchimento interno, e alinhamento dos cards do aside */
+.card-aside-artigo{
+  width: 70%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-bg-sessao);
+}
+
+/* Define cor, alinhamento e preenchimento interno dos elemntos de dentro dos cards do aside */
+.corpo-card{
+  background-color: var(--cor-bg-sessao);
+  display: flex;
+  padding: 20px;
+}
+
+/* Define cor, tamanho da fonte e largura do h6 interno do card do aside */
+.corpo-card h6{
+  font-size: 24px;
+  width: 100%;
+}
+
+/* Define tamanho de fonte, cor, peso da fonte e margem do texto de dentro do card do aside*/
+.corpo-card p{
+  font-size: 20px;
+  color: var(--cor-texto);
+  font-weight:300 ;
+  margin-bottom: 8px;
+}
+
+/* Define tamanho da fonte, tira a decoração de link e muda a cor do elemnto <a> do card do aside*/
+.corpo-card a{
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--cor-principal);
+}
+
+/* Muda a cor do texto quando o usuário passar o mouse por cima do link de "saiba mais" do card*/
+.corpo-card a:hover{
+  color: var(--cor-ativo);
+}
+
+/* Cria um pseudo elemento que vai ser uma barra que vai aparecer embaixo dos links quando o usuário passar o mouse. */
+.link-underline-animado::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--cor-ativo);
+  transform: scaleX(0);
+  transform-origin:left;
+  transition: transform 0.25s ease-in-out;
+}
+
+/* Posiciona o pseudo elemento em relação ao link*/
+.link-underline-animado{
+  position: relative;
+  display: inline-block;
+}
+
+/* Faz o efeito de barra ir crescendo até ocupar a largura total do link quando o usuário passa o mouse por cima */
+.link-underline-animado:hover::after{
+  transform: scaleX(1);
+}
+
 /* PAGINA INICIO */
 /* carrossel */
 .carrossel-inicio {
@@ -510,7 +658,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .carrossel-img-1 {
   background-image: url(../img/carrossel-img-1.png);
-
 }
 
 .carrossel-img-2 {
@@ -550,35 +697,34 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   transform: scale(1.2);
 }
 
-#carrossel-btn-1:checked~.carrossel-navegacao label:nth-child(1),
-#carrossel-btn-2:checked~.carrossel-navegacao label:nth-child(2),
-#carrossel-btn-3:checked~.carrossel-navegacao label:nth-child(3),
-#carrossel-btn-4:checked~.carrossel-navegacao label:nth-child(4) {
+#carrossel-btn-1:checked ~ .carrossel-navegacao label:nth-child(1),
+#carrossel-btn-2:checked ~ .carrossel-navegacao label:nth-child(2),
+#carrossel-btn-3:checked ~ .carrossel-navegacao label:nth-child(3),
+#carrossel-btn-4:checked ~ .carrossel-navegacao label:nth-child(4) {
   background: var(--cor-principal);
 }
 
-.carrossel-inicio input:checked~.carrossel-imagens {
+.carrossel-inicio input:checked ~ .carrossel-imagens {
   animation: none;
 }
 
-#carrossel-btn-1:checked~.carrossel-imagens {
+#carrossel-btn-1:checked ~ .carrossel-imagens {
   transform: translateX(0);
 }
 
-#carrossel-btn-2:checked~.carrossel-imagens {
+#carrossel-btn-2:checked ~ .carrossel-imagens {
   transform: translateX(-100%);
 }
 
-#carrossel-btn-3:checked~.carrossel-imagens {
+#carrossel-btn-3:checked ~ .carrossel-imagens {
   transform: translateX(-200%);
 }
 
-#carrossel-btn-4:checked~.carrossel-imagens {
+#carrossel-btn-4:checked ~ .carrossel-imagens {
   transform: translateX(-300%);
 }
 
 @keyframes autoSlide {
-
   0%,
   20% {
     transform: translateX(0);
@@ -625,7 +771,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 50%;
   border-radius: 8px;
 }
-
 
 .sessao-fundo-azul {
   background-color: var(--cor-bg-sessao);
@@ -683,10 +828,517 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: flex;
   align-items: center;
   margin-bottom: 1em;
+}  
+
+/* Cabeçalho do modal */
+.modal-termos .modal-header {
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-texto);
+  border-bottom: none;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.modal-termos .modal-header .btn-close {
+  filter: invert(1);
+}
+
+.modal-termos .modal-title {
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+  font-family: var(--fonte-titulo);
+}
+
+/* Corpo com scroll */
+.modal-termos .modal-body {
+  max-height: 55vh;
+  overflow-y: auto;
+  padding: 1.5rem 1.75rem;
+  font-size: 0.92rem;
+  color: #333;
+  font-family: var(--fonte-texto);
+  line-height: 1.7;
+  scrollbar-width: thin;
+  scrollbar-color: #a7a7a7 #e9ecef;
+  border-top: 1px solid #dee2e6;
+}
+
+.modal-termos .modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modal-termos .modal-body::-webkit-scrollbar-track {
+  background: #e9ecef;
+  border-radius: 4px;
+}
+
+.modal-termos .modal-body::-webkit-scrollbar-thumb {
+  background-color: var(--cor-principal);
+  border-radius: 4px;
+}
+
+/* Seções dos termos */
+.termos-secao {
+  margin-bottom: 1.2rem;
+}
+
+.termos-secao h6 {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-principal);
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.termos-secao p {
+  margin-bottom: 0.5rem;
+}
+
+/* Rodapé do modal */
+.modal-termos .modal-footer {
+  border-top: 1px solid #dee2e6;
+  padding: 0.85rem 1.25rem;
+  justify-content: flex-start;
+}
+
+/* ESTILIZAÇÃO DAS PÁGINAS DE ESPECIALIDADES (ELIAS) */
+
+/* HERO DERMATOLOGIA*/
+.hero-dermatologia {
+ background: linear-gradient(
+      to right,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.85) 35%,
+      rgba(255,255,255,0.40) 65%,
+      rgba(255,255,255,0.10) 85%,
+      rgba(255,255,255,0) 100%
+    ),
+  url('../img/img-dermatologia-1.jpg') center/cover no-repeat;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-dermatologia h1 {
+  font-weight: 600;
+}
+
+.botao-marcar-consulta {
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  background-color: var(--cor-principal);
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+/* Títulos das seções */
+.Titulos-sessao {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-principal);
+  font-size: var(--titulo-tam-desktop);
+  margin-bottom: 1.5rem;
+}
+
+.container-titulo-hero h1{
+  color: var(--cor-principal);
+  font-size: 48;
+  font-family: var(--fonte-titulo);
+}
+
+.container-titulo-hero p{
+  font-family: var(--texto-desktop);
+  font-weight: 600;
+}
+
+/* HERO NEUROLOGIA*/
+.hero-neurologia{
+  background: linear-gradient(
+      to right,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.85) 35%,
+      rgba(255,255,255,0.40) 65%,
+      rgba(255,255,255,0.10) 85%,
+      rgba(255,255,255,0) 100%
+    ),
+  url('../img/img-especialidade-neurologia.jpg') center/cover no-repeat;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+/* HERO CARDIOLOGIA*/
+.hero-cardiologia{
+  background: linear-gradient(
+      to right,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.85) 35%,
+      rgba(255,255,255,0.40) 65%,
+      rgba(255,255,255,0.10) 85%,
+      rgba(255,255,255,0) 100%
+    ),
+  url('../img/img-especialidade-cardiologia.jpg') center/cover no-repeat;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-ortopedia{
+   background: linear-gradient(
+      to right,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.85) 35%,
+      rgba(255,255,255,0.40) 65%,
+      rgba(255,255,255,0.10) 85%,
+      rgba(255,255,255,0) 100%
+    ),
+  url('../img/img-especialidade-ortopedia.jpg') center/cover no-repeat;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-pediatria{
+   background: linear-gradient(
+      to right,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.85) 35%,
+      rgba(255,255,255,0.40) 65%,
+      rgba(255,255,255,0.10) 85%,
+      rgba(255,255,255,0) 100%
+    ),
+  url('../img/img-especialidade-pediatria.jpg') center/cover no-repeat;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-psiquiatria{
+  background: linear-gradient(
+      to right,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.85) 35%,
+      rgba(255,255,255,0.40) 65%,
+      rgba(255,255,255,0.10) 85%,
+      rgba(255,255,255,0) 100%
+    ),
+  url('../img/img-especialidade-psiquiatria.jpg') center/cover no-repeat;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.card-admin,
+.card-paciente {
+  background-color: var(--cor-bg-pagina);
+  border: 2px solid var(--cor-principal);
+  border-radius: 5px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-admin-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 24px;
+  margin: 0;
+  color: var(--cor-principal);
+}
+
+.card-admin-valor {
+  font-family: var(--fonte-titulo);
+  font-size: 48px;
+  margin: 0;
+  color: var(--cor-principal);
+}
+
+.card-admin-info {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  margin: 0;
+  color: var(--cor-principal);
+}
+
+
+.container-tabela-admin {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tabela-agendamentos {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--cor-principal);
+  font-family: var(--fonte-texto);
+  font-size: 20px;
+  min-width: 600px;
+}
+
+.tabela-agendamentos thead th {
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-texto);
+}
+
+.tabela-agendamentos tbody td {
+  padding: 16px;
+  text-align: center;
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-texto);
+}
+
+.tabela-agendamentos tbody tr:nth-child(odd) td {
+  background-color: var(--cor-bg-sessao);
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-family: var(--fonte-texto);
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge-confirmado {
+  background-color: #4caf50;
+}
+
+.badge-aguardando {
+  background-color: #ffc107;
+  color: #111;
+}
+
+.badge-cancelado {
+  background-color: #f44336;
+}
+
+
+.titulo-relatorio {
+  font-family: var(--fonte-titulo);
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  color: var(--cor-texto);
+}
+
+.item-progresso {
+  margin-bottom: 20px;
+}
+
+.info-progresso {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.texto-progresso {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  color: var(--cor-texto);
+}
+
+.valor-progresso {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  color: var(--cor-texto);
+}
+
+.barra-progresso {
+  width: 100%;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.preenchimento-progresso {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progresso-principal {
+  background-color: var(--cor-principal);
+}
+
+.progresso-azul {
+  background-color: #2196F3;
+}
+
+.progresso-amarelo {
+  background-color: #FFC107;
+}
+
+.item-eficiencia {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.item-eficiencia:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.texto-eficiencia {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  color: var(--cor-texto);
+  flex: 1;
+}
+
+.numero-eficiencia {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--cor-texto);
+}
+
+.badge-ok {
+  background-color: #4caf50;
+}
+
+.card-paciente-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  border: 2px solid var(--cor-principal);
+}
+
+.card-paciente-nome {
+  font-family: var(--fonte-titulo);
+  font-size: 24px;
+  margin: 0;
+  color: var(--cor-principal);
+  text-align: center;
+}
+
+.card-paciente-info {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  margin: 0;
+  color: var(--cor-texto);
+  text-align: center;
+}
+
+.consultas-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-consulta {
+  border: 2px solid var(--cor-principal);
+  color: var(--cor-texto);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-consulta-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 24px;
+  margin: 0;
+}
+
+.card-consulta-info {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  margin: 0;
+}
+
+.card-consulta-status {
+  font-family: var(--fonte-texto);
+  font-size: 16px;
+  font-style: italic;
+}
+
+.card-consulta-status p {
+  display: inline-block;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-family: var(--fonte-texto);
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge-confirmado {
+  background-color: #4caf50;
+}
+
+.badge-aguardando, .badge-alerta {
+  background-color: #ffc107;
+  color: #111;
+}
+
+.badge-erro {
+  background-color: #f44336;
+}
+
+
+.linha-config {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border: 2px solid var(--cor-principal);
+  margin-bottom: 0;
+  background-color: var(--cor-bg-pagina);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.linha-config:hover {
+  background-color: var(--cor-bg-sessao);
+}
+
+.linha-config:not(:last-child) {
+  border-bottom: none;
+}
+
+.linha-config-primeira {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.linha-config-ultima {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.texto-config {
+  font-family: var(--fonte-texto);
+  font-size: 20px;
+  color: var(--cor-texto);
+  transition: 0.2s;
+}
+
+.linha-config:hover .texto-config {
+  color: var(--cor-ativo);
+}
+
+
+.centralizar-texto {
+  text-align: center;
+}
+.badge-cancelado {
+  background-color: #f44336;
 }
 
 /* MEDIAS */
-
 /* Intermediario */
 @media (min-width: 901px) and (max-width: 1300px) {
 
@@ -789,7 +1441,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     color: var(--cor-principal);
   }
 
-  #menu-aberto:checked~.lista-links {
+  #menu-aberto:checked ~ .lista-links {
     display: flex;
   }
 
