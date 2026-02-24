@@ -52,6 +52,30 @@ body.dark input[type="date"] {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
 }
 
+body.dark .accordion-item {
+  background-color: var(--cor-bg-pagina);
+}
+
+body.dark .accordion-button {
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-texto);
+}
+
+body.dark .accordion-button:not(.collapsed) {
+  background-color: var(--cor-bg-sessao);
+  color: var(--cor-ativo);
+  box-shadow: inset 0 -1px 0 var(--cor-escuro);
+}
+
+body.dark .accordion-button::after {
+  filter: invert(1);
+}
+
+body.dark .accordion-body {
+  background-color: var(--cor-bg-sessao);
+  color: var(--cor-texto);
+}
+
 /* ==========================================================================*/
 
 body {
@@ -870,7 +894,7 @@ aside {
 
 /* HERO DA PÁGINA DE INFORMAÇÕES */
 .hero-informacoes {
-  background: url('../img/img-informativo.jpg') center center / cover no-repeat;
+  background: url("../img/img-informativo.jpg") center center / cover no-repeat;
   position: relative;
   min-height: 420px;
   display: flex;
@@ -885,7 +909,7 @@ aside {
   background: rgba(0, 0, 0, 0.45);
 }
 
-.conteudo-hero-informacoes{
+.conteudo-hero-informacoes {
   position: relative;
   z-index: 2;
 }
@@ -895,34 +919,42 @@ aside {
   object-fit: cover;
 }
 
-.botao-hero-informacoes:hover{
+.botao-hero-informacoes:hover {
   background-color: var(--cor-principal);
   color: #ffffff;
 }
 
-.card-convenio{
+.card-convenio {
   width: 350px;
   display: flex;
 }
 
-.card-convenio p{
+.card-convenio p {
   font-size: 16px;
 }
 
-.card-convenio h5{
+.card-convenio h5 {
   width: 100%;
   font-size: var(--titulo-tam-desktop);
 }
 
-.subititulo-convenio{
+.subititulo-convenio {
   color: var(--cor-principal);
 }
 
-.subtitulo-informacoes{
+.subtitulo-informacoes {
   font-family: var(--fonte-titulo);
 }
 
-.resposta-faq{
+.accordion-item {
+  border-color: var(--cor-bg-sessao);
+}
+
+.accordion-header button {
+  font-size: var(--texto-tam-desktop);
+}
+
+.resposta-faq {
   font-size: 16px;
 }
 
@@ -987,7 +1019,8 @@ aside {
 }
 
 /* PAGINA INSTITUCIONAL */
-.essencia{
+.essencia {
+  background-color: var(--cor-bg-pagina);
   padding: 60px 155px;
   display: flex;
   justify-content: center;
@@ -996,11 +1029,11 @@ aside {
   text-align: justify;
 }
 
-.essencia article div{
+.essencia article div {
   display: flex;
   align-items: center;
   margin-bottom: 1em;
-}  
+}
 
 /* Cabeçalho do modal */
 
@@ -1093,7 +1126,8 @@ aside {
 .conteudo-especialidades,
 .conteudo-artigo,
 .conteudo-paciente,
-.conteudo-admin {
+.conteudo-admin,
+.conteudo-informativo {
   background-color: var(--cor-bg-pagina);
 }
 
@@ -1113,7 +1147,7 @@ aside {
   align-items: center;
 }
 
-.botao-marcar-consulta {
+.botao-banner {
   padding: 0.75rem 1.5rem;
   font-weight: 500;
   background-color: var(--cor-principal);
