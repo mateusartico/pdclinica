@@ -1,194 +1,322 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Área administrativa da PD Clínica.">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Área administrativa da PD Clínica." />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../img/favicon-pdclinica.png"
+      type="image/x-icon"
+    />
     <title>PD Clínica | Área Administrativa</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="cabecalho">
-        <img class="logo" src="../img/Logo-PD-Clinica.png" alt="Logo PD Clínica">
-        <nav aria-label="Menu principal">
-            <input type="checkbox" id="menu-aberto">
-            <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
-                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px" fill="#FFFFFF" class="icon-menu"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
-            </label>
-            <ul class="lista-links">
-                <li><a href="/">Início</a></li>
-                <li><a href="institucional.html">Institucional</a></li>
-                <li><a href="conteudo-informativo.html">Informações</a></li>
-                <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-box-arrow-right"></i></a></li>
-            </ul>
-        </nav>
-        <div class="wrapper-botoes">
-            <button type="button" class="botao-icone" data-theme-toggle aria-label="Alternar tema"><i class="bi bi-sun"></i></button>
-            <a href="login.html" class="botao-icone" aria-label="Sair"><i class="bi bi-box-arrow-right"></i></a>
-        </div>
+      <img
+        class="logo"
+        src="../img/Logo-PD-Clinica.png"
+        alt="Logo PD Clínica"
+      />
+      <nav aria-label="Menu principal">
+        <input type="checkbox" id="menu-aberto" />
+        <label
+          for="menu-aberto"
+          class="btn-menu"
+          aria-label="Abrir ou fechar menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="38px"
+            viewBox="0 -960 960 960"
+            width="38px"
+            fill="#FFFFFF"
+            class="icon-menu"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+        <ul class="lista-links">
+          <li>
+            <a
+              href="/"
+              class="link-underline-animado"
+              class="link-underline-animado"
+              >Início</a
+            >
+          </li>
+          <li>
+            <a href="institucional.html" class="link-underline-animado"
+              >Institucional</a
+            >
+          </li>
+          <li>
+            <a href="conteudo-informativo.html" class="link-underline-animado"
+              >Informações</a
+            >
+          </li>
+          <li>
+            <a href="login.html" class="botao-mobile-icone"
+              ><i class="bi bi-box-arrow-right"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="wrapper-botoes">
+        <button
+          type="button"
+          class="botao-icone"
+          data-theme-toggle
+          aria-label="Alternar tema"
+        >
+          <i class="bi bi-sun"></i>
+        </button>
+        <a href="login.html" class="botao-icone" aria-label="Sair"
+          ><i class="bi bi-box-arrow-right"></i
+        ></a>
+      </div>
     </header>
 
     <main class="container my-5">
-        <h1 class="titulo centralizar-texto mb-5">Área <span class="destaque">Administrativa</span></h1>
-        
-        <section class="mb-5" aria-labelledby="titulo-estatisticas">
-            <h2 id="titulo-estatisticas" class="titulo centralizar-texto mb-4">Estatísticas</h2>
-            <section class="row g-4" role="list">
-                <article class="col-12 col-md-6 col-lg-4" role="listitem" aria-labelledby="card-consultas">
-                    <section class="card-admin">
-                        <h3 id="card-consultas" class="card-admin-titulo">Consultas agendadas</h3>
-                        <p class="card-admin-valor">150</p>
-                        <p class="card-admin-info">Últimos 30 dias</p>
-                    </section>
-                </article>
+      <h1 class="titulo centralizar-texto mb-5">
+        Área <span class="destaque">Administrativa</span>
+      </h1>
 
-                <article class="col-12 col-md-6 col-lg-4" role="listitem" aria-labelledby="card-pacientes">
-                    <section class="card-admin">
-                        <h3 id="card-pacientes" class="card-admin-titulo">Pacientes ativos</h3>
-                        <p class="card-admin-valor">320</p>
-                        <p class="card-admin-info">Total cadastrado</p>
-                    </section>
-                </article>
-
-                <article class="col-12 col-md-6 col-lg-4" role="listitem" aria-labelledby="card-medicos">
-                    <section class="card-admin">
-                        <h3 id="card-medicos" class="card-admin-titulo">Médicos disponíveis</h3>
-                        <p class="card-admin-valor">25</p>
-                        <p class="card-admin-info">Em atendimento</p>
-                    </section>
-                </article>
+      <section class="mb-5" aria-labelledby="titulo-estatisticas">
+        <h2 id="titulo-estatisticas" class="titulo centralizar-texto mb-4">
+          Estatísticas
+        </h2>
+        <section class="row g-4" role="list">
+          <article
+            class="col-12 col-md-6 col-lg-4"
+            role="listitem"
+            aria-labelledby="card-consultas"
+          >
+            <section class="card-admin">
+              <h3 id="card-consultas" class="card-admin-titulo">
+                Consultas agendadas
+              </h3>
+              <p class="card-admin-valor">150</p>
+              <p class="card-admin-info">Últimos 30 dias</p>
             </section>
-        </section>
+          </article>
 
-        <section class="mb-5" aria-labelledby="titulo-agendamentos">
-            <h2 id="titulo-agendamentos" class="titulo centralizar-texto mb-4">Agendamentos</h2>
-            <section class="container-tabela-admin">
-                <table class="tabela-agendamentos" aria-label="Lista de agendamentos">
-                    <thead>
-                        <tr>
-                            <th scope="col">Data/Hora</th>
-                            <th scope="col">Paciente</th>
-                            <th scope="col">Médico</th>
-                            <th scope="col">Situação</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>15/01/2024 - 09:00</td>
-                            <td>Maria Silva</td>
-                            <td>Dr. João Santos</td>
-                            <td><span class="badge badge-confirmado">Confirmado</span></td>
-                        </tr>
-                        <tr>
-                            <td>15/01/2024 - 10:30</td>
-                            <td>Carlos Oliveira</td>
-                            <td>Dra. Ana Costa</td>
-                            <td><span class="badge badge-aguardando">Aguardando</span></td>
-                        </tr>
-                        <tr>
-                            <td>15/01/2024 - 14:00</td>
-                            <td>Fernanda Lima</td>
-                            <td>Dr. Pedro Alves</td>
-                            <td><span class="badge badge-cancelado">Cancelado</span></td>
-                        </tr>
-                        <tr>
-                            <td>16/01/2024 - 08:30</td>
-                            <td>Roberto Mendes</td>
-                            <td>Dra. Juliana Rocha</td>
-                            <td><span class="badge badge-confirmado">Confirmado</span></td>
-                        </tr>
-                    </tbody>
-                </table>
+          <article
+            class="col-12 col-md-6 col-lg-4"
+            role="listitem"
+            aria-labelledby="card-pacientes"
+          >
+            <section class="card-admin">
+              <h3 id="card-pacientes" class="card-admin-titulo">
+                Pacientes ativos
+              </h3>
+              <p class="card-admin-valor">320</p>
+              <p class="card-admin-info">Total cadastrado</p>
             </section>
-        </section>
+          </article>
 
-        <section class="mb-5" aria-labelledby="titulo-relatorios">
-            <h2 id="titulo-relatorios" class="titulo centralizar-texto mb-4">Relatórios</h2>
-            
-            <section class="row g-4" role="list">
-                <article class="col-12 col-lg-6" role="listitem" aria-labelledby="titulo-demandas">
-                    <h3 id="titulo-demandas" class="titulo-relatorio">Demandas por Especialidade</h3>
-                    
-                    <section class="item-progresso">
-                        <section class="info-progresso">
-                            <span class="texto-progresso">Dentista</span>
-                            <span class="valor-progresso">45 atendimentos</span>
-                        </section>
-                        <section class="barra-progresso" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Dentista 75%">
-                            <section class="preenchimento-progresso progresso-principal" style="width: 75%;"></section>
-                        </section>
-                    </section>
-
-                    <section class="item-progresso">
-                        <section class="info-progresso">
-                            <span class="texto-progresso">Cardiologia</span>
-                            <span class="valor-progresso">32 atendimentos</span>
-                        </section>
-                        <section class="barra-progresso" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" aria-label="Cardiologia 55%">
-                            <section class="preenchimento-progresso progresso-azul" style="width: 55%;"></section>
-                        </section>
-                    </section>
-
-                    <section class="item-progresso">
-                        <section class="info-progresso">
-                            <span class="texto-progresso">Pediatria</span>
-                            <span class="valor-progresso">28 atendimentos</span>
-                        </section>
-                        <section class="barra-progresso" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" aria-label="Pediatria 45%">
-                            <section class="preenchimento-progresso progresso-amarelo" style="width: 45%;"></section>
-                        </section>
-                    </section>
-                </article>
-
-                <article class="col-12 col-lg-6" role="listitem" aria-labelledby="titulo-eficiencia">
-                    <h3 id="titulo-eficiencia" class="titulo-relatorio">Eficiência de Agenda</h3>
-                    
-                    <section class="item-eficiencia">
-                        <span class="badge badge-ok" aria-label="Status ok">Ok</span>
-                        <span class="texto-eficiencia">Consultas realizadas</span>
-                        <span class="numero-eficiencia">142</span>
-                    </section>
-
-                    <section class="item-eficiencia">
-                        <span class="badge badge-alerta" aria-label="Status alerta">!</span>
-                        <span class="texto-eficiencia">Pendências de confirmação</span>
-                        <span class="numero-eficiencia">8</span>
-                    </section>
-
-                    <section class="item-eficiencia">
-                        <span class="badge badge-erro" aria-label="Status erro">X</span>
-                        <span class="texto-eficiencia">Cancelamentos/Faltas</span>
-                        <span class="numero-eficiencia">5</span>
-                    </section>
-                </article>
+          <article
+            class="col-12 col-md-6 col-lg-4"
+            role="listitem"
+            aria-labelledby="card-medicos"
+          >
+            <section class="card-admin">
+              <h3 id="card-medicos" class="card-admin-titulo">
+                Médicos disponíveis
+              </h3>
+              <p class="card-admin-valor">25</p>
+              <p class="card-admin-info">Em atendimento</p>
             </section>
+          </article>
         </section>
+      </section>
 
-        <section class="mb-5" aria-labelledby="titulo-configuracoes">
-            <h2 id="titulo-configuracoes" class="titulo centralizar-texto mb-4">Configurações</h2>
-            
-            <nav aria-label="Opções de configuração">
-                <section class="linha-config linha-config-primeira">
-                    <span class="texto-config">Solicitar Acesso Prioritário</span>
-                </section>
-
-                <section class="linha-config">
-                    <span class="texto-config">Atualizar Dados da Clínica</span>
-                </section>
-
-                <section class="linha-config linha-config-ultima">
-                    <span class="texto-config">Gerenciar Médicos e Recepcionistas</span>
-                </section>
-            </nav>
+      <section class="mb-5" aria-labelledby="titulo-agendamentos">
+        <h2 id="titulo-agendamentos" class="titulo centralizar-texto mb-4">
+          Agendamentos
+        </h2>
+        <section class="container-tabela-admin">
+          <table class="tabela-agendamentos" aria-label="Lista de agendamentos">
+            <thead>
+              <tr>
+                <th scope="col">Data/Hora</th>
+                <th scope="col">Paciente</th>
+                <th scope="col">Médico</th>
+                <th scope="col">Situação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>15/01/2024 - 09:00</td>
+                <td>Maria Silva</td>
+                <td>Dr. João Santos</td>
+                <td><span class="badge badge-confirmado">Confirmado</span></td>
+              </tr>
+              <tr>
+                <td>15/01/2024 - 10:30</td>
+                <td>Carlos Oliveira</td>
+                <td>Dra. Ana Costa</td>
+                <td><span class="badge badge-aguardando">Aguardando</span></td>
+              </tr>
+              <tr>
+                <td>15/01/2024 - 14:00</td>
+                <td>Fernanda Lima</td>
+                <td>Dr. Pedro Alves</td>
+                <td><span class="badge badge-cancelado">Cancelado</span></td>
+              </tr>
+              <tr>
+                <td>16/01/2024 - 08:30</td>
+                <td>Roberto Mendes</td>
+                <td>Dra. Juliana Rocha</td>
+                <td><span class="badge badge-confirmado">Confirmado</span></td>
+              </tr>
+            </tbody>
+          </table>
         </section>
+      </section>
+
+      <section class="mb-5" aria-labelledby="titulo-relatorios">
+        <h2 id="titulo-relatorios" class="titulo centralizar-texto mb-4">
+          Relatórios
+        </h2>
+
+        <section class="row g-4" role="list">
+          <article
+            class="col-12 col-lg-6"
+            role="listitem"
+            aria-labelledby="titulo-demandas"
+          >
+            <h3 id="titulo-demandas" class="titulo-relatorio">
+              Demandas por Especialidade
+            </h3>
+
+            <section class="item-progresso">
+              <section class="info-progresso">
+                <span class="texto-progresso">Dentista</span>
+                <span class="valor-progresso">45 atendimentos</span>
+              </section>
+              <section
+                class="barra-progresso"
+                role="progressbar"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Dentista 75%"
+              >
+                <section
+                  class="preenchimento-progresso progresso-principal"
+                  style="width: 75%"
+                ></section>
+              </section>
+            </section>
+
+            <section class="item-progresso">
+              <section class="info-progresso">
+                <span class="texto-progresso">Cardiologia</span>
+                <span class="valor-progresso">32 atendimentos</span>
+              </section>
+              <section
+                class="barra-progresso"
+                role="progressbar"
+                aria-valuenow="55"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Cardiologia 55%"
+              >
+                <section
+                  class="preenchimento-progresso progresso-azul"
+                  style="width: 55%"
+                ></section>
+              </section>
+            </section>
+
+            <section class="item-progresso">
+              <section class="info-progresso">
+                <span class="texto-progresso">Pediatria</span>
+                <span class="valor-progresso">28 atendimentos</span>
+              </section>
+              <section
+                class="barra-progresso"
+                role="progressbar"
+                aria-valuenow="45"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Pediatria 45%"
+              >
+                <section
+                  class="preenchimento-progresso progresso-amarelo"
+                  style="width: 45%"
+                ></section>
+              </section>
+            </section>
+          </article>
+
+          <article
+            class="col-12 col-lg-6"
+            role="listitem"
+            aria-labelledby="titulo-eficiencia"
+          >
+            <h3 id="titulo-eficiencia" class="titulo-relatorio">
+              Eficiência de Agenda
+            </h3>
+
+            <section class="item-eficiencia">
+              <span class="badge badge-ok" aria-label="Status ok">Ok</span>
+              <span class="texto-eficiencia">Consultas realizadas</span>
+              <span class="numero-eficiencia">142</span>
+            </section>
+
+            <section class="item-eficiencia">
+              <span class="badge badge-alerta" aria-label="Status alerta"
+                >!</span
+              >
+              <span class="texto-eficiencia">Pendências de confirmação</span>
+              <span class="numero-eficiencia">8</span>
+            </section>
+
+            <section class="item-eficiencia">
+              <span class="badge badge-erro" aria-label="Status erro">X</span>
+              <span class="texto-eficiencia">Cancelamentos/Faltas</span>
+              <span class="numero-eficiencia">5</span>
+            </section>
+          </article>
+        </section>
+      </section>
+
+      <section class="mb-5" aria-labelledby="titulo-configuracoes">
+        <h2 id="titulo-configuracoes" class="titulo centralizar-texto mb-4">
+          Configurações
+        </h2>
+
+        <nav aria-label="Opções de configuração">
+          <section class="linha-config linha-config-primeira">
+            <span class="texto-config">Solicitar Acesso Prioritário</span>
+          </section>
+
+          <section class="linha-config">
+            <span class="texto-config">Atualizar Dados da Clínica</span>
+          </section>
+
+          <section class="linha-config linha-config-ultima">
+            <span class="texto-config">Gerenciar Médicos e Recepcionistas</span>
+          </section>
+        </nav>
+      </section>
     </main>
 
     <footer class="rodape">
-        <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados</span></p>
+      <p class="rodape-copyrigth">
+        © 2026 PD Clínica. <span>Todos os Direitos Reservados</span>
+      </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
-</body>
+  </body>
 </html>
