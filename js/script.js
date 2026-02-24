@@ -3,6 +3,13 @@ const THEME_KEY = "theme";
 
 function applyTheme(theme) {
   document.body.classList.toggle("dark", theme === "dark");
+  updateIcons(theme);
+}
+
+function updateIcons(theme) {
+  document.querySelectorAll("[data-theme-toggle] i").forEach((icon) => {
+    icon.className = theme === "dark" ? "bi bi-moon" : "bi bi-sun";
+  });
 }
 
 const savedTheme = localStorage.getItem(THEME_KEY);
@@ -26,20 +33,21 @@ document.querySelectorAll("[data-theme-toggle]").forEach((btn) => {
   });
 });
 
-// Filtro de especialidades
 function filtrarEspecialidades() {
   let especialidadeSelecionada = document.getElementById("especialidade").value;
 
-  let todasAsCards = document.querySelectorAll(".card");
+  let todasAsColunas = document.querySelectorAll(
+    "#lista-especialidades > [id]",
+  );
 
-  todasAsCards.forEach((card) => {
+  todasAsColunas.forEach((coluna) => {
     if (
       especialidadeSelecionada === "" ||
-      card.id === especialidadeSelecionada
+      coluna.id === especialidadeSelecionada
     ) {
-      card.style.display = "flex";
+      coluna.style.display = "";
     } else {
-      card.style.display = "none";
+      coluna.style.display = "none";
     }
   });
 }

@@ -8,7 +8,6 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
 </head>
@@ -21,146 +20,153 @@
         <nav aria-label="Menu principal">
             <input type="checkbox" id="menu-aberto">
             <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
-                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px" fill="#FFFFFF" class="icon-menu"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px"
+                    fill="#FFFFFF" class="icon-menu">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
             </label>
             <ul class="lista-links">
-                <li><a href="/">Início</a></li>
-                <li><a href="institucional.html">Institucional</a></li>
-                <li><a href="conteudo-informativo.html">Informações</a></li>
+                <li><a href="/" class="link-underline-animado">Início</a></li>
+                <li><a href="institucional.html" class="link-underline-animado">Institucional</a></li>
+                <li><a href="conteudo-informativo.html" class="link-underline-animado">Informações</a></li>
                 <!-- MENU MOBILE -->
                 <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person"></i></a></li>
                 <!-- MENU MOBILE -->
             </ul>
         </nav>
+
         <div class="wrapper-botoes">
             <button type="button" class="botao-icone" data-theme-toggle><i class="bi bi-sun"></i></button>
             <a href="login.html" class="botao-icone"><i class="bi bi-person"></i></a>
         </div>
+
+
     </header>
 
     <!-- Conteudo principal -->
-    <main class="conteudo-principal-artigo">
+    <main class="flex-fill conteudo-artigo">
 
-        <nav aria-label="Navegação de retorno" class="nav-botao">
-            <a href="informacoes-blog.html" class="btn btn-voltar botao">
-                Voltar ao blog
-            </a>
-        </nav>
+        <section class="text-white py-5 sessao-hero">
+            <header class="container text-center text-lg-start">
+                <h1 class="fw-semibold">Vacinas na vida adulta</h1>
+                <p class="lead mb-0 subtitulo-hero-artigo">Quais são essenciais e por quê ?</p>
+            </header>
+        </section>
 
-        <article>
-            <div class="container-fluid p-0 caixa-principal-artigo">
-                <div class="caixa-secundaria-artigo order-2 order-md-1">
-                    <header>
-                        <h1>Vacinas na vida adulta</h1>
-                        <address>Dr. Pedro correia, Março de 2021</address>
-                    </header>
-                    <p>
-                        A vacinação na vida adulta representa uma estratégia fundamental para a manutenção da saúde
-                        individual
-                        e coletiva, contribuindo para a prevenção de doenças infecciosas e redução de complicações
-                        clínicas.
-                        Este artigo tem como objetivo discutir a relevância da imunização em adultos como parte
-                        integrante das
-                        ações de promoção da saúde,
-                        prevenção de agravos e fortalecimento do sistema imunológico ao longo da vida. Por meio de uma
-                        revisão
-                        teórica fictícia,
-                        são abordadas as principais vacinas recomendadas para a população adulta, sua periodicidade e
-                        aplicabilidade conforme fatores de risco,
-                        bem como os benefícios da atualização do calendário vacinal. Os achados indicam que a adesão às
-                        vacinas
-                        recomendadas
-                        contribui significativamente para a redução da morbimortalidade,
-                        prevenção de surtos epidemiológicos e melhoria da qualidade de vida.
+        <article class="container my-5 texto-artigo">
+
+            <div class="row g-5">
+
+                <div class="col-lg-8">
+                    <address>
+                        <p class="text-muted small mb-4">
+                            Dr. Pedro correia, <time datetime="2021-03">Março de 2021</time>
+                        </p>
+                    </address>
+
+                    <figure>
+                        <img src="../img/img-artigo-3.jpg" class="img-fluid rounded mb-4"
+                            alt="Imagem ilustrativa exame médica aplicando vacina em um adulto">
+                    </figure>
+
+
+                    <p class="mb-4">
+                        A vacinação na vida adulta representa uma estratégia fundamental para a manutenção da saúde individual e coletiva, 
+                        contribuindo para a prevenção de doenças infecciosas e redução de complicações clínicas. Este artigo tem como objetivo discutir a 
+                        relevância da imunização em adultos como parte integrante das ações de promoção da saúde, prevenção de agravos e fortalecimento do 
+                        sistema imunológico ao longo da vida. Por meio de uma revisão teórica fictícia, são abordadas as principais vacinas recomendadas 
+                        para a população adulta, sua periodicidade e aplicabilidade conforme fatores de risco, bem como os benefícios da atualização do 
+                        calendário vacinal. Os achados indicam que a adesão às vacinas recomendadas contribui significativamente para a redução da 
+                        morbimortalidade, prevenção de surtos epidemiológicos e melhoria da qualidade de vida.
                     </p>
-                    <br>
-                    <h2 class="topico-artigo">1. Introdução </h2>
 
+                    <h5 class="fw-bold mt-5">1. Introdução</h5>
                     <p>
-                        Tradicionalmente associada à infância, a vacinação tem sua importância frequentemente
-                        subestimada na
-                        fase adulta.
-                        No entanto, a manutenção da imunidade ao longo da vida é essencial, uma vez que a proteção
-                        conferida por
-                        algumas vacinas pode diminuir com o tempo.
-                        Além disso, adultos permanecem expostos a diversos agentes infecciosos em ambientes de trabalho,
-                        convivência social e deslocamentos frequentes,
-                        o que aumenta o risco de adoecimento e transmissão de doenças.
-                        Doenças imunopreveníveis, como influenza, hepatites virais e tétano,
-                        podem apresentar maior gravidade em adultos, especialmente em indivíduos com comorbidades.
-                        Dessa forma, a atualização do esquema vacinal assume papel central na prevenção em saúde.
+                        Tradicionalmente associada à infância, a vacinação tem sua importância frequentemente subestimada na fase adulta. 
+                        No entanto, a manutenção da imunidade ao longo da vida é essencial, uma vez que a proteção conferida por algumas vacinas pode diminuir com o tempo. 
+                        Além disso, adultos permanecem expostos a diversos agentes infecciosos em ambientes de trabalho, convivência social e deslocamentos frequentes, 
+                        o que aumenta o risco de adoecimento e transmissão de doenças. Doenças imunopreveníveis, como influenza, hepatites virais e tétano, 
+                        podem apresentar maior gravidade em adultos, especialmente em indivíduos com comorbidades. Dessa forma, a atualização do esquema vacinal 
+                        assume papel central na prevenção em saúde.
+                    </p>
+
+                    <h5 class="fw-bold mt-5">2. Metodologia</h5>
+                    <p>
+                        O presente artigo caracteriza-se como uma revisão teórica de natureza descritiva, baseada em literatura científica fictícia relacionada à 
+                        imunização na vida adulta. Foram analisados estudos hipotéticos disponíveis em bases de dados simuladas da área da saúde, 
+                        além de recomendações fictícias de programas nacionais e internacionais de imunização. A análise concentrou-se na identificação das 
+                        principais vacinas indicadas para adultos, sua periodicidade e relevância clínica conforme idade, condições de saúde e fatores ocupacionais.
+                    </p>
+
+                    <h5 class="fw-bold mt-5">3. Principais vacinas recomendadas para adultos</h5>
+                    <p>
+                        O calendário vacinal do adulto inclui vacinas essenciais para a prevenção de doenças infecciosas de alta relevância epidemiológica. 
+                        Entre as principais vacinas recomendadas destacam-se a vacina contra influenza, hepatite B, tétano e difteria, além da vacina contra 
+                        febre amarela em áreas de risco. Essas vacinas desempenham papel crucial na proteção individual, reduzindo o risco de infecções graves 
+                        e suas possíveis complicações clínicas.
+                        <br>
+                        <br>
+                        Além das vacinas de rotina, algumas imunizações são indicadas conforme situações específicas, como condições crônicas de saúde, gestação, 
+                        idade avançada ou exposição ocupacional. Vacinas como pneumocócica, herpes-zóster e HPV podem ser recomendadas em determinados grupos, 
+                        ampliando a proteção contra doenças potencialmente incapacitantes. A avaliação individualizada pelo profissional de saúde garante a 
+                        adequação do esquema vacinal e a segurança do paciente.
+                    </p>
+
+                    <h5 class="fw-bold mt-5">4. Importância da vacinação ao longo da vida adulta</h5>
+                    <p>
+                        A vacinação na vida adulta deve ser compreendida como uma ação contínua e complementar às práticas de promoção da saúde. 
+                        Em adultos jovens, a atualização do calendário vacinal contribui para a prevenção de doenças transmissíveis e proteção coletiva. 
+                        Já em indivíduos de meia-idade e idosos, a imunização assume papel ainda mais relevante devido ao declínio natural da resposta imunológica. 
+                        A prevenção de infecções nessa fase reduz internações hospitalares e complicações associadas.
+                        <br>
+                        <br>
+                        Além dos benefícios individuais, a vacinação em adultos impacta positivamente a saúde pública, contribuindo para a redução da circulação 
+                        de agentes infecciosos. A ampliação da cobertura vacinal fortalece a imunidade coletiva, protegendo grupos mais vulneráveis da população. 
+                        Dessa forma, a conscientização sobre a importância das vacinas na vida adulta representa um passo essencial para a construção de sistemas 
+                        de saúde mais eficazes e sustentáveis.
                     </p>
                 </div>
-                <figure class="figure-img-artigos col-12 col-md-6 col-lg-5 order-1 order-md-2">
-                    <img src="../img/img-artigo-3.png" alt="Imagem de um médico fazendo exames em uma senhora"
-                        class="img-fluid">
-                </figure>
-            </div>
 
-            <div class="caixa-secundaria-artigo">
-                <h2 class="topico-artigo">2. Metodologia</h2>
-                <p>
-                    O presente artigo caracteriza-se como uma revisão teórica de natureza descritiva, baseada em
-                    literatura
-                    científica
-                    fictícia relacionada à imunização na vida adulta. Foram analisados estudos hipotéticos disponíveis
-                    em bases
-                    de dados
-                    simuladas da área da saúde, além de recomendações fictícias de programas nacionais e internacionais
-                    de
-                    imunização.
-                    A análise concentrou-se na identificação das principais vacinas indicadas para adultos,
-                    sua periodicidade e relevância clínica conforme idade, condições de saúde e fatores ocupacionais.
-                </p>
+                <aside class="col-lg-4">
 
-                <h2 class="topico-artigo">3. Principais vacinas recomendadas para adultos</h2>
-                <p>
-                    O calendário vacinal do adulto inclui vacinas essenciais para a prevenção de doenças infecciosas de
-                    alta
-                    relevância epidemiológica.
-                    Entre as principais vacinas recomendadas destacam-se a vacina contra influenza,
-                    hepatite B, tétano e difteria, além da vacina contra febre amarela em áreas de risco.
-                    Essas vacinas desempenham papel crucial na proteção individual,
-                    reduzindo o risco de infecções graves e suas possíveis complicações clínicas.
-                </p>
+                    <article class="card shadow-sm mb-4 card-aside-artigo">
+                        <img src="../img/img-card-aside-artigo-1.jpg" class="card-img-top" alt="Notícias">
+                        <div class="card-body corpo-card">
+                            <h6 class="fw-bold">Notícias Pd clínica</h6>
+                            <p>
+                                Veja nossas últimas notícias atualizadas
+                            </p>
+                            <a href="#" class="link-underline-animado">Acessar</a>
+                        </div>
+                    </article>
+                    <article class="card  shadow-sm card-aside-artigo">
+                        <img src="../img/img-card-aside-artigo-2.jpg" class="card-img-top" alt="Redes sociais">
+                        <div class="card-body corpo-card">
+                            <h6 class="fw-bold">Estamos nas redes sociais</h6>
+                            <p>
+                                Confira nossos posts diários nas redes.
+                            </p>
+                            <a href="#" class="link-underline-animado text-start">Acessar</a>
+                        </div>
+                    </article>
 
-                <p>
-                    Além das vacinas de rotina, algumas imunizações são indicadas conforme situações específicas,
-                    como condições crônicas de saúde, gestação, idade avançada ou exposição ocupacional.
-                    Vacinas como pneumocócica, herpes-zóster e HPV podem ser recomendadas em determinados grupos,
-                    ampliando a proteção contra doenças potencialmente incapacitantes.
-                    A avaliação individualizada pelo profissional de saúde
-                    garante a adequação do esquema vacinal e a segurança do paciente.
-                </p>
-
-                <h2 class="topico-artigo">4. Importância da vacinação ao longo da vida adulta</h2>
-                <p>
-                    A vacinação na vida adulta deve ser compreendida como uma ação contínua e complementar às práticas
-                    de
-                    promoção da saúde.
-                    Em adultos jovens, a atualização do calendário vacinal contribui para a prevenção de doenças
-                    transmissíveis
-                    e proteção coletiva.
-                    Já em indivíduos de meia-idade e idosos,
-                    a imunização assume papel ainda mais relevante devido ao declínio natural da resposta imunológica.
-                    A prevenção de infecções nessa fase
-                    reduz internações hospitalares e complicações associadas.
-                </p>
-
-                <p>
-                    Além dos benefícios individuais, a vacinação em adultos impacta positivamente a saúde pública,
-                    contribuindo para a redução da circulação de agentes infecciosos.
-                    A ampliação da cobertura vacinal fortalece a imunidade coletiva,
-                    protegendo grupos mais vulneráveis da população.
-                    Dessa forma, a conscientização sobre a importância das vacinas na vida adulta
-                    representa um passo essencial para a construção de sistemas de saúde mais eficazes e sustentáveis.
-                </p>
+                </aside>
 
             </div>
         </article>
 
-
     </main>
+    <section class="bread py-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 small">
+                    <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
+                    <li class="breadcrumb-item"><a href="informacoes-blog.html">Blog</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Artigo</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
     <footer class="rodape">
         <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados<span></p>
     </footer>
