@@ -3,20 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PD Clínica | Área do Paciente</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+    <meta name="description" content="Área do paciente da PD Clínica.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
+    <title>PD Clínica | Área do Paciente</title>
   </head>
-  <body class="paciente-pagina">
-    <!-- Navbar -->
+  <body>
     <header class="cabecalho">
-        <img class="logo" src="../img/Logo-PD-Clinica.png">
+        <img class="logo" src="../img/Logo-PD-Clinica.png" alt="Logo PD Clínica">
         <nav aria-label="Menu principal">
             <input type="checkbox" id="menu-aberto">
             <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
@@ -26,72 +21,79 @@
                 <li><a href="/">Início</a></li>
                 <li><a href="institucional.html">Institucional</a></li>
                 <li><a href="conteudo-informativo.html">Informações</a></li>
-                <!-- MENU MOBILE -->
                 <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-box-arrow-right"></i></a></li>
-                <!-- MENU MOBILE -->
             </ul>
         </nav>
-        <div class="wrapper-botoes">
-            <button type="button" class="botao-icone" data-theme-toggle><i class="bi bi-sun"></i></button>
-            <a href="login.html" class="botao-icone"><i class="bi bi-box-arrow-right"></i></a>
-        </div>
+        <section class="wrapper-botoes">
+            <button type="button" class="botao-icone" data-theme-toggle aria-label="Alternar tema"><i class="bi bi-sun"></i></button>
+            <a href="login.html" class="botao-icone" aria-label="Sair"><i class="bi bi-box-arrow-right"></i></a>
+        </section>
     </header>
 
-    <main class="paciente-conteudo">
-      <section class="paciente-informacoes">
-        <h2>Informações Gerais</h2>
+    <main class="container my-5">
+      <h1 class="titulo centralizar-texto mb-5">Área <span class="destaque">do Paciente</span></h1>
 
-        <article class="paciente-card">
-          <img
-            src="../img/img-paciente-desktop.png"
-            class="paciente-card-img"
-            alt="Foto da paciente"
-          />
+      <section class="row g-4">
+        <article class="col-12 col-lg-4" aria-labelledby="titulo-informacoes">
+          <h2 id="titulo-informacoes" class="titulo centralizar-texto mb-4">Informações <span class="destaque">Gerais</span></h2>
 
-          <h5>Lívia Santos</h5>
-          <p>Paciente Cadastrada</p>
-          <p>Convênio: Unimed</p>
-          <p>Data de nascimento: 15/08/1995</p>
+          <section class="card-paciente">
+            <img
+              src="../img/img-paciente-desktop.png"
+              class="card-paciente-img"
+              alt="Foto da paciente"
+            />
+
+            <h3 class="card-paciente-nome">Lívia Santos</h3>
+            <p class="card-paciente-info">Paciente Cadastrada</p>
+            <p class="card-paciente-info">Convênio: Unimed</p>
+            <p class="card-paciente-info">Data de nascimento: 15/08/1995</p>
+          </section>
         </article>
-      </section>
 
-      <section class="paciente-consultas">
-        <h2>Consultas Agendadas</h2>
+        <article class="col-12 col-lg-8" aria-labelledby="titulo-consultas">
+          <h2 id="titulo-consultas" class="titulo centralizar-texto mb-4">Consultas <span class="destaque">Agendadas</span></h2>
 
-        <div class="wrapper-consultas">
-          <article class="paciente-consulta-card">
-            <h5>Clínica Geral</h5>
-            <p>Dr. João Silva</p>
-            <p>12/04/2026 • 14:30</p>
-            <small>Status: Agendada</small>
-          </article>
+          <section class="consultas-lista" role="list">
+            <article class="card-consulta" role="listitem">
+              <h3 class="card-consulta-titulo">Clínica Geral</h3>
+              <p class="card-consulta-info">Dr. João Silva</p>
+              <p class="card-consulta-info">12/04/2026 • 14:30</p>
+              <section class="card-consulta-status">
+                <p>Status: </p>
+                <span class="badge badge-cancelado">Cancelado</span>
+              </section>
+            </article>
 
-          <article class="paciente-consulta-card">
-            <h5>Psicologia</h5>
-            <p>Dra. Mariana Costa</p>
-            <p>18/04/2026 • 09:00</p>
-            <small>Status: Confirmada</small>
-          </article>
+            <article class="card-consulta" role="listitem">
+              <h3 class="card-consulta-titulo">Psicologia</h3>
+              <p class="card-consulta-info">Dra. Mariana Costa</p>
+              <p class="card-consulta-info">18/04/2026 • 09:00</p>
+              <section class="card-consulta-status">
+                <p>Status: </p>
+                <span class="badge badge-confirmado">Confirmado</span>
+              </section>
+            </article>
 
-          <article class="paciente-consulta-card">
-            <h5>Nutrição</h5>
-            <p>Dra. Paula Mendes</p>
-            <p>25/04/2026 • 16:00</p>
-            <small>Status: Agendada</small>
-          </article>
-        </div>
+            <article class="card-consulta" role="listitem">
+              <h3 class="card-consulta-titulo">Nutrição</h3>
+              <p class="card-consulta-info">Dra. Paula Mendes</p>
+              <p class="card-consulta-info">25/04/2026 • 16:00</p>
+              <section class="card-consulta-status">
+                <p>Status: </p>
+                <span class="badge badge-aguardando">Aguardando</span>
+              </section>
+            </article>
+          </section>
+        </article>
       </section>
     </main>
 
     <footer class="rodape">
-        <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados<span></p>
+        <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados</span></p>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>
