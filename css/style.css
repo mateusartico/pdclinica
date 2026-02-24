@@ -755,6 +755,7 @@ aside{
   display: flex;
   padding: 65px 155px;
   gap: 70px;
+  align-items: center;
 }
 
 .sessao-bloco-texto-img article {
@@ -814,6 +815,22 @@ aside{
   color: #ffffff;
   width: 70%;
 }
+
+/* PAGINA INSTITUCIONAL */
+.essencia{
+  padding: 60px 155px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  text-align: justify;
+}
+
+.essencia article div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}  
 
 /* Cabeçalho do modal */
 .modal-termos .modal-header {
@@ -1008,97 +1025,6 @@ aside{
   min-height: 420px;
   display: flex;
   align-items: center;
-}
-
-/* MEDIAS */
-
-@media (max-width: 768px) {
-  /* --- Ajustes do Cabeçalho Mobile --- */
-  .cabecalho {
-    padding: 21px 15px;
-  }
-
-  .icon-menu {
-    background-color: var(--cor-laranja);
-    padding: 5px;
-    border-radius: 4px;
-  }
-
-  .btn-menu {
-    display: block;
-  }
-
-  /* Esconde botões desktop */
-  .cabecalho .botao-icone,
-  #menu-aberto {
-    display: none;
-  }
-
-  /* Menu Hamburger (Dropdown) */
-  .lista-links {
-    display: none;
-    flex-direction: column;
-    align-items: start;
-    gap: 25px;
-    padding: 15px;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background-color: var(--cor-verde);
-    z-index: 100;
-  }
-
-  .botao-mobile-icone {
-    display: block;
-    font-family: var(--texto-mobile);
-  }
-
-  #menu-aberto:checked ~ .lista-links {
-    display: flex;
-  }
-
-  .rodape {
-    padding: 15px;
-    gap: 15px;
-  }
-
-  .rodape div nav {
-    display: block;
-  }
-
-  .rodape div {
-    justify-content: start;
-    margin: 0;
-    padding: 0;
-  }
-
-  .rodape div nav ul {
-    list-style: none;
-    font-size: var(--texto-mobile);
-  }
-
-  .rodape div nav ul a {
-    color: var(--cor-bg);
-    font-family: var(--fonte-texto);
-    font-weight: 600;
-    text-decoration: underline;
-  }
-
-  .rodape section,
-  .rodape-links,
-  .none {
-    display: none;
-  }
-
-  .rodape-copyrigth {
-    font-size: var(--texto-mobile);
-  }
-
-  .rodape-copyrigth span {
-    display: block;
-  }
 }
 
 .card-admin,
@@ -1412,4 +1338,94 @@ aside{
 }
 .badge-cancelado {
   background-color: #f44336;
+}
+
+/* MEDIAS */
+@media (max-width: 768px) {
+  /* --- Ajustes do Cabeçalho Mobile --- */
+  .cabecalho {
+    padding: 21px 15px;
+  }
+
+  .icon-menu {
+    background-color: var(--cor-laranja);
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  /* Esconde botões desktop */
+  .cabecalho .botao-icone,
+  #menu-aberto {
+    display: none;
+  }
+
+  /* Menu Hamburger (Dropdown) */
+  .lista-links {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    gap: 25px;
+    padding: 15px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: var(--cor-verde);
+    z-index: 100;
+  }
+
+  .botao-mobile-icone {
+    display: block;
+    font-family: var(--texto-mobile);
+  }
+
+  #menu-aberto:checked ~ .lista-links {
+    display: flex;
+  }
+
+  .rodape {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .rodape div nav {
+    display: block;
+  }
+
+  .rodape div {
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .rodape div nav ul {
+    list-style: none;
+    font-size: var(--texto-mobile);
+  }
+
+  .rodape div nav ul a {
+    color: var(--cor-bg);
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .rodape section,
+  .rodape-links,
+  .none {
+    display: none;
+  }
+
+  .rodape-copyrigth {
+    font-size: var(--texto-mobile);
+  }
+
+  .rodape-copyrigth span {
+    display: block;
+  }
 }
