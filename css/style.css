@@ -775,6 +775,132 @@ aside{
   width: 70%;
 }
 
+/* ESTILIZAÇÃO DAS PÁGINAS DE ESPECIALIDADES (ELIAS) */
+
+/* HERO DERMATOLOGIA*/
+.hero-dermatologia {
+ background: linear-gradient(
+      to right,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.85) 35%,
+      rgba(255,255,255,0.40) 65%,
+      rgba(255,255,255,0.10) 85%,
+      rgba(255,255,255,0) 100%
+    ),
+  url('../img/img-dermatologia-1.jpg') center/cover no-repeat;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-dermatologia h1 {
+  font-weight: 600;
+}
+
+.botao-marcar-consulta {
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  background-color: var(--cor-principal);
+  font-size: 20px;
+  border-radius: 8px;
+}
+
+/* Títulos das seções */
+.Titulos-sessao {
+  font-family: var(--fonte-titulo);
+  color: var(--cor-principal);
+  font-size: var(--titulo-tam-desktop);
+  margin-bottom: 1.5rem;
+}
+
+.container-titulo-hero h1{
+  color: var(--cor-principal);
+  font-size: 48;
+  font-family: var(--fonte-titulo);
+}
+
+.container-titulo-hero p{
+  font-family: var(--texto-desktop);
+  font-weight: 600;
+}
+
+/* HERO NEUROLOGIA*/
+.hero-neurologia{
+  background: linear-gradient(
+      to right,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.85) 35%,
+      rgba(255,255,255,0.40) 65%,
+      rgba(255,255,255,0.10) 85%,
+      rgba(255,255,255,0) 100%
+    ),
+  url('../img/img-especialidade-neurologia.jpg') center/cover no-repeat;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+/* HERO CARDIOLOGIA*/
+.hero-cardiologia{
+  background: linear-gradient(
+      to right,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.85) 35%,
+      rgba(255,255,255,0.40) 65%,
+      rgba(255,255,255,0.10) 85%,
+      rgba(255,255,255,0) 100%
+    ),
+  url('../img/img-especialidade-cardiologia.jpg') center/cover no-repeat;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-ortopedia{
+   background: linear-gradient(
+      to right,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.85) 35%,
+      rgba(255,255,255,0.40) 65%,
+      rgba(255,255,255,0.10) 85%,
+      rgba(255,255,255,0) 100%
+    ),
+  url('../img/img-especialidade-ortopedia.jpg') center/cover no-repeat;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-pediatria{
+   background: linear-gradient(
+      to right,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.85) 35%,
+      rgba(255,255,255,0.40) 65%,
+      rgba(255,255,255,0.10) 85%,
+      rgba(255,255,255,0) 100%
+    ),
+  url('../img/img-especialidade-pediatria.jpg') center/cover no-repeat;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-psiquiatria{
+  background: linear-gradient(
+      to right,
+      rgba(255,255,255,0.95) 0%,
+      rgba(255,255,255,0.85) 35%,
+      rgba(255,255,255,0.40) 65%,
+      rgba(255,255,255,0.10) 85%,
+      rgba(255,255,255,0) 100%
+    ),
+  url('../img/img-especialidade-psiquiatria.jpg') center/cover no-repeat;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+}
+
 /* MEDIAS */
 
 @media (max-width: 768px) {
