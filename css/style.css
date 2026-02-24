@@ -609,6 +609,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: flex;
   padding: 65px 155px;
   gap: 70px;
+  align-items: center;
 }
 
 .sessao-bloco-texto-img article{ 
@@ -666,6 +667,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 2em;
   color: #ffffff;
   width: 70%;
+}
+
+/* PAGINA INSTITUCIONAL */
+.essencia{
+  padding: 60px 155px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  text-align: justify;
+}
+
+.essencia article div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
 }
 
 /* MEDIAS */
