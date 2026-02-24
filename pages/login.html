@@ -11,37 +11,49 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/toasts-alerts.css" />
-    <link rel="stylesheet" href="../css/dark-mode.css" />
-    <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../img/favicon-pdclinica.png"
+      type="image/x-icon"
+    />
   </head>
-  <body class="autenticacao-pagina">
-    <div class="autenticacao-logo">PD Clínica</div>
-    <main class="autenticacao-conteudo">
-      <div class="autenticacao-card">
-        <header>Entrar</header>
+  <body class="pag-autenticacao">
+    <div class="logo-flutuante">
+      <img src="../img/Logo-PD-Clinica.png" alt="Logo PD Clínica" />
+    </div>
+    <main class="conteudo-autenticacao">
+      <section class="card-autenticacao">
         <form action="#" id="form-login">
-          <input
-            id="login-email"
-            class="input-txt"
-            type="email"
-            placeholder="E-mail"
-          />
-          <input
-            id="login-senha"
-            class="input-txt"
-            type="password"
-            placeholder="Senha"
-          />
-          <a href="recuperar-senha.html">Esqueci minha senha</a>
-          <div class="wrapper-botoes">
-            <a href="cadastro.html">Ainda não tenho uma conta</a>
-            <a href="../index.html" class="botao">Voltar</a>
+          <header class="cabecalho-form"><h1>Entrar</h1></header>
+          <div class="corpo-form">
+            <input
+              id="login-email"
+              class="input-txt"
+              type="email"
+              placeholder="E-mail"
+            />
+            <input
+              id="login-senha"
+              class="input-txt"
+              type="password"
+              placeholder="Senha"
+            />
+            <a class="link-simples" href="recuperar-senha.html"
+              >Esqueci minha senha</a
+            >
+            <div class="wrapper-botoes">
+              <a class="link-simples" href="cadastro.html"
+                >Ainda não tenho uma conta</a
+              >
+              <a href="../index.html" class="botao">Voltar</a>
 
-            <button type="button" id="btn-entrar" class="botao">Entrar</button>
+              <button type="button" id="btn-entrar" class="botao">
+                Entrar
+              </button>
+            </div>
           </div>
         </form>
-      </div>
+      </section>
     </main>
 
     <script

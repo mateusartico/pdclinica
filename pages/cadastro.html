@@ -13,70 +13,189 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/toasts-alerts.css" />
     <link rel="stylesheet" href="../css/dark-mode.css" />
-    <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../img/favicon-pdclinica.png"
+      type="image/x-icon"
+    />
   </head>
-  <body class="autenticacao-pagina">
-    <div class="autenticacao-logo">PD Clínica</div>
-    <main class="autenticacao-conteudo">
-      <div class="autenticacao-card">
-        <header>Cadastrar</header>
+  <body class="pag-autenticacao">
+    <div class="logo-flutuante">
+      <img src="../img/Logo-PD-Clinica.png" alt="Logo PD Clínica" />
+    </div>
 
+    <main class="conteudo-autenticacao">
+      <section class="card-autenticacao">
         <form action="#" id="form-cadastro">
-          <div class="wrapper-inputs">
+          <header class="cabecalho-form"><h1>Cadastrar</h1></header>
+          <div class="corpo-form">
+            <div class="wrapper-inputs">
+              <input
+                id="cad-nome"
+                class="input-txt"
+                type="text"
+                placeholder="Informe seu Nome"
+              />
+              <input
+                id="cad-telefone"
+                class="input-txt"
+                type="tel"
+                placeholder="Informe seu Telefone"
+                maxlength="15"
+              />
+            </div>
+
             <input
-              id="cad-nome"
+              id="cad-email"
               class="input-txt"
-              type="text"
-              placeholder="Informe seu Nome"
+              type="email"
+              placeholder="Informe o seu E-mail"
             />
-            <input
-              id="cad-telefone"
-              class="input-txt"
-              type="tel"
-              placeholder="Informe seu Telefone"
-              maxlength="15"
-            />
-          </div>
 
-          <input
-            id="cad-email"
-            class="input-txt"
-            type="email"
-            placeholder="Informe o seu E-mail"
-          />
+            <div class="wrapper-inputs">
+              <input
+                id="cad-senha"
+                class="input-txt"
+                type="password"
+                placeholder="Escolha uma Senha"
+              />
+              <input
+                id="cad-confirma-senha"
+                class="input-txt"
+                type="password"
+                placeholder="Confirme a Senha"
+              />
+            </div>
 
-          <input
-            id="cad-senha"
-            class="input-txt"
-            type="password"
-            placeholder="Escolha uma Senha"
-          />
+            <div>
+              <label class="input-checkbox" for="check-termos">
+                <input type="checkbox" name="termos" id="check-termos" />
+                Aceito os
+                <span
+                  class="destaque"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalTermos"
+                  role="button"
+                  tabindex="0"
+                  aria-label="Abrir Termos de Uso"
+                  >Termos</span
+                >
+              </label>
+            </div>
 
-          <input
-            id="cad-confirma-senha"
-            class="input-txt"
-            type="password"
-            placeholder="Confirme a Senha"
-          />
-
-          <div>
-            <label class="input-checkbox" for="check-termos">
-              <input type="checkbox" name="termos" id="check-termos" />
-              Aceito os<span> Termos</span>
-            </label>
-          </div>
-
-          <div class="wrapper-botoes">
-            <a href="login.html">Já tenho uma conta</a>
-            <a href="../index.html" class="botao">Voltar</a>
-
-            <button type="button" class="botao" id="btn-cadastrar">
-              Cadastrar
-            </button>
+            <div class="wrapper-botoes">
+              <a class="link-simples" href="login.html">Já tenho uma conta</a>
+              <a href="../index.html" class="botao">Voltar</a>
+              <button type="button" class="botao" id="btn-cadastrar">
+                Cadastrar
+              </button>
+            </div>
           </div>
         </form>
-      </div>
+      </section>
     </main>
+
+    <div
+      class="modal fade modal-termos"
+      id="modalTermos"
+      tabindex="-1"
+      aria-labelledby="modalTermosLabel"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title" id="modalTermosLabel">
+              Termos de Uso — <span class="destaque">PD Clínica</span>
+            </h3>
+          </div>
+
+          <div class="modal-body">
+            <p>
+              Ao acessar e utilizar o site da <strong>PD Clínica</strong>, você
+              concorda com os presentes Termos de Uso. Caso não concorde com
+              alguma das condições, recomendamos que não utilize este site.
+            </p>
+
+            <div class="termos-secao">
+              <h6>1. Finalidade do Site</h6>
+              <p>
+                O site possui caráter informativo e institucional,
+                disponibilizando informações sobre serviços, especialidades e
+                formas de contato. Também permite a solicitação de agendamentos
+                e o envio de currículos por meio dos formulários disponíveis.
+              </p>
+              <p>
+                O envio de uma solicitação de agendamento não garante a
+                confirmação automática da consulta, que dependerá do retorno da
+                equipe da clínica.
+              </p>
+            </div>
+
+            <div class="termos-secao">
+              <h6>2. Responsabilidades do Usuário</h6>
+              <p>
+                O usuário compromete-se a fornecer informações verdadeiras e
+                atualizadas, bem como a utilizar o site de forma ética e legal,
+                sem praticar qualquer ato que comprometa sua segurança ou
+                funcionamento.
+              </p>
+            </div>
+
+            <div class="termos-secao">
+              <h6>3. Informações Médicas</h6>
+              <p>
+                As informações disponibilizadas no site têm caráter informativo
+                e <strong>não substituem</strong>
+                avaliação, diagnóstico ou atendimento médico presencial. Em caso
+                de sintomas ou urgência, procure atendimento médico imediato.
+              </p>
+            </div>
+
+            <div class="termos-secao">
+              <h6>4. Proteção de Dados</h6>
+              <p>
+                Os dados pessoais fornecidos são tratados em conformidade com a
+                legislação vigente, especialmente a
+                <strong
+                  >Lei Geral de Proteção de Dados (LGPD – Lei nº
+                  13.709/2018)</strong
+                >, sendo utilizados exclusivamente para finalidades relacionadas
+                aos serviços da clínica, como agendamentos, contatos e processos
+                seletivos.
+              </p>
+            </div>
+
+            <div class="termos-secao">
+              <h6>5. Propriedade Intelectual</h6>
+              <p>
+                Todo o conteúdo do site é de propriedade da PD Clínica, sendo
+                proibida sua reprodução ou utilização sem autorização prévia.
+              </p>
+            </div>
+
+            <div class="termos-secao">
+              <h6>6. Alterações</h6>
+              <p>
+                A PD Clínica pode atualizar estes Termos de Uso a qualquer
+                momento, mediante publicação da versão revisada no site.
+              </p>
+              <p>
+                Em caso de dúvidas, entre em contato pelos canais oficiais
+                disponibilizados.
+              </p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="botao" data-bs-dismiss="modal">
+              Voltar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

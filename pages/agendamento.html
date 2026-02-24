@@ -11,91 +11,91 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/toasts-alerts.css">
-    <link rel="stylesheet" href="../css/dark-mode.css" />
     <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
   </head>
   <body class="agendamento-pagina">
     <!-- Navbar -->
     <header class="cabecalho">
-      <h1 class="logo">PD Clínica</h1>
-      <nav>
-        <input type="checkbox" id="menu-aberto" />
-        <label for="menu-aberto" class="btn-menu">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="38px"
-            viewBox="0 -960 960 960"
-            width="38px"
-            fill="#FFFFFF"
-            class="icon-menu"
-          >
-            <path
-              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-            />
-          </svg>
-        </label>
-        <ul class="lista-links">
-          <li><a href="/">Início</a></li>
-          <li><a href="institucional.html">Institucional</a></li>
-          <li><a href="conteudo-informativo.html">Informações</a></li>
-          <!-- MENU MOBILE -->
-          <li><a href="login.html" class="botao-mobile">Entrar</a></li>
-          <!-- MENU MOBILE -->
-        </ul>
-      </nav>
-      <a href="login.html" class="botao">Entrar</a>
+        <img class="logo" src="../img/Logo-PD-Clinica.png">
+        <nav aria-label="Menu principal">
+            <input type="checkbox" id="menu-aberto">
+            <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
+                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px" fill="#FFFFFF" class="icon-menu"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
+            </label>
+            <ul class="lista-links">
+                <li><a href="/">Início</a></li>
+                <li><a href="institucional.html">Institucional</a></li>
+                <li><a href="conteudo-informativo.html">Informações</a></li>
+                <!-- MENU MOBILE -->
+                <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person"></i></a></li>
+                <!-- MENU MOBILE -->
+            </ul>
+        </nav>
+        <div class="wrapper-botoes">
+            <button type="button" class="botao-icone" data-theme-toggle><i class="bi bi-sun"></i></button>
+            <a href="login.html" class="botao-icone"><i class="bi bi-person"></i></a>
+        </div>
     </header>
-    <main class="agendamento-conteudo">
-  <div class="agendamento-card">
-    <header>Agendamento</header>
-    <form action="#" id="form-agendamento">
-      <div class="wrapper-inputs">
-        <input
-          class="input-txt"
-          type="text"
-          id="nome"
-          placeholder="Informe seu Nome"
-        />
-        <input
-          class="input-txt"
-          type="tel" 
-          id="telefone"
-          placeholder="Informe seu Telefone"
-          maxlength="15"
-        />
-      </div>
-      <select class="select" name="convenio" id="select-convenio">
-        <option value="" selected disabled>Escolha um Convênio</option>
-        <option value="unimed">Unimed</option>
-        <option value="amil">Amil</option>
-        <option value="bradescoSaude">Bradesco Saúde</option>
-        <option value="nenhum">Nenhum</option>
-      </select>
 
-      <select class="select" name="especialidade" id="select-especialidade">
-        <option value="" selected disabled>
-          Escolha uma Especialidade
-        </option>
-        <option value="cardiologia">Cardiologia</option>
-        <option value="dermatologia">Dermatologia</option>
-        <option value="neurologia">Neurologia</option>
-        <option value="ortopedia">Ortopedia</option>
-        <option value="pediatria">Pediatria</option>
-        <option value="psiquiatria">Psiquiatria</option>
-      </select>
-
-      <div class="campo-data">
-        <input type="date" id="data" required />
-        <label for="data">Selecione uma data</label>
+    <main class="pag-agendamento">
+      <div class="bg-img-agendamento">
+        <h1>Agende sua consulta de forma rápida e segura, escolhendo o melhor horário para você.</h1>
       </div>
+      <section class="container-form">
+            <form action="#" id="form-agendamento">
+              
+        <header class="cabecalho-form">
+          <h1>Agendamento</h1>
+        </header>
+              <article class="corpo-form">
+                <div class="wrapper-inputs">
+                  <input
+                class="input-txt"
+                type="text"
+                id="nome"
+                placeholder="Informe seu Nome"
+              />
+              <input
+                class="input-txt"
+                type="tel"
+                id="telefone"
+                placeholder="Informe seu Telefone"
+                maxlength="15"
+              />
+                </div>
+              <div class="wrapper-inputs">
+                <select class="select" name="convenio" id="select-convenio">
+                <option value="" selected disabled>Escolha um Convênio</option>
+                <option value="unimed">Unimed</option>
+                <option value="amil">Amil</option>
+                <option value="bradescoSaude">Bradesco Saúde</option>
+                <option value="nenhum">Nenhum</option>
+              </select>
+              <select class="select" name="especialidade" id="select-especialidade">
+                <option value="" selected disabled>
+                  Escolha uma Especialidade
+                </option>
+                <option value="cardiologia">Cardiologia</option>
+                <option value="dermatologia">Dermatologia</option>
+                <option value="neurologia">Neurologia</option>
+                <option value="ortopedia">Ortopedia</option>
+                <option value="pediatria">Pediatria</option>
+                <option value="psiquiatria">Psiquiatria</option>
+              </select>
+              </div>
+              <div class="wrapper-inputs">
+                <input type="date" class="input-data" id="data" required />
+                <label for="data">Selecione uma data</label>
+              </div>
+                <div class="wrapper-botoes">
+                  
+                <a href="#" class="botao" id="btn-agendar">Agendar</a>
+                </div>
+              </article>
+            </form>
+        </section>
+      </main>
 
-      <div class="wrapper-botoes">
-        <a href="#" class="botao" id="btn-agendar">Agendar</a>
-      </div>
-    </form>
-  </div>
-</main>
     <footer class="rodape">
         <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados<span></p>
     </footer>
