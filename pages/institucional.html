@@ -15,7 +15,7 @@
         <nav aria-label="Menu principal">
             <input type="checkbox" id="menu-aberto">
             <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
-                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px"
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
                     fill="#FFFFFF" class="icon-menu">
                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                 </svg>
@@ -25,7 +25,11 @@
                 <li><a href="institucional.html">Institucional</a></li>
                 <li><a href="conteudo-informativo.html">Informações</a></li>
                 <!-- MENU MOBILE -->
-                <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person"></i></a></li>
+                <div>
+                    <button type="button" class="botao-mobile-icone" data-theme-toggle><i
+                            class="bi bi-sun icone-mobile"></i></button>
+                    <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person icone-mobile"></i></a></li>
+                </div>
                 <!-- MENU MOBILE -->
             </ul>
         </nav>
@@ -38,8 +42,8 @@
     <main>
         <section class="sessao-bloco-texto-img sessao-fundo-azul">
             <article>
-                <h2 class="titulo">Sobre <span class="destaque">Nós<span></h2>
-                <p class="descricao">Somos uma clínica médica dedicada a oferecer atendimento de qualidade, pautado pela
+                <h2>Sobre <span class="destaque">Nós<span></h2>
+                <p>Somos uma clínica médica dedicada a oferecer atendimento de qualidade, pautado pela
                     ética, pelo respeito e pelo cuidado humanizado. Nosso trabalho é centrado no paciente, valorizando a
                     escuta, a atenção individual e a clareza nas orientações, para que cada pessoa se sinta segura e
                     acolhida durante todo o atendimento. Atuamos com responsabilidade e compromisso com a saúde,
@@ -83,9 +87,8 @@
                     </svg>
                     <h2 class="destaque">Valores</h2>
                 </div>
-                <p>Ética e responsabilidade em todas as ações, respeito às pessoas, atenção individualizada,
-                    compromisso
-                    com a qualidade do atendimento e valorização do cuidado humano.</p>
+                <p>Ética e responsabilidade em todas as ações, respeito às pessoas, atenção individualizada, compromisso
+                    com a qualidade e valorização do cuidado.</p>
             </article>
         </section>
 

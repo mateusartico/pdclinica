@@ -605,36 +605,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* sessoes */
-.sessao-bloco-texto-img{
+.sessao-bloco-texto-img {
   display: flex;
   padding: 65px 155px;
   gap: 70px;
   align-items: center;
 }
 
-.sessao-bloco-texto-img article{ 
+.sessao-bloco-texto-img article {
   display: flex;
   flex-direction: column;
   width: 50%;
   text-align: justify;
+  justify-content: center;
+  gap: 15px;
 }
 
-.sessao-bloco-texto-img img{
+.sessao-bloco-texto-img img {
   width: 50%;
+  border-radius: 8px;
 }
 
-.sessao-bloco-texto-img article h2, .sessao-bloco-texto-img article p{ 
-  margin-bottom: 25px;
-}
 
-.sessao-fundo-azul{
+.sessao-fundo-azul {
   background-color: var(--cor-bg-sessao);
 }
 
-.sessao-bloco-texto-img article a{
+.sessao-bloco-texto-img article a {
   width: fit-content;
-} 
-  
+}
+
 .pag-contato,
 .pag-agendamento {
   display: flex;
@@ -670,7 +670,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* PAGINA INSTITUCIONAL */
-.essencia{
+.essencia {
   padding: 60px 155px;
   display: flex;
   justify-content: center;
@@ -679,7 +679,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   text-align: justify;
 }
 
-.essencia article div{
+.essencia article div {
   display: flex;
   align-items: center;
   margin-bottom: 1em;
@@ -687,14 +687,57 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* MEDIAS */
 
+/* Intermediario */
+@media (min-width: 901px) and (max-width: 1300px) {
+
+  .sessao-bloco-texto-img {
+    padding: 40px 50px;
+    gap: 30px;
+  }
+
+  .essencia {
+    padding: 40px 50px;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+
+  .sessao-bloco-texto-img {
+    flex-direction: column-reverse;
+    gap: 0;
+    padding: 0;
+  }
+
+  .sessao-bloco-texto-img article {
+    width: 100%;
+    padding: 40px 50px;
+  }
+
+  .sessao-bloco-texto-img img {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .essencia {
+    padding: 40px 50px;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
+
   /* --- Ajustes do Cabeçalho Mobile --- */
   .cabecalho {
     padding: 21px 15px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .icon-menu {
-    background-color: var(--cor-laranja);
+    background-color: var(--cor-principal);
     padding: 5px;
     border-radius: 4px;
   }
@@ -705,7 +748,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   /* Esconde botões desktop */
   .cabecalho .botao-icone,
-  #menu-aberto {
+  #menu-aberto, .wrapper-botoes {
     display: none;
   }
 
@@ -714,20 +757,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     flex-direction: column;
     align-items: start;
-    gap: 25px;
+    gap: 20px;
     padding: 15px;
     position: absolute;
-    top: 70px;
+    top: 85px;
     left: 0;
     width: 100%;
     height: auto;
-    background-color: var(--cor-verde);
+    background-color: var(--cor-bg-componente);
     z-index: 100;
   }
 
   .botao-mobile-icone {
     display: block;
-    font-family: var(--texto-mobile);
+  }
+
+  .lista-links div{
+    display: flex;
+    gap: 20px;
+    height: 50px;
+    align-items: center;
+  }
+
+  .lista-links div button{
+    background-color: transparent;
+    border: none;
+  }
+
+  .botao-mobile-icone{
+    font-size: var(--titulo-tam-mobile);
+    color: var(--cor-principal);
   }
 
   #menu-aberto:checked~.lista-links {
@@ -773,5 +832,46 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .rodape-copyrigth span {
     display: block;
+  }
+
+  .sessao-bloco-texto-img {
+    flex-direction: column-reverse;
+    gap: 0;
+    padding: 0;
+  }
+
+  .sessao-bloco-texto-img article h2{
+    text-align: center;
+    font-size: var(--titulo-tam-mobile);
+  }
+
+ .sessao-bloco-texto-img article p{
+    text-align: center;
+    font-size: var(--texto-tam-mobile);
+    text-align: justify;
+  }
+
+  .sessao-bloco-texto-img article {
+    width: 100%;
+    padding: 30px 15px;
+  }
+
+  .sessao-bloco-texto-img img {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .essencia {
+    padding: 30px 40px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .essencia article div h2{
+    font-size: var(--titulo-tam-mobile);
+  }
+
+  .essencia article p{
+    font-size: var(--texto-tam-mobile);
   }
 }
