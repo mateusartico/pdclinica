@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="shortcut icon"
       href="../img/favicon-pdclinica.png"
@@ -17,6 +16,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
@@ -225,42 +225,34 @@
         </div>
 
         <div class="container mb-5">
-          <div class="row justify-content-center">
-            <div class="col-12 col-lg-12">
-              <div class="table-responsive rounded-3 overflow-hidden">
-                <table
-                  class="table table-hover table-bordered align-middle"
-                  role="table"
-                  aria-label="Tabela de preços de serviços"
-                >
-                  <thead>
-                    <tr>
-                      <th scope="col">Serviços/Procedimentos</th>
-                      <th scope="col">Convênio</th>
-                      <th scope="col">Valor (R$)</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Consulta Cardiologia</td>
-                      <td>Unimed</td>
-                      <td>R$ 250,00</td>
-                    </tr>
-                    <tr>
-                      <td>Exame Dermatológico</td>
-                      <td>Bradesco Saúde</td>
-                      <td>R$ 180,00</td>
-                    </tr>
-                    <tr>
-                      <td>Consulta Pediatria</td>
-                      <td>Amil</td>
-                      <td>R$ 200,00</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
+          <section class="container-tabela">
+          <table class="tabela" aria-label="Lista de agendamentos">
+            <thead>
+              <tr>
+                <th scope="col">Serviços</th>
+                <th scope="col">Convênio</th>
+                <th scope="col">Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Consulta Cardiológica</td>
+                <td>Unimed</td>
+                <td>R$ 250,00</td>
+              </tr>
+              <tr>
+                <td>Exame Dermatológico</td>
+                <td>Bradesco Saúde</td>
+                <td>R$ 180,00</td>
+              </tr>
+              <tr>
+                <td>Consulta Pediátrica</td>
+                <td>Amil</td>
+                <td>R$ 200,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
         </div>
       </section>
     </main>

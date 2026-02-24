@@ -3,6 +3,13 @@ const THEME_KEY = "theme";
 
 function applyTheme(theme) {
   document.body.classList.toggle("dark", theme === "dark");
+  updateIcons(theme);
+}
+
+function updateIcons(theme) {
+  document.querySelectorAll("[data-theme-toggle] i").forEach((icon) => {
+    icon.className = theme === "dark" ? "bi bi-moon" : "bi bi-sun";
+  });
 }
 
 const savedTheme = localStorage.getItem(THEME_KEY);
