@@ -469,6 +469,113 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin: 0;
 }
 
+/* ESTILIZAÇÃO DAS PÁGINAS DE ARTIGOS (ELIAS) */
+
+/* Define a cor de fundo da sessão hero (Contém o titulo principal da página de artigos)*/
+.sessao-hero{ 
+  background-color: var(--cor-principal);
+}
+
+/* Define  o tamanho do titulo principal da página*/
+.sessao-hero h1{
+  font-size: 48px;
+}
+
+/* Define cor, tamaho da fonte e estilo da fonte do subtitulo principal da página) */
+.subtitulo-hero-artigo{
+  color: white;
+  font-size: 24px;
+  font-style: italic;
+}
+
+/* Define cor e tamaho da fonte dos parágrafos dos artigos */
+article p{
+  font-size: 20px;
+  color: var(--cor-texto);
+}
+
+/* Define cor, tamanho e fonte a ser usada nos titulos h5 */
+.texto-artigo h5{
+  color: var(--cor-principal);
+  font-size: var(--titulo-tam-desktop);
+  font-family: var(--fonte-titulo);
+}
+
+/* Aplica alinhamentos no container aside usando flex-box */
+aside{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 50px 0 !important;
+}
+
+/* Define largura, preenchimento interno, e alinhamento dos cards do aside */
+.card-aside-artigo{
+  width: 70%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor-bg-sessao);
+}
+
+/* Define cor, alinhamento e preenchimento interno dos elemntos de dentro dos cards do aside */
+.corpo-card{
+  background-color: var(--cor-bg-sessao);
+  display: flex;
+  padding: 20px;
+}
+
+/* Define cor, tamanho da fonte e largura do h6 interno do card do aside */
+.corpo-card h6{
+  font-size: 24px;
+  width: 100%;
+}
+
+/* Define tamanho de fonte, cor, peso da fonte e margem do texto de dentro do card do aside*/
+.corpo-card p{
+  font-size: 20px;
+  color: var(--cor-texto);
+  font-weight:300 ;
+  margin-bottom: 8px;
+}
+
+/* Define tamanho da fonte, tira a decoração de link e muda a cor do elemnto <a> do card do aside*/
+.corpo-card a{
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--cor-principal);
+}
+
+/* Muda a cor do texto quando o usuário passar o mouse por cima do link de "saiba mais" do card*/
+.corpo-card a:hover{
+  color: var(--cor-ativo);
+}
+
+/* Cria um pseudo elemento que vai ser uma barra que vai aparecer embaixo dos links quando o usuário passar o mouse. */
+.link-underline-animado::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--cor-ativo);
+  transform: scaleX(0);
+  transform-origin:left;
+  transition: transform 0.25s ease-in-out;
+}
+
+/* Posiciona o pseudo elemento em relação ao link*/
+.link-underline-animado{
+  position: relative;
+  display: inline-block;
+}
+
+/* Faz o efeito de barra ir crescendo até ocupar a largura total do link quando o usuário passa o mouse por cima */
+.link-underline-animado:hover::after{
+  transform: scaleX(1);
+}
+
 /* PAGINA INICIO */
 /* carrossel */
 .carrossel-inicio {
@@ -768,7 +875,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 24px;
   display: flex;
   flex-direction: column;
-  align-itens: center;
+  align-items: center;
   gap: 12px;
 }
 
