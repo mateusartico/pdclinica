@@ -538,10 +538,13 @@ td {
 .rodape section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 50px;
-  padding: 0 40px;
-  margin-bottom: 10px;
+  gap: 30px;
+}
+
+.rodape section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .titulo-rodape {
@@ -599,6 +602,7 @@ td {
   color: white;
   font-size: 24px;
   font-style: italic;
+  font-weight: 200;
 }
 
 /* Define cor e tamaho da fonte dos parágrafos dos artigos */
@@ -608,7 +612,7 @@ article p {
 }
 
 /* Define cor, tamanho e fonte a ser usada nos titulos h5 */
-.texto-artigo h5 {
+.texto-artigo h2 {
   color: var(--cor-principal);
   font-size: var(--titulo-tam-desktop);
   font-family: var(--fonte-titulo);
@@ -723,9 +727,14 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 2em;
+  align-items: start;
+  padding: 65px 155px;
   color: #ffffff;
+}
+
+.carrossel-img h2,
+.carrossel-img p {
+  width: 30%;
 }
 
 .carrossel-img p {
@@ -738,12 +747,10 @@ aside {
 
 .carrossel-img-2 {
   background-image: url(../img/carrossel-img-2.png);
-  align-items: start;
 }
 
 .carrossel-img-3 {
   background-image: url(../img/carrossel-img-3.png);
-  align-items: start;
 }
 
 .carrossel-img-4 {
@@ -762,6 +769,7 @@ aside {
 .carrossel-navegacao label {
   width: 15px;
   height: 15px;
+  padding: 0;
   background: rgb(255, 255, 255);
   border-radius: 50%;
   cursor: pointer;
@@ -773,34 +781,35 @@ aside {
   transform: scale(1.2);
 }
 
-#carrossel-btn-1:checked ~ .carrossel-navegacao label:nth-child(1),
-#carrossel-btn-2:checked ~ .carrossel-navegacao label:nth-child(2),
-#carrossel-btn-3:checked ~ .carrossel-navegacao label:nth-child(3),
-#carrossel-btn-4:checked ~ .carrossel-navegacao label:nth-child(4) {
+#carrossel-btn-1:checked~.carrossel-navegacao label:nth-child(1),
+#carrossel-btn-2:checked~.carrossel-navegacao label:nth-child(2),
+#carrossel-btn-3:checked~.carrossel-navegacao label:nth-child(3),
+#carrossel-btn-4:checked~.carrossel-navegacao label:nth-child(4) {
   background: var(--cor-principal);
 }
 
-.carrossel-inicio input:checked ~ .carrossel-imagens {
+.carrossel-inicio input:checked~.carrossel-imagens {
   animation: none;
 }
 
-#carrossel-btn-1:checked ~ .carrossel-imagens {
+#carrossel-btn-1:checked~.carrossel-imagens {
   transform: translateX(0);
 }
 
-#carrossel-btn-2:checked ~ .carrossel-imagens {
+#carrossel-btn-2:checked~.carrossel-imagens {
   transform: translateX(-100%);
 }
 
-#carrossel-btn-3:checked ~ .carrossel-imagens {
+#carrossel-btn-3:checked~.carrossel-imagens {
   transform: translateX(-200%);
 }
 
-#carrossel-btn-4:checked ~ .carrossel-imagens {
+#carrossel-btn-4:checked~.carrossel-imagens {
   transform: translateX(-300%);
 }
 
 @keyframes autoSlide {
+
   0%,
   20% {
     transform: translateX(0);
@@ -1027,6 +1036,7 @@ aside {
 
 /* PAGINA INSTITUCIONAL */
 .essencia {
+  background-color: var(--cor-bg-pagina);
   padding: 60px 155px;
   display: flex;
   justify-content: center;
@@ -1132,20 +1142,19 @@ aside {
 .conteudo-artigo,
 .conteudo-paciente,
 .conteudo-admin,
-.conteudo-informativo {
+.conteudo-informativo,
+.pag-blog {
   background-color: var(--cor-bg-pagina);
 }
 
 .hero-dermatologia {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-dermatologia-1.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1184,14 +1193,12 @@ aside {
 /* HERO NEUROLOGIA*/
 .hero-neurologia {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-neurologia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1201,14 +1208,12 @@ aside {
 /* HERO CARDIOLOGIA*/
 .hero-cardiologia {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-cardiologia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1217,14 +1222,12 @@ aside {
 
 .hero-ortopedia {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-ortopedia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1233,14 +1236,12 @@ aside {
 
 .hero-pediatria {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-pediatria.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1249,14 +1250,12 @@ aside {
 
 .hero-psiquiatria {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-psiquiatria.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1568,13 +1567,117 @@ aside {
 .centralizar-texto {
   text-align: center;
 }
+
 .badge-cancelado {
   background-color: #f44336;
+}
+
+/* TOAST */
+#toast-container {
+  position: fixed;
+  top: auto;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toast {
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-texto);
+  min-width: 300px;
+  padding: 15px 20px;
+  border-radius: var(--arredondamento-bordas);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-tam-mobile);
+  animation: slideIn 0.3s ease forwards;
+  opacity: 0;
+  transform: translateX(100%);
+  border-left: 6px solid transparent;
+}
+
+.toast.success {
+  border-left-color: #30d646;
+}
+
+.toast.error {
+  border-left-color: #d63031;
+}
+
+.toast.warning {
+  border-left-color: #f18a28;
+}
+
+.toast-icon {
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.toast.success .toast-icon {
+  color: #30d646;
+}
+.toast.error .toast-icon {
+  color: #d63031;
+}
+.toast.warning .toast-icon {
+  color: #f18a28;
+}
+
+.toast-close {
+  background: transparent;
+  border: none;
+  color: var(--cor-texto);
+  font-size: 35px;
+  cursor: pointer;
+  opacity: 0.6;
+  margin-left: 10px;
+}
+
+.toast-close:hover {
+  opacity: 1;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.input-error {
+  border: 1px solid #d63031 !important;
 }
 
 /* MEDIAS */
 /* Intermediario */
 @media (min-width: 901px) and (max-width: 1300px) {
+
+  .carrossel-img {
+    padding: 40px 50px;
+  }
+
+  .carrossel-img h2,
+  .carrossel-img p {
+    width: 30%;
+  }
+
+  .carrossel-imagens h2 {
+    font-size: var(--titulo-tam-desktop);
+  }
+
   .sessao-bloco-texto-img {
     padding: 40px 50px;
     gap: 30px;
@@ -1585,6 +1688,19 @@ aside {
     gap: 30px;
   }
 
+  .rodape {
+    padding: 40px 50px;
+  }
+
+  .rodape section {
+    padding: 0;
+  }
+
+  .rodape section article {
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
   .conteudo-autenticacao {
     margin-top: 80px;
     width: 40%;
@@ -1603,20 +1719,59 @@ aside {
 }
 
 @media (min-width: 769px) and (max-width: 900px) {
+
+  .carrossel-img {
+    padding: 40px 50px;
+  }
+
+  .carrossel-img h2, .carrossel-img{
+    width: 30%;
+  }
+
+  .carrossel-imagens h2 {
+    font-size: var(--titulo-tam-desktop);
+  }
+
+  .carrossel-img {
+    background-size: cover;
+    width: 100%;
+    min-height: 60vw;
+  }
+
+  .carrossel-img-1 {
+    background-image: url(../img/carrossel-img-1-mobile.png);
+  }
+
+  .carrossel-img-2 {
+    background-image: url(../img/carrossel-img-2-mobile.png);
+  }
+
+  .carrossel-img-3 {
+    background-image: url(../img/carrossel-img-3-mobile.png);
+  }
+
+  .carrossel-img-4 {
+    background-image: url(../img/carrossel-img-4-mobile.png);
+  }
+
+  .carrossel-navegacao label {
+    height: 12px;
+    width: 12px;
+  }
+
   .sessao-bloco-texto-img {
-    flex-direction: column-reverse;
-    gap: 0;
+    flex-direction: column;
+    gap: 30px;
     padding: 0;
+    padding: 40px 50px;
   }
 
   .sessao-bloco-texto-img article {
     width: 100%;
-    padding: 40px 50px;
   }
 
   .sessao-bloco-texto-img img {
     width: 100%;
-    border-radius: 0;
   }
 
   .essencia {
@@ -1625,6 +1780,43 @@ aside {
     gap: 30px;
   }
 
+  .rodape {
+    padding: 40px 50px;
+    gap: 30px;
+  }
+
+  .rodape section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rodape section nav {
+    display: block;
+  }
+
+  .rodape section {
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .rodape section nav ul {
+    list-style: none;
+    font-size: var(--texto-mobile);
+  }
+
+  .rodape section nav ul a {
+    color: var(--cor-bg);
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .none,
+  .rodape section article {
+    display: none;
+  }
+    
   .conteudo-autenticacao {
     margin-top: 80px;
     width: 50%;
@@ -1659,6 +1851,10 @@ aside {
     padding: 21px 15px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .wrapper-icones {
+    display: none;
   }
 
   .icon-menu {
@@ -1715,7 +1911,7 @@ aside {
     color: var(--cor-principal);
   }
 
-  #menu-aberto:checked ~ .lista-links {
+  #menu-aberto:checked~.lista-links {
     display: flex;
   }
 
@@ -1724,29 +1920,29 @@ aside {
     gap: 15px;
   }
 
-  .rodape div nav {
+  .rodape section nav {
     display: block;
   }
 
-  .rodape div {
+  .rodape section {
     justify-content: start;
     margin: 0;
     padding: 0;
   }
 
-  .rodape div nav ul {
+  .rodape section nav ul {
     list-style: none;
     font-size: var(--texto-mobile);
   }
 
-  .rodape div nav ul a {
+  .rodape section nav ul a {
     color: var(--cor-bg);
     font-family: var(--fonte-texto);
     font-weight: 600;
     text-decoration: underline;
   }
 
-  .rodape section,
+  .rodape section article,
   .rodape-links,
   .none {
     display: none;
@@ -1758,6 +1954,47 @@ aside {
 
   .rodape-copyrigth span {
     display: block;
+  }
+
+  .carrossel-img {
+    background-size: cover;
+    width: 100%;
+    min-height: 60vw;
+  }
+
+  .carrossel-img-1 {
+    background-image: url(../img/carrossel-img-1-mobile.png);
+  }
+
+  .carrossel-img-2 {
+    background-image: url(../img/carrossel-img-2-mobile.png);
+  }
+
+  .carrossel-img-3 {
+    background-image: url(../img/carrossel-img-3-mobile.png);
+  }
+
+  .carrossel-img-4 {
+    background-image: url(../img/carrossel-img-4-mobile.png);
+  }
+
+  .carrossel-img {
+    padding: 20px;
+  }
+
+  .carrossel-img h2 {
+    max-width: 50%;
+    min-width: 45%;
+    font-size: 25px;
+  }
+
+  .carrossel-img p {
+    display: none;
+  }
+
+  .carrossel-navegacao label {
+    height: 12px;
+    width: 12px;
   }
 
   .sessao-bloco-texto-img {
@@ -1787,6 +2024,19 @@ aside {
     border-radius: 0;
   }
 
+  .reverso {
+    flex-direction: column;
+  }
+
+  .botao {
+    margin: 0 auto;
+    font-size: var(--texto-tam-mobile);
+  }
+
+  .img-conteudo {
+    border-radius: 0;
+  }
+
   .essencia {
     padding: 30px 40px;
     flex-direction: column;
@@ -1795,6 +2045,119 @@ aside {
 
   .essencia article div h2 {
     font-size: var(--titulo-tam-mobile);
+  }
+
+  .essencia article p {
+    font-size: var(--texto-tam-mobile);
+  }
+
+  /* MOBILE ARTIGOS (ELIAS) */
+
+  .texto-artigo h2 {
+    font-size: 24px;
+  }
+
+  .sessao-hero h1 {
+    font-size: 36px;
+  }
+
+  .subtitulo-hero-artigo {
+    font-size: 20px;
+  }
+
+  /* MOBILE ESPECIALIDADES (ELIAS) */
+
+  /* Títulos das seções */
+  .Titulos-sessao {
+    font-size: 24px;
+  }
+
+  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
+  .hero-cardiologia {
+    background:
+      linear-gradient(
+        to right,
+        rgba(70, 70, 70, 0.95) 0%,
+        rgba(70, 70, 70, 0.85) 5%,
+        rgba(70, 70, 70, 0.4) 55%,
+        rgba(70, 70, 70, 0.1) 85%,
+        rgba(70, 70, 70, 0) 100%
+      ),
+      url("../img/img-especialidade-cardiologia.jpg") center/cover no-repeat;
+  }
+
+  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
+  .hero-dermatologia {
+    background:
+      linear-gradient(
+        to right,
+        rgba(70, 70, 70, 0.95) 0%,
+        rgba(70, 70, 70, 0.85) 5%,
+        rgba(70, 70, 70, 0.4) 55%,
+        rgba(70, 70, 70, 0.1) 65%,
+        rgba(70, 70, 70, 0) 100%
+      ),
+      url("../img/img-dermatologia-1.jpg") center/cover no-repeat;
+  }
+
+  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
+  .hero-neurologia {
+    background:
+      rgba(40, 40, 40, 0.95) 0%,
+      linear-gradient(
+        to right,
+        rgba(70, 70, 70, 0.85) 5%,
+        rgba(70, 70, 70, 0.4) 55%,
+        rgba(70, 70, 70, 0.1) 65%,
+        rgba(70, 70, 70, 0) 100%
+      ),
+      url("../img/img-especialidade-neurologia.jpg") center/cover no-repeat;
+  }
+
+  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
+  .hero-ortopedia {
+    background:
+      linear-gradient(
+        to right,
+        rgba(70, 70, 70, 0.95) 0%,
+        rgba(70, 70, 70, 0.85) 5%,
+        rgba(70, 70, 70, 0.4) 55%,
+        rgba(70, 70, 70, 0.1) 65%,
+        rgba(70, 70, 70, 0) 100%
+      ),
+      url("../img/img-especialidade-ortopedia.jpg") center/cover no-repeat;
+  }
+
+  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
+  .hero-pediatria {
+    background:
+      linear-gradient(
+        to right,
+        rgba(70, 70, 70, 0.95) 0%,
+        rgba(70, 70, 70, 0.85) 5%,
+        rgba(70, 70, 70, 0.4) 55%,
+        rgba(70, 70, 70, 0.1) 85%,
+        rgba(70, 70, 70, 0) 100%
+      ),
+      url("../img/img-especialidade-pediatria.jpg") center/cover no-repeat;
+  }
+
+  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
+  .hero-psiquiatria {
+    background:
+      linear-gradient(
+        to right,
+        rgba(70, 70, 70, 0.95) 0%,
+        rgba(70, 70, 70, 0.85) 5%,
+        rgba(70, 70, 70, 0.4) 55%,
+        rgba(70, 70, 70, 0.1) 85%,
+        rgba(70, 70, 70, 0) 100%
+      ),
+      url("../img/img-especialidade-psiquiatria.jpg") center/cover no-repeat;
+  }
+
+  .container-titulo-hero p {
+    font-size: 16px;
   }
 
   .essencia article p {
@@ -1906,4 +2269,11 @@ aside {
   .banner-trabalhe {
     min-height: 40vw;
   }
+
 }
+  
+  /* VAI CONTROLAR ESPECIFICAMENTE QUANDO OS CARDS DAS PÁGINAS DE ARTIGOS DEVEM DEIXAR DE APARECER) */
+@media (max-width: 990px) {
+  .aside-artigos {
+    display: none;
+  }

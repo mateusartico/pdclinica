@@ -20,7 +20,7 @@
         <nav aria-label="Menu principal">
             <input type="checkbox" id="menu-aberto">
             <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
-                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px"
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
                     fill="#FFFFFF" class="icon-menu">
                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                 </svg>
@@ -30,17 +30,18 @@
                 <li><a href="institucional.html" class="link-underline-animado">Institucional</a></li>
                 <li><a href="conteudo-informativo.html" class="link-underline-animado">Informações</a></li>
                 <!-- MENU MOBILE -->
-                <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person"></i></a></li>
+                <div>
+                    <button type="button" class="botao-mobile-icone" data-theme-toggle><i
+                            class="bi bi-sun icone-mobile"></i></button>
+                    <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person icone-mobile"></i></a></li>
+                </div>
                 <!-- MENU MOBILE -->
             </ul>
         </nav>
-
-        <div class="wrapper-botoes">
+        <div class="wrapper-icones">
             <button type="button" class="botao-icone" data-theme-toggle><i class="bi bi-sun"></i></button>
             <a href="login.html" class="botao-icone"><i class="bi bi-person"></i></a>
         </div>
-
-
     </header>
 
     <!-- Conteudo principal -->
@@ -49,7 +50,7 @@
         <section class="text-white py-5 sessao-hero">
             <header class="container text-center text-lg-start">
                 <h1 class="fw-semibold">Saúde física e mental</h1>
-                <p class="lead mb-0 subtitulo-hero-artigo">Por que cuidar das duas é essencial para nós !</p>
+                <h2 class="lead mb-0 subtitulo-hero-artigo">Por que cuidar das duas é essencial para nós !</h2>
             </header>
         </section>
 
@@ -88,7 +89,7 @@
                         melhor desempenho funcional e maior longevidade com autonomia.
                     </p>
 
-                    <h5 class="fw-bold mt-5">1. Introdução</h5>
+                    <h2 class="fw-bold mt-5">1. Introdução</h2>
                     <p>
                         Nas últimas décadas, o modelo de atenção à saúde tem passado por uma transição significativa,
                         deslocando o foco exclusivo do
@@ -104,7 +105,7 @@
                         necessidade de avaliações médicas periódicas.
                     </p>
 
-                    <h5 class="fw-bold mt-5">2. Metodologia</h5>
+                    <h2 class="fw-bold mt-5">2. Metodologia</h2>
                     <p>
                         O presente artigo caracteriza-se como uma revisão teórica de natureza descritiva, fundamentada
                         em literatura científica fictícia
@@ -117,7 +118,7 @@
                         considerando diferentes contextos sociais e faixas etárias.
                     </p>
 
-                    <h5 class="fw-bold mt-5">3. Fatores que influenciam a saúde física e mental</h5>
+                    <h2 class="fw-bold mt-5">3. Fatores que influenciam a saúde física e mental</h2>
                     <p>
                         A saúde física e mental é influenciada por múltiplos fatores, incluindo hábitos alimentares,
                         prática regular de atividade física,
@@ -139,7 +140,7 @@
                         mental quanto a física.
                     </p>
 
-                    <h5 class="fw-bold mt-5">4. Importância da abordagem integrada ao longo da vida</h5>
+                    <h2 class="fw-bold mt-5">4. Importância da abordagem integrada ao longo da vida</h2>
                     <p>
                         A promoção da saúde física e mental deve ser compreendida como um processo contínuo, adaptado às
                         diferentes fases da vida.
@@ -162,7 +163,7 @@
                     </p>
                 </div>
 
-                <aside class="col-lg-4">
+                <aside class="col-lg-4 aside-artigos">
 
                     <article class="card shadow-sm mb-4 card-aside-artigo">
                         <img src="../img/img-card-aside-artigo-1.jpg" class="card-img-top" alt="Notícias">
