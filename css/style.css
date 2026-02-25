@@ -160,7 +160,8 @@ p {
   cursor: pointer;
 }
 
-.wrapper-botoes {
+.wrapper-botoes,
+.wrapper-icones {
   display: flex;
   align-items: center;
   gap: 25px;
@@ -379,7 +380,7 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .logo-flutuante {
@@ -985,13 +986,13 @@ aside {
 
 /* Define estilizações de texto para o subtitulo dos articles do blog */
 .conteudo-blog h2 {
-  color: #3558A6;
+  color: #3558a6;
   font-weight: 700;
   font-family: var(--fonte-titulo);
 }
 
 /* Define estilizações de texto para a data e nome do autor dos artigos */
-.informaco-autor-artigo  {
+.informaco-autor-artigo {
   font-style: italic;
   font-size: 16px;
   color: #6c757d;
@@ -1000,7 +1001,7 @@ aside {
 /* Define estilizações para os links que levam para as páginas de artigos. (O link é o próprio titulo do article)*/
 .article-link {
   text-decoration: none;
-  color: #3558A6;
+  color: #3558a6;
   transition: all 0.2s ease;
 }
 
@@ -1012,12 +1013,12 @@ aside {
 
 /* Define estilizações de hover para os links que levam para as paginas de artigos*/
 .article-link:focus {
-  outline: 2px solid #3558A6;
+  outline: 2px solid #3558a6;
   outline-offset: 4px;
 }
 
 /* Define o tamanho da fonte do subtitulos de cada article*/
-.conteudo-blog h3{
+.conteudo-blog h3 {
   font-size: 20px;
 }
 
@@ -1052,7 +1053,6 @@ aside {
 
 .modal-termos .modal-title {
   font-size: 1.5rem;
-  letter-spacing: 0.02em;
   font-family: var(--fonte-titulo);
 }
 
@@ -1572,7 +1572,6 @@ aside {
 /* MEDIAS */
 /* Intermediario */
 @media (min-width: 901px) and (max-width: 1300px) {
-
   .sessao-bloco-texto-img {
     padding: 40px 50px;
     gap: 30px;
@@ -1582,10 +1581,25 @@ aside {
     padding: 40px 50px;
     gap: 30px;
   }
+
+  .conteudo-autenticacao {
+    margin-top: 80px;
+    width: 40%;
+  }
+
+  .wrapper-botoes {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .wrapper-botoes .botao {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 900px) {
-
   .sessao-bloco-texto-img {
     flex-direction: column-reverse;
     gap: 0;
@@ -1607,10 +1621,35 @@ aside {
     flex-direction: column;
     gap: 30px;
   }
+
+  .conteudo-autenticacao {
+    margin-top: 80px;
+    width: 50%;
+  }
+
+  .wrapper-botoes,
+  .wrapper-inputs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wrapper-botoes .botao {
+    width: 100%;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .cabecalho-form {
+    font-size: var(--titulo-tam-mobile);
+  }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
+  .botao {
+    text-align: center;
+    font-size: var(--texto-tam-mobile);
+  }
 
   /* --- Ajustes do Cabeçalho Mobile --- */
   .cabecalho {
@@ -1631,7 +1670,8 @@ aside {
 
   /* Esconde botões desktop */
   .cabecalho .botao-icone,
-  #menu-aberto, .wrapper-botoes {
+  #menu-aberto,
+  .wrapper-botoes {
     display: none;
   }
 
@@ -1655,19 +1695,19 @@ aside {
     display: block;
   }
 
-  .lista-links div{
+  .lista-links div {
     display: flex;
     gap: 20px;
     height: 50px;
     align-items: center;
   }
 
-  .lista-links div button{
+  .lista-links div button {
     background-color: transparent;
     border: none;
   }
 
-  .botao-mobile-icone{
+  .botao-mobile-icone {
     font-size: var(--titulo-tam-mobile);
     color: var(--cor-principal);
   }
@@ -1723,12 +1763,12 @@ aside {
     padding: 0;
   }
 
-  .sessao-bloco-texto-img article h2{
+  .sessao-bloco-texto-img article h2 {
     text-align: center;
     font-size: var(--titulo-tam-mobile);
   }
 
- .sessao-bloco-texto-img article p{
+  .sessao-bloco-texto-img article p {
     text-align: center;
     font-size: var(--texto-tam-mobile);
     text-align: justify;
@@ -1750,11 +1790,49 @@ aside {
     gap: 30px;
   }
 
-  .essencia article div h2{
+  .essencia article div h2 {
     font-size: var(--titulo-tam-mobile);
   }
 
-  .essencia article p{
+  .essencia article p {
     font-size: var(--texto-tam-mobile);
+  }
+
+  .conteudo-autenticacao {
+    margin-top: 35%;
+    width: 80%;
+    margin-bottom: 15%;
+  }
+
+  .wrapper-botoes,
+  .wrapper-inputs {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .wrapper-botoes .botao {
+    width: 100%;
+  }
+
+  .cabecalho-form {
+    font-size: var(--titulo-tam-mobile);
+  }
+
+  .corpo-form p,
+  .input-txt,
+  .select,
+  .input-data,
+  .link-simples,
+  .input-checkbox {
+    font-size: var(--texto-tam-mobile);
+  }
+
+  .logo-flutuante {
+    height: 60px;
+  }
+
+  .modal-termos .modal-body p {
+    font-size: 16px;
   }
 }
