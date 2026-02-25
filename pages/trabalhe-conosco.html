@@ -13,14 +13,15 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/toasts-alerts.css" />
+    <link rel="stylesheet" href="../css/dark-mode.css" />
     <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0&icon_names=neurology" />
 
     <title>PD Clínica | Trabalhe Conosco</title>
   </head>
   <body>
     <header class="cabecalho">
-        <img class="logo" src="../img/Logo-PD-Clinica.png">
+        <h1 class="logo">PD Clínica</h1>
         <nav aria-label="Menu principal">
             <input type="checkbox" id="menu-aberto">
             <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
@@ -31,14 +32,11 @@
                 <li><a href="institucional.html">Institucional</a></li>
                 <li><a href="conteudo-informativo.html">Informações</a></li>
                 <!-- MENU MOBILE -->
-                <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person"></i></a></li>
+                <li><a href="login.html" class="botao-mobile">Entrar</a></li>
                 <!-- MENU MOBILE -->
             </ul>
         </nav>
-        <div class="wrapper-botoes">
-            <button type="button" class="botao-icone" data-theme-toggle><i class="bi bi-sun"></i></button>
-            <a href="login.html" class="botao-icone"><i class="bi bi-person"></i></a>
-        </div>
+        <a href="login.html" class="botao">Entrar</a>
     </header>
 
     <div class="banner-principal" role="banner">
@@ -77,76 +75,60 @@
         </h2>
 
         <div class="fileira-distribuida" role="list">
-          <article class="card" role="listitem">
-            <h3 class="titulo texto-claro"><span class="material-symbols-outlined">neurology</span>Médico</h3>
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Médico</h3>
             <p class="texto-normal">
               Atendimento clínico geral e especializado
             </p>
-            <div>
-              <a href="#inscricao" class="saiba-mais">Inscrever-se<i class="bi bi-arrow-right-short"></i></a>
-            </div>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
           </article>
 
-          <article class="card" role="listitem">
-            <h3 class="titulo texto-claro"><span class="material-symbols-outlined">neurology</span>Dentista</h3>
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Dentista</h3>
             <p class="texto-normal">
               Cuidados odontológicos e tratamentos dentários
             </p>
-            <div>
-              <a href="#inscricao" class="saiba-mais">Inscrever-se<i class="bi bi-arrow-right-short"></i></a>
-            </div>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
           </article>
 
-          <article class="card" role="listitem">
-            <h3 class="titulo texto-claro"><span class="material-symbols-outlined">neurology</span>Enfermeiro</h3>
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Enfermeiro</h3>
             <p class="texto-normal">Assistência e cuidados aos pacientes</p>
-            <div>
-              <a href="#inscricao" class="saiba-mais">Inscrever-se<i class="bi bi-arrow-right-short"></i></a>
-            </div>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
           </article>
 
-          <article class="card" role="listitem">
-            <h3 class="titulo texto-claro"><span class="material-symbols-outlined">neurology</span>Fisioterapeuta</h3>
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Fisioterapeuta</h3>
             <p class="texto-normal">
               Reabilitação física e tratamentos terapêuticos
             </p>
-            <div>
-              <a href="#inscricao" class="saiba-mais">Inscrever-se<i class="bi bi-arrow-right-short"></i></a>
-            </div>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
           </article>
 
-          <article class="card" role="listitem">
-            <h3 class="titulo texto-claro"><span class="material-symbols-outlined">neurology</span>Nutricionista</h3>
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Nutricionista</h3>
             <p class="texto-normal">
               Orientação nutricional e dietas personalizadas
             </p>
-            <div>
-              <a href="#inscricao" class="saiba-mais">Inscrever-se<i class="bi bi-arrow-right-short"></i></a>
-            </div>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
           </article>
 
-          <article class="card" role="listitem">
-            <h3 class="titulo texto-claro"><span class="material-symbols-outlined">neurology</span>Psicólogo</h3>
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Psicólogo</h3>
             <p class="texto-normal">Atendimento psicológico e terapia</p>
-            <div>
-              <a href="#inscricao" class="saiba-mais">Inscrever-se<i class="bi bi-arrow-right-short"></i></a>
-            </div>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
           </article>
 
-          <article class="card" role="listitem">
-            <h3 class="titulo texto-claro"><span class="material-symbols-outlined">neurology</span>Farmacêutico</h3>
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Farmacêutico</h3>
             <p class="texto-normal">Dispensação e orientação de medicamentos</p>
-            <div>
-              <a href="#inscricao" class="saiba-mais">Inscrever-se<i class="bi bi-arrow-right-short"></i></a>
-            </div>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
           </article>
 
-          <article class="card" role="listitem">
-            <h3 class="titulo texto-claro"><span class="material-symbols-outlined">neurology</span>Radiologista</h3>
+          <article class="cartao-vaga cartao-destaque" role="listitem">
+            <h3 class="titulo texto-claro">Radiologista</h3>
             <p class="texto-normal">Exames de imagem e diagnósticos</p>
-            <div>
-              <a href="#inscricao" class="saiba-mais">Inscrever-se<i class="bi bi-arrow-right-short"></i></a>
-            </div>
+            <a href="#inscricao" class="botao-acao botao-destaque">Inscrever</a>
           </article>
         </div>
       </section>

@@ -13,78 +13,69 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/toasts-alerts.css" />
     <link rel="stylesheet" href="../css/dark-mode.css" />
-    <link
-      rel="shortcut icon"
-      href="../img/favicon-pdclinica.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
   </head>
-  <body class="pag-autenticacao">
-    <div class="logo-flutuante">
-      <img src="../img/Logo-PD-Clinica.png" alt="Logo PD Clínica" />
-    </div>
-    <main class="conteudo-autenticacao">
-      <section class="card-autenticacao">
+  <body class="autenticacao-pagina">
+    <div class="autenticacao-logo">PD Clínica</div>
+    <main class="autenticacao-conteudo">
+      <div class="autenticacao-card">
+        <header>Cadastrar</header>
+
         <form action="#" id="form-cadastro">
-          <header class="cabecalho-form"><h1>Cadastrar</h1></header>
-          <div class="corpo-form">
-            <div class="wrapper-inputs">
-              <input
-                id="cad-nome"
-                class="input-txt"
-                type="text"
-                placeholder="Informe seu Nome"
-              />
-              <input
-                id="cad-telefone"
-                class="input-txt"
-                type="tel"
-                placeholder="Informe seu Telefone"
-                maxlength="15"
-              />
-            </div>
-
+          <div class="wrapper-inputs">
             <input
-              id="cad-email"
+              id="cad-nome"
               class="input-txt"
-              type="email"
-              placeholder="Informe o seu E-mail"
+              type="text"
+              placeholder="Informe seu Nome"
             />
+            <input
+              id="cad-telefone"
+              class="input-txt"
+              type="tel"
+              placeholder="Informe seu Telefone"
+              maxlength="15"
+            />
+          </div>
 
-            <div class="wrapper-inputs">
-              <input
-                id="cad-senha"
-                class="input-txt"
-                type="password"
-                placeholder="Escolha uma Senha"
-              />
+          <input
+            id="cad-email"
+            class="input-txt"
+            type="email"
+            placeholder="Informe o seu E-mail"
+          />
 
-              <input
-                id="cad-confirma-senha"
-                class="input-txt"
-                type="password"
-                placeholder="Confirme a Senha"
-              />
-            </div>
+          <input
+            id="cad-senha"
+            class="input-txt"
+            type="password"
+            placeholder="Escolha uma Senha"
+          />
 
-            <div>
-              <label class="input-checkbox" for="check-termos">
-                <input type="checkbox" name="termos" id="check-termos" />
-                Aceito os <span class="destaque">Termos</span>
-              </label>
-            </div>
+          <input
+            id="cad-confirma-senha"
+            class="input-txt"
+            type="password"
+            placeholder="Confirme a Senha"
+          />
 
-            <div class="wrapper-botoes">
-              <a class="link-simples" href="login.html">Já tenho uma conta</a>
-              <a href="../index.html" class="botao">Voltar</a>
+          <div>
+            <label class="input-checkbox" for="check-termos">
+              <input type="checkbox" name="termos" id="check-termos" />
+              Aceito os<span> Termos</span>
+            </label>
+          </div>
 
-              <button type="button" class="botao" id="btn-cadastrar">
-                Cadastrar
-              </button>
-            </div>
+          <div class="wrapper-botoes">
+            <a href="login.html">Já tenho uma conta</a>
+            <a href="../index.html" class="botao">Voltar</a>
+
+            <button type="button" class="botao" id="btn-cadastrar">
+              Cadastrar
+            </button>
           </div>
         </form>
-      </section>
+      </div>
     </main>
 
     <script

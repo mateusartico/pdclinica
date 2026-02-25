@@ -1,3 +1,16 @@
+/* Controle de Fluxo de Usuários */
+
+function entrar() {
+  const email = document.getElementById("login-email").value;
+  const senha = document.getElementById("login-senha").value;
+
+  if (email === "admin@gmail.com" && senha === "12345") {
+    window.location.href = "area-administrativa.html";
+  } else {
+    window.location.href = "area-paciente.html";
+  }
+}
+
 // Dark mode
 const THEME_KEY = "theme";
 
@@ -25,6 +38,7 @@ document.querySelectorAll("[data-theme-toggle]").forEach((btn) => {
     localStorage.setItem(THEME_KEY, newTheme);
   });
 });
+// Dark mode
 
 // Filtro de especialidades
 function filtrarEspecialidades() {
@@ -43,6 +57,7 @@ function filtrarEspecialidades() {
     }
   });
 }
+// Filtro de especialidades
 
 /* SISTEMA DE TOASTS */
 

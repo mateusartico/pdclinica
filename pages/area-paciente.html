@@ -11,37 +11,45 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/dark-mode.css" />
     <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
   </head>
   <body class="paciente-pagina">
     <!-- Navbar -->
     <header class="cabecalho">
-        <img class="logo" src="../img/Logo-PD-Clinica.png">
-        <nav aria-label="Menu principal">
-            <input type="checkbox" id="menu-aberto">
-            <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
-                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px" fill="#FFFFFF" class="icon-menu"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
-            </label>
-            <ul class="lista-links">
-                <li><a href="/">Início</a></li>
-                <li><a href="institucional.html">Institucional</a></li>
-                <li><a href="conteudo-informativo.html">Informações</a></li>
-                <!-- MENU MOBILE -->
-                <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-box-arrow-right"></i></a></li>
-                <!-- MENU MOBILE -->
-            </ul>
-        </nav>
-        <div class="wrapper-botoes">
-            <button type="button" class="botao-icone" data-theme-toggle><i class="bi bi-sun"></i></button>
-            <a href="login.html" class="botao-icone"><i class="bi bi-box-arrow-right"></i></a>
-        </div>
+      <h1 class="logo">PD Clínica</h1>
+      <nav>
+        <input type="checkbox" id="menu-aberto" />
+        <label for="menu-aberto" class="btn-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="38px"
+            viewBox="0 -960 960 960"
+            width="38px"
+            fill="#FFFFFF"
+            class="icon-menu"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+        <ul class="lista-links">
+          <li><a href="/">Início</a></li>
+          <li><a href="institucional.html">Institucional</a></li>
+          <li><a href="conteudo-informativo.html">Informações</a></li>
+          <!-- MENU MOBILE -->
+          <li><a href="login.html" class="botao-mobile">Sair</a></li>
+          <!-- MENU MOBILE -->
+        </ul>
+      </nav>
+      <a href="login.html" class="botao">Sair</a>
     </header>
-
     <main class="paciente-conteudo">
       <section class="paciente-informacoes">
         <h2>Informações Gerais</h2>
 
-        <article class="paciente-card">
+        <div class="paciente-card">
           <img
             src="../img/img-paciente-desktop.png"
             class="paciente-card-img"
@@ -52,33 +60,33 @@
           <p>Paciente Cadastrada</p>
           <p>Convênio: Unimed</p>
           <p>Data de nascimento: 15/08/1995</p>
-        </article>
+        </div>
       </section>
 
       <section class="paciente-consultas">
         <h2>Consultas Agendadas</h2>
 
         <div class="wrapper-consultas">
-          <article class="paciente-consulta-card">
+          <div class="paciente-consulta-card">
             <h5>Clínica Geral</h5>
             <p>Dr. João Silva</p>
             <p>12/04/2026 • 14:30</p>
             <small>Status: Agendada</small>
-          </article>
+          </div>
 
-          <article class="paciente-consulta-card">
+          <div class="paciente-consulta-card">
             <h5>Psicologia</h5>
             <p>Dra. Mariana Costa</p>
             <p>18/04/2026 • 09:00</p>
             <small>Status: Confirmada</small>
-          </article>
+          </div>
 
-          <article class="paciente-consulta-card">
+          <div class="paciente-consulta-card">
             <h5>Nutrição</h5>
             <p>Dra. Paula Mendes</p>
             <p>25/04/2026 • 16:00</p>
             <small>Status: Agendada</small>
-          </article>
+          </div>
         </div>
       </section>
     </main>
