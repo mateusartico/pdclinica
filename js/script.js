@@ -4,11 +4,28 @@ const THEME_KEY = "theme";
 function applyTheme(theme) {
   document.body.classList.toggle("dark", theme === "dark");
   updateIcons(theme);
+  updateLogo(theme);
 }
 
 function updateIcons(theme) {
   document.querySelectorAll("[data-theme-toggle] i").forEach((icon) => {
     icon.className = theme === "dark" ? "bi bi-moon" : "bi bi-sun";
+  });
+}
+
+function updateLogo(theme) {
+  document.querySelectorAll(".logo").forEach((logo) => {
+    if (theme === "dark") {
+      logo.src = logo.src.replace(
+        "Logo-PD-Clinica.png",
+        "Logo-PD-Clinica-Dark.png",
+      );
+    } else {
+      logo.src = logo.src.replace(
+        "Logo-PD-Clinica-Dark.png",
+        "Logo-PD-Clinica.png",
+      );
+    }
   });
 }
 
