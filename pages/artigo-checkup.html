@@ -19,28 +19,28 @@
         <nav aria-label="Menu principal">
             <input type="checkbox" id="menu-aberto">
             <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
-                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px"
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
                     fill="#FFFFFF" class="icon-menu">
                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                 </svg>
             </label>
             <ul class="lista-links">
-                
                 <li><a href="/" class="link-underline-animado">Início</a></li>
                 <li><a href="institucional.html" class="link-underline-animado">Institucional</a></li>
                 <li><a href="conteudo-informativo.html" class="link-underline-animado">Informações</a></li>
                 <!-- MENU MOBILE -->
-                <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person"></i></a></li>
+                <div>
+                    <button type="button" class="botao-mobile-icone" data-theme-toggle><i
+                            class="bi bi-sun icone-mobile"></i></button>
+                    <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person icone-mobile"></i></a></li>
+                </div>
                 <!-- MENU MOBILE -->
             </ul>
         </nav>
-
-        <div class="wrapper-botoes">
+        <div class="wrapper-icones">
             <button type="button" class="botao-icone" data-theme-toggle><i class="bi bi-sun"></i></button>
             <a href="login.html" class="botao-icone"><i class="bi bi-person"></i></a>
         </div>
-
-
     </header>
 
     <!-- Conteudo principal -->
@@ -49,7 +49,7 @@
         <section class="text-white py-5 sessao-hero">
             <header class="container text-center text-lg-start">
                 <h1 class="fw-semibold">Check-up Preventivo</h1>
-                <p class="lead mb-0 subtitulo-hero-artigo">Quais exames fazer em cada fase da vida ?</p>
+                <h2 class="lead mb-0 subtitulo-hero-artigo">Quais exames fazer em cada fase da vida ?</h2>
             </header>
         </section>
 
@@ -67,9 +67,7 @@
                     <figure>
                         <img src="../img/img-artigo-1.jpg" class="img-fluid rounded mb-4"
                             alt="Imagem ilustrativa exame médico">
-                        <figcaption>Imagem de uma médico aplicando vacina no braço de uma pessoa adulta</figcaption>
                     </figure>
-
 
                     <p class="mb-4">
                         O check-up preventivo consiste na realização periódica de avaliações clínicas e exames
@@ -87,7 +85,7 @@
                         melhor prognóstico clínico e maior qualidade de vida.
                     </p>
 
-                    <h5 class="fw-bold mt-5">1. Introdução</h5>
+                    <h2 class="fw-bold mt-5">1. Introdução</h2>
                     <p>
                         Nas últimas décadas, o modelo de atenção à saúde tem passado por uma transição significativa,
                         deslocando o foco exclusivo do
@@ -103,7 +101,7 @@
                         necessidade de avaliações médicas periódicas.
                     </p>
 
-                    <h5 class="fw-bold mt-5">2. Metodologia</h5>
+                    <h2 class="fw-bold mt-5">2. Metodologia</h2>
                     <p>
                         O presente artigo caracteriza-se como uma revisão teórica de caráter descritivo, com base em
                         literatura científica fictícia relacionada à prática do check-up preventivo. Foram considerados
@@ -114,7 +112,7 @@
                         individuais, como idade, sexo e histórico familiar.
                     </p>
 
-                    <h5 class="fw-bold mt-5">3. Principais exames no check-up preventivo</h5>
+                    <h2 class="fw-bold mt-5">3. Principais exames no check-up preventivo</h2>
                     <p>
                         O check-up preventivo envolve um conjunto de exames clínicos, laboratoriais e de imagem,
                         selecionados de acordo com o perfil do paciente.
@@ -134,7 +132,7 @@
                         os recursos em saúde
                     </p>
 
-                    <h5 class="fw-bold mt-5">4. Importância do check-up conforme faixa etária e sexo</h5>
+                    <h2 class="fw-bold mt-5">4. Importância do check-up conforme faixa etária e sexo</h2>
                     <p>
                         A periodicidade e o tipo de exames realizados no check-up preventivo devem considerar fatores
                         individuais, como faixa etária e sexo biológico.
@@ -151,7 +149,7 @@
                     </p>
                 </div>
 
-                <aside class="col-lg-4">
+                <aside class="col-lg-4 aside-artigos">
 
                     <div class="card shadow-sm mb-4 card-aside-artigo">
                         <img src="../img/img-card-aside-artigo-1.jpg" class="card-img-top" alt="Notícias">

@@ -160,7 +160,8 @@ p {
   cursor: pointer;
 }
 
-.wrapper-botoes {
+.wrapper-botoes,
+.wrapper-icones {
   display: flex;
   align-items: center;
   gap: 25px;
@@ -379,7 +380,7 @@ td {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .logo-flutuante {
@@ -598,6 +599,7 @@ td {
   color: white;
   font-size: 24px;
   font-style: italic;
+  font-weight: 200;
 }
 
 /* Define cor e tamaho da fonte dos parágrafos dos artigos */
@@ -607,7 +609,7 @@ article p {
 }
 
 /* Define cor, tamanho e fonte a ser usada nos titulos h5 */
-.texto-artigo h5 {
+.texto-artigo h2 {
   color: var(--cor-principal);
   font-size: var(--titulo-tam-desktop);
   font-family: var(--fonte-titulo);
@@ -993,7 +995,7 @@ aside {
 
 /* Define estilizações de texto para o subtitulo dos articles do blog */
 .conteudo-blog h2 {
-  color: #3558A6;
+  color: #3558a6;
   font-weight: 700;
   font-family: var(--fonte-titulo);
 }
@@ -1008,7 +1010,7 @@ aside {
 /* Define estilizações para os links que levam para as páginas de artigos. (O link é o próprio titulo do article)*/
 .article-link {
   text-decoration: none;
-  color: #3558A6;
+  color: #3558a6;
   transition: all 0.2s ease;
 }
 
@@ -1020,7 +1022,7 @@ aside {
 
 /* Define estilizações de hover para os links que levam para as paginas de artigos*/
 .article-link:focus {
-  outline: 2px solid #3558A6;
+  outline: 2px solid #3558a6;
   outline-offset: 4px;
 }
 
@@ -1031,6 +1033,7 @@ aside {
 
 /* PAGINA INSTITUCIONAL */
 .essencia {
+  background-color: var(--cor-bg-pagina);
   padding: 60px 155px;
   display: flex;
   justify-content: center;
@@ -1060,7 +1063,6 @@ aside {
 
 .modal-termos .modal-title {
   font-size: 1.5rem;
-  letter-spacing: 0.02em;
   font-family: var(--fonte-titulo);
 }
 
@@ -1137,7 +1139,8 @@ aside {
 .conteudo-artigo,
 .conteudo-paciente,
 .conteudo-admin,
-.conteudo-informativo {
+.conteudo-informativo,
+.pag-blog {
   background-color: var(--cor-bg-pagina);
 }
 
@@ -1566,6 +1569,95 @@ aside {
   background-color: #f44336;
 }
 
+/* TOAST */
+#toast-container {
+  position: fixed;
+  top: auto;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toast {
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-texto);
+  min-width: 300px;
+  padding: 15px 20px;
+  border-radius: var(--arredondamento-bordas);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-tam-mobile);
+  animation: slideIn 0.3s ease forwards;
+  opacity: 0;
+  transform: translateX(100%);
+  border-left: 6px solid transparent;
+}
+
+.toast.success {
+  border-left-color: #30d646;
+}
+
+.toast.error {
+  border-left-color: #d63031;
+}
+
+.toast.warning {
+  border-left-color: #f18a28;
+}
+
+.toast-icon {
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.toast.success .toast-icon {
+  color: #30d646;
+}
+.toast.error .toast-icon {
+  color: #d63031;
+}
+.toast.warning .toast-icon {
+  color: #f18a28;
+}
+
+.toast-close {
+  background: transparent;
+  border: none;
+  color: var(--cor-texto);
+  font-size: 35px;
+  cursor: pointer;
+  opacity: 0.6;
+  margin-left: 10px;
+}
+
+.toast-close:hover {
+  opacity: 1;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.input-error {
+  border: 1px solid #d63031 !important;
+}
+
 /* MEDIAS */
 /* Intermediario */
 @media (min-width: 901px) and (max-width: 1300px) {
@@ -1606,6 +1698,20 @@ aside {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
+  .conteudo-autenticacao {
+    margin-top: 80px;
+    width: 40%;
+  }
+
+  .wrapper-botoes {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .wrapper-botoes .botao {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -1707,16 +1813,45 @@ aside {
   .rodape section article {
     display: none;
   }
+    
+  .conteudo-autenticacao {
+    margin-top: 80px;
+    width: 50%;
+  }
+
+  .wrapper-botoes,
+  .wrapper-inputs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wrapper-botoes .botao {
+    width: 100%;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .cabecalho-form {
+    font-size: var(--titulo-tam-mobile);
+  }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
+  .botao {
+    text-align: center;
+    font-size: var(--texto-tam-mobile);
+  }
 
   /* --- Ajustes do Cabeçalho Mobile --- */
   .cabecalho {
     padding: 21px 15px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .wrapper-icones {
+    display: none;
   }
 
   .icon-menu {
@@ -1911,5 +2046,163 @@ aside {
 
   .essencia article p {
     font-size: var(--texto-tam-mobile);
+  }
+
+  /* MOBILE ARTIGOS (ELIAS) */
+
+  .texto-artigo h2 {
+    font-size: 24px;
+  }
+
+  .sessao-hero h1 {
+    font-size: 36px;
+  }
+
+  .subtitulo-hero-artigo {
+    font-size: 20px;
+  }
+
+  /* MOBILE ESPECIALIDADES (ELIAS) */
+
+  /* Títulos das seções */
+  .Titulos-sessao {
+    font-size: 24px;
+  }
+
+  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
+  .hero-cardiologia {
+    background:
+      linear-gradient(
+        to right,
+        rgba(70, 70, 70, 0.95) 0%,
+        rgba(70, 70, 70, 0.85) 5%,
+        rgba(70, 70, 70, 0.4) 55%,
+        rgba(70, 70, 70, 0.1) 85%,
+        rgba(70, 70, 70, 0) 100%
+      ),
+      url("../img/img-especialidade-cardiologia.jpg") center/cover no-repeat;
+  }
+
+  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
+  .hero-dermatologia {
+    background:
+      linear-gradient(
+        to right,
+        rgba(70, 70, 70, 0.95) 0%,
+        rgba(70, 70, 70, 0.85) 5%,
+        rgba(70, 70, 70, 0.4) 55%,
+        rgba(70, 70, 70, 0.1) 65%,
+        rgba(70, 70, 70, 0) 100%
+      ),
+      url("../img/img-dermatologia-1.jpg") center/cover no-repeat;
+  }
+
+  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
+  .hero-neurologia {
+    background:
+      rgba(40, 40, 40, 0.95) 0%,
+      linear-gradient(
+        to right,
+        rgba(70, 70, 70, 0.85) 5%,
+        rgba(70, 70, 70, 0.4) 55%,
+        rgba(70, 70, 70, 0.1) 65%,
+        rgba(70, 70, 70, 0) 100%
+      ),
+      url("../img/img-especialidade-neurologia.jpg") center/cover no-repeat;
+  }
+
+  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
+  .hero-ortopedia {
+    background:
+      linear-gradient(
+        to right,
+        rgba(70, 70, 70, 0.95) 0%,
+        rgba(70, 70, 70, 0.85) 5%,
+        rgba(70, 70, 70, 0.4) 55%,
+        rgba(70, 70, 70, 0.1) 65%,
+        rgba(70, 70, 70, 0) 100%
+      ),
+      url("../img/img-especialidade-ortopedia.jpg") center/cover no-repeat;
+  }
+
+  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
+  .hero-pediatria {
+    background:
+      linear-gradient(
+        to right,
+        rgba(70, 70, 70, 0.95) 0%,
+        rgba(70, 70, 70, 0.85) 5%,
+        rgba(70, 70, 70, 0.4) 55%,
+        rgba(70, 70, 70, 0.1) 85%,
+        rgba(70, 70, 70, 0) 100%
+      ),
+      url("../img/img-especialidade-pediatria.jpg") center/cover no-repeat;
+  }
+
+  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
+  .hero-psiquiatria {
+    background:
+      linear-gradient(
+        to right,
+        rgba(70, 70, 70, 0.95) 0%,
+        rgba(70, 70, 70, 0.85) 5%,
+        rgba(70, 70, 70, 0.4) 55%,
+        rgba(70, 70, 70, 0.1) 85%,
+        rgba(70, 70, 70, 0) 100%
+      ),
+      url("../img/img-especialidade-psiquiatria.jpg") center/cover no-repeat;
+  }
+
+  .container-titulo-hero p {
+    font-size: 16px;
+  }
+
+  .essencia article p {
+    font-size: var(--texto-tam-mobile);
+  }
+
+  .conteudo-autenticacao {
+    margin-top: 35%;
+    width: 80%;
+    margin-bottom: 15%;
+  }
+
+  .wrapper-botoes,
+  .wrapper-inputs {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .wrapper-botoes .botao {
+    width: 100%;
+  }
+
+  .cabecalho-form {
+    font-size: var(--titulo-tam-mobile);
+  }
+
+  .corpo-form p,
+  .input-txt,
+  .select,
+  .input-data,
+  .link-simples,
+  .input-checkbox {
+    font-size: var(--texto-tam-mobile);
+  }
+
+  .logo-flutuante {
+    height: 60px;
+  }
+
+  .modal-termos .modal-body p {
+    font-size: 16px;
+  }
+}
+
+/* VAI CONTROLAR ESPECIFICAMENTE QUANDO OS CARDS DAS PÁGINAS DE ARTIGOS DEVEM DEIXAR DE APARECER) */
+@media (max-width: 990px) {
+  .aside-artigos {
+    display: none;
   }
 }
