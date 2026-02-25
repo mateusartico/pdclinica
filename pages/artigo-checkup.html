@@ -19,28 +19,28 @@
         <nav aria-label="Menu principal">
             <input type="checkbox" id="menu-aberto">
             <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
-                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px"
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
                     fill="#FFFFFF" class="icon-menu">
                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                 </svg>
             </label>
             <ul class="lista-links">
-                
                 <li><a href="/" class="link-underline-animado">Início</a></li>
                 <li><a href="institucional.html" class="link-underline-animado">Institucional</a></li>
                 <li><a href="conteudo-informativo.html" class="link-underline-animado">Informações</a></li>
                 <!-- MENU MOBILE -->
-                <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person"></i></a></li>
+                <div>
+                    <button type="button" class="botao-mobile-icone" data-theme-toggle><i
+                            class="bi bi-sun icone-mobile"></i></button>
+                    <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person icone-mobile"></i></a></li>
+                </div>
                 <!-- MENU MOBILE -->
             </ul>
         </nav>
-
-        <div class="wrapper-botoes">
+        <div class="wrapper-icones">
             <button type="button" class="botao-icone" data-theme-toggle><i class="bi bi-sun"></i></button>
             <a href="login.html" class="botao-icone"><i class="bi bi-person"></i></a>
         </div>
-
-
     </header>
 
     <!-- Conteudo principal -->

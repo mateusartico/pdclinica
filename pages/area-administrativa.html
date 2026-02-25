@@ -18,11 +18,7 @@
   </head>
   <body class="conteudo-admin">
     <header class="cabecalho">
-      <img
-        class="logo"
-        src="../img/Logo-PD-Clinica.png"
-        alt="Logo PD Clínica"
-      />
+      <img class="logo" src="../img/Logo-PD-Clinica.png" />
       <nav aria-label="Menu principal">
         <input type="checkbox" id="menu-aberto" />
         <label
@@ -32,9 +28,9 @@
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="38px"
+            height="40px"
             viewBox="0 -960 960 960"
-            width="38px"
+            width="40px"
             fill="#FFFFFF"
             class="icon-menu"
           >
@@ -44,14 +40,7 @@
           </svg>
         </label>
         <ul class="lista-links">
-          <li>
-            <a
-              href="/"
-              class="link-underline-animado"
-              class="link-underline-animado"
-              >Início</a
-            >
-          </li>
+          <li><a href="/" class="link-underline-animado">Início</a></li>
           <li>
             <a href="institucional.html" class="link-underline-animado"
               >Institucional</a
@@ -62,23 +51,25 @@
               >Informações</a
             >
           </li>
-          <li>
-            <a href="login.html" class="botao-mobile-icone"
-              ><i class="bi bi-box-arrow-right"></i
-            ></a>
-          </li>
+          <!-- MENU MOBILE -->
+          <div>
+            <button type="button" class="botao-mobile-icone" data-theme-toggle>
+              <i class="bi bi-sun icone-mobile"></i>
+            </button>
+            <li>
+              <a href="login.html" class="botao-mobile-icone"
+                ><i class="bi bi-box-arrow-right icone-mobile"></i
+              ></a>
+            </li>
+          </div>
+          <!-- MENU MOBILE -->
         </ul>
       </nav>
-      <div class="wrapper-botoes">
-        <button
-          type="button"
-          class="botao-icone"
-          data-theme-toggle
-          aria-label="Alternar tema"
-        >
+      <div class="wrapper-icones">
+        <button type="button" class="botao-icone" data-theme-toggle>
           <i class="bi bi-sun"></i>
         </button>
-        <a href="login.html" class="botao-icone" aria-label="Sair"
+        <a href="login.html" class="botao-icone"
           ><i class="bi bi-box-arrow-right"></i
         ></a>
       </div>
