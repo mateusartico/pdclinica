@@ -758,3 +758,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: block;
   }
 }
+
+
+.centralizar-texto {
+  text-align: center;
+}

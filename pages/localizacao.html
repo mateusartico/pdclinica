@@ -25,33 +25,33 @@
                 <!-- MENU MOBILE -->
             </ul>
         </nav>
-        <div class="wrapper-botoes">
-            <button type="button" class="botao-icone" data-theme-toggle><i class="bi bi-sun"></i></button>
-            <a href="login.html" class="botao-icone"><i class="bi bi-person"></i></a>
-        </div>
+        <section class="wrapper-botoes">
+            <button type="button" class="botao-icone" data-theme-toggle aria-label="Alternar tema"><i class="bi bi-sun"></i></button>
+            <a href="login.html" class="botao-icone" aria-label="Entrar"><i class="bi bi-person"></i></a>
+        </section>
     </header>
 
     <main class="recipiente-localizacao">
         <section class="secao-endereco" aria-labelledby="titulo-endereco">
-            <div class="fileira-localizacao">
-                <div class="coluna-info-localizacao">
-                    <h1 id="titulo-endereco" class="titulo-localizacao">Localização</h1>
+            <section class="fileira-localizacao">
+                <article class="coluna-info-localizacao">
+                    <h1 id="titulo-endereco" class="titulo-localizacao centralizar-texto">Localização</h1>
                     <address class="texto-endereco">
                         Alameda Oscar Niemeyer, 891<br>
                         Vila da Serra<br>
                         Nova Lima - MG
                     </address>
                     <a href="https://maps.app.goo.gl/jvfV89Bp8K8W1tKA8" target="_blank" rel="noopener noreferrer" class="botao-acao botao-destaque" aria-label="Abrir localização no Google Maps">Abrir no Maps</a>
-                </div>
-                <div class="coluna-imagem-localizacao">
+                </article>
+                <section class="coluna-imagem-localizacao">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.7215321746908!2d-43.94500212401481!3d-19.978209881421186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa697ff7aba62c9%3A0x26a43f520c774e7!2sPD%20Case%20Inform%C3%A1tica!5e0!3m2!1sen!2sbr!4v1770661711752!5m2!1sen!2sbr" class="mapa-iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de localização da PD Clínica"></iframe>
-                </div>
-            </div>
+                </section>
+            </section>
         </section>
 
         <section class="secao-horarios" aria-labelledby="titulo-horarios">
-            <h2 id="titulo-horarios" class="titulo-horarios">Horários disponíveis</h2>
-            <div class="container-tabela">
+            <h2 id="titulo-horarios" class="titulo-horarios centralizar-texto">Horários disponíveis</h2>
+            <section class="container-tabela">
                 <table class="tabela-horarios" role="table" aria-label="Horários de atendimento da semana">
                     <thead>
                         <tr>
@@ -79,12 +79,12 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
+            </section>
         </section>
     </main>
 
-        <footer class="rodape">
-        <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados<span></p>
+    <footer class="rodape">
+        <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados</span></p>
     </footer>
     <script src="../js/script.js"></script>
 </body>
