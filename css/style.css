@@ -1889,11 +1889,6 @@ aside {
   border: none;
 }
 
-.barra-busca-trabalhe .botao:hover {
-  background-color: var(--cor-ativo);
-  color: var(--cor-bg-pagina);
-}
-
 @media (max-width: 768px) {
   .titulo-banner {
     font-size: 32px;
