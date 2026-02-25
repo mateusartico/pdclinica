@@ -1622,9 +1622,11 @@ aside {
 .toast.success .toast-icon {
   color: #30d646;
 }
+
 .toast.error .toast-icon {
   color: #d63031;
 }
+
 .toast.warning .toast-icon {
   color: #f18a28;
 }
@@ -1701,6 +1703,8 @@ aside {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
+  }
+
   .conteudo-autenticacao {
     margin-top: 80px;
     width: 40%;
@@ -1724,7 +1728,8 @@ aside {
     padding: 40px 50px;
   }
 
-  .carrossel-img h2, .carrossel-img{
+  .carrossel-img h2,
+  .carrossel-img {
     width: 30%;
   }
 
@@ -1816,7 +1821,7 @@ aside {
   .rodape section article {
     display: none;
   }
-    
+
   .conteudo-autenticacao {
     margin-top: 80px;
     width: 50%;
@@ -2075,28 +2080,24 @@ aside {
   /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-cardiologia {
     background:
-      linear-gradient(
-        to right,
+      linear-gradient(to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 85%,
-        rgba(70, 70, 70, 0) 100%
-      ),
+        rgba(70, 70, 70, 0) 100%),
       url("../img/img-especialidade-cardiologia.jpg") center/cover no-repeat;
   }
 
   /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-dermatologia {
     background:
-      linear-gradient(
-        to right,
+      linear-gradient(to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 65%,
-        rgba(70, 70, 70, 0) 100%
-      ),
+        rgba(70, 70, 70, 0) 100%),
       url("../img/img-dermatologia-1.jpg") center/cover no-repeat;
   }
 
@@ -2104,55 +2105,47 @@ aside {
   .hero-neurologia {
     background:
       rgba(40, 40, 40, 0.95) 0%,
-      linear-gradient(
-        to right,
+      linear-gradient(to right,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 65%,
-        rgba(70, 70, 70, 0) 100%
-      ),
+        rgba(70, 70, 70, 0) 100%),
       url("../img/img-especialidade-neurologia.jpg") center/cover no-repeat;
   }
 
   /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-ortopedia {
     background:
-      linear-gradient(
-        to right,
+      linear-gradient(to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 65%,
-        rgba(70, 70, 70, 0) 100%
-      ),
+        rgba(70, 70, 70, 0) 100%),
       url("../img/img-especialidade-ortopedia.jpg") center/cover no-repeat;
   }
 
   /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-pediatria {
     background:
-      linear-gradient(
-        to right,
+      linear-gradient(to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 85%,
-        rgba(70, 70, 70, 0) 100%
-      ),
+        rgba(70, 70, 70, 0) 100%),
       url("../img/img-especialidade-pediatria.jpg") center/cover no-repeat;
   }
 
   /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-psiquiatria {
     background:
-      linear-gradient(
-        to right,
+      linear-gradient(to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 85%,
-        rgba(70, 70, 70, 0) 100%
-      ),
+        rgba(70, 70, 70, 0) 100%),
       url("../img/img-especialidade-psiquiatria.jpg") center/cover no-repeat;
   }
 
@@ -2271,8 +2264,8 @@ aside {
   }
 
 }
-  
-  /* VAI CONTROLAR ESPECIFICAMENTE QUANDO OS CARDS DAS PÁGINAS DE ARTIGOS DEVEM DEIXAR DE APARECER) */
+
+/* VAI CONTROLAR ESPECIFICAMENTE QUANDO OS CARDS DAS PÁGINAS DE ARTIGOS DEVEM DEIXAR DE APARECER) */
 @media (max-width: 990px) {
   .aside-artigos {
     display: none;
