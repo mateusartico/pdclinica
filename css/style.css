@@ -2271,3 +2271,42 @@ aside {
     display: none;
   }
 }
+
+
+.centralizar-texto {
+  text-align: center;
+}
+
+.container-tabela-admin {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tabela-agendamentos {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--cor-principal);
+  font-family: var(--fonte-texto);
+  font-size: 20px;
+  min-width: 600px;
+}
+
+.tabela-agendamentos thead th {
+  padding: 16px;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-texto);
+  border-bottom: 2px solid var(--cor-principal);
+}
+
+.tabela-agendamentos tbody td {
+  padding: 16px;
+  text-align: center;
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-texto);
+}
+
+.tabela-agendamentos tbody tr:nth-child(odd) td {
+  background-color: var(--cor-bg-sessao);
+}
