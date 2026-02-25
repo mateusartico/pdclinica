@@ -80,7 +80,7 @@ body.dark .accordion-body {
 
 body {
   height: 100%;
-  background-color: var(--cor-branco);
+  background-color: var(--cor-bg-pagina);
   font-family: var(--fonte-texto);
   font-size: 20px;
   color: var(--cor-texto);
@@ -1859,7 +1859,7 @@ aside {
 
 .titulo-banner {
   font-family: var(--fonte-titulo);
-  font-size: var(--titulo-tam-desktop);
+  font-size: 48px;
   font-weight: bold;
   color: var(--cor-bg-pagina);
   text-align: center;
