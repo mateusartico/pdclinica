@@ -1420,7 +1420,7 @@ label span {
 .tabela-agendamentos {
   width: 100%;
   border-collapse: collapse;
-  border: 2px solid var(--cor-txt);
+  border: 2px solid var(--cor-principal);
   font-family: var(--fonte-texto);
   font-size: 20px;
   min-width: 600px;
@@ -1430,15 +1430,19 @@ label span {
   padding: 16px;
   text-align: center;
   font-weight: bold;
-  background-color: var(--cor-bg);
-  color: var(--cor-txt);
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-texto);
 }
 
 .tabela-agendamentos tbody td {
   padding: 16px;
   text-align: center;
-  background-color: var(--cor-bg);
-  color: var(--cor-txt);
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-texto);
+}
+
+.tabela-agendamentos tbody tr:nth-child(odd) td {
+  background-color: var(--cor-bg-sessao);
 }
 
 .tabela-agendamentos tbody tr:nth-child(odd) td {
