@@ -1859,7 +1859,7 @@ aside {
 
 .titulo-banner {
   font-family: var(--fonte-titulo);
-  font-size: 48px;
+  font-size: var(--titulo-tam-desktop);
   font-weight: bold;
   color: var(--cor-bg-pagina);
   text-align: center;
@@ -1872,7 +1872,7 @@ aside {
 
 .texto-banner {
   font-family: var(--fonte-texto);
-  font-size: 24px;
+  font-size: var(--texto-tam-desktop);
   color: var(--cor-bg-pagina);
   text-align: center;
 }
@@ -1889,13 +1889,18 @@ aside {
   border: none;
 }
 
+.barra-busca-trabalhe .input-txt {
+  width: 100%;
+  font-size: var(--texto-tam-desktop);
+}
+
 @media (max-width: 768px) {
   .titulo-banner {
-    font-size: 32px;
+    font-size: var(--titulo-tam-mobile);
   }
 
   .texto-banner {
-    font-size: 18px;
+    font-size: var(--texto-tam-mobile);
   }
 
   .banner-trabalhe {
