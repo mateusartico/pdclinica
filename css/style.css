@@ -2271,3 +2271,35 @@ aside {
     display: none;
   }
 }
+
+
+@media (max-width: 768px) {
+  .pag-contato,
+  .pag-agendamento {
+    flex-direction: column;
+  }
+
+  .bg-img-contato,
+  .bg-img-agendamento {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .container-form {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .bg-img-contato h1,
+  .bg-img-agendamento h1 {
+    font-size: var(--titulo-tam-mobile);
+    width: 90%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container-form {
+    width: 50%;
+    padding: 40px 50px;
+  }
+}
