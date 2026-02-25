@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PD Clínica | Artigo saúde fisica e mental</title>
+    <title>PD Clínica | Artigo Saúde Física e Mental</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
 </head>
@@ -21,151 +20,189 @@
         <nav aria-label="Menu principal">
             <input type="checkbox" id="menu-aberto">
             <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
-                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px" fill="#FFFFFF" class="icon-menu"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                    fill="#FFFFFF" class="icon-menu">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
             </label>
             <ul class="lista-links">
-                <li><a href="/">Início</a></li>
-                <li><a href="institucional.html">Institucional</a></li>
-                <li><a href="conteudo-informativo.html">Informações</a></li>
+                <li><a href="/" class="link-underline-animado">Início</a></li>
+                <li><a href="institucional.html" class="link-underline-animado">Institucional</a></li>
+                <li><a href="conteudo-informativo.html" class="link-underline-animado">Informações</a></li>
                 <!-- MENU MOBILE -->
-                <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person"></i></a></li>
+                <div>
+                    <button type="button" class="botao-mobile-icone" data-theme-toggle><i
+                            class="bi bi-sun icone-mobile"></i></button>
+                    <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person icone-mobile"></i></a></li>
+                </div>
                 <!-- MENU MOBILE -->
             </ul>
         </nav>
-        <div class="wrapper-botoes">
+        <div class="wrapper-icones">
             <button type="button" class="botao-icone" data-theme-toggle><i class="bi bi-sun"></i></button>
             <a href="login.html" class="botao-icone"><i class="bi bi-person"></i></a>
         </div>
     </header>
 
     <!-- Conteudo principal -->
-    <main class="conteudo-principal-artigo">
+    <main class="flex-fill conteudo-artigo">
 
-        <nav aria-label="Navegação de retorno" class="nav-botao">
-            <a href="informacoes-blog.html" class="btn btn-voltar botao">
-                Voltar ao blog
-            </a>
-        </nav>
+        <section class="text-white py-5 sessao-hero">
+            <header class="container text-center text-lg-start">
+                <h1 class="fw-semibold">Saúde física e mental</h1>
+                <h2 class="lead mb-0 subtitulo-hero-artigo">Por que cuidar das duas é essencial para nós !</h2>
+            </header>
+        </section>
 
-        <article>
-            <div class="container-fluid p-0 caixa-principal-artigo">
-                <div class="caixa-secundaria-artigo order-2 order-md-1">
-                    <header>
-                        <h1>Saúde física e mental</h1>
-                        <address>Dr. Douglas Bastos, Abril de 2024</address>
-                    </header>
-                    <p>
+        <article class="container my-5 texto-artigo">
+
+            <div class="row g-5">
+
+                <div class="col-lg-8">
+                    <address>
+                        <p class="text-muted small mb-4">
+                            Dr. Douglas Bastos, <time datetime="2024-04">Abril de 2024</time>
+                        </p>
+                    </address>
+
+                    <figure>
+                        <img src="../img/img-artigo-2.jpg" class="img-fluid rounded mb-4"
+                            alt="Imagem ilustrativa 3 pessoas em uma pista de corrida">
+                    </figure>
+
+
+                    <p class="mb-4">
                         A saúde física e mental constitui um dos pilares fundamentais para o bem-estar integral do
                         indivíduo,
                         abrangendo não apenas a ausência de doenças, mas também o equilíbrio entre corpo, mente e
                         emoções.
                         Este artigo tem como objetivo analisar a importância da integração entre saúde física e saúde
-                        mental
-                        como estratégia essencial para a promoção da qualidade de vida,
-                        prevenção de agravos à saúde e fortalecimento da capacidade funcional ao longo do ciclo vital.
-                        Por meio
-                        de uma revisão teórica fictícia,
-                        são discutidos fatores relacionados ao estilo de vida, atividade física, saúde emocional e
-                        suporte
-                        psicossocial,
-                        bem como seus impactos na prevenção de doenças crônicas e transtornos mentais. Os resultados
-                        indicam
-                        que a adoção de hábitos saudáveis
-                        contribui significativamente para o equilíbrio biopsicossocial,
+                        mental como estratégia essencial
+                        para a promoção da qualidade de vida, prevenção de agravos à saúde e fortalecimento da
+                        capacidade funcional ao longo do ciclo vital.
+                        Por meio de uma revisão teórica fictícia, são discutidos fatores relacionados ao estilo de vida,
+                        atividade física, saúde emocional e
+                        suporte psicossocial, bem como seus impactos na prevenção de doenças crônicas e transtornos
+                        mentais.
+                        Os resultados indicam que a adoção de hábitos saudáveis contribui significativamente para o
+                        equilíbrio biopsicossocial,
                         melhor desempenho funcional e maior longevidade com autonomia.
                     </p>
-                    <br>
-                    <h2 class="topico-artigo">1. Introdução </h2>
-                    
+
+                    <h2 class="fw-bold mt-5">1. Introdução</h2>
                     <p>
-                        Nas últimas décadas, o conceito de saúde tem sido ampliado, superando a visão estritamente
-                        biológica e
-                        incorporando aspectos psicológicos e sociais.
-                        Nesse cenário, a compreensão da relação entre saúde física e mental torna-se indispensável para
-                        o
-                        desenvolvimento de estratégias eficazes de promoção da saúde.
-                        Evidências científicas apontam que alterações emocionais, como estresse crônico, ansiedade e
-                        depressão,
-                        exercem impacto direto sobre o funcionamento físico do organismo,
-                        favorecendo o surgimento de doenças cardiovasculares, distúrbios metabólicos e comprometimento
-                        do
-                        sistema imunológico.
-                        Da mesma forma, condições físicas crônicas podem desencadear sofrimento psicológico, reduzindo a
-                        qualidade de vida.
-                        Assim, torna-se evidente a necessidade de uma abordagem integrada e contínua no cuidado à saúde.
+                        Nas últimas décadas, o modelo de atenção à saúde tem passado por uma transição significativa,
+                        deslocando o foco exclusivo do
+                        tratamento de doenças para estratégias de prevenção e promoção da saúde. Nesse contexto, o
+                        check-up preventivo surge como uma
+                        ferra-menta essencial para a identificação precoce de condições clínicas que, quando
+                        diagnosticadas em estágios iniciais,
+                        apresentam maiores chances de controle e tratamento eficaz.
+                        Doenças crônicas não transmissíveis, como hipertensão arterial, diabetes mellitus e
+                        dislipidemias, frequentemente evoluem de forma silenciosa,
+                        manifestando sintomas apenas em fases avançadas. Assim,
+                        a ausência de sinais clínicos não deve ser interpretada como sinônimo de boa saúde, reforçando a
+                        necessidade de avaliações médicas periódicas.
+                    </p>
+
+                    <h2 class="fw-bold mt-5">2. Metodologia</h2>
+                    <p>
+                        O presente artigo caracteriza-se como uma revisão teórica de natureza descritiva, fundamentada
+                        em literatura científica fictícia
+                        relacionada à saúde física e mental. Foram analisados estudos hipotéticos disponíveis em bases
+                        de dados simuladas da área da saúde,
+                        bem como diretrizes fictícias de organismos nacionais e internacionais. A metodologia
+                        concentrou-se na análise de fatores associados
+                        ao estilo de vida, prática de atividade física, saúde emocional e estratégias de prevenção de
+                        transtornos físicos e mentais,
+                        considerando diferentes contextos sociais e faixas etárias.
+                    </p>
+
+                    <h2 class="fw-bold mt-5">3. Fatores que influenciam a saúde física e mental</h2>
+                    <p>
+                        A saúde física e mental é influenciada por múltiplos fatores, incluindo hábitos alimentares,
+                        prática regular de atividade física,
+                        qualidade do sono, manejo do estresse e relações interpessoais. A atividade física regular
+                        desempenha papel central na
+                        manutenção da saúde corporal, contribuindo para o controle do peso, fortalecimento muscular e
+                        prevenção de doenças cardiovasculares,
+                        além de exercer efeito positivo sobre a saúde mental, reduzindo sintomas de ansiedade, depressão
+                        e estresse.
+                        <br>
+                        <br>
+                        Do ponto de vista da saúde mental, aspectos como suporte social, equilíbrio emocional e acesso a
+                        cuidados psicológicos são
+                        determinantes para o bem-estar. Estratégias de autocuidado, como técnicas de relaxamento,
+                        organização da rotina e acompanhamento
+                        profissional quando necessário, favorecem a resiliência emocional e a capacidade de lidar com
+                        desafios cotidianos.
+                        A integração dessas práticas promove benefícios amplos, impactando positivamente tanto a saúde
+                        mental quanto a física.
+                    </p>
+
+                    <h2 class="fw-bold mt-5">4. Importância da abordagem integrada ao longo da vida</h2>
+                    <p>
+                        A promoção da saúde física e mental deve ser compreendida como um processo contínuo, adaptado às
+                        diferentes fases da vida.
+                        Em crianças e adolescentes, o incentivo à atividade física, hábitos saudáveis e desenvolvimento
+                        emocional equilibrado contribui
+                        para a formação de adultos mais saudáveis. Na vida adulta, a atenção ao equilíbrio entre
+                        trabalho, lazer e autocuidado torna-se
+                        essencial para a prevenção de doenças e transtornos mentais.
+                        <br>
+                        <br>
+                        Em idosos, a manutenção da
+                        autonomia funcional, aliada ao suporte
+                        emocional e social, assume papel central na preservação da qualidade de vida. A abordagem
+                        integrada da saúde física e mental permite
+                        intervenções mais eficazes, favorecendo o envelhecimento saudável e a redução de complicações
+                        associadas a doenças crônicas.
+                        Dessa forma, investir em estratégias preventivas e educativas representa um avanço significativo
+                        na promoção da saúde integral da
+                        população..
                     </p>
                 </div>
-                <figure class="figure-img-artigos col-12 col-md-6 col-lg-5 order-1 order-md-2">
-                    <img src="../img/img-artigo-2.png" alt="Imagem de um médico fazendo exames em uma senhora"
-                        class="img-fluid">
-                </figure>
-            </div>
 
-            <div class="caixa-secundaria-artigo">
-                <h2 class="topico-artigo">2. Metodologia</h2>
-                <p>
-                    O presente artigo caracteriza-se como uma revisão teórica de natureza descritiva, fundamentada em
-                    literatura
-                    científica
-                    fictícia relacionada à saúde física e mental. Foram analisados estudos hipotéticos disponíveis em
-                    bases de
-                    dados
-                    simuladas da área da saúde, bem como diretrizes fictícias de organismos nacionais e internacionais.
-                    A metodologia concentrou-se na análise de fatores associados ao estilo de vida, prática de atividade
-                    física,
-                    saúde emocional
-                    e estratégias de prevenção de transtornos físicos e mentais,
-                    considerando diferentes contextos sociais e faixas etárias.
-                </p>
-                <h2 class="topico-artigo">3. Fatores que influenciam a saúde física e mental</h2>
-                <p>
-                    A saúde física e mental é influenciada por múltiplos fatores, incluindo hábitos alimentares, prática
-                    regular de atividade física,
-                    qualidade do sono, manejo do estresse e relações interpessoais.
-                    A atividade física regular desempenha papel central na manutenção da saúde corporal,
-                    contribuindo para o controle do peso, fortalecimento muscular e prevenção de doenças
-                    cardiovasculares,
-                    além de exercer efeito positivo sobre a saúde mental,
-                    reduzindo sintomas de ansiedade, depressão e estresse.
-                </p>
+                <aside class="col-lg-4 aside-artigos">
 
-                <p>
-                    Do ponto de vista da saúde mental, aspectos como suporte social, equilíbrio emocional e acesso a
-                    cuidados
-                    psicológicos
-                    são determinantes para o bem-estar.
-                    Estratégias de autocuidado, como técnicas de relaxamento, organização da rotina e acompanhamento
-                    profissional quando necessário,
-                    favorecem a resiliência emocional e a capacidade de lidar com desafios cotidianos.
-                    A integração dessas práticas promove benefícios amplos,
-                    impactando positivamente tanto a saúde mental quanto a física.
-                </p>
+                    <article class="card shadow-sm mb-4 card-aside-artigo">
+                        <img src="../img/img-card-aside-artigo-1.jpg" class="card-img-top" alt="Notícias">
+                        <div class="card-body corpo-card">
+                            <h6 class="fw-bold">Notícias Pd clínica</h6>
+                            <p>
+                                Veja nossas últimas notícias atualizadas
+                            </p>
+                            <a href="#" class="link-underline-animado">Acessar</a>
+                        </div>
+                    </article>
+                    <article class="card  shadow-sm card-aside-artigo">
+                        <img src="../img/img-card-aside-artigo-2.jpg" class="card-img-top" alt="Redes sociais">
+                        <div class="card-body corpo-card">
+                            <h6 class="fw-bold">Estamos nas redes sociais</h6>
+                            <p>
+                                Confira nossos posts diários nas redes.
+                            </p>
+                            <a href="#" class="link-underline-animado text-start">Acessar</a>
+                        </div>
+                    </article>
 
-                <h2 class="topico-artigo">4. Importância da abordagem integrada ao longo da vida</h2>
-                <p>
-                    A promoção da saúde física e mental deve ser compreendida como um processo contínuo,
-                    adaptado às diferentes fases da vida.
-                    Em crianças e adolescentes, o incentivo à atividade física, hábitos saudáveis e desenvolvimento
-                    emocional
-                    equilibrado
-                    contribui para a formação de adultos mais saudáveis.
-                    Na vida adulta, a atenção ao equilíbrio entre trabalho, lazer e autocuidado torna-se essencial
-                    para a prevenção de doenças e transtornos mentais.
-                </p>
+                </aside>
 
-                <p>
-                    Em idosos, a manutenção da autonomia funcional, aliada ao suporte emocional e social,
-                    assume papel central na preservação da qualidade de vida.
-                    A abordagem integrada da saúde física e mental permite intervenções mais eficazes,
-                    favorecendo o envelhecimento saudável e a redução de complicações associadas a doenças crônicas.
-                    Dessa forma, investir em estratégias preventivas e educativas
-                    representa um avanço significativo na promoção da saúde integral da população.
-                </p>
             </div>
         </article>
 
-
     </main>
+    <section class="bread py-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 small">
+                    <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
+                    <li class="breadcrumb-item"><a href="informacoes-blog.html">Blog</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Artigo</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
     <footer class="rodape">
         <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados<span></p>
     </footer>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
-    <title>PD Clínica | Lista de Especialidades</title>
+    <title>PD Clínica | Institucional</title>
 </head>
 
 <body>
@@ -15,61 +15,105 @@
         <nav aria-label="Menu principal">
             <input type="checkbox" id="menu-aberto">
             <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
-                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px" fill="#FFFFFF" class="icon-menu"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                    fill="#FFFFFF" class="icon-menu">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
             </label>
             <ul class="lista-links">
-                <li><a href="/">Início</a></li>
-                <li><a href="institucional.html">Institucional</a></li>
-                <li><a href="conteudo-informativo.html">Informações</a></li>
+                <li><a href="/" class="link-underline-animado">Início</a></li>
+                <li><a href="institucional.html" class="link-underline-animado">Institucional</a></li>
+                <li><a href="conteudo-informativo.html" class="link-underline-animado">Informações</a></li>
                 <!-- MENU MOBILE -->
-                <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person"></i></a></li>
+                <div>
+                    <button type="button" class="botao-mobile-icone" data-theme-toggle><i
+                            class="bi bi-sun icone-mobile"></i></button>
+                    <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person icone-mobile"></i></a></li>
+                </div>
                 <!-- MENU MOBILE -->
             </ul>
         </nav>
-        <div class="wrapper-botoes">
+        <div class="wrapper-icones">
             <button type="button" class="botao-icone" data-theme-toggle><i class="bi bi-sun"></i></button>
             <a href="login.html" class="botao-icone"><i class="bi bi-person"></i></a>
         </div>
     </header>
 
-    <main class="conteudo-principal-inicio">
-        <section class="sessao primeira-sessao">
-            <img src="../img/estrutura-fisica-2.png" alt="" class="img-conteudo">
+    <main>
+        <section class="sessao-bloco-texto-img sessao-fundo-azul">
             <article>
-                <h2 class="titulo">Sobre Nós</h2>
-                <p class="descricao">Somos uma clínica médica dedicada a oferecer atendimento de qualidade, pautado pela ética, pelo respeito e pelo cuidado humanizado. Nosso trabalho é centrado no paciente, valorizando a escuta, a atenção individual e a clareza nas orientações, para que cada pessoa se sinta segura e acolhida durante todo o atendimento. Atuamos com responsabilidade e compromisso com a saúde, buscando sempre proporcionar uma experiência confiável e profissional.</p>
+                <h2>Sobre <span class="destaque">Nós<span></h2>
+                <p>Somos uma clínica médica dedicada a oferecer atendimento de qualidade, pautado pela
+                    ética, pelo respeito e pelo cuidado humanizado. Nosso trabalho é centrado no paciente, valorizando a
+                    escuta, a atenção individual e a clareza nas orientações, para que cada pessoa se sinta segura e
+                    acolhida durante todo o atendimento. Atuamos com responsabilidade e compromisso com a saúde,
+                    buscando sempre proporcionar uma experiência confiável e profissional.</p>
             </article>
+            <img src="../img/estrutura-fisica-1.png" alt="" class="img-conteudo">
         </section>
 
         <section class="essencia">
             <article>
-                <h2 class="subtitulo">Missão</h2>
-                <p>Oferecer atendimento médico de qualidade, com foco no cuidado integral do paciente, promovendo saúde, bem-estar e segurança por meio de práticas responsáveis e humanizadas.</p>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="45px"
+                        fill="#264d98">
+                        <path
+                            d="M480.13-120q-74.67 0-140.41-28.34-65.73-28.34-114.36-76.92-48.63-48.58-76.99-114.26Q120-405.19 120-479.87q0-74.67 28.35-140.41 28.35-65.73 76.95-114.36 48.6-48.63 114.3-76.99Q405.3-840 480-840q61.41 0 116.2 19 54.8 19 99.95 53l-28.77 29.77q-39.53-29.39-86.98-45.58Q532.96-800 480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-24.15-3.54-47.38-3.54-23.22-10.61-45.16l31.92-32.69q11 29.69 16.61 60.93Q840-513.07 840-480q0 74.7-28.34 140.4t-76.92 114.3q-48.58 48.6-114.26 76.95Q554.81-120 480.13-120Zm-57.67-203.69L280.15-466l28.31-28.31 114 114 389.23-389.46L840-741.46 422.46-323.69Z" />
+                    </svg>
+                    <h2 class="destaque">Missão</h2>
+                </div>
+                <p>Oferecer atendimento médico de qualidade, com foco no cuidado integral do paciente, promovendo saúde,
+                    bem-estar e segurança por meio de práticas responsáveis e humanizadas.</p>
             </article>
             <article>
-                <h2 class="subtitulo">Visão</h2>
-                <p>Ser reconhecida como uma clínica de referência em atendimento médico, destacando-se pela confiança, pelo cuidado com as pessoas e pela excelência nos serviços prestados.</p>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="45px"
+                        fill="#264d98">
+                        <path
+                            d="M480.13-120q-74.67 0-140.41-28.34-65.73-28.34-114.36-76.92-48.63-48.58-76.99-114.26Q120-405.19 120-479.87q0-74.67 28.35-140.41 28.35-65.73 76.95-114.36 48.6-48.63 114.3-76.99Q405.3-840 480-840q61.41 0 116.2 19 54.8 19 99.95 53l-28.77 29.77q-39.53-29.39-86.98-45.58Q532.96-800 480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-24.15-3.54-47.38-3.54-23.22-10.61-45.16l31.92-32.69q11 29.69 16.61 60.93Q840-513.07 840-480q0 74.7-28.34 140.4t-76.92 114.3q-48.58 48.6-114.26 76.95Q554.81-120 480.13-120Zm-57.67-203.69L280.15-466l28.31-28.31 114 114 389.23-389.46L840-741.46 422.46-323.69Z" />
+                    </svg>
+                    <h2 class="destaque">Visão</h2>
+                </div>
+                <p>Ser reconhecida como uma clínica de referência em atendimento médico, destacando-se pela
+                    confiança,
+                    pelo cuidado com as pessoas e pela excelência nos serviços prestados.</p>
             </article>
             <article>
-                <h2 class="subtitulo">Valores</h2>
-                <p>Ética e responsabilidade em todas as ações, respeito às pessoas, atenção individualizada, compromisso com a qualidade do atendimento e valorização do cuidado humano.</p>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="45px" viewBox="0 -960 960 960" width="45px"
+                        fill="#264d98">
+                        <path
+                            d="M480.13-120q-74.67 0-140.41-28.34-65.73-28.34-114.36-76.92-48.63-48.58-76.99-114.26Q120-405.19 120-479.87q0-74.67 28.35-140.41 28.35-65.73 76.95-114.36 48.6-48.63 114.3-76.99Q405.3-840 480-840q61.41 0 116.2 19 54.8 19 99.95 53l-28.77 29.77q-39.53-29.39-86.98-45.58Q532.96-800 480-800q-133 0-226.5 93.5T160-480q0 133 93.5 226.5T480-160q133 0 226.5-93.5T800-480q0-24.15-3.54-47.38-3.54-23.22-10.61-45.16l31.92-32.69q11 29.69 16.61 60.93Q840-513.07 840-480q0 74.7-28.34 140.4t-76.92 114.3q-48.58 48.6-114.26 76.95Q554.81-120 480.13-120Zm-57.67-203.69L280.15-466l28.31-28.31 114 114 389.23-389.46L840-741.46 422.46-323.69Z" />
+                    </svg>
+                    <h2 class="destaque">Valores</h2>
+                </div>
+                <p>Ética e responsabilidade em todas as ações, respeito às pessoas, atenção individualizada, compromisso
+                    com a qualidade e valorização do cuidado.</p>
             </article>
         </section>
 
-        <section class="sessao reverso">
+        <section class="sessao-bloco-texto-img">
+            <article>
+                <h2 class="titulo">Estrutura <span class="destaque">Física</span></h2>
+                <p class="descricao">Nossa clínica conta com uma estrutura planejada para oferecer conforto, segurança e
+                    acessibilidade aos pacientes. Os ambientes foram pensados para proporcionar bem-estar e
+                    tranquilidade, seguindo padrões adequados de higiene e organização. Buscamos criar um espaço
+                    acolhedor, que contribua para uma experiência positiva desde a recepção até o atendimento médico.
+                </p>
+            </article>
+            <img src="../img/estrutura-fisica-2.png" alt="" class="img-conteudo">
+        </section>
+
+        <section class="sessao-bloco-texto-img">
+            <article>
+                <h2 class="titulo">Nossa <span class="destaque">História</span></h2>
+                <p class="descricao">A PD Clínica surgiu com o propósito de oferecer um atendimento médico mais próximo,
+                    humano e responsável. Desde sua criação, a clínica vem construindo sua trajetória com base na
+                    confiança dos pacientes e no compromisso com a saúde e o bem-estar. Ao longo do tempo, buscamos
+                    evoluir constantemente, aprimorando nossos serviços e fortalecendo nossos valores para atender cada
+                    vez melhor.</p>
+            </article>
             <img src="../img/estrutura-fisica-3.png" alt="" class="img-conteudo">
-            <article>
-                <h2 class="titulo">Estrutura Física</h2>
-                <p class="descricao">Nossa clínica conta com uma estrutura planejada para oferecer conforto, segurança e acessibilidade aos pacientes. Os ambientes foram pensados para proporcionar bem-estar e tranquilidade, seguindo padrões adequados de higiene e organização. Buscamos criar um espaço acolhedor, que contribua para uma experiência positiva desde a recepção até o atendimento médico.</p>
-            </article>
-        </section>
-
-        <section class="sessao ultima-sessao">
-            <img src="../img/img-dentro-consultorio.png" alt="" class="img-conteudo">
-            <article>
-                <h2 class="titulo">Nossa História</h2>
-                <p class="descricao">A PD Clínica surgiu com o propósito de oferecer um atendimento médico mais próximo, humano e responsável. Desde sua criação, a clínica vem construindo sua trajetória com base na confiança dos pacientes e no compromisso com a saúde e o bem-estar. Ao longo do tempo, buscamos evoluir constantemente, aprimorando nossos serviços e fortalecendo nossos valores para atender cada vez melhor.</p>
-            </article>
         </section>
     </main>
 

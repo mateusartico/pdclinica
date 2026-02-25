@@ -10,7 +10,6 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/dark-mode.css" />
     <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
 </head>
 
@@ -22,94 +21,158 @@
         <nav aria-label="Menu principal">
             <input type="checkbox" id="menu-aberto">
             <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
-                <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px" fill="#FFFFFF" class="icon-menu"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                    fill="#FFFFFF" class="icon-menu">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
             </label>
             <ul class="lista-links">
-                <li><a href="/">Início</a></li>
-                <li><a href="institucional.html">Institucional</a></li>
-                <li><a href="conteudo-informativo.html">Informações</a></li>
+                <li><a href="/" class="link-underline-animado">Início</a></li>
+                <li><a href="institucional.html" class="link-underline-animado">Institucional</a></li>
+                <li><a href="conteudo-informativo.html" class="link-underline-animado">Informações</a></li>
                 <!-- MENU MOBILE -->
-                <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person"></i></a></li>
+                <div>
+                    <button type="button" class="botao-mobile-icone" data-theme-toggle><i
+                            class="bi bi-sun icone-mobile"></i></button>
+                    <li><a href="login.html" class="botao-mobile-icone"><i class="bi bi-person icone-mobile"></i></a></li>
+                </div>
                 <!-- MENU MOBILE -->
             </ul>
         </nav>
-        <div class="wrapper-botoes">
+        <div class="wrapper-icones">
             <button type="button" class="botao-icone" data-theme-toggle><i class="bi bi-sun"></i></button>
             <a href="login.html" class="botao-icone"><i class="bi bi-person"></i></a>
         </div>
     </header>
 
-    <!-- Conteudo principal -->
-    <main class="conteudo-principal">
+     <!-- Conteudo principal -->
+    <main class="conteudo-especialidades">
+        <header class="hero-cardiologia">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8 container-titulo-hero">
+                        <h1 class="display-5 mb-3 ">Cardiologia</h1>
 
-        <nav aria-label="Navegação de retorno" class="nav-botao">
-            <a href="listagem-especialidades.html" class="btn btn-voltar botao">
-                Voltar à Lista de Especialidades
-            </a>
-        </nav>
+                        <p class="lead mb-4">
+                            A Cardiologia trata de doenças como Insuficiência Cardíaca, Miocardite, Arritmias, 
+                            entre outras que atingem milhares de pessoas no mundo todo.
+                        </p>
 
-        <section class="container-fluid txt-img">
-            <div class="row align-items-center linha-txt-img">
-                <figure class="col-12 col-md-auto fig-img">
-                    <img src="../img/img-cardiologia-1.png" alt="Imagem ilustrativa sobre dermatologia"
-                        class="img-fluid img-especialidade">
-                </figure>
+                        <a href="#" class="btn btn-primary botao-banner">
+                            <i class="bi bi-plus-lg me-2"></i> Marque uma consulta
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-                <article class="col txt-especialidade">
-                    <h2>Cardiologia</h2>
+        <section class="py-5">
+            <div class="container content-wrapper">
+
+                <section class="mb-5">
+                    <h2 class="Titulos-sessao ">
+                        O que é Cardiologia?
+                    </h2>
 
                     <p>
-                        A cardiologia é a especialidade médica dedicada ao cuidado do coração e do sistema
-                        cardiovascular, responsáveis por garantir a circulação adequada do sangue e o
-                        funcionamento equilibrado de todo o organismo.
+                        A cardiologia é a especialidade médica responsável pelo diagnóstico, tratamento e prevenção de 
+                        doenças que afetam o coração e o sistema cardiovascular.
+                    </p>
+
+                    <p>O cardiologista é o profissional responsável por diagnosticar e tratar doenças cardiovasculares, além de atuar na prevenção dessas condições.</p>
+
+                    <p>Ele pode acompanhar pacientes com histórico de doenças cardíacas, monitorar indivíduos com fatores de risco e intervir precocemente para evitar complicações graves, como infartos.</p>
+
+                    <p>Entre as principais funções do cardiologista, estão:</p>
+
+                    <ul>
+                        <li>avaliação clínica e solicitação de exames para investigação de doenças cardiovasculares;</li>
+                        <li>interpretação de exames cardiológicos, como eletrocardiograma, ecocardiograma, teste ergométrico e cateterismo cardíaco;</li>
+                        <li>tratamento de doenças cardíacas por meio de medicações, mudanças no estilo de vida e procedimentos invasivos, quando necessário;</li>
+                        <li>prevenção e orientação para pacientes com fatores de risco, como hipertensão, diabetes, colesterol alto e histórico familiar de doenças do coração.</li>
+                    </ul>
+
+                    
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="Titulos-sessao">
+                        Quais doenças a Cardiologia trata?
+                    </h2>
+
+                    <p>
+                        A cardiologia trata uma ampla gama de doenças e condições relacionadas ao sistema cardiovascular.
                     </p>
 
                     <ul>
-                        <li>
-                            <strong>Doenças cardiovasculares:</strong> hipertensão arterial, insuficiência
-                            cardíaca, arritmias, infarto, angina e cardiopatias.
-                        </li>
-                        <li>
-                            <strong>Avaliação e acompanhamento clínico:</strong> check-ups cardiológicos,
-                            exames de rotina e avaliação de risco.
-                        </li>
-                        <li>
-                            <strong>Prevenção e qualidade de vida:</strong> orientação sobre hábitos saudáveis,
-                            controle do colesterol, diabetes, sedentarismo, estresse e tabagismo.
-                        </li>
+                        <li>Hipertensão arterial: pressão alta, um dos principais fatores de risco para doenças do coração.</li>
+                        <li>Insuficiência cardíaca: quando o coração perde a capacidade de bombear sangue adequadamente.</li>
+                        <li>Arritmias cardíacas: alterações no ritmo dos batimentos cardíacos, como a fibrilação atrial.</li>
+                        <li>Valvopatias: doenças que afetam o funcionamento das válvulas do coração.</li>
+                        <li>Cardiomiopatias: doenças que alteram a estrutura e a função do músculo cardíaco.</li>
                     </ul>
-                </article>
-            </div>
-        </section>
 
-        <section class="container-fluid txt-img">
-            <div class="row align-items-center linha-txt-img">
-                <section class="col txt-especialidade order-2 order-md-1">
-                    <p>
-                        A cardiologia vai além do tratamento de doenças já instaladas, sendo essencial na
-                        prevenção de eventos cardiovasculares graves, como infarto e AVC.
-                        Muitas alterações cardíacas se desenvolvem de forma silenciosa, o que torna o
-                        acompanhamento médico regular fundamental para um diagnóstico precoce.
-                    </p>
+                <section>
+                    <h2 class="Titulos-sessao">
+                        Qual a diferença entre Cardiologia e Cirurgia Cardíaca?
+                    </h2>
 
                     <p>
-                        O cuidado cardiológico é contínuo e personalizado, levando em consideração o estilo
-                        de vida, histórico familiar e condições de saúde de cada paciente.
-                        Dessa forma, o cardiologista atua de maneira integrada, unindo conhecimento técnico,
-                        tecnologia diagnóstica e orientação preventiva para promover mais saúde, segurança
-                        e longevidade.
+                        A cardiologia é a especialidade médica responsável pelo diagnóstico e tratamento clínico das doenças do coração. 
+                        Já a cirurgia cardíaca é uma especialidade cirúrgica voltada para procedimentos invasivos e intervenções no órgão.
                     </p>
                 </section>
 
-                <figure class="col-12 col-md-auto fig-img order-1 order-md-2">
-                    <img src="../img/img-cardiologia-2.png" alt="Exame clínico de avaliação da pele"
-                        class="img-fluid img-especialidade">
-                </figure>
+                <section>
+                    <h2 class="Titulos-sessao">
+                        O que é a Cardiologia Intervencionista?
+                    </h2>
+                    <p>A cardiologia intervencionista é um ramo da especialidade que realiza procedimentos minimamente invasivos para tratar doenças cardíacas. 
+                        Em vez de cirurgias abertas, utilizam-se técnicas como o cateterismo cardíaco e a angioplastia, reduzindo o tempo de recuperação e os 
+                        riscos associados às intervenções.
+                    </p>
+
+                    <p>Confira abaixo os principais procedimentos realizados pela cardiologia intervencionista.</p>
+
+                    <ul>
+                        <li>Cateterismo cardíaco: exame que avalia obstruções nas artérias do coração.</li>
+                        <li>Angioplastia coronariana: desobstrução das artérias coronárias com a colocação de stents.</li>
+                        <li>Implante de válvulas cardíacas: substituição de válvulas do coração por meio de técnicas minimamente invasivas, como a TAVI (Implante Transcateter de Válvula Aórtica).</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="Titulos-sessao">
+                        O que é a Cardiologia Preventiva?
+                    </h2>
+                    <p>
+                        A cardiologia preventiva tem como objetivo reduzir os fatores de risco e evitar o desenvolvimento de doenças cardiovasculares. Por meio de exames periódicos, acompanhamento médico e mudanças no estilo de vida, 
+                        é possível diminuir significativamente o risco de infarto, AVC e outras complicações cardíacas.
+                    </p>
+
+                    <p>Veja a seguir os principais pilares da cardiologia preventiva.</p>
+
+                    <ul>
+                        <li>Alimentação equilibrada: reduzir o consumo de sal, gorduras saturadas e açúcares.</li>
+                        <li>Prática regular de exercícios físicos: manter uma rotina ativa para fortalecer o sistema cardiovascular.</li>
+                        <li>Controle de fatores de risco: monitorar pressão arterial, colesterol, diabetes e obesidade.</li>
+                    </ul>
+                </section>
             </div>
-
         </section>
-
     </main>
+
+    <section class="bread  py-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0 small">
+                    <li class="breadcrumb-item"><a href="../index.html">Início</a></li>
+                    <li class="breadcrumb-item"><a href="listagem-especialidades.html">Lista de especialidades</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cardiologia</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
     <footer class="rodape">
         <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados<span></p>
     </footer>
@@ -117,7 +180,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
         </script>
-        <script src="../js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
