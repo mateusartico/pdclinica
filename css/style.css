@@ -771,35 +771,34 @@ aside {
   transform: scale(1.2);
 }
 
-#carrossel-btn-1:checked~.carrossel-navegacao label:nth-child(1),
-#carrossel-btn-2:checked~.carrossel-navegacao label:nth-child(2),
-#carrossel-btn-3:checked~.carrossel-navegacao label:nth-child(3),
-#carrossel-btn-4:checked~.carrossel-navegacao label:nth-child(4) {
+#carrossel-btn-1:checked ~ .carrossel-navegacao label:nth-child(1),
+#carrossel-btn-2:checked ~ .carrossel-navegacao label:nth-child(2),
+#carrossel-btn-3:checked ~ .carrossel-navegacao label:nth-child(3),
+#carrossel-btn-4:checked ~ .carrossel-navegacao label:nth-child(4) {
   background: var(--cor-principal);
 }
 
-.carrossel-inicio input:checked~.carrossel-imagens {
+.carrossel-inicio input:checked ~ .carrossel-imagens {
   animation: none;
 }
 
-#carrossel-btn-1:checked~.carrossel-imagens {
+#carrossel-btn-1:checked ~ .carrossel-imagens {
   transform: translateX(0);
 }
 
-#carrossel-btn-2:checked~.carrossel-imagens {
+#carrossel-btn-2:checked ~ .carrossel-imagens {
   transform: translateX(-100%);
 }
 
-#carrossel-btn-3:checked~.carrossel-imagens {
+#carrossel-btn-3:checked ~ .carrossel-imagens {
   transform: translateX(-200%);
 }
 
-#carrossel-btn-4:checked~.carrossel-imagens {
+#carrossel-btn-4:checked ~ .carrossel-imagens {
   transform: translateX(-300%);
 }
 
 @keyframes autoSlide {
-
   0%,
   20% {
     transform: translateX(0);
@@ -1026,6 +1025,7 @@ aside {
 
 /* PAGINA INSTITUCIONAL */
 .essencia {
+  background-color: var(--cor-bg-pagina);
   padding: 60px 155px;
   display: flex;
   justify-content: center;
@@ -1131,18 +1131,21 @@ aside {
 .conteudo-artigo,
 .conteudo-paciente,
 .conteudo-admin,
-.conteudo-informativo {
+.conteudo-informativo,
+.pag-blog {
   background-color: var(--cor-bg-pagina);
 }
 
 .hero-dermatologia {
   background:
-    linear-gradient(to right,
+    linear-gradient(
+      to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%),
+      rgba(40, 40, 40, 0) 100%
+    ),
     url("../img/img-dermatologia-1.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1181,12 +1184,14 @@ aside {
 /* HERO NEUROLOGIA*/
 .hero-neurologia {
   background:
-    linear-gradient(to right,
+    linear-gradient(
+      to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%),
+      rgba(40, 40, 40, 0) 100%
+    ),
     url("../img/img-especialidade-neurologia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1196,12 +1201,14 @@ aside {
 /* HERO CARDIOLOGIA*/
 .hero-cardiologia {
   background:
-    linear-gradient(to right,
+    linear-gradient(
+      to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%),
+      rgba(40, 40, 40, 0) 100%
+    ),
     url("../img/img-especialidade-cardiologia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1210,12 +1217,14 @@ aside {
 
 .hero-ortopedia {
   background:
-    linear-gradient(to right,
+    linear-gradient(
+      to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%),
+      rgba(40, 40, 40, 0) 100%
+    ),
     url("../img/img-especialidade-ortopedia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1224,12 +1233,14 @@ aside {
 
 .hero-pediatria {
   background:
-    linear-gradient(to right,
+    linear-gradient(
+      to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%),
+      rgba(40, 40, 40, 0) 100%
+    ),
     url("../img/img-especialidade-pediatria.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1238,12 +1249,14 @@ aside {
 
 .hero-psiquiatria {
   background:
-    linear-gradient(to right,
+    linear-gradient(
+      to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%),
+      rgba(40, 40, 40, 0) 100%
+    ),
     url("../img/img-especialidade-psiquiatria.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1796,7 +1809,7 @@ aside {
     color: var(--cor-principal);
   }
 
-  #menu-aberto:checked~.lista-links {
+  #menu-aberto:checked ~ .lista-links {
     display: flex;
   }
 
@@ -1906,73 +1919,84 @@ aside {
   /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-cardiologia {
     background:
-      linear-gradient(to right,
+      linear-gradient(
+        to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 85%,
-        rgba(70, 70, 70, 0) 100%),
+        rgba(70, 70, 70, 0) 100%
+      ),
       url("../img/img-especialidade-cardiologia.jpg") center/cover no-repeat;
   }
 
   /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-dermatologia {
     background:
-      linear-gradient(to right,
+      linear-gradient(
+        to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 65%,
-        rgba(70, 70, 70, 0) 100%),
+        rgba(70, 70, 70, 0) 100%
+      ),
       url("../img/img-dermatologia-1.jpg") center/cover no-repeat;
   }
-
 
   /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-neurologia {
     background:
-    rgba(40, 40, 40, 0.95) 0%,
-      linear-gradient(to right,
+      rgba(40, 40, 40, 0.95) 0%,
+      linear-gradient(
+        to right,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 65%,
-        rgba(70, 70, 70, 0) 100%),
+        rgba(70, 70, 70, 0) 100%
+      ),
       url("../img/img-especialidade-neurologia.jpg") center/cover no-repeat;
   }
 
   /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-ortopedia {
     background:
-      linear-gradient(to right,
+      linear-gradient(
+        to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 65%,
-        rgba(70, 70, 70, 0) 100%),
+        rgba(70, 70, 70, 0) 100%
+      ),
       url("../img/img-especialidade-ortopedia.jpg") center/cover no-repeat;
   }
 
   /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-pediatria {
     background:
-      linear-gradient(to right,
+      linear-gradient(
+        to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 85%,
-        rgba(70, 70, 70, 0) 100%),
+        rgba(70, 70, 70, 0) 100%
+      ),
       url("../img/img-especialidade-pediatria.jpg") center/cover no-repeat;
   }
 
   /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-psiquiatria {
     background:
-      linear-gradient(to right,
+      linear-gradient(
+        to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 85%,
-        rgba(70, 70, 70, 0) 100%),
+        rgba(70, 70, 70, 0) 100%
+      ),
       url("../img/img-especialidade-psiquiatria.jpg") center/cover no-repeat;
   }
 
