@@ -534,10 +534,13 @@ td {
 .rodape section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 50px;
-  padding: 0 40px;
-  margin-bottom: 10px;
+  gap: 30px;
+}
+
+.rodape section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .titulo-rodape {
@@ -719,9 +722,14 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 2em;
+  align-items: start;
+  padding: 65px 155px;
   color: #ffffff;
+}
+
+.carrossel-img h2,
+.carrossel-img p {
+  width: 30%;
 }
 
 .carrossel-img p {
@@ -734,12 +742,10 @@ aside {
 
 .carrossel-img-2 {
   background-image: url(../img/carrossel-img-2.png);
-  align-items: start;
 }
 
 .carrossel-img-3 {
   background-image: url(../img/carrossel-img-3.png);
-  align-items: start;
 }
 
 .carrossel-img-4 {
@@ -758,6 +764,7 @@ aside {
 .carrossel-navegacao label {
   width: 15px;
   height: 15px;
+  padding: 0;
   background: rgb(255, 255, 255);
   border-radius: 50%;
   cursor: pointer;
@@ -769,34 +776,35 @@ aside {
   transform: scale(1.2);
 }
 
-#carrossel-btn-1:checked ~ .carrossel-navegacao label:nth-child(1),
-#carrossel-btn-2:checked ~ .carrossel-navegacao label:nth-child(2),
-#carrossel-btn-3:checked ~ .carrossel-navegacao label:nth-child(3),
-#carrossel-btn-4:checked ~ .carrossel-navegacao label:nth-child(4) {
+#carrossel-btn-1:checked~.carrossel-navegacao label:nth-child(1),
+#carrossel-btn-2:checked~.carrossel-navegacao label:nth-child(2),
+#carrossel-btn-3:checked~.carrossel-navegacao label:nth-child(3),
+#carrossel-btn-4:checked~.carrossel-navegacao label:nth-child(4) {
   background: var(--cor-principal);
 }
 
-.carrossel-inicio input:checked ~ .carrossel-imagens {
+.carrossel-inicio input:checked~.carrossel-imagens {
   animation: none;
 }
 
-#carrossel-btn-1:checked ~ .carrossel-imagens {
+#carrossel-btn-1:checked~.carrossel-imagens {
   transform: translateX(0);
 }
 
-#carrossel-btn-2:checked ~ .carrossel-imagens {
+#carrossel-btn-2:checked~.carrossel-imagens {
   transform: translateX(-100%);
 }
 
-#carrossel-btn-3:checked ~ .carrossel-imagens {
+#carrossel-btn-3:checked~.carrossel-imagens {
   transform: translateX(-200%);
 }
 
-#carrossel-btn-4:checked ~ .carrossel-imagens {
+#carrossel-btn-4:checked~.carrossel-imagens {
   transform: translateX(-300%);
 }
 
 @keyframes autoSlide {
+
   0%,
   20% {
     transform: translateX(0);
@@ -991,7 +999,7 @@ aside {
 }
 
 /* Define estilizações de texto para a data e nome do autor dos artigos */
-.informaco-autor-artigo  {
+.informaco-autor-artigo {
   font-style: italic;
   font-size: 16px;
   color: #6c757d;
@@ -1017,7 +1025,7 @@ aside {
 }
 
 /* Define o tamanho da fonte do subtitulos de cada article*/
-.conteudo-blog h3{
+.conteudo-blog h3 {
   font-size: 20px;
 }
 
@@ -1135,14 +1143,12 @@ aside {
 
 .hero-dermatologia {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-dermatologia-1.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1181,14 +1187,12 @@ aside {
 /* HERO NEUROLOGIA*/
 .hero-neurologia {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-neurologia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1198,14 +1202,12 @@ aside {
 /* HERO CARDIOLOGIA*/
 .hero-cardiologia {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-cardiologia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1214,14 +1216,12 @@ aside {
 
 .hero-ortopedia {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-ortopedia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1230,14 +1230,12 @@ aside {
 
 .hero-pediatria {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-pediatria.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1246,14 +1244,12 @@ aside {
 
 .hero-psiquiatria {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-psiquiatria.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1565,6 +1561,7 @@ aside {
 .centralizar-texto {
   text-align: center;
 }
+
 .badge-cancelado {
   background-color: #f44336;
 }
@@ -1573,6 +1570,19 @@ aside {
 /* Intermediario */
 @media (min-width: 901px) and (max-width: 1300px) {
 
+  .carrossel-img {
+    padding: 40px 50px;
+  }
+
+  .carrossel-img h2,
+  .carrossel-img p {
+    width: 30%;
+  }
+
+  .carrossel-imagens h2 {
+    font-size: var(--titulo-tam-desktop);
+  }
+
   .sessao-bloco-texto-img {
     padding: 40px 50px;
     gap: 30px;
@@ -1582,30 +1592,97 @@ aside {
     padding: 40px 50px;
     gap: 30px;
   }
+
+  .rodape {
+    padding: 40px 50px;
+  }
+
+  .rodape section {
+    padding: 0;
+  }
+
+  .rodape section article {
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 900px) {
 
+  .carrossel-img {
+    padding: 40px 50px;
+  }
+
+  .carrossel-img h2 {
+    width: 30%;
+  }
+
+  .carrossel-img p {
+    display: none;
+  }
+
+  .carrossel-imagens h2 {
+    font-size: var(--titulo-tam-desktop);
+  }
+
   .sessao-bloco-texto-img {
-    flex-direction: column-reverse;
-    gap: 0;
+    flex-direction: column;
+    gap: 30px;
     padding: 0;
+    padding: 40px 50px;
   }
 
   .sessao-bloco-texto-img article {
     width: 100%;
-    padding: 40px 50px;
   }
 
   .sessao-bloco-texto-img img {
     width: 100%;
-    border-radius: 0;
   }
 
   .essencia {
     padding: 40px 50px;
     flex-direction: column;
     gap: 30px;
+  }
+
+  .rodape {
+    padding: 40px 50px;
+    gap: 30px;
+  }
+
+  .rodape section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rodape section nav {
+    display: block;
+  }
+
+  .rodape section {
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .rodape section nav ul {
+    list-style: none;
+    font-size: var(--texto-mobile);
+  }
+
+  .rodape section nav ul a {
+    color: var(--cor-bg);
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .none,
+  .rodape section article {
+    display: none;
   }
 }
 
@@ -1631,7 +1708,8 @@ aside {
 
   /* Esconde botões desktop */
   .cabecalho .botao-icone,
-  #menu-aberto, .wrapper-botoes {
+  #menu-aberto,
+  .wrapper-botoes {
     display: none;
   }
 
@@ -1655,24 +1733,24 @@ aside {
     display: block;
   }
 
-  .lista-links div{
+  .lista-links div {
     display: flex;
     gap: 20px;
     height: 50px;
     align-items: center;
   }
 
-  .lista-links div button{
+  .lista-links div button {
     background-color: transparent;
     border: none;
   }
 
-  .botao-mobile-icone{
+  .botao-mobile-icone {
     font-size: var(--titulo-tam-mobile);
     color: var(--cor-principal);
   }
 
-  #menu-aberto:checked ~ .lista-links {
+  #menu-aberto:checked~.lista-links {
     display: flex;
   }
 
@@ -1681,29 +1759,29 @@ aside {
     gap: 15px;
   }
 
-  .rodape div nav {
+  .rodape section nav {
     display: block;
   }
 
-  .rodape div {
+  .rodape section {
     justify-content: start;
     margin: 0;
     padding: 0;
   }
 
-  .rodape div nav ul {
+  .rodape section nav ul {
     list-style: none;
     font-size: var(--texto-mobile);
   }
 
-  .rodape div nav ul a {
+  .rodape section nav ul a {
     color: var(--cor-bg);
     font-family: var(--fonte-texto);
     font-weight: 600;
     text-decoration: underline;
   }
 
-  .rodape section,
+  .rodape section article,
   .rodape-links,
   .none {
     display: none;
@@ -1717,18 +1795,31 @@ aside {
     display: block;
   }
 
+  .carrossel-img {
+    padding: 0 15px;
+  }
+
+  .carrossel-img h2 {
+    width: 30%;
+    font-size: var(--titulo-tam-mobile);
+  }
+
+  .carrossel-img p {
+    display: none;
+  }
+
   .sessao-bloco-texto-img {
     flex-direction: column-reverse;
     gap: 0;
     padding: 0;
   }
 
-  .sessao-bloco-texto-img article h2{
+  .sessao-bloco-texto-img article h2 {
     text-align: center;
     font-size: var(--titulo-tam-mobile);
   }
 
- .sessao-bloco-texto-img article p{
+  .sessao-bloco-texto-img article p {
     text-align: center;
     font-size: var(--texto-tam-mobile);
     text-align: justify;
@@ -1744,17 +1835,30 @@ aside {
     border-radius: 0;
   }
 
+  .reverso {
+    flex-direction: column;
+  }
+
+  .botao {
+    margin: 0 auto;
+    font-size: var(--texto-tam-mobile);
+  }
+
+  .img-conteudo {
+    border-radius: 0;
+  }
+
   .essencia {
     padding: 30px 40px;
     flex-direction: column;
     gap: 30px;
   }
 
-  .essencia article div h2{
+  .essencia article div h2 {
     font-size: var(--titulo-tam-mobile);
   }
 
-  .essencia article p{
+  .essencia article p {
     font-size: var(--texto-tam-mobile);
   }
 }
