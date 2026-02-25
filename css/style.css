@@ -80,7 +80,7 @@ body.dark .accordion-body {
 
 body {
   height: 100%;
-  background-color: var(--cor-branco);
+  background-color: var(--cor-bg-pagina);
   font-family: var(--fonte-texto);
   font-size: 20px;
   color: var(--cor-texto);
@@ -206,16 +206,19 @@ p {
   border: 1px solid var(--cor-bg-sessao);
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
   width: 100%;
+  height: 100%;
+  min-height: 200px;
   padding: 18px 24px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.card div {
+.card section {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-top: auto;
 }
 
 .material-symbols-outlined {
@@ -2200,9 +2203,77 @@ aside {
   }
 }
 
-/* VAI CONTROLAR ESPECIFICAMENTE QUANDO OS CARDS DAS PÁGINAS DE ARTIGOS DEVEM DEIXAR DE APARECER) */
+
+.banner-trabalhe {
+  background-image: url(../img/medico-apertando-mao.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 30vw;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  color: var(--cor-bg-pagina);
+}
+
+.titulo-banner {
+  font-family: var(--fonte-titulo);
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--cor-bg-pagina);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.destaque-banner {
+  color: var(--cor-bg-pagina);
+}
+
+.texto-banner {
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-tam-desktop);
+  color: var(--cor-bg-pagina);
+  text-align: center;
+}
+
+.barra-busca-trabalhe {
+  background-color: var(--cor-principal);
+  padding: 30px 0;
+  width: 100%;
+}
+
+.barra-busca-trabalhe .botao {
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-principal);
+  border: none;
+}
+
+.barra-busca-trabalhe .input-txt {
+  width: 100%;
+  font-size: var(--texto-tam-desktop);
+}
+
+@media (max-width: 768px) {
+  .titulo-banner {
+    font-size: var(--titulo-tam-mobile);
+  }
+
+  .texto-banner {
+    font-size: var(--texto-tam-mobile);
+  }
+
+  .banner-trabalhe {
+    min-height: 40vw;
+  }
+
+}
+  
+  /* VAI CONTROLAR ESPECIFICAMENTE QUANDO OS CARDS DAS PÁGINAS DE ARTIGOS DEVEM DEIXAR DE APARECER) */
 @media (max-width: 990px) {
   .aside-artigos {
     display: none;
   }
-}
