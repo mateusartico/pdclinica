@@ -554,13 +554,13 @@ td {
 }
 
 .titulo-rodape {
-  text-align: center;
+  text-align: left;
   font-family: var(--fonte-titulo);
   margin-bottom: 27px;
 }
 
 .descricao-rodape {
-  text-align: center;
+  text-align: left;
   margin-bottom: 27px;
   color: #ffffff;
 }
@@ -572,7 +572,7 @@ td {
   padding: 10px 20px;
   border: 1px solid #ffffff;
   border-radius: var(--arredondamento-bordas);
-  text-align: center;
+  text-align: left;
   display: block;
   width: 100%;
   transition: 0.2s;
@@ -585,7 +585,7 @@ td {
 }
 
 .rodape-copyrigth {
-  text-align: center;
+  text-align: left;
   font-size: var(--texto-desktop);
   font-family: var(--fonte-texto);
   margin: 0;
@@ -932,6 +932,7 @@ aside {
 
 .conteudo-hero-informacoes h1 {
   font-size: var(--banner-tam-desktop);
+  width: 70%;
 }
 
 .card-convenio img {
@@ -1473,7 +1474,7 @@ aside {
   font-size: var(--titulo-tam-desktop);
   margin: 0;
   color: var(--cor-principal);
-  text-align: center;
+  text-align: left;
 }
 
 .card-paciente-info {
@@ -1481,7 +1482,7 @@ aside {
   font-size: var(--texto-tam-desktop);
   margin: 0;
   color: var(--cor-texto);
-  text-align: center;
+  text-align: left;
 }
 
 .consultas-lista {
@@ -1588,7 +1589,7 @@ aside {
 }
 
 .centralizar-texto {
-  text-align: center;
+  text-align: left;
 }
 
 .badge-cancelado {
@@ -1740,7 +1741,7 @@ aside {
 
   .wrapper-botoes .botao {
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -1860,7 +1861,7 @@ aside {
 
   .wrapper-botoes .botao {
     width: 100%;
-    text-align: center;
+    text-align: left;
     gap: 15px;
   }
 
@@ -1872,7 +1873,7 @@ aside {
 /* Mobile */
 @media (max-width: 768px) {
   .botao {
-    text-align: center;
+    text-align: left;
     font-size: var(--texto-tam-mobile);
   }
 
@@ -2034,12 +2035,12 @@ aside {
   }
 
   .sessao-bloco-texto-img article h2 {
-    text-align: center;
+    text-align: left;
     font-size: var(--titulo-tam-mobile);
   }
 
   .sessao-bloco-texto-img article p {
-    text-align: center;
+    text-align: left;
     font-size: var(--texto-tam-mobile);
     text-align: justify;
   }
@@ -2262,7 +2263,7 @@ aside {
   font-size: var(--banner-tam-desktop);
   font-weight: bold;
   color: var(--cor-bg-pagina);
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
 }
 
@@ -2274,7 +2275,7 @@ aside {
   font-family: var(--fonte-texto);
   font-size: var(--texto-tam-desktop);
   color: var(--cor-bg-pagina);
-  text-align: center;
+  text-align: left;
 }
 
 .barra-busca-trabalhe {
@@ -2347,7 +2348,7 @@ aside {
 }
 
 .centralizar-texto {
-  text-align: center;
+  text-align: left;
 }
 
 .container-tabela-admin {
@@ -2367,7 +2368,7 @@ aside {
 .tabela-agendamentos thead th {
   font-size: var(--texto-tam-desktop);
   padding: 16px;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   background-color: var(--cor-bg-pagina);
   color: var(--cor-texto);
@@ -2376,7 +2377,7 @@ aside {
 
 .tabela-agendamentos tbody td {
   padding: 16px;
-  text-align: center;
+  text-align: left;
   background-color: var(--cor-bg-pagina);
   color: var(--cor-texto);
 }
@@ -2406,7 +2407,7 @@ aside {
   font-size: var(--banner-tam-desktop);
   font-weight: bold;
   color: var(--cor-bg-pagina);
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
 }
 
@@ -2418,7 +2419,7 @@ aside {
   font-family: var(--fonte-texto);
   font-size: var(--texto-tam-desktop);
   color: var(--cor-bg-pagina);
-  text-align: center;
+  text-align: left;
 }
 
 .barra-busca-trabalhe {
@@ -2460,6 +2461,11 @@ aside {
 }
 
 @media (max-width: 768px) {
+
+  .conteudo-hero-informacoes h1 {
+    font-size: var(--titulo-tam-mobile);
+    width: 90%;
+  }
   .pag-contato,
   .pag-agendamento {
     flex-direction: column;
@@ -2491,7 +2497,7 @@ aside {
 }
 
 .centralizar-texto {
-  text-align: center;
+  text-align: left;
 }
 
 .container-tabela-admin {
@@ -2511,7 +2517,7 @@ aside {
 .tabela-agendamentos thead th {
   font-size: var(--texto-tam-desktop);
   padding: 16px;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   background-color: var(--cor-bg-pagina);
   color: var(--cor-texto);
@@ -2520,7 +2526,7 @@ aside {
 
 .tabela-agendamentos tbody td {
   padding: 16px;
-  text-align: center;
+  text-align: left;
   background-color: var(--cor-bg-pagina);
   color: var(--cor-texto);
 }
