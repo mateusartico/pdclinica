@@ -924,19 +924,16 @@ aside {
   z-index: 2;
 }
 
-.card-convenio img {
-  height: 160px;
-  object-fit: cover;
-}
+
 
 .botao-hero-informacoes:hover {
   background-color: var(--cor-principal);
   color: #ffffff;
 }
 
-.card-convenio {
-  width: 350px;
-  display: flex;
+.card-convenio img {
+  height: 160px;
+  object-fit: cover;
 }
 
 .card-convenio p {
