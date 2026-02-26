@@ -6,7 +6,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  transition: 0.2s;
 }
 
 :root {
@@ -2018,9 +2017,9 @@ aside {
   }
 
   .carrossel-img h2 {
-    max-width: 50%;
-    min-width: 45%;
-    font-size: var(--titulo-tam-desktop);
+    max-width: 70%;
+    min-width: 60%;
+    font-size: var(--banner-tam-mobile);
   }
 
   .carrossel-img p {
@@ -2334,7 +2333,7 @@ aside {
 
   .container-form {
     width: 100%;
-    padding: 30px 20px;
+    padding: 20px 15px;
   }
 
   .bg-img-contato h1,
