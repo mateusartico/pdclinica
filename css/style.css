@@ -121,6 +121,7 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -725,7 +726,7 @@ aside {
 .carrossel-img {
   background-size: cover;
   width: 100%;
-  min-height: 30vw;
+  min-height: 400px;
   background-repeat: no-repeat;
   background-position: center;
   flex-shrink: 0;
@@ -733,7 +734,7 @@ aside {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding: 65px 155px;
+  padding: 40px 80px;
   color: #ffffff;
 }
 
@@ -847,9 +848,10 @@ aside {
 .sessao-bloco-texto-img {
   background-color: var(--cor-bg-pagina);
   display: flex;
-  padding: 65px 155px;
-  gap: 70px;
+  padding: 40px 80px;
+  gap: 40px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .sessao-bloco-texto-img article {
@@ -1051,12 +1053,13 @@ aside {
 /* PAGINA INSTITUCIONAL */
 .essencia {
   background-color: var(--cor-bg-pagina);
-  padding: 60px 155px;
+  padding: 40px 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 60px;
   text-align: left;
+  flex-wrap: wrap;
 }
 
 .essencia article div {
@@ -1692,184 +1695,35 @@ aside {
 
 /* MEDIAS */
 /* Intermediario */
-@media (min-width: 901px) and (max-width: 1300px) {
+@media (min-width: 769px) and (max-width: 1300px) {
   .carrossel-img {
     padding: 40px 50px;
   }
 
-  .carrossel-img h2,
-  .carrossel-img p {
-    width: 30%;
-  }
-
-  .carrossel-imagens h2 {
-    font-size: var(--titulo-tam-desktop);
-  }
-
-  .sessao-bloco-texto-img {
-    padding: 40px 50px;
-    gap: 30px;
-  }
-
-  .essencia {
-    padding: 40px 50px;
-    gap: 30px;
-  }
-
-  .rodape {
-    padding: 40px 50px;
-  }
-
-  .rodape section {
-    padding: 0;
-  }
-
-  .rodape section article {
-    padding: 0;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .conteudo-autenticacao {
-    margin-top: 80px;
-    width: 40%;
-  }
-
-  .wrapper-botoes {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
-
-  .wrapper-botoes .botao {
-    width: fit-content;
-    text-align: left;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 900px) {
-  .lista-links {
-    gap: 30px;
-  }
-
-  .carrossel-img {
-    padding: 40px 50px;
-  }
-
-  .carrossel-img h2,
-  .carrossel-img {
-    width: 30%;
-  }
-
-  .carrossel-imagens h2 {
-    font-size: var(--titulo-tam-desktop);
-  }
-
-  .carrossel-img {
-    background-size: cover;
-    width: 100%;
-    min-height: 60vw;
-  }
-
-  .carrossel-img-1 {
-    background-image: url(../img/carrossel-img-1-mobile.png);
-  }
-
-  .carrossel-img-2 {
-    background-image: url(../img/carrossel-img-2-mobile.png);
-  }
-
-  .carrossel-img-3 {
-    background-image: url(../img/carrossel-img-3-mobile.png);
-  }
-
-  .carrossel-img-4 {
-    background-image: url(../img/carrossel-img-4-mobile.png);
-  }
-
-  .carrossel-navegacao label {
-    height: 12px;
-    width: 12px;
-  }
-
-  .sessao-bloco-texto-img {
-    flex-direction: column;
-    gap: 30px;
-    padding: 0;
-    padding: 40px 50px;
-  }
-
-  .sessao-bloco-texto-img article {
-    width: 100%;
-  }
-
-  .sessao-bloco-texto-img img {
-    width: 100%;
-  }
-
-  .essencia {
-    padding: 40px 50px;
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .rodape {
-    padding: 40px 50px;
-    gap: 30px;
-  }
-
-  .rodape section {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .rodape section nav {
-    display: block;
-  }
-
-  .rodape section {
-    justify-content: start;
-    margin: 0;
-    padding: 0;
-  }
-
-  .rodape section nav ul {
-    list-style: none;
-    font-size: var(--texto-mobile);
-  }
-
-  .rodape section nav ul a {
-    color: var(--cor-bg);
-    font-family: var(--fonte-texto);
-    font-weight: 600;
-    text-decoration: underline;
-  }
-
-  .none,
-  .rodape section article {
-    display: none;
-  }
-
-  .conteudo-autenticacao {
-    margin-top: 80px;
+  .carrossel-img h2 {
     width: 50%;
   }
 
-  .wrapper-botoes,
-  .wrapper-inputs {
-    flex-direction: column;
-    align-items: flex-start;
+  .carrossel-img p {
+    width: 40%;
   }
 
-  .wrapper-botoes .botao {
-    width: fit-content;
-    text-align: left;
-    gap: 15px;
+  .sessao-bloco-texto-img {
+    padding: 40px 50px;
+    gap: 30px;
   }
 
-  .cabecalho-form {
-    font-size: var(--titulo-tam-mobile);
+  .essencia {
+    padding: 40px 50px;
+    gap: 30px;
+  }
+
+  .rodape {
+    padding: 40px 50px;
+  }
+
+  .container-form {
+    padding: 40px 50px;
   }
 }
 
