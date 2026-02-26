@@ -932,6 +932,7 @@ aside {
 
 .conteudo-hero-informacoes h1 {
   font-size: var(--banner-tam-desktop);
+  width: 70%;
 }
 
 .card-convenio img {
@@ -2460,6 +2461,11 @@ aside {
 }
 
 @media (max-width: 768px) {
+
+  .conteudo-hero-informacoes h1 {
+    font-size: var(--titulo-tam-mobile);
+    width: 90%;
+  }
   .pag-contato,
   .pag-agendamento {
     flex-direction: column;
