@@ -632,6 +632,10 @@ aside {
   padding: 50px 0 !important;
 }
 
+.aside-artigos{
+  height: 100%;
+}
+
 /* Define largura, preenchimento interno, e alinhamento dos cards do aside */
 .card-aside-artigo {
   width: 70%;
@@ -641,22 +645,16 @@ aside {
   background-color: var(--cor-bg-sessao);
 }
 
-/* Define cor, alinhamento e preenchimento interno dos elemntos de dentro dos cards do aside */
-.corpo-card {
-  background-color: var(--cor-bg-sessao);
-  display: flex;
-  padding: 20px;
-}
 
 /* Define cor, tamanho da fonte e largura do h6 interno do card do aside */
 .corpo-card h6 {
-  font-size: var(--titulo-tam-desktop);
+  font-size: 25px;
   width: 100%;
 }
 
 /* Define tamanho de fonte, cor, peso da fonte e margem do texto de dentro do card do aside*/
 .corpo-card p {
-  font-size: var(--texto-tam-desktop);
+  font-size: 18px;
   color: var(--cor-texto);
   font-weight: 300;
   margin-bottom: 8px;
@@ -664,7 +662,6 @@ aside {
 
 /* Define tamanho da fonte, tira a decoração de link e muda a cor do elemnto <a> do card do aside*/
 .corpo-card a {
-  font-size: var(--titulo-tam-desktop);
   text-decoration: none;
   color: var(--cor-principal);
 }
