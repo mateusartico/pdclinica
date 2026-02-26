@@ -14,10 +14,12 @@
   --fonte-texto: "Lato", sans-serif;
 
   /* Tamanhos Desktop */
+  --banner-tam-desktop: 48px;
   --titulo-tam-desktop: 32px;
   --texto-tam-desktop: 20px;
 
   /* Tamanhos Mobile */
+  --banner-tam-mobile: 36px;
   --titulo-tam-mobile: 30px;
   --texto-tam-mobile: 15px;
 
@@ -96,6 +98,7 @@ h5 {
   font-family: var(--fonte-titulo);
   font-size: var(--titulo-tam-desktop);
   font-weight: normal;
+  text-align: left;
 }
 
 h3 {
@@ -152,7 +155,7 @@ p {
 }
 
 .botao-tema {
-  font-size: 30px;
+  font-size: var(--banner-tam-mobile);
 }
 
 .botao-icone:hover {
@@ -594,7 +597,7 @@ td {
 
 /* Define  o tamanho do titulo principal da página*/
 .sessao-hero h1 {
-  font-size: 48px;
+  font-size: var(--banner-tam-desktop);
 }
 
 /* Define cor, tamaho da fonte e estilo da fonte do subtitulo principal da página) */
@@ -713,7 +716,7 @@ aside {
 }
 
 .carrossel-imagens h2 {
-  font-size: 48px;
+  font-size: var(--banner-tam-desktop);
   font-weight: bold;
 }
 
@@ -924,6 +927,10 @@ aside {
   z-index: 2;
 }
 
+.conteudo-hero-informacoes h1 {
+  font-size: var(--banner-tam-desktop);
+}
+
 .card-convenio img {
   height: 160px;
   object-fit: cover;
@@ -980,7 +987,7 @@ aside {
 /* Define tamanho e fonte do titulo principal */
 .hero-blog h1 {
   font-family: var(--fonte-titulo);
-  font-size: 64px;
+  font-size: var(--banner-tam-desktop);
 }
 
 /* Define tamanho, familia, estilo e peso da fonte do texto do subtitulo da HERO  */
@@ -1283,7 +1290,7 @@ aside {
 
 .card-admin-valor {
   font-family: var(--fonte-titulo);
-  font-size: 48px;
+  font-size: var(--banner-tam-desktop);
   margin: 0;
   color: var(--cor-principal);
 }
@@ -2063,7 +2070,7 @@ aside {
   }
 
   .sessao-hero h1 {
-    font-size: 36px;
+    font-size: var(--banner-tam-mobile);
   }
 
   .subtitulo-hero-artigo {
@@ -2215,7 +2222,7 @@ aside {
 
 .titulo-banner {
   font-family: var(--fonte-titulo);
-  font-size: 48px;
+  font-size: var(--banner-tam-desktop);
   font-weight: bold;
   color: var(--cor-bg-pagina);
   text-align: center;
@@ -2361,7 +2368,7 @@ aside {
 
 .titulo-banner {
   font-family: var(--fonte-titulo);
-  font-size: 48px;
+  font-size: var(--banner-tam-desktop);
   font-weight: bold;
   color: var(--cor-bg-pagina);
   text-align: center;
