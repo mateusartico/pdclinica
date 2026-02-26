@@ -734,7 +734,7 @@ aside {
 
 .carrossel-img h2,
 .carrossel-img p {
-  width: 30%;
+  width: 25%;
 }
 
 .carrossel-img p {
@@ -1042,7 +1042,7 @@ aside {
   justify-content: center;
   align-items: center;
   gap: 100px;
-  text-align: justify;
+  text-align: left;
 }
 
 .essencia article div {
@@ -1723,6 +1723,10 @@ aside {
 }
 
 @media (min-width: 769px) and (max-width: 900px) {
+
+  .lista-links {
+    gap: 30px;
+  }
 
   .carrossel-img {
     padding: 40px 50px;
