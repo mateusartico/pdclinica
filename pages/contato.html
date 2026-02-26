@@ -7,6 +7,7 @@
       name="description"
       content="Entre em contato com a PD Clínica. Estamos prontos para atendê-lo."
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="shortcut icon" href="../img/favicon-pdclinica.png" type="image/x-icon">
     <title>PD Clínica | Contato</title>
@@ -43,80 +44,37 @@
     </header>
     
     <main class="pag-contato" role="main">
-      <div class="bg-img-contato">
+      <section class="bg-img-contato">
         <h1>Agende sua consulta de forma rápida e segura, escolhendo o melhor horário para você.</h1>
-      </div>
+      </section>
 
-      <section
-        class="container-form"
-      >
-        <form
-          id="form-contato"
-          method="post"
-          action="#"
-          aria-label="Formulário de contato"
-        >
+      <section class="container-form">
+        <form id="form-contato" method="post" action="#" aria-label="Formulário de contato">
           <header class="cabecalho-form">
-            <h1>
-              Contato
-            </h1>
+            <h1>Contato</h1>
           </header>
 
           <article class="corpo-form">
-                <input
-                  type="text"
-                  id="contato-nome"
-                  name="nome"
-                  placeholder="Nome"
-                  autocomplete="name"
-                  class="input-txt"
-                />
+            <input type="text" id="contato-nome" name="nome" placeholder="Nome" autocomplete="name" class="input-txt" />
 
-                <div class="wrapper-inputs">
-                <input
-                  type="tel"
-                  id="contato-telefone"
-                  name="telefone"
-                  placeholder="Telefone"
-                  autocomplete="tel"
-                  maxlength="15"
-                  class="input-txt"
-                />
+            <section class="wrapper-inputs">
+              <input type="tel" id="contato-telefone" name="telefone" placeholder="Telefone" autocomplete="tel" maxlength="15" class="input-txt" />
+              <input type="email" id="contato-email" name="email" placeholder="Email" autocomplete="email" class="input-txt" />
+            </section>
 
-              <input
-                type="email"
-                id="contato-email"
-                name="email"
-                placeholder="Email"
-                autocomplete="email"
-                class="input-txt"
-              />
-                </div>
-              <textarea
-                id="contato-mensagem"
-                name="mensagem"
-                placeholder="Sua mensagem"
-                rows="5"
-                class="input-txt"
-              ></textarea>
+            <textarea id="contato-mensagem" name="mensagem" placeholder="Sua mensagem" rows="5" class="input-txt"></textarea>
 
-              <div class="wrapper-botoes">
-                <button
-                type="button"
-                id="btn-contato"
-                class="botao"
-                aria-label="Enviar formulário de contato"
-              >
-                Enviar
-              </button>
-              </div>
+            <section class="wrapper-botoes">
+              <button type="button" id="btn-contato" class="botao" aria-label="Enviar formulário de contato">Enviar</button>
+            </section>
           </article>
         </form>
       </section>
     </main>
     <footer class="rodape">
-        <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados<span></p>
+        <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados</span></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>
