@@ -2207,6 +2207,14 @@ aside {
     gap: 15px;
   }
 
+  .wrapper-inputs label {
+    margin-bottom: 5px;
+  }
+
+  .wrapper-inputs .input-data {
+    width: 100%;
+  }
+
   .wrapper-botoes .botao {
     width: 100%;
   }
