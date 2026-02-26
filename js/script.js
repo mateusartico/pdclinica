@@ -69,6 +69,20 @@ function filtrarEspecialidades() {
   });
 }
 
+function filtrarVagas() {
+  let vagaSelecionada = document.getElementById("busca-vaga").value;
+
+  let todasAsVagas = document.querySelectorAll(".vaga");
+
+  todasAsVagas.forEach((vaga) => {
+    if (vagaSelecionada === "" || vaga.id === vagaSelecionada) {
+      vaga.style.display = "";
+    } else {
+      vaga.style.display = "none";
+    }
+  });
+}
+
 /* SISTEMA DE TOASTS */
 
 if (!document.getElementById("toast-container")) {
@@ -456,20 +470,6 @@ if (formContato) {
 
 /* LÓGICA: TRABALHE CONOSCO */
 
-const btnBuscarVagas = document.getElementById("btn-buscar-vagas");
-if (btnBuscarVagas) {
-  btnBuscarVagas.addEventListener("click", (e) => {
-    e.preventDefault();
-    const termo = document.getElementById("busca-vagas");
-
-    if (termo.value.trim() === "") {
-      showToast("Digite algo para buscar.", "warning");
-    } else {
-      showToast(`Buscando vagas para: "${termo.value}"...`, "success");
-    }
-  });
-}
-
 const formTrabalhe = document.getElementById("form-trabalhe");
 
 if (formTrabalhe) {
@@ -520,6 +520,22 @@ if (formTrabalhe) {
       setError(curriculo);
       isValid = false;
       if (!msgErro) msgErro = "Por favor, anexe seu currículo.";
+    } else {
+      const arquivo = curriculo.files[0];
+      const extensoesPermitidas = ["application/pdf", "application/msword"];
+      const tamanhoMaximo = 5 * 1024 * 1024; // 5MB
+
+      if (!extensoesPermitidas.includes(arquivo.type)) {
+        setError(curriculo);
+        isValid = false;
+        if (!msgErro) msgErro = "O arquivo deve ser .pdf ou .doc.";
+      }
+
+      if (arquivo.size > tamanhoMaximo) {
+        setError(curriculo);
+        isValid = false;
+        if (!msgErro) msgErro = "O arquivo deve ter no máximo 5MB.";
+      }
     }
 
     if (!isValid) {
@@ -528,5 +544,20 @@ if (formTrabalhe) {
       showToast("Inscrição enviada com sucesso! Boa sorte.", "success");
       formTrabalhe.reset();
     }
+  });
+}
+
+const linhasConfig = document.querySelectorAll(".linha-config");
+
+if (linhasConfig.length > 0) {
+  linhasConfig.forEach((opcao) => {
+    opcao.style.cursor = "pointer";
+
+    opcao.addEventListener("click", () => {
+      showToast(
+        "As configurações estão temporariamente indisponíveis.",
+        "warning",
+      );
+    });
   });
 }
