@@ -546,3 +546,18 @@ if (formTrabalhe) {
     }
   });
 }
+
+const linhasConfig = document.querySelectorAll(".linha-config");
+
+if (linhasConfig.length > 0) {
+  linhasConfig.forEach((opcao) => {
+    opcao.style.cursor = "pointer";
+
+    opcao.addEventListener("click", () => {
+      showToast(
+        "As configurações estão temporariamente indisponíveis.",
+        "warning",
+      );
+    });
+  });
+}
