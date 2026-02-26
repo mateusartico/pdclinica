@@ -351,6 +351,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: flex-end;
 }
 
+.corpo-form .wrapper-botoes .botao {
+  width: 100%;
+  text-align: center;
+}
+
 .table-resopnsive {
   border-radius: var(--arredondamento-bordas);
 }
@@ -569,13 +574,14 @@ td {
   background-color: none;
   color: #ffffff;
   text-decoration: none;
-  padding: 10px 20px;
-  border: 1px solid #ffffff;
+  padding: 12px 24px;
+  border: 2px solid #ffffff;
   border-radius: var(--arredondamento-bordas);
   text-align: center;
   display: block;
   width: 100%;
-  transition: 0.2s;
+  transition: all 0.2s;
+  font-weight: 500;
 }
 
 .botao-rodape:hover {
