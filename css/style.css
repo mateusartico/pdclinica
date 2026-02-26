@@ -1744,7 +1744,7 @@ aside {
   }
 
   .wrapper-botoes .botao {
-    width: 100%;
+    width: fit-content;
     text-align: left;
   }
 }
@@ -1864,7 +1864,7 @@ aside {
   }
 
   .wrapper-botoes .botao {
-    width: 100%;
+    width: fit-content;
     text-align: left;
     gap: 15px;
   }
@@ -2221,7 +2221,7 @@ aside {
   }
 
   .wrapper-botoes .botao {
-    width: 100%;
+    width: fit-content;
   }
 
   .cabecalho-form {
