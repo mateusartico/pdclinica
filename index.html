@@ -11,10 +11,10 @@
 
 <body>
     <header class="cabecalho">
-        <img class="logo" src="img/Logo-PD-Clinica.png">
+        <img class="logo" src="img/Logo-PD-Clinica.png" alt="Logo da PD Clínica">
         <nav aria-label="Menu principal">
             <input type="checkbox" id="menu-aberto">
-            <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu">
+            <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu" role="button" tabindex="0">
                 <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
                     fill="#FFFFFF" class="icon-menu">
                     <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
@@ -25,11 +25,11 @@
                 <li><a href="pages/institucional.html" class="link-underline-animado">Institucional</a></li>
                 <li><a href="pages/conteudo-informativo.html" class="link-underline-animado">Informações</a></li>
                 <!-- MENU MOBILE -->
-                <div>
+                <li>
                     <button type="button" class="botao-mobile-icone" data-theme-toggle><i
                             class="bi bi-sun icone-mobile"></i></button>
-                    <li><a href="pages/login.html" class="botao-mobile-icone"><i class="bi bi-person icone-mobile"></i></a></li>
-                </div>
+                    <a href="pages/login.html" class="botao-mobile-icone"><i class="bi bi-person icone-mobile"></i></a>
+                </li>
                 <!-- MENU MOBILE -->
             </ul>
         </nav>
@@ -112,7 +112,7 @@
             <!-- RODAPE MOBILE -->
             <nav>
                 <ul>
-                    <li><a href="pages/trabalhe-conosco.html">Trabelhe Conosco</a></li>
+                    <li><a href="pages/trabalhe-conosco.html">Trabalhe Conosco</a></li>
                     <li><a href="pages/contato.html">Contato</a></li>
                     <li><a href="pages/localizacao.html">Localização</a></li>
                 </ul>
@@ -141,7 +141,7 @@
                 <a href="pages/localizacao.html" class="botao botao-rodape">Ver Localização Completa</a>
             </article>
         </section>
-        <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados<span></p>
+        <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados</span></p>
     </footer>
     <script src="js/script.js"></script>
 </body>
