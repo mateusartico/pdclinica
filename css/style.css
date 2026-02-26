@@ -554,13 +554,13 @@ td {
 }
 
 .titulo-rodape {
-  text-align: left;
+  text-align: center;
   font-family: var(--fonte-titulo);
   margin-bottom: 27px;
 }
 
 .descricao-rodape {
-  text-align: left;
+  text-align: center;
   margin-bottom: 27px;
   color: #ffffff;
 }
@@ -572,7 +572,7 @@ td {
   padding: 10px 20px;
   border: 1px solid #ffffff;
   border-radius: var(--arredondamento-bordas);
-  text-align: left;
+  text-align: center;
   display: block;
   width: 100%;
   transition: 0.2s;
@@ -585,7 +585,7 @@ td {
 }
 
 .rodape-copyrigth {
-  text-align: left;
+  text-align: center;
   font-size: var(--texto-desktop);
   font-family: var(--fonte-texto);
   margin: 0;
@@ -738,6 +738,10 @@ aside {
 .carrossel-img h2,
 .carrossel-img p {
   width: 25%;
+}
+
+.carrossel-img h2 {
+  width: 40%;
 }
 
 .carrossel-img p {
@@ -1738,7 +1742,7 @@ aside {
   }
 
   .wrapper-botoes .botao {
-    width: 100%;
+    width: fit-content;
     text-align: left;
   }
 }
@@ -1858,7 +1862,7 @@ aside {
   }
 
   .wrapper-botoes .botao {
-    width: 100%;
+    width: fit-content;
     text-align: left;
     gap: 15px;
   }
@@ -2215,7 +2219,7 @@ aside {
   }
 
   .wrapper-botoes .botao {
-    width: 100%;
+    width: fit-content;
   }
 
   .cabecalho-form {
