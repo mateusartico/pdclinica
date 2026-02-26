@@ -915,6 +915,7 @@ aside {
   display: flex;
   align-items: center;
   color: white;
+  padding: 60px 0;
 }
 
 .hero-informacoes::before {
@@ -2204,6 +2205,14 @@ aside {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
+  }
+
+  .wrapper-inputs label {
+    margin-bottom: 5px;
+  }
+
+  .wrapper-inputs .input-data {
+    width: 100%;
   }
 
   .wrapper-botoes .botao {
