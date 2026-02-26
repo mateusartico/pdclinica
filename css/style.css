@@ -1927,14 +1927,14 @@ aside {
     display: block;
   }
 
-  .lista-links li {
+  .lista-links li, .lista-links div{
     display: flex;
     gap: 20px;
     height: 50px;
     align-items: center;
   }
 
-  .lista-links li button {
+  .lista-links li button, .lista-links div button{
     background-color: transparent;
     border: none;
   }
