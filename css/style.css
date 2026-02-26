@@ -2016,8 +2016,8 @@ aside {
   }
 
   .carrossel-img h2 {
-    max-width: 50%;
-    min-width: 45%;
+    max-width: 75%;
+    min-width: 65%;
     font-size: var(--titulo-tam-desktop);
   }
 
