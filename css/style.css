@@ -371,7 +371,7 @@ thead {
 
 th {
   font-family: var(--fonte-titulo);
-  font-size: var(--titulo-tam-desktop);
+  font-size: var(--texto-tam-desktop);
   font-weight: normal;
 }
 
@@ -1336,6 +1336,7 @@ aside {
   font-weight: bold;
   background-color: var(--cor-bg-pagina);
   color: var(--cor-texto);
+  font-size: var(--texto-tam-desktop);
 }
 
 .tabela tbody td {
@@ -2355,6 +2356,7 @@ aside {
 }
 
 .tabela-agendamentos thead th {
+  font-size: var(--texto-tam-desktop);
   padding: 16px;
   text-align: center;
   font-weight: bold;
@@ -2498,6 +2500,7 @@ aside {
 }
 
 .tabela-agendamentos thead th {
+  font-size: var(--texto-tam-desktop);
   padding: 16px;
   text-align: center;
   font-weight: bold;
