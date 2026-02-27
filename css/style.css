@@ -1288,6 +1288,7 @@ aside {
   flex-direction: column;
   align-items: start;
   gap: 12px;
+  min-height: 150px;
 }
 
 .card-admin-titulo {
