@@ -1270,7 +1270,19 @@ aside {
   align-items: center;
 }
 
-.card-admin,
+.card-admin {
+  background-color: var(--cor-bg-pagina);
+  border: 1px solid var(--cor-principal);
+  border-radius: 5px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+  min-height: 180px;
+  height: 100%;
+}
+
 .card-paciente {
   background-color: var(--cor-bg-pagina);
   border: 1px solid var(--cor-principal);
@@ -1287,6 +1299,7 @@ aside {
   font-size: var(--titulo-tam-desktop);
   margin: 0;
   color: var(--cor-principal);
+  width: 100%;
 }
 
 .card-admin-valor {
@@ -1825,6 +1838,23 @@ aside {
 
   .input-data {
     width: 100%;
+  }
+
+  .card-admin {
+    padding: 20px;
+  }
+
+  .card-admin-titulo {
+    font-size: 22px;
+  }
+
+  .tabela,
+  .tabela-agendamentos {
+    font-size: 18px;
+  }
+
+  .container-tabela {
+    overflow-x: auto;
   }
 }
 
@@ -2493,6 +2523,20 @@ aside {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  .card-admin,
+  .card-paciente {
+    padding: 20px;
+  }
+
+  .card-paciente-img {
+    max-width: 200px;
+    margin: 0 auto 12px;
+  }
+
+  .consultas-lista {
+    gap: 15px;
+  }
+
   .container-form {
     width: 50%;
     padding: 40px 50px;
