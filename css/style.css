@@ -2490,6 +2490,20 @@ aside {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  .card-admin,
+  .card-paciente {
+    padding: 20px;
+  }
+
+  .card-paciente-img {
+    max-width: 200px;
+    margin: 0 auto 12px;
+  }
+
+  .consultas-lista {
+    gap: 15px;
+  }
+
   .container-form {
     width: 50%;
     padding: 40px 50px;
