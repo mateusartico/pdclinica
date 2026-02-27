@@ -1278,8 +1278,7 @@ aside {
   align-items: center;
 }
 
-.card-admin,
-.card-paciente {
+.card-admin {
   background-color: var(--cor-bg-pagina);
   border: 1px solid var(--cor-principal);
   border-radius: 5px;
@@ -1290,6 +1289,17 @@ aside {
   gap: 12px;
   min-height: 180px;
   height: 100%;
+}
+
+.card-paciente {
+  background-color: var(--cor-bg-pagina);
+  border: 1px solid var(--cor-principal);
+  border-radius: 5px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
 }
 
 .card-admin-titulo {
@@ -1838,8 +1848,7 @@ aside {
     width: 100%;
   }
 
-  .card-admin,
-  .card-paciente {
+  .card-admin {
     padding: 20px;
   }
 
