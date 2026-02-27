@@ -235,6 +235,7 @@ p {
 
 .descricao-card {
   font-size: var(--texto-tam-desktop);
+  text-align: left;
 }
 
 .saiba-mais {
@@ -319,7 +320,6 @@ p {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  /* Adiciona uma seta personalizada */
   background-image: url('data:image/svg+xml;utf8,<svg fill="darkblue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z"/></svg>');
   background-repeat: no-repeat;
   background-position: right 10px center;
@@ -591,40 +591,40 @@ td {
   margin: 0;
 }
 
-/* ESTILIZAÇÃO DAS PÁGINAS DE ARTIGOS (ELIAS) */
+/* ESTILIZAÇÃO DAS PÁGINAS DE ARTIGOS */
 
-/* Define a cor de fundo da sessão hero (Contém o titulo principal da página de artigos)*/
 .sessao-hero {
   background-color: var(--cor-principal);
 }
 
-/* Define  o tamanho do titulo principal da página*/
+/* FIX: cor hardcoded para manter branco no dark mode */
 .sessao-hero h1 {
   font-size: var(--banner-tam-desktop);
+  text-align: left;
+  color: #ffffff;
 }
 
-/* Define cor, tamaho da fonte e estilo da fonte do subtitulo principal da página) */
 .subtitulo-hero-artigo {
-  color: white;
+  color: #ffffff;
   font-size: var(--titulo-tam-desktop);
   font-style: italic;
   font-weight: 200;
+  text-align: left;
 }
 
-/* Define cor e tamaho da fonte dos parágrafos dos artigos */
 article p {
   font-size: var(--texto-tam-desktop);
   color: var(--cor-texto);
+  text-align: justify;
 }
 
-/* Define cor, tamanho e fonte a ser usada nos titulos h5 */
 .texto-artigo h2 {
   color: var(--cor-principal);
   font-size: var(--titulo-tam-desktop);
   font-family: var(--fonte-titulo);
+  text-align: left;
 }
 
-/* Aplica alinhamentos no container aside usando flex-box */
 aside {
   display: flex;
   flex-direction: column;
@@ -632,11 +632,10 @@ aside {
   padding: 50px 0 !important;
 }
 
-.aside-artigos{
+.aside-artigos {
   height: 100%;
 }
 
-/* Define largura, preenchimento interno, e alinhamento dos cards do aside */
 .card-aside-artigo {
   width: 70%;
   padding: 0;
@@ -645,14 +644,11 @@ aside {
   background-color: var(--cor-bg-sessao);
 }
 
-
-/* Define cor, tamanho da fonte e largura do h6 interno do card do aside */
 .corpo-card h6 {
   font-size: 25px;
   width: 100%;
 }
 
-/* Define tamanho de fonte, cor, peso da fonte e margem do texto de dentro do card do aside*/
 .corpo-card p {
   font-size: 18px;
   color: var(--cor-texto);
@@ -660,18 +656,15 @@ aside {
   margin-bottom: 8px;
 }
 
-/* Define tamanho da fonte, tira a decoração de link e muda a cor do elemnto <a> do card do aside*/
 .corpo-card a {
   text-decoration: none;
   color: var(--cor-principal);
 }
 
-/* Muda a cor do texto quando o usuário passar o mouse por cima do link de "saiba mais" do card*/
 .corpo-card a:hover {
   color: var(--cor-ativo);
 }
 
-/* Cria um pseudo elemento que vai ser uma barra que vai aparecer embaixo dos links quando o usuário passar o mouse. */
 .link-underline-animado::after {
   content: "";
   position: absolute;
@@ -685,13 +678,11 @@ aside {
   transition: transform 0.25s ease-in-out;
 }
 
-/* Posiciona o pseudo elemento em relação ao link*/
 .link-underline-animado {
   position: relative;
   display: inline-block;
 }
 
-/* Faz o efeito de barra ir crescendo até ocupar a largura total do link quando o usuário passa o mouse por cima */
 .link-underline-animado:hover::after {
   transform: scaleX(1);
 }
@@ -715,9 +706,12 @@ aside {
   animation: autoSlide 20s infinite;
 }
 
+/* FIX: cor hardcoded para manter branco no dark mode */
 .carrossel-imagens h2 {
   font-size: var(--banner-tam-desktop);
   font-weight: bold;
+  text-align: left;
+  color: #ffffff;
 }
 
 .carrossel-img {
@@ -741,10 +735,13 @@ aside {
 
 .carrossel-img h2 {
   width: 40%;
+  text-align: left;
+  color: #ffffff;
 }
 
 .carrossel-img p {
   color: #ffffff;
+  text-align: left;
   width: 50%;
 }
 
@@ -900,23 +897,24 @@ aside {
   background-image: url(../img/imagem-contato.png);
 }
 
+/* FIX: cor hardcoded + alinhamento à esquerda */
 .bg-img-contato h1,
 .bg-img-agendamento h1 {
   font-size: var(--banner-tam-desktop);
   color: #ffffff;
   width: 70%;
+  text-align: left;
 }
 
 /* ESTILAZAÇÃO DA PÁGINA DE INFORMAÇÕES*/
 
-/* HERO DA PÁGINA DE INFORMAÇÕES */
 .hero-informacoes {
   background: url("../img/img-informativo.jpg") center center / cover no-repeat;
   position: relative;
   min-height: 420px;
   display: flex;
   align-items: center;
-  color: white;
+  color: #ffffff;
   padding: 60px 0;
 }
 
@@ -932,9 +930,12 @@ aside {
   z-index: 2;
 }
 
+/* FIX: cor hardcoded + alinhamento à esquerda */
 .conteudo-hero-informacoes h1 {
   font-size: var(--banner-tam-desktop);
   width: 70%;
+  color: #ffffff;
+  text-align: left;
 }
 
 .card-convenio img {
@@ -945,11 +946,6 @@ aside {
 .botao-hero-informacoes:hover {
   background-color: var(--cor-principal);
   color: #ffffff;
-}
-
-.card-convenio img {
-  height: 160px;
-  object-fit: cover;
 }
 
 .card-convenio p {
@@ -981,68 +977,64 @@ aside {
   font-size: var(--texto-tam-desktop);
 }
 
-/* ESTILIZACAO PAGINA BLOG (ELIAS) */
+/* ESTILIZACAO PAGINA BLOG */
 
-/* Faz alterações no hero da página onde há o titulo e subtiulo principais */
 .hero-blog {
   background-color: var(--cor-principal);
-  color: white;
+  color: #ffffff;
   padding: 80px 0;
 }
 
-/* Define tamanho e fonte do titulo principal */
+/* FIX: cor hardcoded + alinhamento à esquerda */
 .hero-blog h1 {
   font-family: var(--fonte-titulo);
   font-size: var(--banner-tam-desktop);
+  color: #ffffff;
+  text-align: left;
 }
 
-/* Define tamanho, familia, estilo e peso da fonte do texto do subtitulo da HERO  */
+/* FIX: cor hardcoded + alinhamento à esquerda */
 .hero-blog h2 {
   font-size: 32px;
   font-style: italic;
   font-family: var(--fonte-texto);
   font-weight: 300;
+  color: #ffffff;
+  text-align: left;
 }
 
-/* Define espaçamento interno de cada article do blog */
 .conteudo-blog {
   padding: 40px 0;
 }
 
-/* Define estilizações de texto para o subtitulo dos articles do blog */
 .conteudo-blog h2 {
   color: #3558a6;
   font-weight: 700;
   font-family: var(--fonte-titulo);
 }
 
-/* Define estilizações de texto para a data e nome do autor dos artigos */
 .informaco-autor-artigo {
   font-style: italic;
   font-size: var(--texto-tam-desktop);
   color: #6c757d;
 }
 
-/* Define estilizações para os links que levam para as páginas de artigos. (O link é o próprio titulo do article)*/
 .article-link {
   text-decoration: none;
   color: #3558a6;
   transition: all 0.2s ease;
 }
 
-/* Define estilizações de hover para os links que levam para as paginas de artigos*/
 .article-link:hover {
   text-decoration: underline;
   opacity: 0.85;
 }
 
-/* Define estilizações de hover para os links que levam para as paginas de artigos*/
 .article-link:focus {
   outline: 2px solid #3558a6;
   outline-offset: 4px;
 }
 
-/* Define o tamanho da fonte do subtitulos de cada article*/
 .conteudo-blog h3 {
   font-size: var(--texto-tam-desktop);
 }
@@ -1064,8 +1056,6 @@ aside {
   margin-bottom: 1em;
 }
 
-/* Cabeçalho do modal */
-
 .modal-content {
   background-color: var(--cor-bg-pagina);
 }
@@ -1082,7 +1072,6 @@ aside {
   font-family: var(--fonte-titulo);
 }
 
-/* Corpo com scroll */
 .modal-termos .modal-body {
   background-color: var(--cor-bg-pagina);
   max-height: 55vh;
@@ -1110,7 +1099,6 @@ aside {
   border-radius: 4px;
 }
 
-/* Seções dos termos */
 .termos-secao {
   margin-bottom: 1.2rem;
 }
@@ -1127,7 +1115,6 @@ aside {
   font-size: 18px;
 }
 
-/* Rodapé do modal */
 .modal-termos .modal-footer {
   border-top: 1px solid var(--cor-bg-componente);
   padding: 0.85rem 1.25rem;
@@ -1147,9 +1134,7 @@ aside {
   color: var(--cor-ativo);
 }
 
-/* ESTILIZAÇÃO DAS PÁGINAS DE ESPECIALIDADES (ELIAS) */
-
-/* HERO DERMATOLOGIA*/
+/* ESTILIZAÇÃO DAS PÁGINAS DE ESPECIALIDADES */
 
 .conteudo-especialidades,
 .conteudo-artigo,
@@ -1158,6 +1143,10 @@ aside {
 .conteudo-informativo,
 .pag-blog {
   background-color: var(--cor-bg-pagina);
+}
+
+.conteudo-especialidades p {
+  text-align: justify;
 }
 
 .hero-dermatologia {
@@ -1185,27 +1174,30 @@ aside {
   border: none;
 }
 
-/* Títulos das seções */
 .Titulos-sessao {
   font-family: var(--fonte-titulo);
   color: var(--cor-principal);
   font-size: var(--titulo-tam-desktop);
   margin-bottom: 1.5rem;
+  text-align: left;
 }
 
+/* FIX: cor hardcoded + alinhamento à esquerda */
 .container-titulo-hero h1 {
   color: #ffffff;
-  font-size: 48;
+  font-size: var(--banner-tam-desktop);
   font-family: var(--fonte-titulo);
+  text-align: left;
 }
 
+/* FIX: cor hardcoded + alinhamento à esquerda */
 .container-titulo-hero p {
   color: #ffffff;
   font-size: var(--texto-tam-desktop);
   font-weight: 600;
+  text-align: justify;
 }
 
-/* HERO NEUROLOGIA*/
 .hero-neurologia {
   background:
     linear-gradient(
@@ -1222,7 +1214,6 @@ aside {
   align-items: center;
 }
 
-/* HERO CARDIOLOGIA*/
 .hero-cardiologia {
   background:
     linear-gradient(
@@ -1525,20 +1516,6 @@ aside {
   display: inline-block;
 }
 
-.badge {
-  display: inline-block;
-  padding: 4px 12px;
-  border-radius: 12px;
-  font-family: var(--fonte-texto);
-  font-size: 14px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.badge-confirmado {
-  background-color: #4caf50;
-}
-
 .badge-aguardando,
 .badge-alerta {
   background-color: #ffc107;
@@ -1592,10 +1569,6 @@ aside {
 
 .centralizar-texto {
   text-align: left;
-}
-
-.badge-cancelado {
-  background-color: #f44336;
 }
 
 /* TOAST */
@@ -1689,9 +1662,118 @@ aside {
   border: 1px solid #d63031 !important;
 }
 
-/* MEDIAS */
-/* Intermediario */
+/* BANNER TRABALHE CONOSCO — FIX: cores hardcoded para consistência no dark mode */
+.banner-trabalhe {
+  background-image: url(../img/medico-apertando-mao.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 30vw;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2em;
+  color: #ffffff;
+}
+
+.titulo-banner {
+  font-family: var(--fonte-titulo);
+  font-size: var(--banner-tam-desktop);
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.destaque-banner {
+  color: #ffffff;
+}
+
+.texto-banner {
+  font-family: var(--fonte-texto);
+  font-size: var(--texto-tam-desktop);
+  color: #ffffff;
+  text-align: left;
+}
+
+.barra-busca-trabalhe {
+  background-color: var(--cor-principal);
+  padding: 30px 0;
+  width: 100%;
+}
+
+.barra-busca-trabalhe .botao {
+  background-color: var(--cor-bg-pagina);
+  color: var(--cor-principal);
+  border: none;
+}
+
+.barra-busca-trabalhe .input-txt {
+  width: 100%;
+  font-size: var(--texto-tam-desktop);
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+/* Intermediário 901–1300: textos menores, botões mantêm largura desktop */
 @media (min-width: 901px) and (max-width: 1300px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: var(--titulo-tam-mobile);
+  }
+
+  p,
+  .descricao-card,
+  .saiba-mais,
+  .botao,
+  .input-txt,
+  .select,
+  .input-data,
+  th,
+  td,
+  .texto-config,
+  .card-admin-info,
+  .card-paciente-info,
+  .card-consulta-info,
+  .card-consulta-status,
+  .informaco-autor-artigo,
+  .conteudo-blog h3,
+  .resposta-faq,
+  .accordion-header button,
+  .texto-progresso,
+  .valor-progresso,
+  .texto-eficiencia,
+  .numero-eficiencia,
+  .texto-banner,
+  .barra-busca-trabalhe .input-txt,
+  a.link-simples,
+  label.input-checkbox {
+    font-size: var(--texto-tam-mobile);
+  }
+
+  .sessao-hero h1,
+  .hero-blog h1,
+  .conteudo-hero-informacoes h1,
+  .bg-img-contato h1,
+  .bg-img-agendamento h1,
+  .container-titulo-hero h1,
+  .titulo-banner {
+    font-size: var(--banner-tam-mobile);
+  }
+
+  .subtitulo-hero-artigo,
+  .hero-blog h2 {
+    font-size: var(--titulo-tam-mobile);
+  }
+
   .carrossel-img {
     padding: 40px 50px;
   }
@@ -1705,7 +1787,7 @@ aside {
   }
 
   .carrossel-imagens h2 {
-    font-size: var(--titulo-tam-desktop);
+    font-size: var(--titulo-tam-mobile);
   }
 
   .sessao-bloco-texto-img {
@@ -1738,19 +1820,76 @@ aside {
     width: 40%;
   }
 
+  /* FIX: botões mantêm comportamento desktop em telas intermediárias */
   .wrapper-botoes {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
   }
 
   .wrapper-botoes .botao {
     width: fit-content;
-    text-align: left;
+  }
+
+  .input-data {
+    width: 100%;
   }
 }
 
+/* Intermediário 769–900: textos menores, botões mantêm largura desktop */
 @media (min-width: 769px) and (max-width: 900px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-size: var(--titulo-tam-mobile);
+  }
+
+  p,
+  .descricao-card,
+  .saiba-mais,
+  .botao,
+  .input-txt,
+  .select,
+  .input-data,
+  th,
+  td,
+  .texto-config,
+  .card-admin-info,
+  .card-paciente-info,
+  .card-consulta-info,
+  .card-consulta-status,
+  .informaco-autor-artigo,
+  .conteudo-blog h3,
+  .resposta-faq,
+  .accordion-header button,
+  .texto-progresso,
+  .valor-progresso,
+  .texto-eficiencia,
+  .numero-eficiencia,
+  .texto-banner,
+  .barra-busca-trabalhe .input-txt,
+  a.link-simples,
+  label.input-checkbox {
+    font-size: var(--texto-tam-mobile);
+  }
+
+  .sessao-hero h1,
+  .hero-blog h1,
+  .conteudo-hero-informacoes h1,
+  .bg-img-contato h1,
+  .bg-img-agendamento h1,
+  .container-titulo-hero h1,
+  .titulo-banner {
+    font-size: var(--banner-tam-mobile);
+  }
+
+  .subtitulo-hero-artigo,
+  .hero-blog h2 {
+    font-size: var(--titulo-tam-mobile);
+  }
+
   .lista-links {
     gap: 30px;
   }
@@ -1769,7 +1908,7 @@ aside {
   }
 
   .carrossel-imagens h2 {
-    font-size: var(--titulo-tam-desktop);
+    font-size: var(--titulo-tam-mobile);
   }
 
   .carrossel-img {
@@ -1802,7 +1941,6 @@ aside {
   .sessao-bloco-texto-img {
     flex-direction: column;
     gap: 30px;
-    padding: 0;
     padding: 40px 50px;
   }
 
@@ -1828,21 +1966,23 @@ aside {
   .rodape section {
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
   }
 
   .rodape section nav {
     display: block;
   }
 
-  .rodape section {
-    justify-content: start;
-    margin: 0;
-    padding: 0;
-  }
-
   .rodape section nav ul {
     list-style: none;
     font-size: var(--texto-mobile);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
   }
 
   .rodape section nav ul a {
@@ -1859,31 +1999,86 @@ aside {
 
   .conteudo-autenticacao {
     margin-top: 80px;
-    width: 50%;
+    width: 60%;
   }
 
-  .wrapper-botoes,
+  /* FIX: botões mantêm comportamento desktop em telas intermediárias */
+  .wrapper-botoes {
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .wrapper-botoes .botao {
+    width: fit-content;
+  }
+
   .wrapper-inputs {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .wrapper-botoes .botao {
-    width: fit-content;
-    text-align: left;
-    gap: 15px;
-  }
-
   .cabecalho-form {
     font-size: var(--titulo-tam-mobile);
   }
+
+  .input-data {
+    width: 100%;
+  }
+  .bg-img-contato h1,
+  .bg-img-agendamento h1 {
+    font-size: var(--titulo-tam-mobile);
+    width: 90%;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .pag-contato,
+  .pag-agendamento {
+    flex-direction: column;
+  }
+
+  .bg-img-contato,
+  .bg-img-agendamento {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .container-form {
+    width: 100%;
+    padding: 30px 20px;
+  }
 }
 
-/* Mobile */
+/* Mobile — textos menores, botões 100% largura */
 @media (max-width: 768px) {
+  /* FIX: botões ocupam 100% da largura no mobile */
   .botao {
-    text-align: left;
+    text-align: center;
     font-size: var(--texto-tam-mobile);
+    width: 100%;
+    display: block;
+  }
+
+  .wrapper-botoes {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .wrapper-botoes .botao {
+    width: 100%;
+    text-align: center;
+  }
+
+  .conteudo-blog p,
+  .card-convenio p {
+    font-size: var(--texto-tam-mobile);
+  }
+
+  .article-link,
+  .card-convenio h5 {
+    font-size: var(--titulo-tam-mobile);
   }
 
   /* --- Ajustes do Cabeçalho Mobile --- */
@@ -1907,14 +2102,11 @@ aside {
     display: block;
   }
 
-  /* Esconde botões desktop */
   .cabecalho .botao-icone,
-  #menu-aberto,
-  .wrapper-botoes {
+  #menu-aberto {
     display: none;
   }
 
-  /* Menu Hamburger (Dropdown) */
   .lista-links {
     display: none;
     flex-direction: column;
@@ -1932,23 +2124,22 @@ aside {
 
   .botao-mobile-icone {
     display: block;
+    font-size: var(--titulo-tam-mobile);
+    color: var(--cor-principal);
   }
 
-  .lista-links li, .lista-links div{
+  .lista-links li,
+  .lista-links div {
     display: flex;
     gap: 20px;
     height: 50px;
     align-items: center;
   }
 
-  .lista-links li button, .lista-links div button{
+  .lista-links li button,
+  .lista-links div button {
     background-color: transparent;
     border: none;
-  }
-
-  .botao-mobile-icone {
-    font-size: var(--titulo-tam-mobile);
-    color: var(--cor-principal);
   }
 
   #menu-aberto:checked ~ .lista-links {
@@ -2000,6 +2191,7 @@ aside {
     background-size: cover;
     width: 100%;
     min-height: 60vw;
+    padding: 20px;
   }
 
   .carrossel-img-1 {
@@ -2018,14 +2210,12 @@ aside {
     background-image: url(../img/carrossel-img-4-mobile.png);
   }
 
-  .carrossel-img {
-    padding: 20px;
-  }
-
   .carrossel-img h2 {
     max-width: 75%;
     min-width: 65%;
-    font-size: var(--titulo-tam-desktop);
+    font-size: var(--titulo-tam-mobile);
+    color: #ffffff;
+    text-align: left;
   }
 
   .carrossel-img p {
@@ -2068,11 +2258,6 @@ aside {
     flex-direction: column;
   }
 
-  .botao {
-    margin: 0 auto;
-    font-size: var(--texto-tam-mobile);
-  }
-
   .img-conteudo {
     border-radius: 0;
   }
@@ -2091,28 +2276,37 @@ aside {
     font-size: var(--texto-tam-mobile);
   }
 
-  /* MOBILE ARTIGOS (ELIAS) */
-
+  /* MOBILE ARTIGOS */
   .texto-artigo h2 {
-    font-size: var(--titulo-tam-desktop);
+    font-size: var(--titulo-tam-mobile);
   }
 
   .sessao-hero h1 {
     font-size: var(--banner-tam-mobile);
+    color: #ffffff;
+    text-align: left;
   }
 
   .subtitulo-hero-artigo {
-    font-size: var(--texto-tam-desktop);
+    font-size: var(--texto-tam-mobile);
+    color: #ffffff;
+    text-align: left;
   }
 
-  /* MOBILE ESPECIALIDADES (ELIAS) */
-
-  /* Títulos das seções */
+  /* MOBILE ESPECIALIDADES */
   .Titulos-sessao {
-    font-size: var(--titulo-tam-desktop);
+    font-size: var(--titulo-tam-mobile);
   }
 
-  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
+  .subtitulo-informacoes,
+  .subititulo-convenio {
+    font-size: var(--titulo-tam-mobile);
+  }
+
+  .resposta-faq {
+    font-size: var(--texto-tam-mobile);
+  }
+
   .hero-cardiologia {
     background:
       linear-gradient(
@@ -2126,7 +2320,6 @@ aside {
       url("../img/img-especialidade-cardiologia.jpg") center/cover no-repeat;
   }
 
-  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-dermatologia {
     background:
       linear-gradient(
@@ -2140,7 +2333,6 @@ aside {
       url("../img/img-dermatologia-1.jpg") center/cover no-repeat;
   }
 
-  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-neurologia {
     background:
       rgba(40, 40, 40, 0.95) 0%,
@@ -2154,7 +2346,6 @@ aside {
       url("../img/img-especialidade-neurologia.jpg") center/cover no-repeat;
   }
 
-  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-ortopedia {
     background:
       linear-gradient(
@@ -2168,7 +2359,6 @@ aside {
       url("../img/img-especialidade-ortopedia.jpg") center/cover no-repeat;
   }
 
-  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-pediatria {
     background:
       linear-gradient(
@@ -2182,7 +2372,6 @@ aside {
       url("../img/img-especialidade-pediatria.jpg") center/cover no-repeat;
   }
 
-  /* ADAPTA O DEGRADÊ DA IMAGEM DA SESSÃO HERO DAS PÁGINAS DE ESPECIALIDADES PARA FICAR MAIS COERENTE NO MOBILE*/
   .hero-psiquiatria {
     background:
       linear-gradient(
@@ -2196,12 +2385,16 @@ aside {
       url("../img/img-especialidade-psiquiatria.jpg") center/cover no-repeat;
   }
 
-  .container-titulo-hero p {
-    font-size: var(--texto-tam-desktop);
+  .container-titulo-hero h1 {
+    font-size: var(--banner-tam-mobile);
+    color: #ffffff;
+    text-align: left;
   }
 
-  .essencia article p {
+  .container-titulo-hero p {
     font-size: var(--texto-tam-mobile);
+    color: #ffffff;
+    text-align: justify;
   }
 
   .conteudo-autenticacao {
@@ -2210,7 +2403,6 @@ aside {
     margin-bottom: 15%;
   }
 
-  .wrapper-botoes,
   .wrapper-inputs {
     flex-direction: column;
     align-items: flex-start;
@@ -2223,10 +2415,6 @@ aside {
 
   .wrapper-inputs .input-data {
     width: 100%;
-  }
-
-  .wrapper-botoes .botao {
-    width: fit-content;
   }
 
   .cabecalho-form {
@@ -2242,57 +2430,61 @@ aside {
     font-size: var(--texto-tam-mobile);
   }
 
+  .input-data {
+    width: 100%;
+  }
+
   .logo-flutuante {
     height: 60px;
   }
 
   .modal-termos .modal-body p {
-    font-size: var(--texto-tam-desktop);
+    font-size: var(--texto-tam-mobile);
   }
 }
 
+/* BANNER TRABALHE CONOSCO MOBILE */
 @media (max-width: 768px) {
   .titulo-banner {
     font-size: var(--titulo-tam-mobile);
+    color: #ffffff;
   }
 
   .texto-banner {
     font-size: var(--texto-tam-mobile);
+    color: #ffffff;
   }
 
   .banner-trabalhe {
     min-height: 40vw;
   }
-}
 
-/* VAI CONTROLAR ESPECIFICAMENTE QUANDO OS CARDS DAS PÁGINAS DE ARTIGOS DEVEM DEIXAR DE APARECER) */
-@media (max-width: 990px) {
-  .aside-artigos {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .pag-contato,
-  .pag-agendamento {
-    flex-direction: column;
+  /* BLOG E INFORMAÇÕES MOBILE */
+  .hero-blog h1 {
+    font-size: var(--banner-tam-mobile);
+    color: #ffffff;
+    text-align: left;
   }
 
-  .bg-img-contato,
-  .bg-img-agendamento {
-    width: 100%;
-    height: 40vh;
+  .hero-blog h2 {
+    font-size: var(--titulo-tam-mobile);
+    color: #ffffff;
+    text-align: left;
   }
 
-  .container-form {
-    width: 100%;
-    padding: 30px 20px;
+  .conteudo-hero-informacoes h1 {
+    font-size: var(--titulo-tam-mobile);
+    width: 90%;
+    color: #ffffff;
+    text-align: left;
   }
 
   .bg-img-contato h1,
   .bg-img-agendamento h1 {
     font-size: var(--titulo-tam-mobile);
     width: 90%;
+    color: #ffffff;
+    text-align: left;
   }
 }
 
@@ -2404,12 +2596,6 @@ aside {
   }
 }
 
-@media (max-width: 768px) {
-
-  .conteudo-hero-informacoes h1 {
-    font-size: var(--titulo-tam-mobile);
-    width: 90%;
-  }
   .pag-contato,
   .pag-agendamento {
     flex-direction: column;
@@ -2425,23 +2611,20 @@ aside {
     width: 100%;
     padding: 30px 20px;
   }
+}
 
-  .bg-img-contato h1,
-  .bg-img-agendamento h1 {
-    font-size: var(--titulo-tam-mobile);
-    width: 90%;
+/* VAI CONTROLAR ESPECIFICAMENTE QUANDO OS CARDS DAS PÁGINAS DE ARTIGOS DEVEM DEIXAR DE APARECER */
+@media (max-width: 990px) {
+  .aside-artigos {
+    display: none;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .container-form {
-    width: 50%;
+    width: 100%;
     padding: 40px 50px;
   }
-}
-
-.centralizar-texto {
-  text-align: left;
 }
 
 .container-tabela-admin {
