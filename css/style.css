@@ -1835,6 +1835,20 @@ aside {
   .input-data {
     width: 100%;
   }
+
+  .card-admin,
+  .card-paciente {
+    padding: 20px;
+  }
+
+  .tabela,
+  .tabela-agendamentos {
+    font-size: 18px;
+  }
+
+  .container-tabela {
+    overflow-x: auto;
+  }
 }
 
 /* Intermediário 769–900: textos menores, botões mantêm largura desktop */
