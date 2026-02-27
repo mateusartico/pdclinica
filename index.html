@@ -1,149 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon-pdclinica.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/favicon-pdclinica.png"
+      type="image/x-icon"
+    />
     <title>PD Clínica | Início</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="cabecalho">
-        <img class="logo" src="img/Logo-PD-Clinica.png" alt="Logo da PD Clínica">
-        <nav aria-label="Menu principal">
-            <input type="checkbox" id="menu-aberto">
-            <label for="menu-aberto" class="btn-menu" aria-label="Abrir ou fechar menu" role="button" tabindex="0">
-                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
-                    fill="#FFFFFF" class="icon-menu">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                </svg>
-            </label>
-            <ul class="lista-links">
-                <li><a href="index.html" class="link-underline-animado">Início</a></li>
-                <li><a href="pages/institucional.html" class="link-underline-animado">Institucional</a></li>
-                <li><a href="pages/conteudo-informativo.html" class="link-underline-animado">Informações</a></li>
-                <!-- MENU MOBILE -->
-                <li>
-                    <button type="button" class="botao-mobile-icone" data-theme-toggle><i
-                            class="bi bi-sun icone-mobile"></i></button>
-                    <a href="pages/login.html" class="botao-mobile-icone"><i class="bi bi-person icone-mobile"></i></a>
-                </li>
-                <!-- MENU MOBILE -->
-            </ul>
-        </nav>
-        <section class="wrapper-icones">
-            <button type="button" class="botao-icone" data-theme-toggle><i class="bi bi-sun"></i></button>
-            <a href="pages/login.html" class="botao-icone"><i class="bi bi-person"></i></a>
-        </section>
+      <img
+        class="logo"
+        src="img/Logo-PD-Clinica.png"
+        alt="Logo da PD Clínica"
+      />
+      <nav aria-label="Menu principal">
+        <input type="checkbox" id="menu-aberto" />
+        <label
+          for="menu-aberto"
+          class="btn-menu"
+          aria-label="Abrir ou fechar menu"
+          role="button"
+          tabindex="0"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40px"
+            viewBox="0 -960 960 960"
+            width="40px"
+            fill="#FFFFFF"
+            class="icon-menu"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+        <ul class="lista-links">
+          <li>
+            <a href="index.html" class="link-underline-animado">Início</a>
+          </li>
+          <li>
+            <a href="pages/institucional.html" class="link-underline-animado"
+              >Institucional</a
+            >
+          </li>
+          <li>
+            <a
+              href="pages/conteudo-informativo.html"
+              class="link-underline-animado"
+              >Informações</a
+            >
+          </li>
+          <!-- MENU MOBILE -->
+          <li>
+            <button type="button" class="botao-mobile-icone" data-theme-toggle>
+              <i class="bi bi-sun icone-mobile"></i>
+            </button>
+            <a href="pages/login.html" class="botao-mobile-icone"
+              ><i class="bi bi-person icone-mobile"></i
+            ></a>
+          </li>
+          <!-- MENU MOBILE -->
+        </ul>
+      </nav>
+      <section class="wrapper-icones">
+        <button type="button" class="botao-icone" data-theme-toggle>
+          <i class="bi bi-sun"></i>
+        </button>
+        <a href="pages/login.html" class="botao-icone"
+          ><i class="bi bi-person"></i
+        ></a>
+      </section>
     </header>
 
     <main>
-        <section class="carrossel-inicio">
+      <section class="carrossel-inicio">
+        <input type="radio" name="carrossel-btn" id="carrossel-btn-1" />
+        <input type="radio" name="carrossel-btn" id="carrossel-btn-2" />
+        <input type="radio" name="carrossel-btn" id="carrossel-btn-3" />
+        <input type="radio" name="carrossel-btn" id="carrossel-btn-4" />
 
-            <input type="radio" name="carrossel-btn" id="carrossel-btn-1">
-            <input type="radio" name="carrossel-btn" id="carrossel-btn-2">
-            <input type="radio" name="carrossel-btn" id="carrossel-btn-3">
-            <input type="radio" name="carrossel-btn" id="carrossel-btn-4">
+        <div class="carrossel-imagens">
+          <article class="carrossel-img carrossel-img-1">
+            <h2>Excelência em Saúde e Atendimento</h2>
+            <p>
+              Estrutura moderna, profissionais qualificados e cuidado humanizado
+              em todos os momentos.
+            </p>
+          </article>
+          <article class="carrossel-img carrossel-img-2">
+            <h2>Previna-se.<br />Cuide-se.<br />Ame-se.</h2>
+            <p>O exame preventivo pode salvar sua vida.</p>
+          </article>
+          <article class="carrossel-img carrossel-img-3">
+            <h2>Especialistas <br />ao Seu Lado</h2>
+            <p>Médicos capacitados e dedicados para cuidar de você.</p>
+          </article>
+          <article class="carrossel-img carrossel-img-4">
+            <h2>Cuidar da Alimentação é Cuidar da Saúde</h2>
+            <p>
+              Hábitos saudáveis fazem a diferença na sua energia e disposição
+              diária.
+            </p>
+          </article>
+        </div>
 
-            <div class="carrossel-imagens">
-                <article class="carrossel-img carrossel-img-1">
-                    <h2>Excelência em Saúde e Atendimento</h2>
-                    <p>Estrutura moderna, profissionais qualificados e cuidado humanizado em todos os momentos.</p>
-                </article>
-                <article class="carrossel-img carrossel-img-2">
-                    <h2>Previna-se.<br>Cuide-se.<br>Ame-se.</h2>
-                    <p>O exame preventivo pode salvar sua vida.</p>
-                </article>
-                <article class="carrossel-img carrossel-img-3">
-                    <h2>Especialistas <br>ao Seu Lado</h2>
-                    <p>Médicos capacitados e dedicados para cuidar de você.</p>
-                </article>
-                <article class="carrossel-img carrossel-img-4">
-                    <h2>Cuidar da Alimentação é Cuidar da Saúde</h2>
-                    <p>Hábitos saudáveis fazem a diferença na sua energia e disposição diária.</p>
-                </article>
-            </div>
+        <nav class="carrossel-navegacao">
+          <label
+            for="carrossel-btn-1"
+            aria-label="Imagem do carrossel 1"
+          ></label>
+          <label
+            for="carrossel-btn-2"
+            aria-label="Imagem do carrossel 2"
+          ></label>
+          <label
+            for="carrossel-btn-3"
+            aria-label="Imagem do carrossel 3"
+          ></label>
+          <label
+            for="carrossel-btn-4"
+            aria-label="Imagem do carrossel 4"
+          ></label>
+        </nav>
+      </section>
 
-            <nav class="carrossel-navegacao">
-                <label for="carrossel-btn-1" aria-label="Imagem do carrossel 1"></label>
-                <label for="carrossel-btn-2" aria-label="Imagem do carrossel 2"></label>
-                <label for="carrossel-btn-3" aria-label="Imagem do carrossel 3"></label>
-                <label for="carrossel-btn-4" aria-label="Imagem do carrossel 4"></label>
-            </nav>
-        </section>
+      <section class="sessao-bloco-texto-img sessao-fundo-azul reverso">
+        <article>
+          <h2>Cuidado <span class="destaque">e Confiança</span></h2>
+          <p>
+            Oferecemos atendimento médico focado no cuidado integral do
+            paciente, combinando conhecimento técnico, atenção individual e um
+            ambiente acolhedor. Nossa atuação é guiada pelo compromisso com a
+            saúde, o bem-estar e a segurança, buscando sempre oferecer um
+            atendimento claro, humano e responsável. Trabalhamos para que cada
+            consulta seja uma experiência de confiança, respeito e
+            tranquilidade, com profissionais preparados para acompanhar o
+            paciente em todas as etapas do cuidado.
+          </p>
+          <a
+            href="pages/agendamento.html"
+            class="botao"
+            aria-label="Fazer agendamento online"
+            >Fazer Agendamento</a
+          >
+        </article>
+        <img
+          src="img/estrutura-fisica.png"
+          alt="Ambiente interno do consultório da PD Clínica"
+          class="img-conteudo"
+        />
+      </section>
 
-        <section class="sessao-bloco-texto-img sessao-fundo-azul reverso">
-            <article>
-                <h2>Cuidado <span class="destaque">e Confiança</span></h2>
-                <p>Oferecemos atendimento médico focado no cuidado integral do paciente, combinando
-                    conhecimento
-                    técnico, atenção individual e um ambiente acolhedor. Nossa atuação é guiada pelo compromisso com a
-                    saúde, o bem-estar e a segurança, buscando sempre oferecer um atendimento claro, humano e
-                    responsável. Trabalhamos para que cada consulta seja uma experiência de confiança, respeito e
-                    tranquilidade, com profissionais preparados para acompanhar o paciente em todas as etapas do
-                    cuidado.</p>
-                <a href="pages/agendamento.html" class="botao" aria-label="Fazer agendamento online">Fazer
-                    Agendamento</a>
-            </article>
-            <img src="img/estrutura-fisica.png" alt="Ambiente interno do consultório da PD Clínica"
-                class="img-conteudo">
-        </section>
-
-        <section class="sessao-bloco-texto-img">
-            <article>
-                <h2>Diversas <span class="destaque">Especialidades</span></h2>
-                <p>Oferecemos atendimento médico focado no cuidado integral do paciente, combinando
-                    conhecimento técnico, atenção individual e um ambiente acolhedor. Nossa atuação é guiada pelo
-                    compromisso com a saúde, o bem-estar e a segurança, buscando sempre oferecer um atendimento claro,
-                    humano e responsável. Trabalhamos para que cada consulta seja uma experiência de confiança, respeito
-                    e tranquilidade, com profissionais preparados para acompanhar o paciente em todas as etapas do
-                    cuidado.</p>
-                <a href="pages/listagem-especialidades.html" class="botao">Ver Lista de Especialidades</a>
-            </article>
-            <img src="img/lista-especialidades.png" alt="Consultorio medico com ampla visão para aparelhos"
-                class="img-conteudo none">
-        </section>
+      <section class="sessao-bloco-texto-img">
+        <article>
+          <h2>Diversas <span class="destaque">Especialidades</span></h2>
+          <p>
+            Reunimos uma equipe multidisciplinar preparada para atender
+            diferentes necessidades de saúde com eficiência e responsabilidade.
+            Contamos com profissionais qualificados em diversas áreas da
+            medicina, trabalhando de forma integrada para oferecer diagnósticos
+            precisos e tratamentos adequados a cada paciente. Nosso objetivo é
+            proporcionar praticidade, segurança e continuidade no cuidado,
+            garantindo que você encontre em um só lugar o suporte necessário
+            para manter sua saúde em dia.
+          </p>
+          <a href="pages/listagem-especialidades.html" class="botao"
+            >Ver Lista de Especialidades</a
+          >
+        </article>
+        <img
+          src="img/lista-especialidades.png"
+          alt="Consultorio medico com ampla visão para aparelhos"
+          class="img-conteudo none"
+        />
+      </section>
     </main>
 
     <footer class="rodape">
-        <section>
-            <!-- RODAPE MOBILE -->
-            <nav>
-                <ul>
-                    <li><a href="pages/trabalhe-conosco.html">Trabalhe Conosco</a></li>
-                    <li><a href="pages/contato.html">Contato</a></li>
-                    <li><a href="pages/localizacao.html">Localização</a></li>
-                </ul>
-            </nav>
-            <!-- RODAPE MOBILE -->
-            <article>
-                <h3 class="titulo-rodape">Trabalhe Conosco</h3>
-                <p class="descricao-rodape">Somos uma clínica comprometida com a ética, o cuidado humanizado e a
-                    excelência no atendimento. Buscamos profissionais dedicados que queiram crescer junto à nós.</p>
-                <a href="pages/trabalhe-conosco.html" class="botao botao-rodape">Enviar Currículo</a>
-            </article>
-            <article>
-                <h3 class="titulo-rodape">Contato</h3>
-                <p class="descricao-rodape">Estamos à disposição para tirar dúvidas, agendar consultas e fornecer
-                    mais
-                    informações sobre nossos serviços. Entre em contato pelos nossos canais de atendimento.</p>
-                <a href="pages/contato.html" class="botao botao-rodape">Entrar em Contato</a>
-            </article>
-            <article>
-                <h3 class="titulo-rodape">Localização</h3>
-                <p class="descricao-rodape">Nossa clínica está localizada em uma região de fácil acesso, pensada
-                    para
-                    oferecer conforto e praticidade aos pacientes. Confira nosso endereço completo e saiba como
-                    chegar.
-                </p>
-                <a href="pages/localizacao.html" class="botao botao-rodape">Ver Localização Completa</a>
-            </article>
-        </section>
-        <p class="rodape-copyrigth">© 2026 PD Clínica. <span>Todos os Direitos Reservados</span></p>
+      <section>
+        <!-- RODAPE MOBILE -->
+        <nav>
+          <ul>
+            <li><a href="pages/trabalhe-conosco.html">Trabalhe Conosco</a></li>
+            <li><a href="pages/contato.html">Contato</a></li>
+            <li><a href="pages/localizacao.html">Localização</a></li>
+          </ul>
+        </nav>
+        <!-- RODAPE MOBILE -->
+        <article>
+          <h3 class="titulo-rodape">Trabalhe Conosco</h3>
+          <p class="descricao-rodape">
+            Somos uma clínica comprometida com a ética, o cuidado humanizado e a
+            excelência no atendimento. Buscamos profissionais dedicados que
+            queiram crescer junto à nós.
+          </p>
+          <a href="pages/trabalhe-conosco.html" class="botao botao-rodape"
+            >Enviar Currículo</a
+          >
+        </article>
+        <article>
+          <h3 class="titulo-rodape">Contato</h3>
+          <p class="descricao-rodape">
+            Estamos à disposição para tirar dúvidas, agendar consultas e
+            fornecer mais informações sobre nossos serviços. Entre em contato
+            pelos nossos canais de atendimento.
+          </p>
+          <a href="pages/contato.html" class="botao botao-rodape"
+            >Entrar em Contato</a
+          >
+        </article>
+        <article>
+          <h3 class="titulo-rodape">Localização</h3>
+          <p class="descricao-rodape">
+            Nossa clínica está localizada em uma região de fácil acesso, pensada
+            para oferecer conforto e praticidade aos pacientes. Confira nosso
+            endereço completo e saiba como chegar.
+          </p>
+          <a href="pages/localizacao.html" class="botao botao-rodape"
+            >Ver Localização Completa</a
+          >
+        </article>
+      </section>
+      <p class="rodape-copyrigth">
+        © 2026 PD Clínica. <span>Todos os Direitos Reservados</span>
+      </p>
     </footer>
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
