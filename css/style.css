@@ -1288,7 +1288,8 @@ aside {
   flex-direction: column;
   align-items: start;
   gap: 12px;
-  min-height: 150px;
+  min-height: 180px;
+  height: 100%;
 }
 
 .card-admin-titulo {
@@ -1296,6 +1297,7 @@ aside {
   font-size: var(--titulo-tam-desktop);
   margin: 0;
   color: var(--cor-principal);
+  width: 100%;
 }
 
 .card-admin-valor {
@@ -1839,6 +1841,10 @@ aside {
   .card-admin,
   .card-paciente {
     padding: 20px;
+  }
+
+  .card-admin-titulo {
+    font-size: 22px;
   }
 
   .tabela,
