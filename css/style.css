@@ -198,10 +198,12 @@ p {
   color: var(--cor-texto);
 }
 
+
 .especialidades,
 .secao-precos {
   margin-top: 50px;
 }
+
 
 .card {
   background-color: var(--cor-bg-pagina);
@@ -2308,6 +2310,11 @@ aside {
 
   .banner-trabalhe {
     min-height: 40vw;
+  }
+
+  /* No mobile vai deixar o primeiro texto da página de lista de especialidade, da mesma largura dos cards */
+  .artigo-listagem-especialidades{
+  padding: 0 !important;
   }
 }
 
