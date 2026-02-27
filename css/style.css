@@ -735,8 +735,7 @@ aside {
   color: #ffffff;
 }
 
-.carrossel-img h2,
-.carrossel-img p {
+.carrossel-img h2{
   width: 25%;
 }
 
@@ -746,6 +745,7 @@ aside {
 
 .carrossel-img p {
   color: #ffffff;
+  width: 50%;
 }
 
 .carrossel-img-1 {
@@ -1696,9 +1696,12 @@ aside {
     padding: 40px 50px;
   }
 
-  .carrossel-img h2,
-  .carrossel-img p {
+  .carrossel-img h2{
     width: 30%;
+  }
+
+  .carrossel-img p{
+    width: 45%;
   }
 
   .carrossel-imagens h2 {
@@ -1756,9 +1759,13 @@ aside {
     padding: 40px 50px;
   }
 
-  .carrossel-img h2,
-  .carrossel-img {
+  .carrossel-img h2{
     width: 30%;
+  }
+
+
+  .carrossel-img p{
+    width: 45%;
   }
 
   .carrossel-imagens h2 {
@@ -2244,59 +2251,6 @@ aside {
   }
 }
 
-.banner-trabalhe {
-  background-image: url(../img/medico-apertando-mao.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 30vw;
-  max-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2em;
-  color: var(--cor-bg-pagina);
-}
-
-.titulo-banner {
-  font-family: var(--fonte-titulo);
-  font-size: var(--banner-tam-desktop);
-  font-weight: bold;
-  color: var(--cor-bg-pagina);
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-.destaque-banner {
-  color: var(--cor-bg-pagina);
-}
-
-.texto-banner {
-  font-family: var(--fonte-texto);
-  font-size: var(--texto-tam-desktop);
-  color: var(--cor-bg-pagina);
-  text-align: left;
-}
-
-.barra-busca-trabalhe {
-  background-color: var(--cor-principal);
-  padding: 30px 0;
-  width: 100%;
-}
-
-.barra-busca-trabalhe .botao {
-  background-color: var(--cor-bg-pagina);
-  color: var(--cor-principal);
-  border: none;
-}
-
-.barra-busca-trabalhe .input-txt {
-  width: 100%;
-  font-size: var(--texto-tam-desktop);
-}
-
 @media (max-width: 768px) {
   .titulo-banner {
     font-size: var(--titulo-tam-mobile);
@@ -2401,26 +2355,20 @@ aside {
   justify-content: center;
   align-items: center;
   padding: 2em;
-  color: var(--cor-bg-pagina);
+  color: #ffffff;
 }
 
 .titulo-banner {
   font-family: var(--fonte-titulo);
   font-size: var(--banner-tam-desktop);
   font-weight: bold;
-  color: var(--cor-bg-pagina);
   text-align: left;
   margin-bottom: 10px;
-}
-
-.destaque-banner {
-  color: var(--cor-bg-pagina);
 }
 
 .texto-banner {
   font-family: var(--fonte-texto);
   font-size: var(--texto-tam-desktop);
-  color: var(--cor-bg-pagina);
   text-align: left;
 }
 
@@ -2428,12 +2376,6 @@ aside {
   background-color: var(--cor-principal);
   padding: 30px 0;
   width: 100%;
-}
-
-.barra-busca-trabalhe .botao {
-  background-color: var(--cor-bg-pagina);
-  color: var(--cor-principal);
-  border: none;
 }
 
 .barra-busca-trabalhe .input-txt {
