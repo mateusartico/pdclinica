@@ -198,10 +198,12 @@ p {
   color: var(--cor-texto);
 }
 
+
 .especialidades,
 .secao-precos {
   margin-top: 50px;
 }
+
 
 .card {
   background-color: var(--cor-bg-pagina);
@@ -786,34 +788,35 @@ aside {
   transform: scale(1.2);
 }
 
-#carrossel-btn-1:checked ~ .carrossel-navegacao label:nth-child(1),
-#carrossel-btn-2:checked ~ .carrossel-navegacao label:nth-child(2),
-#carrossel-btn-3:checked ~ .carrossel-navegacao label:nth-child(3),
-#carrossel-btn-4:checked ~ .carrossel-navegacao label:nth-child(4) {
+#carrossel-btn-1:checked~.carrossel-navegacao label:nth-child(1),
+#carrossel-btn-2:checked~.carrossel-navegacao label:nth-child(2),
+#carrossel-btn-3:checked~.carrossel-navegacao label:nth-child(3),
+#carrossel-btn-4:checked~.carrossel-navegacao label:nth-child(4) {
   background: var(--cor-principal);
 }
 
-.carrossel-inicio input:checked ~ .carrossel-imagens {
+.carrossel-inicio input:checked~.carrossel-imagens {
   animation: none;
 }
 
-#carrossel-btn-1:checked ~ .carrossel-imagens {
+#carrossel-btn-1:checked~.carrossel-imagens {
   transform: translateX(0);
 }
 
-#carrossel-btn-2:checked ~ .carrossel-imagens {
+#carrossel-btn-2:checked~.carrossel-imagens {
   transform: translateX(-100%);
 }
 
-#carrossel-btn-3:checked ~ .carrossel-imagens {
+#carrossel-btn-3:checked~.carrossel-imagens {
   transform: translateX(-200%);
 }
 
-#carrossel-btn-4:checked ~ .carrossel-imagens {
+#carrossel-btn-4:checked~.carrossel-imagens {
   transform: translateX(-300%);
 }
 
 @keyframes autoSlide {
+
   0%,
   20% {
     transform: translateX(0);
@@ -864,6 +867,7 @@ aside {
 
 .sessao-fundo-azul {
   background-color: var(--cor-bg-sessao);
+ 
 }
 
 .sessao-bloco-texto-img article a {
@@ -1151,14 +1155,12 @@ aside {
 
 .hero-dermatologia {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-dermatologia-1.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1200,14 +1202,12 @@ aside {
 
 .hero-neurologia {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-neurologia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1216,14 +1216,12 @@ aside {
 
 .hero-cardiologia {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-cardiologia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1232,14 +1230,12 @@ aside {
 
 .hero-ortopedia {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-ortopedia.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1248,14 +1244,12 @@ aside {
 
 .hero-pediatria {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-pediatria.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
@@ -1264,21 +1258,31 @@ aside {
 
 .hero-psiquiatria {
   background:
-    linear-gradient(
-      to right,
+    linear-gradient(to right,
       rgba(40, 40, 40, 0.95) 0%,
       rgba(40, 40, 40, 0.85) 35%,
       rgba(40, 40, 40, 0.4) 65%,
       rgba(40, 40, 40, 0.1) 85%,
-      rgba(40, 40, 40, 0) 100%
-    ),
+      rgba(40, 40, 40, 0) 100%),
     url("../img/img-especialidade-psiquiatria.jpg") center/cover no-repeat;
   min-height: 420px;
   display: flex;
   align-items: center;
 }
 
-.card-admin,
+.card-admin {
+  background-color: var(--cor-bg-pagina);
+  border: 1px solid var(--cor-principal);
+  border-radius: 5px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+  min-height: 180px;
+  height: 100%;
+}
+
 .card-paciente {
   background-color: var(--cor-bg-pagina);
   border: 1px solid var(--cor-principal);
@@ -1295,6 +1299,7 @@ aside {
   font-size: var(--titulo-tam-desktop);
   margin: 0;
   color: var(--cor-principal);
+  width: 100%;
 }
 
 .card-admin-valor {
@@ -1849,6 +1854,23 @@ MEDIA QUERIES
   .input-data {
     width: 100%;
   }
+
+  .card-admin {
+    padding: 20px;
+  }
+
+  .card-admin-titulo {
+    font-size: 22px;
+  }
+
+  .tabela,
+  .tabela-agendamentos {
+    font-size: 18px;
+  }
+
+  .container-tabela {
+    overflow-x: auto;
+  }
 }
 
 /* Intermediário 769–900: textos menores, botões mantêm largura desktop */
@@ -2156,7 +2178,12 @@ MEDIA QUERIES
     border: none;
   }
 
-  #menu-aberto:checked ~ .lista-links {
+  .botao-mobile-icone {
+    font-size: var(--titulo-tam-mobile);
+    color: var(--cor-principal);
+  }
+
+  #menu-aberto:checked~.lista-links {
     display: flex;
   }
 
@@ -2323,79 +2350,67 @@ MEDIA QUERIES
 
   .hero-cardiologia {
     background:
-      linear-gradient(
-        to right,
+      linear-gradient(to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 85%,
-        rgba(70, 70, 70, 0) 100%
-      ),
+        rgba(70, 70, 70, 0) 100%),
       url("../img/img-especialidade-cardiologia.jpg") center/cover no-repeat;
   }
 
   .hero-dermatologia {
     background:
-      linear-gradient(
-        to right,
+      linear-gradient(to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 65%,
-        rgba(70, 70, 70, 0) 100%
-      ),
+        rgba(70, 70, 70, 0) 100%),
       url("../img/img-dermatologia-1.jpg") center/cover no-repeat;
   }
 
   .hero-neurologia {
     background:
       rgba(40, 40, 40, 0.95) 0%,
-      linear-gradient(
-        to right,
+      linear-gradient(to right,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 65%,
-        rgba(70, 70, 70, 0) 100%
-      ),
+        rgba(70, 70, 70, 0) 100%),
       url("../img/img-especialidade-neurologia.jpg") center/cover no-repeat;
   }
 
   .hero-ortopedia {
     background:
-      linear-gradient(
-        to right,
+      linear-gradient(to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 65%,
-        rgba(70, 70, 70, 0) 100%
-      ),
+        rgba(70, 70, 70, 0) 100%),
       url("../img/img-especialidade-ortopedia.jpg") center/cover no-repeat;
   }
 
   .hero-pediatria {
     background:
-      linear-gradient(
-        to right,
+      linear-gradient(to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 85%,
-        rgba(70, 70, 70, 0) 100%
-      ),
+        rgba(70, 70, 70, 0) 100%),
       url("../img/img-especialidade-pediatria.jpg") center/cover no-repeat;
   }
 
   .hero-psiquiatria {
     background:
-      linear-gradient(
-        to right,
+      linear-gradient(to right,
         rgba(70, 70, 70, 0.95) 0%,
         rgba(70, 70, 70, 0.85) 5%,
         rgba(70, 70, 70, 0.4) 55%,
         rgba(70, 70, 70, 0.1) 85%,
-        rgba(70, 70, 70, 0) 100%
-      ),
+        rgba(70, 70, 70, 0) 100%),
       url("../img/img-especialidade-psiquiatria.jpg") center/cover no-repeat;
   }
 
@@ -2473,6 +2488,26 @@ MEDIA QUERIES
     min-height: 40vw;
   }
 
+  /* No mobile vai deixar o primeiro texto da página de lista de especialidade, da mesma largura dos cards */
+  .artigo-listagem-especialidades {
+    padding: 0 !important;
+  }
+}
+
+/* VAI CONTROLAR ESPECIFICAMENTE QUANDO OS CARDS DAS PÁGINAS DE ARTIGOS DEVEM DEIXAR DE APARECER) */
+@media (max-width: 990px) {
+  .aside-artigos {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .pag-contato,
+  .pag-agendamento {
+    flex-direction: column;
+  }
+
   /* BLOG E INFORMAÇÕES MOBILE */
   .hero-blog h1 {
     font-size: var(--banner-tam-mobile);
@@ -2503,6 +2538,20 @@ MEDIA QUERIES
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  .card-admin,
+  .card-paciente {
+    padding: 20px;
+  }
+
+  .card-paciente-img {
+    max-width: 200px;
+    margin: 0 auto 12px;
+  }
+
+  .consultas-lista {
+    gap: 15px;
+  }
+
   .container-form {
     width: 50%;
     padding: 40px 50px;
@@ -2624,6 +2673,29 @@ MEDIA QUERIES
   .aside-artigos {
     display: none;
   }
+}
+
+@media (max-width: 768px) {
+
+  .conteudo-hero-informacoes h1 {
+    font-size: var(--titulo-tam-mobile);
+    width: 90%;
+  }
+
+  .pag-contato,
+  .pag-agendamento {
+    flex-direction: column;
+  }
+
+.bg-img-contato,
+.bg-img-agendamento {
+  width: 100%;
+  height: 40vh;
+}
+
+.container-form {
+  width: 100%;
+  padding: 30px 20px;
 }
 
 /* VAI CONTROLAR ESPECIFICAMENTE QUANDO OS CARDS DAS PÁGINAS DE ARTIGOS DEVEM DEIXAR DE APARECER */
