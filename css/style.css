@@ -997,6 +997,7 @@ aside {
 
 /* ESTILIZACAO PAGINA BLOG */
 
+/* Adiciona estilização da sessçao hero da página de blog, seta cor de texto, cor de fundo e padding*/
 .hero-blog {
   background-color: var(--cor-principal);
   color: #ffffff;
@@ -1004,6 +1005,7 @@ aside {
 }
 
 /* FIX: cor hardcoded + alinhamento à esquerda */
+/* Estiliza o texto principal "Blog PD clínica" da página de blog*/
 .hero-blog h1 {
   font-family: var(--fonte-titulo);
   font-size: var(--banner-tam-desktop);
@@ -1012,6 +1014,7 @@ aside {
 }
 
 /* FIX: cor hardcoded + alinhamento à esquerda */
+/* Estiliza o subtitulo "Artigos sobre saúde, ciência e cuidados práticos" da página de blog*/
 .hero-blog h2 {
   font-size: 32px;
   font-style: italic;
@@ -1021,38 +1024,45 @@ aside {
   text-align: left;
 }
 
+/* Adiciona um padding lateral nos textos da página de blog */
 .conteudo-blog {
   padding: 40px 0;
 }
 
+/* Estiliza os titulos das sessões de conteudo da página de blog */
 .conteudo-blog h2 {
   color: #3558a6;
   font-weight: 700;
   font-family: var(--fonte-titulo);
 }
 
+/* Estiliza os nomes dos autores de cada artigo médico e as datas*/
 .informaco-autor-artigo {
   font-style: italic;
   font-size: var(--texto-tam-desktop);
   color: #6c757d;
 }
 
+/* Estiliza os titulos dos artigos que também são links que levam para os artigos*/
 .article-link {
   text-decoration: none;
   color: #3558a6;
   transition: all 0.2s ease;
 }
 
+/* Adiciona um efeito de hover nos titulos dos artigos*/
 .article-link:hover {
   text-decoration: underline;
   opacity: 0.85;
 }
 
+/* Estiliza o link quando ele está em foco, criando uma borda em baixo do elemento.*/
 .article-link:focus {
   outline: 2px solid #3558a6;
   outline-offset: 4px;
 }
 
+/* Estiliza os subtitulos de cada artigo médico. Por exemplo: "Quais exames fazer em cada fase da vida?" */
 .conteudo-blog h3 {
   font-size: var(--texto-tam-desktop);
 }
