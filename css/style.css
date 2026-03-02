@@ -867,7 +867,7 @@ aside {
 
 .sessao-fundo-azul {
   background-color: var(--cor-bg-sessao);
- 
+
 }
 
 .sessao-bloco-texto-img article a {
@@ -1742,6 +1742,7 @@ MEDIA QUERIES
 
 /* Intermediário 901–1300: textos menores, botões mantêm largura desktop */
 @media (min-width: 901px) and (max-width: 1300px) {
+
   h1,
   h2,
   h3,
@@ -1875,6 +1876,7 @@ MEDIA QUERIES
 
 /* Intermediário 769–900: textos menores, botões mantêm largura desktop */
 @media (min-width: 769px) and (max-width: 900px) {
+
   h1,
   h2,
   h3,
@@ -2061,6 +2063,7 @@ MEDIA QUERIES
   .input-data {
     width: 100%;
   }
+
   .bg-img-contato h1,
   .bg-img-agendamento h1 {
     font-size: var(--titulo-tam-mobile);
@@ -2088,6 +2091,7 @@ MEDIA QUERIES
 
 /* Mobile — textos menores, botões 100% largura */
 @media (max-width: 768px) {
+
   /* FIX: botões ocupam 100% da largura no mobile */
   .botao {
     text-align: center;
@@ -2538,6 +2542,7 @@ MEDIA QUERIES
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
   .card-admin,
   .card-paciente {
     padding: 20px;
@@ -2687,15 +2692,16 @@ MEDIA QUERIES
     flex-direction: column;
   }
 
-.bg-img-contato,
-.bg-img-agendamento {
-  width: 100%;
-  height: 40vh;
-}
+  .bg-img-contato,
+  .bg-img-agendamento {
+    width: 100%;
+    height: 40vh;
+  }
 
-.container-form {
-  width: 100%;
-  padding: 30px 20px;
+  .container-form {
+    width: 100%;
+    padding: 30px 20px;
+  }
 }
 
 /* VAI CONTROLAR ESPECIFICAMENTE QUANDO OS CARDS DAS PÁGINAS DE ARTIGOS DEVEM DEIXAR DE APARECER */
@@ -2759,6 +2765,6 @@ MEDIA QUERIES
   color: var(--cor-texto);
 }
 
-.tabela-agendamentos tbody tr:nth-child(odd) td {
+.tabela-agendamentos tbody tr:nth-child(odd) {
   background-color: var(--cor-bg-sessao);
 }
