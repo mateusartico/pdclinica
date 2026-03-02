@@ -1154,6 +1154,7 @@ aside {
 
 /* ESTILIZAÇÃO DAS PÁGINAS DE ESPECIALIDADES */
 
+/* Define a cor de fundo para as páginas de especialidades assim como para outras páginas também. */
 .conteudo-especialidades,
 .conteudo-artigo,
 .conteudo-paciente,
@@ -1163,10 +1164,16 @@ aside {
   background-color: var(--cor-bg-pagina);
 }
 
+/* Adiciona um espaçamento justificado a todo conteúdo de texto das páginas de especialidades*/
 .conteudo-especialidades p {
   text-align: justify;
 }
 
+/* Adiciona uma largura minima, alinha com display-flex e adiciona uma camada de degradê por cima de 
+todas as imagens da sessão hero de todas as páginas de esécialidades*/
+
+/* Este trecho de código se repete 6 vezes aqui, ele gera exatamente o mesmo efeito cada 
+vez que se repete, mas nas 6 páginas diferentes de especialidades*/ 
 .hero-dermatologia {
   background:
     linear-gradient(to right,
@@ -1181,6 +1188,7 @@ aside {
   align-items: center;
 }
 
+/* Estiliza o botão "Marque uma consulta" das páginas de especialidades.*/ 
 .botao-banner {
   padding: 0.75rem 1.5rem;
   font-weight: 500;
@@ -1190,6 +1198,7 @@ aside {
   border: none;
 }
 
+/* Estiliza os titulos de cada sessão das páginas de especialidades*/ 
 .Titulos-sessao {
   font-family: var(--fonte-titulo);
   color: var(--cor-principal);
@@ -1199,6 +1208,7 @@ aside {
 }
 
 /* FIX: cor hardcoded + alinhamento à esquerda */
+/* Estiliza o titulo da principal das páginas de especialidades (O titulo da hero)*/ 
 .container-titulo-hero h1 {
   color: #ffffff;
   font-size: var(--banner-tam-desktop);
@@ -1207,6 +1217,7 @@ aside {
 }
 
 /* FIX: cor hardcoded + alinhamento à esquerda */
+/* Estiliza o texto que fica abaixo do titulo principal das páginas de especialidades (O titulo da hero)*/ 
 .container-titulo-hero p {
   color: #ffffff;
   font-size: var(--texto-tam-desktop);
