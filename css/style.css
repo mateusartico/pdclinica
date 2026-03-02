@@ -593,19 +593,21 @@ td {
   margin: 0;
 }
 
-/* ESTILIZAÇÃO DAS PÁGINAS DE ARTIGOS */
+/* ESTILIZAÇÃO DAS PÁGINAS DE ARTIGOS (ELIAS) */
 
+/* Define a cor de fundo da sessão hero (Contém o titulo principal da página de artigos)*/
 .sessao-hero {
   background-color: var(--cor-principal);
 }
 
-/* FIX: cor hardcoded para manter branco no dark mode */
+/* Define  o tamanho, alinhamento e  cor do titulo principal da página*/
 .sessao-hero h1 {
   font-size: var(--banner-tam-desktop);
   text-align: left;
   color: #ffffff;
 }
 
+/* Define cor, tamaho, estilo, alinhamento e peso da fonte e estilo da fonte do subtitulo principal da página) */
 .subtitulo-hero-artigo {
   color: #ffffff;
   font-size: var(--titulo-tam-desktop);
@@ -614,12 +616,14 @@ td {
   text-align: left;
 }
 
+/* Define cor, alinhamento e tamaho da fonte dos parágrafos dos artigos */
 article p {
   font-size: var(--texto-tam-desktop);
   color: var(--cor-texto);
   text-align: justify;
 }
 
+/* Define cor, tamanho, alinhamento e fonte a ser usada nos titulos h2 da pagina de artigos */
 .texto-artigo h2 {
   color: var(--cor-principal);
   font-size: var(--titulo-tam-desktop);
@@ -627,6 +631,7 @@ article p {
   text-align: left;
 }
 
+/* Aplica alinhamentos no container aside da página de artigos usando flex-box */
 aside {
   display: flex;
   flex-direction: column;
@@ -634,10 +639,12 @@ aside {
   padding: 50px 0 !important;
 }
 
+/* Define altura do container aside da página de artigos*/
 .aside-artigos {
   height: 100%;
 }
 
+/* Define largura, preenchimento interno, cor de fundo e alinhamento dos cards do aside da pagina de artigos*/
 .card-aside-artigo {
   width: 70%;
   padding: 0;
@@ -646,11 +653,13 @@ aside {
   background-color: var(--cor-bg-sessao);
 }
 
+/* Define cor, tamanho da fonte e largura do h6 interno do card do aside na página de artigos*/
 .corpo-card h6 {
   font-size: 25px;
   width: 100%;
 }
 
+/* Define tamanho de fonte, cor, peso da fonte e margem do texto de dentro do card do aside na página de artigos*/
 .corpo-card p {
   font-size: 18px;
   color: var(--cor-texto);
@@ -658,15 +667,18 @@ aside {
   margin-bottom: 8px;
 }
 
+/* Tira a decoração de link e muda a cor do elemnto <a> do card do aside na página de artigos*/
 .corpo-card a {
   text-decoration: none;
   color: var(--cor-principal);
 }
 
+/* Muda a cor do texto quando o usuário passar o mouse por cima do link de "saiba mais" do card*/
 .corpo-card a:hover {
   color: var(--cor-ativo);
 }
 
+/* Cria um pseudo elemento que vai ser uma barra que vai aparecer embaixo dos links quando o usuário passar o mouse. */
 .link-underline-animado::after {
   content: "";
   position: absolute;
@@ -680,11 +692,13 @@ aside {
   transition: transform 0.25s ease-in-out;
 }
 
+/* Posiciona o pseudo elemento em relação ao link*/
 .link-underline-animado {
   position: relative;
   display: inline-block;
 }
 
+/* Faz o efeito de barra ir crescendo até ocupar a largura total do link quando o usuário passa o mouse por cima */
 .link-underline-animado:hover::after {
   transform: scaleX(1);
 }
