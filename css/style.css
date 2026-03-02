@@ -1054,7 +1054,7 @@ aside {
   text-align: left;
 }
 
-.essencia article div {
+.essencia article header {
   display: flex;
   align-items: center;
   margin-bottom: 1em;
@@ -2165,7 +2165,7 @@ MEDIA QUERIES
   }
 
   .lista-links li,
-  .lista-links div {
+  .lista-links section {
     display: flex;
     gap: 20px;
     height: 50px;
@@ -2173,7 +2173,7 @@ MEDIA QUERIES
   }
 
   .lista-links li button,
-  .lista-links div button {
+  .lista-links section button {
     background-color: transparent;
     border: none;
   }
@@ -2309,7 +2309,7 @@ MEDIA QUERIES
     gap: 30px;
   }
 
-  .essencia article div h2 {
+  .essencia article header h2 {
     font-size: var(--titulo-tam-mobile);
   }
 
