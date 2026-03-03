@@ -593,19 +593,21 @@ td {
   margin: 0;
 }
 
-/* ESTILIZAÇÃO DAS PÁGINAS DE ARTIGOS */
+/* ESTILIZAÇÃO DAS PÁGINAS DE ARTIGOS (ELIAS) */
 
+/* Define a cor de fundo da sessão hero (Contém o titulo principal da página de artigos)*/
 .sessao-hero {
   background-color: var(--cor-principal);
 }
 
-/* FIX: cor hardcoded para manter branco no dark mode */
+/* Define  o tamanho, alinhamento e  cor do titulo principal da página*/
 .sessao-hero h1 {
   font-size: var(--banner-tam-desktop);
   text-align: left;
   color: #ffffff;
 }
 
+/* Define cor, tamaho, estilo, alinhamento e peso da fonte e estilo da fonte do subtitulo principal da página) */
 .subtitulo-hero-artigo {
   color: #ffffff;
   font-size: var(--titulo-tam-desktop);
@@ -614,12 +616,14 @@ td {
   text-align: left;
 }
 
+/* Define cor, alinhamento e tamaho da fonte dos parágrafos dos artigos */
 article p {
   font-size: var(--texto-tam-desktop);
   color: var(--cor-texto);
   text-align: justify;
 }
 
+/* Define cor, tamanho, alinhamento e fonte a ser usada nos titulos h2 da pagina de artigos */
 .texto-artigo h2 {
   color: var(--cor-principal);
   font-size: var(--titulo-tam-desktop);
@@ -627,6 +631,7 @@ article p {
   text-align: left;
 }
 
+/* Aplica alinhamentos no container aside da página de artigos usando flex-box */
 aside {
   display: flex;
   flex-direction: column;
@@ -634,10 +639,12 @@ aside {
   padding: 50px 0 !important;
 }
 
+/* Define altura do container aside da página de artigos*/
 .aside-artigos {
   height: 100%;
 }
 
+/* Define largura, preenchimento interno, cor de fundo e alinhamento dos cards do aside da pagina de artigos*/
 .card-aside-artigo {
   width: 70%;
   padding: 0;
@@ -646,11 +653,13 @@ aside {
   background-color: var(--cor-bg-sessao);
 }
 
+/* Define cor, tamanho da fonte e largura do h6 interno do card do aside na página de artigos*/
 .corpo-card h6 {
   font-size: 25px;
   width: 100%;
 }
 
+/* Define tamanho de fonte, cor, peso da fonte e margem do texto de dentro do card do aside na página de artigos*/
 .corpo-card p {
   font-size: 18px;
   color: var(--cor-texto);
@@ -658,15 +667,18 @@ aside {
   margin-bottom: 8px;
 }
 
+/* Tira a decoração de link e muda a cor do elemnto <a> do card do aside na página de artigos*/
 .corpo-card a {
   text-decoration: none;
   color: var(--cor-principal);
 }
 
+/* Muda a cor do texto quando o usuário passar o mouse por cima do link de "saiba mais" do card*/
 .corpo-card a:hover {
   color: var(--cor-ativo);
 }
 
+/* Cria um pseudo elemento que vai ser uma barra que vai aparecer embaixo dos links quando o usuário passar o mouse. */
 .link-underline-animado::after {
   content: "";
   position: absolute;
@@ -680,11 +692,13 @@ aside {
   transition: transform 0.25s ease-in-out;
 }
 
+/* Posiciona o pseudo elemento em relação ao link*/
 .link-underline-animado {
   position: relative;
   display: inline-block;
 }
 
+/* Faz o efeito de barra ir crescendo até ocupar a largura total do link quando o usuário passa o mouse por cima */
 .link-underline-animado:hover::after {
   transform: scaleX(1);
 }
@@ -867,7 +881,7 @@ aside {
 
 .sessao-fundo-azul {
   background-color: var(--cor-bg-sessao);
- 
+
 }
 
 .sessao-bloco-texto-img article a {
@@ -912,6 +926,7 @@ aside {
 
 /* ESTILAZAÇÃO DA PÁGINA DE INFORMAÇÕES*/
 
+/* Estiliza a sessão hero da página de informações*/
 .hero-informacoes {
   background: url("../img/img-informativo.jpg") center center / cover no-repeat;
   position: relative;
@@ -922,6 +937,7 @@ aside {
   padding: 60px 0;
 }
 
+/* Cria uma camada de sombra por cima da imagem da sessçao hero da página de informações*/
 .hero-informacoes::before {
   content: "";
   position: absolute;
@@ -929,12 +945,14 @@ aside {
   background: rgba(0, 0, 0, 0.45);
 }
 
+/* Seta o posicionamento dos elementos da sessçao hero da página de informações*/
 .conteudo-hero-informacoes {
   position: relative;
   z-index: 2;
 }
 
 /* FIX: cor hardcoded + alinhamento à esquerda */
+/*Estiliza o titulo principal da página de informações */
 .conteudo-hero-informacoes h1 {
   font-size: var(--banner-tam-desktop);
   width: 70%;
@@ -942,47 +960,59 @@ aside {
   text-align: left;
 }
 
+/* Seta regras css para as imagens dos cards da página de informações*/
 .card-convenio img {
   height: 160px;
   object-fit: cover;
 }
 
+/* Adiciona efeito de hover no botão "Acessar blog" da página de informações */
 .botao-hero-informacoes:hover {
   background-color: var(--cor-principal);
   color: #ffffff;
 }
 
+/* Seta tamanho da fonte dos textos dos cards da página de informalções */
 .card-convenio p {
   font-size: var(--texto-tam-desktop);
 }
 
+/* Seta largura e tamanho da fonte dos titulos dos cards de convenios da pagina de informações */
 .card-convenio h5 {
   width: 100%;
   font-size: var(--titulo-tam-desktop);
 }
 
+/* Separa cores diferentes para trechos de um mesmo titulo de sessao =  <span class="subititulo-convenio">Aceitos</span>*/
 .subititulo-convenio {
   color: var(--cor-principal);
 }
 
+/* Separa cores diferentes para trechos de um mesmo titulo de sessao =  <h2 class="subtitulo-informacoes"> 
+Convênios <span class="subititulo-convenio">Aceitos</span>
+</h2>*/
 .subtitulo-informacoes {
   font-family: var(--fonte-titulo);
 }
 
+/* Seta cor da borda do acordeon da página de informações */
 .accordion-item {
   border-color: var(--cor-bg-sessao);
 }
 
+/* Define tamanho da fonte do cabeçalho do acordeon da página de informações */
 .accordion-header button {
   font-size: var(--texto-tam-desktop);
 }
 
+/* Define tamanho da fonte das respostas do acordeon da página de informações*/
 .resposta-faq {
   font-size: var(--texto-tam-desktop);
 }
 
 /* ESTILIZACAO PAGINA BLOG */
 
+/* Adiciona estilização da sessçao hero da página de blog, seta cor de texto, cor de fundo e padding*/
 .hero-blog {
   background-color: var(--cor-principal);
   color: #ffffff;
@@ -990,6 +1020,7 @@ aside {
 }
 
 /* FIX: cor hardcoded + alinhamento à esquerda */
+/* Estiliza o texto principal "Blog PD clínica" da página de blog*/
 .hero-blog h1 {
   font-family: var(--fonte-titulo);
   font-size: var(--banner-tam-desktop);
@@ -998,6 +1029,7 @@ aside {
 }
 
 /* FIX: cor hardcoded + alinhamento à esquerda */
+/* Estiliza o subtitulo "Artigos sobre saúde, ciência e cuidados práticos" da página de blog*/
 .hero-blog h2 {
   font-size: 32px;
   font-style: italic;
@@ -1007,38 +1039,45 @@ aside {
   text-align: left;
 }
 
+/* Adiciona um padding lateral nos textos da página de blog */
 .conteudo-blog {
   padding: 40px 0;
 }
 
+/* Estiliza os titulos das sessões de conteudo da página de blog */
 .conteudo-blog h2 {
   color: #3558a6;
   font-weight: 700;
   font-family: var(--fonte-titulo);
 }
 
+/* Estiliza os nomes dos autores de cada artigo médico e as datas*/
 .informaco-autor-artigo {
   font-style: italic;
   font-size: var(--texto-tam-desktop);
   color: #6c757d;
 }
 
+/* Estiliza os titulos dos artigos que também são links que levam para os artigos*/
 .article-link {
   text-decoration: none;
   color: #3558a6;
   transition: all 0.2s ease;
 }
 
+/* Adiciona um efeito de hover nos titulos dos artigos*/
 .article-link:hover {
   text-decoration: underline;
   opacity: 0.85;
 }
 
+/* Estiliza o link quando ele está em foco, criando uma borda em baixo do elemento.*/
 .article-link:focus {
   outline: 2px solid #3558a6;
   outline-offset: 4px;
 }
 
+/* Estiliza os subtitulos de cada artigo médico. Por exemplo: "Quais exames fazer em cada fase da vida?" */
 .conteudo-blog h3 {
   font-size: var(--texto-tam-desktop);
 }
@@ -1140,6 +1179,7 @@ aside {
 
 /* ESTILIZAÇÃO DAS PÁGINAS DE ESPECIALIDADES */
 
+/* Define a cor de fundo para as páginas de especialidades assim como para outras páginas também. */
 .conteudo-especialidades,
 .conteudo-artigo,
 .conteudo-paciente,
@@ -1149,10 +1189,16 @@ aside {
   background-color: var(--cor-bg-pagina);
 }
 
+/* Adiciona um espaçamento justificado a todo conteúdo de texto das páginas de especialidades*/
 .conteudo-especialidades p {
   text-align: justify;
 }
 
+/* Adiciona uma largura minima, alinha com display-flex e adiciona uma camada de degradê por cima de 
+todas as imagens da sessão hero de todas as páginas de esécialidades*/
+
+/* Este trecho de código se repete 6 vezes aqui, ele gera exatamente o mesmo efeito cada 
+vez que se repete, mas nas 6 páginas diferentes de especialidades*/ 
 .hero-dermatologia {
   background:
     linear-gradient(to right,
@@ -1167,6 +1213,7 @@ aside {
   align-items: center;
 }
 
+/* Estiliza o botão "Marque uma consulta" das páginas de especialidades.*/ 
 .botao-banner {
   padding: 0.75rem 1.5rem;
   font-weight: 500;
@@ -1176,6 +1223,7 @@ aside {
   border: none;
 }
 
+/* Estiliza os titulos de cada sessão das páginas de especialidades*/ 
 .Titulos-sessao {
   font-family: var(--fonte-titulo);
   color: var(--cor-principal);
@@ -1185,6 +1233,7 @@ aside {
 }
 
 /* FIX: cor hardcoded + alinhamento à esquerda */
+/* Estiliza o titulo da principal das páginas de especialidades (O titulo da hero)*/ 
 .container-titulo-hero h1 {
   color: #ffffff;
   font-size: var(--banner-tam-desktop);
@@ -1193,6 +1242,7 @@ aside {
 }
 
 /* FIX: cor hardcoded + alinhamento à esquerda */
+/* Estiliza o texto que fica abaixo do titulo principal das páginas de especialidades (O titulo da hero)*/ 
 .container-titulo-hero p {
   color: #ffffff;
   font-size: var(--texto-tam-desktop);
@@ -1742,6 +1792,7 @@ MEDIA QUERIES
 
 /* Intermediário 901–1300: textos menores, botões mantêm largura desktop */
 @media (min-width: 901px) and (max-width: 1300px) {
+
   h1,
   h2,
   h3,
@@ -1875,6 +1926,7 @@ MEDIA QUERIES
 
 /* Intermediário 769–900: textos menores, botões mantêm largura desktop */
 @media (min-width: 769px) and (max-width: 900px) {
+
   h1,
   h2,
   h3,
@@ -2061,6 +2113,7 @@ MEDIA QUERIES
   .input-data {
     width: 100%;
   }
+
   .bg-img-contato h1,
   .bg-img-agendamento h1 {
     font-size: var(--titulo-tam-mobile);
@@ -2088,6 +2141,7 @@ MEDIA QUERIES
 
 /* Mobile — textos menores, botões 100% largura */
 @media (max-width: 768px) {
+
   /* FIX: botões ocupam 100% da largura no mobile */
   .botao {
     text-align: center;
@@ -2538,6 +2592,7 @@ MEDIA QUERIES
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
   .card-admin,
   .card-paciente {
     padding: 20px;
@@ -2687,15 +2742,16 @@ MEDIA QUERIES
     flex-direction: column;
   }
 
-.bg-img-contato,
-.bg-img-agendamento {
-  width: 100%;
-  height: 40vh;
-}
+  .bg-img-contato,
+  .bg-img-agendamento {
+    width: 100%;
+    height: 40vh;
+  }
 
-.container-form {
-  width: 100%;
-  padding: 30px 20px;
+  .container-form {
+    width: 100%;
+    padding: 30px 20px;
+  }
 }
 
 /* VAI CONTROLAR ESPECIFICAMENTE QUANDO OS CARDS DAS PÁGINAS DE ARTIGOS DEVEM DEIXAR DE APARECER */
@@ -2759,6 +2815,6 @@ MEDIA QUERIES
   color: var(--cor-texto);
 }
 
-.tabela-agendamentos tbody tr:nth-child(odd) td {
+.tabela-agendamentos tbody tr:nth-child(odd) {
   background-color: var(--cor-bg-sessao);
 }
