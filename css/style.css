@@ -926,6 +926,7 @@ aside {
 
 /* ESTILAZAÇÃO DA PÁGINA DE INFORMAÇÕES*/
 
+/* Estiliza a sessão hero da página de informações*/
 .hero-informacoes {
   background: url("../img/img-informativo.jpg") center center / cover no-repeat;
   position: relative;
@@ -936,6 +937,7 @@ aside {
   padding: 60px 0;
 }
 
+/* Cria uma camada de sombra por cima da imagem da sessçao hero da página de informações*/
 .hero-informacoes::before {
   content: "";
   position: absolute;
@@ -943,12 +945,14 @@ aside {
   background: rgba(0, 0, 0, 0.45);
 }
 
+/* Seta o posicionamento dos elementos da sessçao hero da página de informações*/
 .conteudo-hero-informacoes {
   position: relative;
   z-index: 2;
 }
 
 /* FIX: cor hardcoded + alinhamento à esquerda */
+/*Estiliza o titulo principal da página de informações */
 .conteudo-hero-informacoes h1 {
   font-size: var(--banner-tam-desktop);
   width: 70%;
@@ -956,41 +960,52 @@ aside {
   text-align: left;
 }
 
+/* Seta regras css para as imagens dos cards da página de informações*/
 .card-convenio img {
   height: 160px;
   object-fit: cover;
 }
 
+/* Adiciona efeito de hover no botão "Acessar blog" da página de informações */
 .botao-hero-informacoes:hover {
   background-color: var(--cor-principal);
   color: #ffffff;
 }
 
+/* Seta tamanho da fonte dos textos dos cards da página de informalções */
 .card-convenio p {
   font-size: var(--texto-tam-desktop);
 }
 
+/* Seta largura e tamanho da fonte dos titulos dos cards de convenios da pagina de informações */
 .card-convenio h5 {
   width: 100%;
   font-size: var(--titulo-tam-desktop);
 }
 
+/* Separa cores diferentes para trechos de um mesmo titulo de sessao =  <span class="subititulo-convenio">Aceitos</span>*/
 .subititulo-convenio {
   color: var(--cor-principal);
 }
 
+/* Separa cores diferentes para trechos de um mesmo titulo de sessao =  <h2 class="subtitulo-informacoes"> 
+Convênios <span class="subititulo-convenio">Aceitos</span>
+</h2>*/
 .subtitulo-informacoes {
   font-family: var(--fonte-titulo);
 }
 
+/* Seta cor da borda do acordeon da página de informações */
 .accordion-item {
   border-color: var(--cor-bg-sessao);
 }
 
+/* Define tamanho da fonte do cabeçalho do acordeon da página de informações */
 .accordion-header button {
   font-size: var(--texto-tam-desktop);
 }
 
+/* Define tamanho da fonte das respostas do acordeon da página de informações*/
 .resposta-faq {
   font-size: var(--texto-tam-desktop);
 }
